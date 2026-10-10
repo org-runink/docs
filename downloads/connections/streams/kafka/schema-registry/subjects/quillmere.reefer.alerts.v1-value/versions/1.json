@@ -1,0 +1,6 @@
+{
+  "subject": "quillmere.reefer.alerts.v1-value",
+  "version": 1,
+  "id": 6,
+  "schema": "{\"type\":\"record\",\"name\":\"ReeferAlert\",\"namespace\":\"invalid.quillmere.coldchain\",\"fields\":[{\"name\":\"alert_id\",\"type\":\"string\"},{\"name\":\"trailer_id\",\"type\":\"string\"},{\"name\":\"shipment_id\",\"type\":\"string\"},{\"name\":\"device_id\",\"type\":\"string\"},{\"name\":\"temp_c\",\"type\":\"double\"},{\"name\":\"threshold_c\",\"type\":\"double\",\"doc\":\"the reefer setpoint ceiling the reading broke\"},{\"name\":\"at\",\"type\":\"string\"},{\"name\":\"unit\",\"type\":\"string\"}]}"
+}

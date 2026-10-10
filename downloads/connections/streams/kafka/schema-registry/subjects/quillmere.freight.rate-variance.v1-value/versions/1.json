@@ -1,0 +1,6 @@
+{
+  "subject": "quillmere.freight.rate-variance.v1-value",
+  "version": 1,
+  "id": 14,
+  "schema": "{\"type\":\"record\",\"name\":\"InvoiceRateVariance\",\"namespace\":\"invalid.quillmere.freight\",\"fields\":[{\"name\":\"invoice_id\",\"type\":\"string\"},{\"name\":\"shipment_id\",\"type\":\"string\"},{\"name\":\"carrier_id\",\"type\":\"string\"},{\"name\":\"rate_per_mile\",\"type\":\"double\"},{\"name\":\"contracted_rate_per_mile\",\"type\":\"double\"},{\"name\":\"variance_pct\",\"type\":\"double\",\"doc\":\"billed rate_per_mile over contracted_rate_per_mile on the invoice posted event, in percent\"},{\"name\":\"at\",\"type\":\"string\"}]}"
+}

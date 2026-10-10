@@ -1,0 +1,11 @@
+{
+  "type": "iot",
+  "protocol": "mqtt-3.1.1 (topic quillmere/tags/<trailer>/event)",
+  "recordings": [
+    "streams/iot/messages.jsonl"
+  ],
+  "messages": 48,
+  "first_at": "2026-07-13T15:45:00Z",
+  "last_at": "2026-09-20T18:45:00Z",
+  "replay": "go run ./cmd/synth replay iot --broker localhost:1883    # PUBLISH to a broker you run"
+}

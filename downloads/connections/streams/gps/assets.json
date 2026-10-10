@@ -1,0 +1,52 @@
+[
+  {
+    "file": "nmea/GPS-101.nmea",
+    "device_id": "GPS-101",
+    "trailer_id": "TRL-101"
+  },
+  {
+    "file": "nmea/GPS-102.nmea",
+    "device_id": "GPS-102",
+    "trailer_id": "TRL-102"
+  },
+  {
+    "file": "nmea/GPS-103.nmea",
+    "device_id": "GPS-103",
+    "trailer_id": "TRL-103"
+  },
+  {
+    "file": "nmea/GPS-104.nmea",
+    "device_id": "GPS-104",
+    "trailer_id": "TRL-104"
+  },
+  {
+    "file": "nmea/GPS-105.nmea",
+    "device_id": "GPS-105",
+    "trailer_id": "TRL-105"
+  },
+  {
+    "file": "nmea/GPS-106.nmea",
+    "device_id": "GPS-106",
+    "trailer_id": "TRL-106"
+  },
+  {
+    "file": "nmea/GPS-107.nmea",
+    "device_id": "GPS-107",
+    "trailer_id": "TRL-107"
+  },
+  {
+    "file": "nmea/GPS-108.nmea",
+    "device_id": "GPS-108",
+    "trailer_id": "TRL-108"
+  },
+  {
+    "file": "nmea/GPS-109.nmea",
+    "device_id": "GPS-109",
+    "trailer_id": "TRL-109"
+  },
+  {
+    "file": "nmea/GPS-110.nmea",
+    "device_id": "GPS-110",
+    "trailer_id": "TRL-110"
+  }
+]

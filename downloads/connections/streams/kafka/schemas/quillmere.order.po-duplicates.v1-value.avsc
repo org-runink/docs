@@ -1,0 +1,28 @@
+{
+  "type": "record",
+  "name": "OrderPoDuplicate",
+  "namespace": "invalid.quillmere.orders",
+  "fields": [
+    {
+      "name": "customer_id",
+      "type": "string"
+    },
+    {
+      "name": "customer_po",
+      "type": "string"
+    },
+    {
+      "name": "order_count",
+      "type": "int",
+      "doc": "order created events that carry this customer PO"
+    },
+    {
+      "name": "order_ids",
+      "type": {
+        "type": "array",
+        "items": "string"
+      },
+      "doc": "the order ids of those events"
+    }
+  ]
+}

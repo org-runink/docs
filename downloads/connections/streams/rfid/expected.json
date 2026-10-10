@@ -1,0 +1,178 @@
+{
+  "type": "rfid",
+  "fixture_kind": "stream",
+  "root": "streams/rfid",
+  "discovery_today": "no catalogue: FACE collects reads for collect_seconds; the reader's location setting ties a read to a dock",
+  "replay": "go run ./cmd/synth replay rfid            # tag reports at http://localhost:8084/events",
+  "connections": [
+    {
+      "name": "Dock reader RDR-NORTH-01",
+      "settings": {
+        "protocol": "llrp",
+        "endpoint": "rfid-dock-north-01.quillmere.invalid:5084",
+        "reader_id": "RDR-NORTH-01",
+        "antenna_ports": "1,2,3,4",
+        "location": "DOCK-NORTH-01",
+        "collect_seconds": 30,
+        "max_reads": 10000,
+        "report_duplicates": false,
+        "use_tls": false
+      }
+    },
+    {
+      "name": "Dock reader RDR-NORTH-02",
+      "settings": {
+        "protocol": "llrp",
+        "endpoint": "rfid-dock-north-02.quillmere.invalid:5084",
+        "reader_id": "RDR-NORTH-02",
+        "antenna_ports": "1,2,3,4",
+        "location": "DOCK-NORTH-02",
+        "collect_seconds": 30,
+        "max_reads": 10000,
+        "report_duplicates": false,
+        "use_tls": false
+      }
+    },
+    {
+      "name": "Dock reader RDR-NORTH-03",
+      "settings": {
+        "protocol": "llrp",
+        "endpoint": "rfid-dock-north-03.quillmere.invalid:5084",
+        "reader_id": "RDR-NORTH-03",
+        "antenna_ports": "1,2,3,4",
+        "location": "DOCK-NORTH-03",
+        "collect_seconds": 30,
+        "max_reads": 10000,
+        "report_duplicates": false,
+        "use_tls": false
+      }
+    },
+    {
+      "name": "Dock reader RDR-EAST-01",
+      "settings": {
+        "protocol": "llrp",
+        "endpoint": "rfid-dock-east-01.quillmere.invalid:5084",
+        "reader_id": "RDR-EAST-01",
+        "antenna_ports": "1,2,3,4",
+        "location": "DOCK-EAST-01",
+        "collect_seconds": 30,
+        "max_reads": 10000,
+        "report_duplicates": false,
+        "use_tls": false
+      }
+    },
+    {
+      "name": "Dock reader RDR-EAST-02",
+      "settings": {
+        "protocol": "llrp",
+        "endpoint": "rfid-dock-east-02.quillmere.invalid:5084",
+        "reader_id": "RDR-EAST-02",
+        "antenna_ports": "1,2,3,4",
+        "location": "DOCK-EAST-02",
+        "collect_seconds": 30,
+        "max_reads": 10000,
+        "report_duplicates": false,
+        "use_tls": false
+      }
+    },
+    {
+      "name": "Dock reader RDR-EAST-03",
+      "settings": {
+        "protocol": "llrp",
+        "endpoint": "rfid-dock-east-03.quillmere.invalid:5084",
+        "reader_id": "RDR-EAST-03",
+        "antenna_ports": "1,2,3,4",
+        "location": "DOCK-EAST-03",
+        "collect_seconds": 30,
+        "max_reads": 10000,
+        "report_duplicates": false,
+        "use_tls": false
+      }
+    },
+    {
+      "name": "Dock reader RDR-SOUTH-01",
+      "settings": {
+        "protocol": "llrp",
+        "endpoint": "rfid-dock-south-01.quillmere.invalid:5084",
+        "reader_id": "RDR-SOUTH-01",
+        "antenna_ports": "1,2,3,4",
+        "location": "DOCK-SOUTH-01",
+        "collect_seconds": 30,
+        "max_reads": 10000,
+        "report_duplicates": false,
+        "use_tls": false
+      }
+    },
+    {
+      "name": "Dock reader RDR-SOUTH-02",
+      "settings": {
+        "protocol": "llrp",
+        "endpoint": "rfid-dock-south-02.quillmere.invalid:5084",
+        "reader_id": "RDR-SOUTH-02",
+        "antenna_ports": "1,2,3,4",
+        "location": "DOCK-SOUTH-02",
+        "collect_seconds": 30,
+        "max_reads": 10000,
+        "report_duplicates": false,
+        "use_tls": false
+      }
+    },
+    {
+      "name": "Dock reader RDR-SOUTH-03",
+      "settings": {
+        "protocol": "llrp",
+        "endpoint": "rfid-dock-south-03.quillmere.invalid:5084",
+        "reader_id": "RDR-SOUTH-03",
+        "antenna_ports": "1,2,3,4",
+        "location": "DOCK-SOUTH-03",
+        "collect_seconds": 30,
+        "max_reads": 10000,
+        "report_duplicates": false,
+        "use_tls": false
+      }
+    }
+  ],
+  "datasets": [
+    {
+      "name": "tag_reports",
+      "kind": "llrp_ro_access_report",
+      "domain": "receiving",
+      "fields": [
+        {
+          "name": "reader_id",
+          "type": "string",
+          "joins": "device"
+        },
+        {
+          "name": "AntennaID",
+          "type": "int"
+        },
+        {
+          "name": "EPC_96",
+          "type": "string",
+          "joins": "epc"
+        },
+        {
+          "name": "PeakRSSI",
+          "type": "int"
+        },
+        {
+          "name": "FirstSeenTimestampUTC",
+          "type": "int"
+        },
+        {
+          "name": "TagSeenCount",
+          "type": "int"
+        },
+        {
+          "name": "first_seen",
+          "type": "timestamp"
+        }
+      ],
+      "paths": [
+        "streams/rfid/tag_reports.jsonl"
+      ],
+      "row_count": 49
+    }
+  ]
+}

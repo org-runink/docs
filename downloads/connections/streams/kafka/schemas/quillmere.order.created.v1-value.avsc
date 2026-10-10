@@ -1,0 +1,32 @@
+{
+  "type": "record",
+  "name": "OrderCreated",
+  "namespace": "invalid.quillmere.orders",
+  "fields": [
+    {
+      "name": "order_id",
+      "type": "string"
+    },
+    {
+      "name": "customer_id",
+      "type": "string"
+    },
+    {
+      "name": "customer_po",
+      "type": "string",
+      "doc": "the purchase order number the customer sent"
+    },
+    {
+      "name": "line_count",
+      "type": "int"
+    },
+    {
+      "name": "total",
+      "type": "double"
+    },
+    {
+      "name": "at",
+      "type": "string"
+    }
+  ]
+}

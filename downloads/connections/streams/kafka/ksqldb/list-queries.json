@@ -1,0 +1,64 @@
+[
+  {
+    "@type": "queries",
+    "queries": [
+      {
+        "sinks": [
+          "INVOICE_RATE_VARIANCE"
+        ],
+        "sinkKafkaTopics": [
+          "quillmere.freight.rate-variance.v1"
+        ],
+        "id": "CSAS_INVOICE_RATE_VARIANCE_9",
+        "statusCount": {
+          "RUNNING": 1
+        },
+        "queryType": "PERSISTENT",
+        "state": "RUNNING"
+      },
+      {
+        "sinks": [
+          "ORDER_PO_DUPLICATES"
+        ],
+        "sinkKafkaTopics": [
+          "quillmere.order.po-duplicates.v1"
+        ],
+        "id": "CTAS_ORDER_PO_DUPLICATES_3",
+        "statusCount": {
+          "RUNNING": 1
+        },
+        "queryType": "PERSISTENT",
+        "state": "RUNNING"
+      },
+      {
+        "sinks": [
+          "REEFER_EXCURSIONS"
+        ],
+        "sinkKafkaTopics": [
+          "quillmere.coldchain.excursions.v1"
+        ],
+        "id": "CTAS_REEFER_EXCURSIONS_7",
+        "statusCount": {
+          "RUNNING": 1
+        },
+        "queryType": "PERSISTENT",
+        "state": "RUNNING"
+      },
+      {
+        "sinks": [
+          "SHIPMENT_LATEST"
+        ],
+        "sinkKafkaTopics": [
+          "quillmere.shipment.latest.v1"
+        ],
+        "id": "CTAS_SHIPMENT_LATEST_5",
+        "statusCount": {
+          "RUNNING": 1
+        },
+        "queryType": "PERSISTENT",
+        "state": "RUNNING"
+      }
+    ],
+    "warnings": []
+  }
+]
