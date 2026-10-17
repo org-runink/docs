@@ -1,0 +1,6 @@
+{
+  "subject": "quillmere.shipment.export.v0-value",
+  "version": 1,
+  "id": 5,
+  "schema": "{\"type\":\"record\",\"name\":\"ShipmentExport\",\"namespace\":\"invalid.quillmere.shipments\",\"fields\":[{\"name\":\"shipment_id\",\"type\":\"string\"},{\"name\":\"order_id\",\"type\":\"string\"},{\"name\":\"status\",\"type\":\"string\"},{\"name\":\"dock_id\",\"type\":\"string\"},{\"name\":\"trailer_id\",\"type\":\"string\"},{\"name\":\"exported_at\",\"type\":\"string\"}]}"
+}
