@@ -1,0 +1,1850 @@
+{
+  "seed": 20261005,
+  "as_of": "2026-09-30T00:00:00Z",
+  "company": {
+    "name": "Quillmere Freight Lines",
+    "domain": "quillmere.invalid"
+  },
+  "entities": [
+    {
+      "entity": "asn",
+      "count": 24,
+      "examples": [
+        "ASN-70001",
+        "ASN-70002",
+        "ASN-70003"
+      ],
+      "connection_types": [
+        "logisticsapi",
+        "postgres",
+        "whs"
+      ]
+    },
+    {
+      "entity": "carrier",
+      "count": 4,
+      "examples": [
+        "CAR-01",
+        "CAR-02",
+        "CAR-03"
+      ],
+      "connection_types": [
+        "d365",
+        "document",
+        "files",
+        "guidewire",
+        "kafka",
+        "mysql",
+        "objectstore",
+        "postgres",
+        "redshift",
+        "sharepoint",
+        "tms",
+        "yms"
+      ]
+    },
+    {
+      "entity": "claim",
+      "count": 4,
+      "examples": [
+        "CLM-2026-0101",
+        "CLM-2026-0102",
+        "CLM-2026-0103"
+      ],
+      "connection_types": [
+        "files",
+        "guidewire",
+        "salesforce",
+        "sharepoint"
+      ]
+    },
+    {
+      "entity": "customer",
+      "count": 6,
+      "examples": [
+        "CUST-0001",
+        "CUST-0002",
+        "CUST-0003"
+      ],
+      "connection_types": [
+        "files",
+        "hubspot",
+        "kafka",
+        "oms",
+        "postgres",
+        "redshift",
+        "salesforce",
+        "sap",
+        "snowflake"
+      ]
+    },
+    {
+      "entity": "customer_po",
+      "count": 23,
+      "examples": [
+        "PO-0002-4103",
+        "PO-0006-4107",
+        "PO-0003-4116"
+      ],
+      "connection_types": [
+        "files",
+        "hubspot",
+        "kafka",
+        "oms",
+        "postgres",
+        "snowflake"
+      ]
+    },
+    {
+      "entity": "device",
+      "count": 42,
+      "examples": [
+        "GPS-101",
+        "TAG-101",
+        "TMP-101"
+      ],
+      "connection_types": [
+        "bigquery",
+        "cctv",
+        "databricks",
+        "files",
+        "gps",
+        "iot",
+        "kafka",
+        "mqtt",
+        "postgres",
+        "rfid",
+        "servicenow"
+      ]
+    },
+    {
+      "entity": "dock",
+      "count": 9,
+      "examples": [
+        "DOCK-NORTH-01",
+        "DOCK-NORTH-02",
+        "DOCK-NORTH-03"
+      ],
+      "connection_types": [
+        "cctv",
+        "excel",
+        "files",
+        "kafka",
+        "logisticsapi",
+        "postgres",
+        "sensorgateway",
+        "whs",
+        "yms"
+      ]
+    },
+    {
+      "entity": "epc",
+      "count": 48,
+      "examples": [
+        "303400000051AE0000000001",
+        "303400000051AE0000000002",
+        "303400000051AE0000000003"
+      ],
+      "connection_types": [
+        "logisticsapi",
+        "rfid"
+      ]
+    },
+    {
+      "entity": "invoice",
+      "count": 24,
+      "examples": [
+        "INV-90001",
+        "INV-90002",
+        "INV-90003"
+      ],
+      "connection_types": [
+        "d365",
+        "files",
+        "kafka",
+        "mysql",
+        "objectstore",
+        "redshift"
+      ]
+    },
+    {
+      "entity": "load",
+      "count": 24,
+      "examples": [
+        "LD-610001",
+        "LD-610002",
+        "LD-610003"
+      ],
+      "connection_types": [
+        "tms"
+      ]
+    },
+    {
+      "entity": "order",
+      "count": 24,
+      "examples": [
+        "SO-30001",
+        "SO-30002",
+        "SO-30003"
+      ],
+      "connection_types": [
+        "document",
+        "files",
+        "hubspot",
+        "kafka",
+        "oms",
+        "postgres",
+        "sap",
+        "snowflake"
+      ]
+    },
+    {
+      "entity": "role",
+      "count": 6,
+      "examples": [
+        "ROLE-DISPATCH",
+        "ROLE-YARD",
+        "ROLE-RECEIVING"
+      ],
+      "connection_types": [
+        "servicenow",
+        "sharepoint",
+        "whs",
+        "yms"
+      ]
+    },
+    {
+      "entity": "sap_delivery",
+      "count": 24,
+      "examples": [
+        "80000101",
+        "80000102",
+        "80000103"
+      ],
+      "connection_types": [
+        "sap"
+      ]
+    },
+    {
+      "entity": "sap_vendor",
+      "count": 4,
+      "examples": [
+        "0000200100",
+        "0000200101",
+        "0000200102"
+      ],
+      "connection_types": [
+        "mysql"
+      ]
+    },
+    {
+      "entity": "shipment",
+      "count": 24,
+      "examples": [
+        "SHP-50001",
+        "SHP-50002",
+        "SHP-50003"
+      ],
+      "connection_types": [
+        "bigquery",
+        "d365",
+        "databricks",
+        "document",
+        "excel",
+        "files",
+        "github",
+        "guidewire",
+        "iot",
+        "kafka",
+        "logisticsapi",
+        "mqtt",
+        "mysql",
+        "objectstore",
+        "postgres",
+        "redshift",
+        "salesforce",
+        "sap",
+        "servicenow",
+        "sharepoint",
+        "tms",
+        "whs",
+        "yms"
+      ]
+    },
+    {
+      "entity": "sku",
+      "count": 12,
+      "examples": [
+        "SKU-10001",
+        "SKU-10002",
+        "SKU-10003"
+      ],
+      "connection_types": [
+        "ims",
+        "inventory",
+        "logisticsapi",
+        "oms",
+        "postgres",
+        "sap",
+        "snowflake"
+      ]
+    },
+    {
+      "entity": "trailer",
+      "count": 10,
+      "examples": [
+        "TRL-101",
+        "TRL-102",
+        "TRL-103"
+      ],
+      "connection_types": [
+        "cctv",
+        "databricks",
+        "document",
+        "excel",
+        "iot",
+        "kafka",
+        "mqtt",
+        "postgres",
+        "servicenow",
+        "tms",
+        "yms"
+      ]
+    },
+    {
+      "entity": "warehouse",
+      "count": 3,
+      "examples": [
+        "WH-NORTH",
+        "WH-EAST",
+        "WH-SOUTH"
+      ],
+      "connection_types": [
+        "inventory",
+        "oms",
+        "postgres",
+        "redshift",
+        "tms",
+        "whs"
+      ]
+    },
+    {
+      "entity": "yard",
+      "count": 3,
+      "examples": [
+        "YARD-NORTH",
+        "YARD-EAST",
+        "YARD-SOUTH"
+      ],
+      "connection_types": [
+        "postgres",
+        "yms"
+      ]
+    }
+  ],
+  "links": {
+    "asn": [
+      {
+        "type": "logisticsapi",
+        "dataset": "asns",
+        "field": "asn_id"
+      },
+      {
+        "type": "postgres",
+        "dataset": "shipments",
+        "field": "asn_id"
+      },
+      {
+        "type": "whs",
+        "dataset": "tasks",
+        "field": "asn_id"
+      }
+    ],
+    "carrier": [
+      {
+        "type": "d365",
+        "dataset": "VendorsV2",
+        "field": "VendorAccountNumber"
+      },
+      {
+        "type": "d365",
+        "dataset": "VendorInvoiceHeaders",
+        "field": "InvoiceAccount"
+      },
+      {
+        "type": "document",
+        "dataset": "bill_of_lading",
+        "field": "carrier"
+      },
+      {
+        "type": "files",
+        "dataset": "claim_documents",
+        "field": "carrier"
+      },
+      {
+        "type": "files",
+        "dataset": "freight_invoice_documents",
+        "field": "carrier"
+      },
+      {
+        "type": "files",
+        "dataset": "carrier_rate_sheet",
+        "field": "carrier_id"
+      },
+      {
+        "type": "files",
+        "dataset": "carrier_scorecard",
+        "field": "carrier_id"
+      },
+      {
+        "type": "guidewire",
+        "dataset": "claims",
+        "field": "attributes.carrierCode_Ext"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.freight.invoice.posted.v1",
+        "field": "carrier_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.freight.rate-variance.v1",
+        "field": "carrier_id"
+      },
+      {
+        "type": "mysql",
+        "dataset": "carriers",
+        "field": "carrier_id"
+      },
+      {
+        "type": "mysql",
+        "dataset": "rate_contracts",
+        "field": "carrier_id"
+      },
+      {
+        "type": "mysql",
+        "dataset": "freight_invoices",
+        "field": "carrier_id"
+      },
+      {
+        "type": "objectstore",
+        "dataset": "invoice_register",
+        "field": "carrier_id"
+      },
+      {
+        "type": "postgres",
+        "dataset": "shipments",
+        "field": "carrier_id"
+      },
+      {
+        "type": "redshift",
+        "dataset": "fact_shipment_cost",
+        "field": "carrier_id"
+      },
+      {
+        "type": "sharepoint",
+        "dataset": "Claims Tracker",
+        "field": "fields.CarrierCode"
+      },
+      {
+        "type": "tms",
+        "dataset": "loads",
+        "field": "carrier_id"
+      },
+      {
+        "type": "yms",
+        "dataset": "appointments",
+        "field": "carrier_id"
+      }
+    ],
+    "claim": [
+      {
+        "type": "files",
+        "dataset": "claim_documents",
+        "field": "claim_number"
+      },
+      {
+        "type": "files",
+        "dataset": "damage_photos",
+        "field": "claim_number"
+      },
+      {
+        "type": "guidewire",
+        "dataset": "claims",
+        "field": "attributes.claimNumber"
+      },
+      {
+        "type": "salesforce",
+        "dataset": "Case",
+        "field": "Claim_Number__c"
+      },
+      {
+        "type": "sharepoint",
+        "dataset": "Claims Tracker",
+        "field": "fields.Title"
+      }
+    ],
+    "customer": [
+      {
+        "type": "files",
+        "dataset": "proof_of_delivery",
+        "field": "consignee"
+      },
+      {
+        "type": "files",
+        "dataset": "orders_export",
+        "field": "customer_id"
+      },
+      {
+        "type": "hubspot",
+        "dataset": "companies",
+        "field": "properties.customer_number"
+      },
+      {
+        "type": "hubspot",
+        "dataset": "deals",
+        "field": "properties.customer_number"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.order.created.v1",
+        "field": "customer_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.order.po-duplicates.v1",
+        "field": "customer_id"
+      },
+      {
+        "type": "oms",
+        "dataset": "orders",
+        "field": "customer_id"
+      },
+      {
+        "type": "postgres",
+        "dataset": "customers",
+        "field": "customer_id"
+      },
+      {
+        "type": "postgres",
+        "dataset": "orders",
+        "field": "customer_id"
+      },
+      {
+        "type": "redshift",
+        "dataset": "fact_delivery",
+        "field": "customer_id"
+      },
+      {
+        "type": "salesforce",
+        "dataset": "Account",
+        "field": "Customer_Number__c"
+      },
+      {
+        "type": "sap",
+        "dataset": "A_OutbDeliveryHeader",
+        "field": "ShipToParty"
+      },
+      {
+        "type": "snowflake",
+        "dataset": "DIM_CUSTOMER",
+        "field": "CUSTOMER_ID"
+      },
+      {
+        "type": "snowflake",
+        "dataset": "FACT_ORDER_LINE",
+        "field": "CUSTOMER_ID"
+      }
+    ],
+    "customer_po": [
+      {
+        "type": "files",
+        "dataset": "orders_export",
+        "field": "customer_po"
+      },
+      {
+        "type": "hubspot",
+        "dataset": "deals",
+        "field": "properties.customer_po"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.order.created.v1",
+        "field": "customer_po"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.order.po-duplicates.v1",
+        "field": "customer_po"
+      },
+      {
+        "type": "oms",
+        "dataset": "orders",
+        "field": "customer_po"
+      },
+      {
+        "type": "postgres",
+        "dataset": "orders",
+        "field": "customer_po"
+      },
+      {
+        "type": "snowflake",
+        "dataset": "FACT_ORDER_LINE",
+        "field": "CUSTOMER_PO"
+      }
+    ],
+    "device": [
+      {
+        "type": "bigquery",
+        "dataset": "gps_pings",
+        "field": "device_id"
+      },
+      {
+        "type": "cctv",
+        "dataset": "frames",
+        "field": "camera_id"
+      },
+      {
+        "type": "databricks",
+        "dataset": "bronze_reefer_raw",
+        "field": "device_id"
+      },
+      {
+        "type": "databricks",
+        "dataset": "silver_reefer_readings",
+        "field": "device_id"
+      },
+      {
+        "type": "files",
+        "dataset": "dock_video",
+        "field": "camera_id"
+      },
+      {
+        "type": "gps",
+        "dataset": "GPRMC",
+        "field": "device_id"
+      },
+      {
+        "type": "iot",
+        "dataset": "quillmere/tags/+/event",
+        "field": "device_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.reefer.alerts.v1",
+        "field": "device_id"
+      },
+      {
+        "type": "mqtt",
+        "dataset": "quillmere/reefer/+/temperature",
+        "field": "device"
+      },
+      {
+        "type": "mqtt",
+        "dataset": "quillmere/reefer/+/unit",
+        "field": "device"
+      },
+      {
+        "type": "postgres",
+        "dataset": "docks",
+        "field": "camera_id"
+      },
+      {
+        "type": "postgres",
+        "dataset": "docks",
+        "field": "rfid_reader_id"
+      },
+      {
+        "type": "rfid",
+        "dataset": "tag_reports",
+        "field": "reader_id"
+      },
+      {
+        "type": "servicenow",
+        "dataset": "incident",
+        "field": "cmdb_ci"
+      }
+    ],
+    "dock": [
+      {
+        "type": "cctv",
+        "dataset": "frames",
+        "field": "dock_id"
+      },
+      {
+        "type": "excel",
+        "dataset": "Schedule",
+        "field": "dock_id"
+      },
+      {
+        "type": "files",
+        "dataset": "dock_video",
+        "field": "dock_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.shipment.status.v1",
+        "field": "dock_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.shipment.latest.v1",
+        "field": "dock_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.shipment.export.v0",
+        "field": "dock_id"
+      },
+      {
+        "type": "logisticsapi",
+        "dataset": "asns",
+        "field": "dock_id"
+      },
+      {
+        "type": "postgres",
+        "dataset": "docks",
+        "field": "dock_id"
+      },
+      {
+        "type": "postgres",
+        "dataset": "shipments",
+        "field": "dock_id"
+      },
+      {
+        "type": "sensorgateway",
+        "dataset": "holding_registers",
+        "field": "channel"
+      },
+      {
+        "type": "whs",
+        "dataset": "tasks",
+        "field": "dock_id"
+      },
+      {
+        "type": "yms",
+        "dataset": "appointments",
+        "field": "dock_id"
+      },
+      {
+        "type": "yms",
+        "dataset": "moves",
+        "field": "to_location"
+      }
+    ],
+    "epc": [
+      {
+        "type": "logisticsapi",
+        "dataset": "asns.lines",
+        "field": "epcs"
+      },
+      {
+        "type": "rfid",
+        "dataset": "tag_reports",
+        "field": "EPC_96"
+      }
+    ],
+    "invoice": [
+      {
+        "type": "d365",
+        "dataset": "VendorInvoiceHeaders",
+        "field": "InvoiceNumber"
+      },
+      {
+        "type": "files",
+        "dataset": "freight_invoice_documents",
+        "field": "invoice_number"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.freight.invoice.posted.v1",
+        "field": "invoice_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.freight.rate-variance.v1",
+        "field": "invoice_id"
+      },
+      {
+        "type": "mysql",
+        "dataset": "freight_invoices",
+        "field": "invoice_id"
+      },
+      {
+        "type": "objectstore",
+        "dataset": "invoice_register",
+        "field": "invoice_id"
+      },
+      {
+        "type": "redshift",
+        "dataset": "fact_shipment_cost",
+        "field": "invoice_id"
+      }
+    ],
+    "load": [
+      {
+        "type": "tms",
+        "dataset": "loads",
+        "field": "load_id"
+      }
+    ],
+    "order": [
+      {
+        "type": "document",
+        "dataset": "bill_of_lading",
+        "field": "order_number"
+      },
+      {
+        "type": "files",
+        "dataset": "shipping_labels",
+        "field": "order_number"
+      },
+      {
+        "type": "files",
+        "dataset": "orders_export",
+        "field": "order_id"
+      },
+      {
+        "type": "hubspot",
+        "dataset": "deals",
+        "field": "properties.order_number"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.order.created.v1",
+        "field": "order_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.shipment.status.v1",
+        "field": "order_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.shipment.latest.v1",
+        "field": "order_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.shipment.export.v0",
+        "field": "order_id"
+      },
+      {
+        "type": "oms",
+        "dataset": "orders",
+        "field": "order_id"
+      },
+      {
+        "type": "postgres",
+        "dataset": "orders",
+        "field": "order_id"
+      },
+      {
+        "type": "postgres",
+        "dataset": "order_lines",
+        "field": "order_id"
+      },
+      {
+        "type": "postgres",
+        "dataset": "shipments",
+        "field": "order_id"
+      },
+      {
+        "type": "sap",
+        "dataset": "A_OutbDeliveryItem",
+        "field": "ReferenceSDDocument"
+      },
+      {
+        "type": "sap",
+        "dataset": "DELVRY07",
+        "field": "E1EDL24.VGBEL"
+      },
+      {
+        "type": "snowflake",
+        "dataset": "FACT_ORDER_LINE",
+        "field": "ORDER_ID"
+      }
+    ],
+    "role": [
+      {
+        "type": "servicenow",
+        "dataset": "incident",
+        "field": "assignment_group"
+      },
+      {
+        "type": "sharepoint",
+        "dataset": "Claims Tracker",
+        "field": "fields.Owner"
+      },
+      {
+        "type": "whs",
+        "dataset": "tasks",
+        "field": "assigned_role"
+      },
+      {
+        "type": "yms",
+        "dataset": "moves",
+        "field": "performed_by_role"
+      }
+    ],
+    "sap_delivery": [
+      {
+        "type": "sap",
+        "dataset": "A_OutbDeliveryHeader",
+        "field": "DeliveryDocument"
+      },
+      {
+        "type": "sap",
+        "dataset": "A_OutbDeliveryItem",
+        "field": "DeliveryDocument"
+      },
+      {
+        "type": "sap",
+        "dataset": "DELVRY07",
+        "field": "E1EDL20.VBELN"
+      }
+    ],
+    "sap_vendor": [
+      {
+        "type": "mysql",
+        "dataset": "carriers",
+        "field": "sap_vendor"
+      }
+    ],
+    "shipment": [
+      {
+        "type": "bigquery",
+        "dataset": "gps_pings",
+        "field": "shipment_id"
+      },
+      {
+        "type": "bigquery",
+        "dataset": "planned_routes",
+        "field": "shipment_id"
+      },
+      {
+        "type": "d365",
+        "dataset": "VendorInvoiceHeaders",
+        "field": "QFLShipmentId"
+      },
+      {
+        "type": "databricks",
+        "dataset": "silver_reefer_readings",
+        "field": "shipment_id"
+      },
+      {
+        "type": "document",
+        "dataset": "bill_of_lading",
+        "field": "bol_number"
+      },
+      {
+        "type": "excel",
+        "dataset": "Schedule",
+        "field": "shipment_id"
+      },
+      {
+        "type": "files",
+        "dataset": "claim_documents",
+        "field": "shipment_number"
+      },
+      {
+        "type": "files",
+        "dataset": "freight_invoice_documents",
+        "field": "shipment_number"
+      },
+      {
+        "type": "files",
+        "dataset": "damage_photos",
+        "field": "shipment_number"
+      },
+      {
+        "type": "files",
+        "dataset": "shipping_labels",
+        "field": "shipment_number"
+      },
+      {
+        "type": "files",
+        "dataset": "proof_of_delivery",
+        "field": "shipment_id"
+      },
+      {
+        "type": "github",
+        "dataset": "issues",
+        "field": "body"
+      },
+      {
+        "type": "guidewire",
+        "dataset": "claims",
+        "field": "attributes.shipmentNumber_Ext"
+      },
+      {
+        "type": "iot",
+        "dataset": "quillmere/tags/+/event",
+        "field": "shipment_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.shipment.status.v1",
+        "field": "shipment_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.shipment.latest.v1",
+        "field": "shipment_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.shipment.export.v0",
+        "field": "shipment_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.reefer.alerts.v1",
+        "field": "shipment_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.coldchain.excursions.v1",
+        "field": "shipment_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.freight.invoice.posted.v1",
+        "field": "shipment_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.freight.rate-variance.v1",
+        "field": "shipment_id"
+      },
+      {
+        "type": "logisticsapi",
+        "dataset": "asns",
+        "field": "shipment_id"
+      },
+      {
+        "type": "mqtt",
+        "dataset": "quillmere/reefer/+/temperature",
+        "field": "shipment"
+      },
+      {
+        "type": "mysql",
+        "dataset": "freight_invoices",
+        "field": "shipment_id"
+      },
+      {
+        "type": "objectstore",
+        "dataset": "invoice_register",
+        "field": "shipment_id"
+      },
+      {
+        "type": "postgres",
+        "dataset": "shipments",
+        "field": "shipment_id"
+      },
+      {
+        "type": "redshift",
+        "dataset": "fact_shipment_cost",
+        "field": "shipment_id"
+      },
+      {
+        "type": "redshift",
+        "dataset": "fact_delivery",
+        "field": "shipment_id"
+      },
+      {
+        "type": "salesforce",
+        "dataset": "Case",
+        "field": "Shipment_Number__c"
+      },
+      {
+        "type": "sap",
+        "dataset": "A_OutbDeliveryHeader",
+        "field": "DeliveryDocumentBySupplier"
+      },
+      {
+        "type": "sap",
+        "dataset": "DELVRY07",
+        "field": "E1EDL20.BOLNR"
+      },
+      {
+        "type": "servicenow",
+        "dataset": "incident",
+        "field": "u_shipment"
+      },
+      {
+        "type": "sharepoint",
+        "dataset": "Claims Tracker",
+        "field": "fields.ShipmentNumber"
+      },
+      {
+        "type": "tms",
+        "dataset": "loads",
+        "field": "shipment_ref"
+      },
+      {
+        "type": "whs",
+        "dataset": "tasks",
+        "field": "shipment_id"
+      },
+      {
+        "type": "yms",
+        "dataset": "appointments",
+        "field": "shipment_id"
+      }
+    ],
+    "sku": [
+      {
+        "type": "ims",
+        "dataset": "items",
+        "field": "sku_id"
+      },
+      {
+        "type": "inventory",
+        "dataset": "stock_levels",
+        "field": "sku_id"
+      },
+      {
+        "type": "logisticsapi",
+        "dataset": "asns.lines",
+        "field": "sku_id"
+      },
+      {
+        "type": "oms",
+        "dataset": "orders.lines",
+        "field": "sku_id"
+      },
+      {
+        "type": "postgres",
+        "dataset": "order_lines",
+        "field": "sku_id"
+      },
+      {
+        "type": "sap",
+        "dataset": "A_OutbDeliveryItem",
+        "field": "Material"
+      },
+      {
+        "type": "sap",
+        "dataset": "DELVRY07",
+        "field": "E1EDL24.MATNR"
+      },
+      {
+        "type": "snowflake",
+        "dataset": "DIM_SKU",
+        "field": "SKU_ID"
+      },
+      {
+        "type": "snowflake",
+        "dataset": "FACT_ORDER_LINE",
+        "field": "SKU_ID"
+      }
+    ],
+    "trailer": [
+      {
+        "type": "cctv",
+        "dataset": "frames",
+        "field": "trailer_id"
+      },
+      {
+        "type": "databricks",
+        "dataset": "silver_reefer_readings",
+        "field": "trailer_id"
+      },
+      {
+        "type": "document",
+        "dataset": "bill_of_lading",
+        "field": "trailer"
+      },
+      {
+        "type": "excel",
+        "dataset": "Schedule",
+        "field": "trailer_id"
+      },
+      {
+        "type": "iot",
+        "dataset": "quillmere/tags/+/event",
+        "field": "trailer_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.shipment.status.v1",
+        "field": "trailer_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.shipment.latest.v1",
+        "field": "trailer_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.shipment.export.v0",
+        "field": "trailer_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.reefer.alerts.v1",
+        "field": "trailer_id"
+      },
+      {
+        "type": "kafka",
+        "dataset": "quillmere.coldchain.excursions.v1",
+        "field": "trailer_id"
+      },
+      {
+        "type": "mqtt",
+        "dataset": "quillmere/reefer/+/temperature",
+        "field": "trailer"
+      },
+      {
+        "type": "mqtt",
+        "dataset": "quillmere/reefer/+/unit",
+        "field": "trailer"
+      },
+      {
+        "type": "postgres",
+        "dataset": "shipments",
+        "field": "trailer_id"
+      },
+      {
+        "type": "servicenow",
+        "dataset": "incident",
+        "field": "u_trailer"
+      },
+      {
+        "type": "tms",
+        "dataset": "loads",
+        "field": "trailer_id"
+      },
+      {
+        "type": "yms",
+        "dataset": "appointments",
+        "field": "trailer_id"
+      },
+      {
+        "type": "yms",
+        "dataset": "moves",
+        "field": "trailer_id"
+      }
+    ],
+    "warehouse": [
+      {
+        "type": "inventory",
+        "dataset": "stock_levels",
+        "field": "warehouse_id"
+      },
+      {
+        "type": "oms",
+        "dataset": "orders",
+        "field": "warehouse_id"
+      },
+      {
+        "type": "postgres",
+        "dataset": "warehouses",
+        "field": "warehouse_id"
+      },
+      {
+        "type": "postgres",
+        "dataset": "docks",
+        "field": "warehouse_id"
+      },
+      {
+        "type": "postgres",
+        "dataset": "orders",
+        "field": "warehouse_id"
+      },
+      {
+        "type": "redshift",
+        "dataset": "fact_delivery",
+        "field": "warehouse_id"
+      },
+      {
+        "type": "tms",
+        "dataset": "loads",
+        "field": "origin.warehouse_id"
+      },
+      {
+        "type": "whs",
+        "dataset": "tasks",
+        "field": "warehouse_id"
+      }
+    ],
+    "yard": [
+      {
+        "type": "postgres",
+        "dataset": "warehouses",
+        "field": "yard_id"
+      },
+      {
+        "type": "yms",
+        "dataset": "appointments",
+        "field": "yard_id"
+      },
+      {
+        "type": "yms",
+        "dataset": "moves",
+        "field": "yard_id"
+      }
+    ]
+  },
+  "types": [
+    {
+      "type": "bigquery",
+      "fixture_kind": "sql",
+      "root": "sources/bigquery",
+      "datasets": [
+        "gps_pings",
+        "planned_routes"
+      ]
+    },
+    {
+      "type": "cctv",
+      "fixture_kind": "stream",
+      "root": "streams/cctv",
+      "datasets": [
+        "frames"
+      ]
+    },
+    {
+      "type": "d365",
+      "fixture_kind": "api",
+      "root": "sources/d365",
+      "datasets": [
+        "VendorsV2",
+        "VendorInvoiceHeaders"
+      ]
+    },
+    {
+      "type": "databricks",
+      "fixture_kind": "sql",
+      "root": "sources/databricks",
+      "datasets": [
+        "bronze_reefer_raw",
+        "silver_reefer_readings"
+      ]
+    },
+    {
+      "type": "document",
+      "fixture_kind": "files",
+      "root": "sources/document",
+      "datasets": [
+        "bill_of_lading"
+      ]
+    },
+    {
+      "type": "excel",
+      "fixture_kind": "files",
+      "root": "sources/excel",
+      "datasets": [
+        "Schedule"
+      ]
+    },
+    {
+      "type": "files",
+      "fixture_kind": "files",
+      "root": "sources/files",
+      "datasets": [
+        "claim_documents",
+        "freight_invoice_documents",
+        "damage_photos",
+        "shipping_labels",
+        "dock_video",
+        "carrier_rate_sheet",
+        "proof_of_delivery",
+        "carrier_scorecard",
+        "orders_export"
+      ]
+    },
+    {
+      "type": "github",
+      "fixture_kind": "api",
+      "root": "sources/github",
+      "datasets": [
+        "issues"
+      ]
+    },
+    {
+      "type": "gps",
+      "fixture_kind": "stream",
+      "root": "streams/gps",
+      "datasets": [
+        "GPRMC"
+      ]
+    },
+    {
+      "type": "guidewire",
+      "fixture_kind": "api",
+      "root": "sources/guidewire",
+      "datasets": [
+        "claims"
+      ]
+    },
+    {
+      "type": "hubspot",
+      "fixture_kind": "api",
+      "root": "sources/hubspot",
+      "datasets": [
+        "companies",
+        "deals"
+      ]
+    },
+    {
+      "type": "ims",
+      "fixture_kind": "api",
+      "root": "sources/ims",
+      "datasets": [
+        "items"
+      ]
+    },
+    {
+      "type": "inventory",
+      "fixture_kind": "api",
+      "root": "sources/inventory",
+      "datasets": [
+        "stock_levels"
+      ]
+    },
+    {
+      "type": "iot",
+      "fixture_kind": "stream",
+      "root": "streams/iot",
+      "datasets": [
+        "quillmere/tags/+/event"
+      ]
+    },
+    {
+      "type": "kafka",
+      "fixture_kind": "stream",
+      "root": "streams/kafka",
+      "datasets": [
+        "quillmere.order.created.v1",
+        "quillmere.order.po-duplicates.v1",
+        "quillmere.shipment.status.v1",
+        "quillmere.shipment.latest.v1",
+        "quillmere.shipment.export.v0",
+        "quillmere.reefer.alerts.v1",
+        "quillmere.coldchain.excursions.v1",
+        "quillmere.freight.invoice.posted.v1",
+        "quillmere.freight.rate-variance.v1"
+      ]
+    },
+    {
+      "type": "logisticsapi",
+      "fixture_kind": "api",
+      "root": "sources/logisticsapi",
+      "datasets": [
+        "asns",
+        "asns.lines"
+      ]
+    },
+    {
+      "type": "mqtt",
+      "fixture_kind": "stream",
+      "root": "streams/mqtt",
+      "datasets": [
+        "quillmere/reefer/+/temperature",
+        "quillmere/reefer/+/unit"
+      ]
+    },
+    {
+      "type": "mysql",
+      "fixture_kind": "sql",
+      "root": "sources/mysql",
+      "datasets": [
+        "carriers",
+        "rate_contracts",
+        "freight_invoices"
+      ]
+    },
+    {
+      "type": "objectstore",
+      "fixture_kind": "files",
+      "root": "sources/objectstore",
+      "datasets": [
+        "invoice_register"
+      ]
+    },
+    {
+      "type": "oms",
+      "fixture_kind": "api",
+      "root": "sources/oms",
+      "datasets": [
+        "orders",
+        "orders.lines"
+      ]
+    },
+    {
+      "type": "postgres",
+      "fixture_kind": "sql",
+      "root": "sources/postgres",
+      "datasets": [
+        "customers",
+        "warehouses",
+        "docks",
+        "orders",
+        "order_lines",
+        "shipments"
+      ]
+    },
+    {
+      "type": "redshift",
+      "fixture_kind": "sql",
+      "root": "sources/redshift",
+      "datasets": [
+        "fact_shipment_cost",
+        "fact_delivery"
+      ]
+    },
+    {
+      "type": "rfid",
+      "fixture_kind": "stream",
+      "root": "streams/rfid",
+      "datasets": [
+        "tag_reports"
+      ]
+    },
+    {
+      "type": "salesforce",
+      "fixture_kind": "api",
+      "root": "sources/salesforce",
+      "datasets": [
+        "Account",
+        "Case"
+      ]
+    },
+    {
+      "type": "sap",
+      "fixture_kind": "api",
+      "root": "sources/sap",
+      "datasets": [
+        "A_OutbDeliveryHeader",
+        "A_OutbDeliveryItem",
+        "DELVRY07"
+      ]
+    },
+    {
+      "type": "sensorgateway",
+      "fixture_kind": "stream",
+      "root": "streams/sensorgateway",
+      "datasets": [
+        "holding_registers"
+      ]
+    },
+    {
+      "type": "servicenow",
+      "fixture_kind": "api",
+      "root": "sources/servicenow",
+      "datasets": [
+        "incident"
+      ]
+    },
+    {
+      "type": "sharepoint",
+      "fixture_kind": "api",
+      "root": "sources/sharepoint",
+      "datasets": [
+        "Claims Tracker"
+      ]
+    },
+    {
+      "type": "snowflake",
+      "fixture_kind": "sql",
+      "root": "sources/snowflake",
+      "datasets": [
+        "DIM_SKU",
+        "DIM_CUSTOMER",
+        "FACT_ORDER_LINE"
+      ]
+    },
+    {
+      "type": "tms",
+      "fixture_kind": "api",
+      "root": "sources/tms",
+      "datasets": [
+        "loads"
+      ]
+    },
+    {
+      "type": "whs",
+      "fixture_kind": "api",
+      "root": "sources/whs",
+      "datasets": [
+        "tasks"
+      ]
+    },
+    {
+      "type": "yms",
+      "fixture_kind": "api",
+      "root": "sources/yms",
+      "datasets": [
+        "appointments",
+        "moves"
+      ]
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "ANOM-1",
+      "kind": "overcharged_freight_invoice",
+      "entity": "INV-90003",
+      "summary": "INV-90003 for SHP-50003 bills 3.84/mile against a contracted 3.25/mile (+15.8% on the total)",
+      "evidence": [
+        {
+          "type": "mysql",
+          "path": "sources/mysql/02_data.sql",
+          "dataset": "freight.freight_invoices",
+          "match": "'INV-90003'",
+          "note": "billed_rate_per_mile 3.84"
+        },
+        {
+          "type": "mysql",
+          "path": "sources/mysql/02_data.sql",
+          "dataset": "freight.rate_contracts",
+          "match": "'RC-CAR-01-2026'",
+          "note": "contracted rate_per_mile 3.25"
+        },
+        {
+          "type": "files",
+          "path": "sources/files/s3/quillmere-claims/invoices/INV-90003.pdf",
+          "dataset": "freight_invoice_documents",
+          "match": "Rate per mile: USD 3.84"
+        },
+        {
+          "type": "files",
+          "path": "sources/files/sftp/outbound/carrier_rates_2026.tsv",
+          "dataset": "carrier_rate_sheet",
+          "match": "CAR-01\tZQAL\t3.25",
+          "note": "the carrier's own rate sheet"
+        },
+        {
+          "type": "d365",
+          "path": "sources/d365/data_VendorInvoiceHeaders.json",
+          "dataset": "VendorInvoiceHeaders",
+          "match": "\"InvoiceAmount\": 494.01",
+          "note": "approved for payment at the billed amount"
+        },
+        {
+          "type": "kafka",
+          "path": "streams/kafka/records.jsonl",
+          "dataset": "quillmere.freight.rate-variance.v1",
+          "match": "\"rate_per_mile\":3.84,\"contracted_rate_per_mile\":3.25,\"variance_pct\":18.20",
+          "note": "the ksqlDB stream INVOICE_RATE_VARIANCE: a billed rate more than 5% over contract"
+        }
+      ]
+    },
+    {
+      "id": "ANOM-2",
+      "kind": "claim_near_filing_deadline",
+      "entity": "CLM-2026-0101",
+      "summary": "CLM-2026-0101 (damage on SHP-50009) is still a draft; CAR-01's 60-day filing window closes 2026-10-05, 5 days after as_of",
+      "evidence": [
+        {
+          "type": "guidewire",
+          "path": "sources/guidewire/claim_v1_claims.json",
+          "dataset": "claims",
+          "match": "\"carrierFilingDeadline_Ext\": \"2026-10-05\"",
+          "note": "state draft, filedWithCarrier_Ext false"
+        },
+        {
+          "type": "sharepoint",
+          "path": "sources/sharepoint/graph_sites_ops_lists_claims-tracker_items.json",
+          "dataset": "Claims Tracker",
+          "match": "\"Title\": \"CLM-2026-0101\""
+        },
+        {
+          "type": "files",
+          "path": "sources/files/s3/quillmere-claims/claims/CLM-2026-0101.pdf",
+          "dataset": "claim_documents",
+          "match": "Filed with carrier: NO - draft"
+        },
+        {
+          "type": "mysql",
+          "path": "sources/mysql/02_data.sql",
+          "dataset": "freight.rate_contracts",
+          "match": "'RC-CAR-01-2026'",
+          "note": "claim_window_days 60"
+        },
+        {
+          "type": "salesforce",
+          "path": "sources/salesforce/query_Case.json",
+          "dataset": "Case",
+          "match": "\"Claim_Number__c\": \"CLM-2026-0101\"",
+          "note": "escalated case"
+        }
+      ]
+    },
+    {
+      "id": "ANOM-3",
+      "kind": "temperature_excursion",
+      "entity": "SHP-50004",
+      "summary": "SHP-50004 on reefer TRL-102 peaked at 11.4 C against an 8.0 C ceiling, after a mid-transit door opening; stock quarantined and a spoilage claim followed",
+      "evidence": [
+        {
+          "type": "databricks",
+          "path": "sources/databricks/02_data.sql",
+          "dataset": "telemetry.silver_reefer_readings",
+          "match": "'SHP-50004', TIMESTAMP",
+          "note": "temp_c up to 11.40"
+        },
+        {
+          "type": "mqtt",
+          "path": "streams/mqtt/messages.jsonl",
+          "dataset": "quillmere/reefer/+/temperature",
+          "match": "\"temp_c\":11.40"
+        },
+        {
+          "type": "kafka",
+          "path": "streams/kafka/records.jsonl",
+          "dataset": "quillmere.reefer.alerts.v1",
+          "match": "\"shipment_id\":\"SHP-50004\""
+        },
+        {
+          "type": "kafka",
+          "path": "streams/kafka/records.jsonl",
+          "dataset": "quillmere.coldchain.excursions.v1",
+          "match": "\"shipment_id\":\"SHP-50004\",\"trailer_id\":\"TRL-102\",\"breach_count\":4,\"peak_celsius\":11.40",
+          "note": "the ksqlDB table REEFER_EXCURSIONS: its only shipment"
+        },
+        {
+          "type": "servicenow",
+          "path": "sources/servicenow/api_now_table_incident.json",
+          "dataset": "incident",
+          "match": "\"u_shipment\": \"SHP-50004\"",
+          "note": "reefer high-temperature alarm"
+        },
+        {
+          "type": "iot",
+          "path": "streams/iot/messages.jsonl",
+          "dataset": "quillmere/tags/+/event",
+          "match": "\"device_id\":\"TAG-102\"",
+          "note": "door_open mid-transit"
+        },
+        {
+          "type": "inventory",
+          "path": "sources/inventory/api_stock-levels.json",
+          "dataset": "stock_levels",
+          "match": "\"quarantined\": ",
+          "note": "quarantine at WH-NORTH"
+        }
+      ]
+    },
+    {
+      "id": "ANOM-4",
+      "kind": "duplicate_customer_po",
+      "entity": "PO-0002-4194",
+      "summary": "customer PO PO-0002-4194 was accepted twice, as SO-30014 and SO-30015, with identical lines; both shipped",
+      "evidence": [
+        {
+          "type": "postgres",
+          "path": "sources/postgres/02_data.sql",
+          "dataset": "ops.orders",
+          "match": "'PO-0002-4194'",
+          "note": "two order rows"
+        },
+        {
+          "type": "oms",
+          "path": "sources/oms/v1_orders.json",
+          "dataset": "orders",
+          "match": "\"customer_po\": \"PO-0002-4194\""
+        },
+        {
+          "type": "hubspot",
+          "path": "sources/hubspot/crm_v3_objects_deals.json",
+          "dataset": "deals",
+          "match": "\"customer_po\": \"PO-0002-4194\""
+        },
+        {
+          "type": "kafka",
+          "path": "streams/kafka/records.jsonl",
+          "dataset": "quillmere.order.created.v1",
+          "match": "\"customer_po\":\"PO-0002-4194\""
+        },
+        {
+          "type": "kafka",
+          "path": "streams/kafka/records.jsonl",
+          "dataset": "quillmere.order.po-duplicates.v1",
+          "match": "\"customer_po\":\"PO-0002-4194\",\"order_count\":2",
+          "note": "the ksqlDB table ORDER_PO_DUPLICATES: its only row"
+        },
+        {
+          "type": "github",
+          "path": "sources/github/repos_quillmere_edi-integrations_issues.json",
+          "dataset": "issues",
+          "match": "PO-0002-4194",
+          "note": "the EDI team's own bug report"
+        }
+      ]
+    },
+    {
+      "id": "ANOM-5",
+      "kind": "gps_route_deviation",
+      "entity": "SHP-50021",
+      "summary": "SHP-50021 (trailer TRL-106) ran up to 36.4 km off its planned corridor for three consecutive pings",
+      "evidence": [
+        {
+          "type": "bigquery",
+          "path": "sources/bigquery/02_data.sql",
+          "dataset": "fleet.gps_pings",
+          "match": "'PG-000205'",
+          "note": "first off-corridor ping"
+        },
+        {
+          "type": "bigquery",
+          "path": "sources/bigquery/02_data.sql",
+          "dataset": "fleet.planned_routes",
+          "match": "'SHP-50021'",
+          "note": "the planned corridor"
+        },
+        {
+          "type": "gps",
+          "path": "streams/gps/nmea/GPS-106.nmea",
+          "dataset": "GPRMC",
+          "match": "$GPRMC,104146.00,A,3831.8162,N,08803.2976,W,44.8,148.0,110926,,,A*7F",
+          "note": "the off-corridor fix as the unit sent it"
+        },
+        {
+          "type": "tms",
+          "path": "sources/tms/api_loads.json",
+          "dataset": "loads",
+          "match": "\"shipment_ref\": \"SHP-50021\"",
+          "note": "planned route polyline"
+        }
+      ]
+    },
+    {
+      "id": "ANOM-6",
+      "kind": "rfid_read_without_asn",
+      "entity": "303400000051AEFF00000999",
+      "summary": "EPC 303400000051AEFF00000999 was read at DOCK-EAST-03 by RDR-EAST-03 and appears on no ASN; the dock camera has a frame of the moment and no shipment to attach it to",
+      "evidence": [
+        {
+          "type": "rfid",
+          "path": "streams/rfid/tag_reports.jsonl",
+          "dataset": "tag_reports",
+          "match": "303400000051AEFF00000999"
+        },
+        {
+          "type": "logisticsapi",
+          "path": "sources/logisticsapi/api_asns.json",
+          "dataset": "asns.lines",
+          "match": "303400000051AEFF00000999",
+          "note": "ABSENT: no ASN line carries it"
+        },
+        {
+          "type": "cctv",
+          "path": "streams/cctv/frames.jsonl",
+          "dataset": "frames",
+          "match": "\"camera_id\":\"CAM-EAST-03\"",
+          "note": "frame at the read time, no trailer_id"
+        }
+      ]
+    }
+  ],
+  "fiction_rules": [
+    "every name comes from a fixed invented word list; no real company, person, address or phone number",
+    "hosts end in .invalid (RFC 6761); IPs are RFC 5737 (192.0.2.0/24, 198.51.100.0/24, 203.0.113.0/24) or RFC 3849 (2001:db8::/32)",
+    "phone numbers are in the 555-0100..0199 fiction block",
+    "people appear only as roles (role entity)",
+    "the only credential value anywhere is change-me"
+  ]
+}

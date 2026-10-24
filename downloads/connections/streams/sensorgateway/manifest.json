@@ -1,0 +1,13 @@
+{
+  "type": "sensorgateway",
+  "protocol": "modbus-tcp (function 0x03, read holding registers)",
+  "recordings": [
+    "streams/sensorgateway/polls.jsonl",
+    "streams/sensorgateway/register_map.json"
+  ],
+  "messages": 72,
+  "first_at": "2026-07-13T15:30:00Z",
+  "last_at": "2026-09-20T19:00:00Z",
+  "replay": "go run ./cmd/synth replay sensorgateway   # Modbus TCP on localhost:1502",
+  "notes": "Modbus has no authentication; the replayer is a Modbus TCP server answering 0x03 from this recording"
+}

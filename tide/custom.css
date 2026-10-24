@@ -1,0 +1,272 @@
+/* SPDX-License-Identifier: LicenseRef-Runink-Proprietary */
+/* CORE documentation site custom styling — Business DNA branding */
+
+:root {
+  /* CORE instrument-panel palette: warm graphite, measured mint, semantic colors */
+  --core-chassis: #151312;
+  --core-panel: #1F1C1A;
+  --core-rail-bg: #100E0D;
+  --core-recess: #0D0B0A;
+  --core-etch: #35312C;
+  --core-measured: #3DDC97;
+  --core-derived: #8FA6C4;
+  --core-warn: #E3B341;
+  --core-danger: #E5484D;
+  --core-read: #EDE7DF;
+  --core-label: #93897C;
+
+  /* Apply to Geekdocs variables */
+  --sd-color-primary: var(--core-measured);
+  --sd-color-primary-highlight: #2ab884;
+  --sd-color-secondary: var(--core-derived);
+
+  background-color: var(--core-chassis);
+  color: var(--core-read);
+}
+
+/* Hero section styling */
+.geekdocs-hero {
+  background: linear-gradient(135deg, var(--core-panel) 0%, var(--core-rail-bg) 100%);
+  border-bottom: 2px solid var(--core-etch);
+  padding: 4rem 2rem;
+}
+
+.geekdocs-hero h1 {
+  color: var(--core-read);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.geekdocs-hero p {
+  color: var(--core-label);
+  font-size: 1.125rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Card grid for category landing */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.category-card {
+  background: var(--core-panel);
+  border: 1px solid var(--core-etch);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-card:hover {
+  border-color: var(--core-measured);
+  background: #2a2622;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(61, 220, 151, 0.1);
+}
+
+.category-card h3 {
+  color: var(--core-measured);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.category-card p {
+  color: var(--core-label);
+  font-size: 0.95rem;
+  flex-grow: 1;
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+
+.category-card .meta {
+  color: var(--core-derived);
+  font-size: 0.85rem;
+  margin-top: auto;
+}
+
+/* Code blocks — recess background for JSON/YAML/shell */
+.highlight {
+  background: var(--core-recess);
+  border-left: 3px solid var(--core-measured);
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.highlight code {
+  color: var(--core-read);
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+}
+
+/* Tables */
+.geekdocs-content table {
+  background: var(--core-panel);
+  border-collapse: collapse;
+}
+
+.geekdocs-content table thead {
+  background: var(--core-rail-bg);
+  border-bottom: 2px solid var(--core-etch);
+}
+
+.geekdocs-content table th {
+  color: var(--core-read);
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.geekdocs-content table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--core-etch);
+  color: var(--core-read);
+}
+
+.geekdocs-content table tbody tr:hover {
+  background: #2a2622;
+}
+
+/* Callouts — warn/danger/info */
+.gdoc-warn {
+  background: rgba(227, 179, 65, 0.1);
+  border-left: 4px solid var(--core-warn);
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.gdoc-danger {
+  background: rgba(229, 72, 77, 0.1);
+  border-left: 4px solid var(--core-danger);
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.gdoc-info {
+  background: rgba(61, 220, 151, 0.05);
+  border-left: 4px solid var(--core-measured);
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+/* Links */
+.geekdocs-content a {
+  color: var(--core-measured);
+  text-decoration: underline;
+  text-decoration-color: rgba(61, 220, 151, 0.3);
+}
+
+.geekdocs-content a:hover {
+  text-decoration-color: var(--core-measured);
+}
+
+/* Sidebar navigation */
+.geekdocs-nav {
+  background: var(--core-rail-bg);
+}
+
+.geekdocs-nav a {
+  color: var(--core-label);
+}
+
+.geekdocs-nav a:hover,
+.geekdocs-nav a.active {
+  color: var(--core-measured);
+  background: rgba(61, 220, 151, 0.05);
+}
+
+/* Headings */
+.geekdocs-content h2,
+.geekdocs-content h3,
+.geekdocs-content h4 {
+  color: var(--core-read);
+  border-bottom: 1px solid var(--core-etch);
+  padding-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Quick-reference boxes */
+.quick-ref {
+  background: var(--core-panel);
+  border: 1px solid var(--core-etch);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.quick-ref h4 {
+  color: var(--core-measured);
+  margin-top: 0;
+}
+
+.quick-ref code {
+  background: var(--core-recess);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Fira Code', monospace;
+}
+
+/* API reference table */
+.api-table {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.api-table .method {
+  font-weight: 600;
+  font-family: 'Fira Code', monospace;
+  color: var(--core-measured);
+}
+
+.api-table .method.get { color: #61affe; }
+.api-table .method.post { color: #49cc90; }
+.api-table .method.put { color: #fca130; }
+.api-table .method.delete { color: #f93e3e; }
+
+/* Breadcrumb */
+.breadcrumb {
+  color: var(--core-label);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb a {
+  color: var(--core-derived);
+}
+
+/* Footer */
+.geekdocs-footer {
+  background: var(--core-rail-bg);
+  border-top: 1px solid var(--core-etch);
+  color: var(--core-label);
+}
+
+.geekdocs-footer a {
+  color: var(--core-measured);
+}
+
+/* Print styles */
+@media print {
+  :root {
+    --sd-color-primary: #000;
+  }
+}
+
+/* Dark mode (forced for CORE) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
