@@ -1,0 +1,88 @@
+{
+  "type": "sensorgateway",
+  "fixture_kind": "stream",
+  "root": "streams/sensorgateway",
+  "discovery_today": "no catalogue: Modbus has no register map on the wire; channels setting names what each register means",
+  "replay": "go run ./cmd/synth replay sensorgateway   # Modbus TCP on localhost:1502",
+  "connections": [
+    {
+      "name": "Dock staging probes WH-NORTH",
+      "settings": {
+        "transport": "modbus_tcp",
+        "endpoint": "[2001:db8:51::d8]:502",
+        "unit_id": 1,
+        "channels": "100:DOCK-NORTH-01,101:DOCK-NORTH-02,102:DOCK-NORTH-03",
+        "collect_seconds": 60,
+        "poll_interval_seconds": 900,
+        "use_tls": false
+      }
+    },
+    {
+      "name": "Dock staging probes WH-EAST",
+      "settings": {
+        "transport": "modbus_tcp",
+        "endpoint": "[2001:db8:51::d9]:502",
+        "unit_id": 2,
+        "channels": "100:DOCK-EAST-01,101:DOCK-EAST-02,102:DOCK-EAST-03",
+        "collect_seconds": 60,
+        "poll_interval_seconds": 900,
+        "use_tls": false
+      }
+    },
+    {
+      "name": "Dock staging probes WH-SOUTH",
+      "settings": {
+        "transport": "modbus_tcp",
+        "endpoint": "[2001:db8:51::da]:502",
+        "unit_id": 3,
+        "channels": "100:DOCK-SOUTH-01,101:DOCK-SOUTH-02,102:DOCK-SOUTH-03",
+        "collect_seconds": 60,
+        "poll_interval_seconds": 900,
+        "use_tls": false
+      }
+    }
+  ],
+  "datasets": [
+    {
+      "name": "holding_registers",
+      "kind": "modbus_register_poll",
+      "domain": "cold_chain",
+      "fields": [
+        {
+          "name": "at",
+          "type": "timestamp"
+        },
+        {
+          "name": "unit_id",
+          "type": "int"
+        },
+        {
+          "name": "function",
+          "type": "int"
+        },
+        {
+          "name": "address",
+          "type": "int"
+        },
+        {
+          "name": "raw",
+          "type": "int"
+        },
+        {
+          "name": "channel",
+          "type": "string",
+          "joins": "dock"
+        },
+        {
+          "name": "value_c",
+          "type": "decimal"
+        }
+      ],
+      "paths": [
+        "streams/sensorgateway/polls.jsonl",
+        "streams/sensorgateway/register_map.json"
+      ],
+      "row_count": 72
+    }
+  ]
+}

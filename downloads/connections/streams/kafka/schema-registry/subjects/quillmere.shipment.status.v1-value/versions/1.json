@@ -1,0 +1,6 @@
+{
+  "subject": "quillmere.shipment.status.v1-value",
+  "version": 1,
+  "id": 3,
+  "schema": "{\"type\":\"record\",\"name\":\"ShipmentStatus\",\"namespace\":\"invalid.quillmere.shipments\",\"fields\":[{\"name\":\"shipment_id\",\"type\":\"string\"},{\"name\":\"order_id\",\"type\":\"string\"},{\"name\":\"status\",\"type\":\"string\",\"doc\":\"loaded, departed or delivered\"},{\"name\":\"at\",\"type\":\"string\"},{\"name\":\"dock_id\",\"type\":\"string\"},{\"name\":\"trailer_id\",\"type\":\"string\"},{\"name\":\"carrier_scac\",\"type\":\"string\"}]}"
+}
