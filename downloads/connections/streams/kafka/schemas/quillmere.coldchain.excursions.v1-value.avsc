@@ -1,0 +1,30 @@
+{
+  "type": "record",
+  "name": "ReeferExcursion",
+  "namespace": "invalid.quillmere.coldchain",
+  "fields": [
+    {
+      "name": "shipment_id",
+      "type": "string"
+    },
+    {
+      "name": "trailer_id",
+      "type": "string"
+    },
+    {
+      "name": "breach_count",
+      "type": "int",
+      "doc": "reefer alerts above the limit for this shipment"
+    },
+    {
+      "name": "peak_celsius",
+      "type": "double",
+      "doc": "the highest temp_c among those reefer alerts"
+    },
+    {
+      "name": "limit_celsius",
+      "type": "double",
+      "doc": "threshold_c of those reefer alerts"
+    }
+  ]
+}

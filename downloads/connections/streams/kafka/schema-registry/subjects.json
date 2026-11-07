@@ -1,0 +1,13 @@
+[
+  "quillmere.coldchain.excursions.v1-value",
+  "quillmere.freight.invoice.posted.v1-invalid.quillmere.freight.InvoicePosted",
+  "quillmere.freight.rate-variance.v1-value",
+  "quillmere.order.created.v1-key",
+  "quillmere.order.created.v1-value",
+  "quillmere.order.po-duplicates.v1-key",
+  "quillmere.order.po-duplicates.v1-value",
+  "quillmere.reefer.alerts.v1-value",
+  "quillmere.shipment.export.v0-value",
+  "quillmere.shipment.latest.v1-value",
+  "quillmere.shipment.status.v1-value"
+]

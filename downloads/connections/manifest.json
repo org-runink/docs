@@ -1,0 +1,866 @@
+{
+  "description": "Connection sample downloads: the Quillmere Freight Lines universe, one zip per non-stream connection type, streams/<type>/ replay recordings, and universe.json. Every value is fictional. Check with: sha256sum -c SHA256SUMS",
+  "total_bytes": 1360857,
+  "files": [
+    {
+      "path": "bigquery.zip",
+      "bytes": 41129,
+      "sha256": "5c69dae81191bcf0ab23f678159988f2e0f5037cda351b433da302df755527d7"
+    },
+    {
+      "path": "d365.zip",
+      "bytes": 11406,
+      "sha256": "1e7adb5cd8688e65863404f74540ce0c0b183861363d8f777db7911915c165c0"
+    },
+    {
+      "path": "databricks.zip",
+      "bytes": 24757,
+      "sha256": "744981d8563037b05b468589fdd440fb287973a682bc00754c5fb8ab4acd42ad"
+    },
+    {
+      "path": "document.zip",
+      "bytes": 5141,
+      "sha256": "897c2c2e1db772eff2c152b1ca512f24eec465c1966b3ac396bf1b528636958c"
+    },
+    {
+      "path": "excel.zip",
+      "bytes": 5953,
+      "sha256": "7d2c1b62a14380483a280a92c988174cf4af205f60a50310b1420c38595ee950"
+    },
+    {
+      "path": "files.zip",
+      "bytes": 309379,
+      "sha256": "e6c4c2e0833da22b184628f16144ebdeb6edcbd7f4ab5cfddfd667f562d915aa"
+    },
+    {
+      "path": "github.zip",
+      "bytes": 3026,
+      "sha256": "633e494fbbf893497107051aa748e7fa4d1424472adde40845ea86c50c776bfc"
+    },
+    {
+      "path": "guidewire.zip",
+      "bytes": 6373,
+      "sha256": "f7fa2751f1be0ef0d61360b9649afffdbc739ce0499db5b67bedada314f22614"
+    },
+    {
+      "path": "hubspot.zip",
+      "bytes": 14053,
+      "sha256": "b917d06bb1e9c4dca2c568917d9f3f9a818ef86ca7d795026db7c9d46f9c2aa7"
+    },
+    {
+      "path": "ims.zip",
+      "bytes": 5117,
+      "sha256": "755da83616cad3086187eafe35ad673dbb155c2d1b94a01a629f368419ceae54"
+    },
+    {
+      "path": "inventory.zip",
+      "bytes": 8339,
+      "sha256": "ec5e6ec89ec019f2af2822df2ee05e3f07be15d0785c8d2e3de22a1bf5b36d45"
+    },
+    {
+      "path": "logisticsapi.zip",
+      "bytes": 14175,
+      "sha256": "ea31022ee06bdcfafd4d3a06fc3f601269be19bbfadfcdf1ff9d75c11b4ef5bf"
+    },
+    {
+      "path": "mysql.zip",
+      "bytes": 9537,
+      "sha256": "903ba53edfb44a6cc8758329903142bea07dec72a7ceed8d3b728715a2c4e583"
+    },
+    {
+      "path": "objectstore.zip",
+      "bytes": 3052,
+      "sha256": "448af333284cd3703e3c7b97fb7ca21c8794777b25fff76f990bd381baa4ea35"
+    },
+    {
+      "path": "oms.zip",
+      "bytes": 16077,
+      "sha256": "bdb7d666c37dedf62ed626fec3812dd94e5f5af58fb6fd776d5df524489d9cc3"
+    },
+    {
+      "path": "postgres.zip",
+      "bytes": 22860,
+      "sha256": "3eed0ab2db000382362c92c332869809e5f767c130a783a800efd8662f5142cb"
+    },
+    {
+      "path": "redshift.zip",
+      "bytes": 8614,
+      "sha256": "029fb45992ff37d86ffd505a8d893a1be9354d8ffd4c4603c6786f36298bb4a9"
+    },
+    {
+      "path": "salesforce.zip",
+      "bytes": 9577,
+      "sha256": "4250f6202e41f10f6a1240900d259a56caa6190dbf3727f8f557e0b8e7db96dc"
+    },
+    {
+      "path": "sap.zip",
+      "bytes": 71319,
+      "sha256": "4f47d3ae179f5e48fe8fdf8f4a65285be05190c55083b1b6aaab60972f679581"
+    },
+    {
+      "path": "servicenow.zip",
+      "bytes": 3314,
+      "sha256": "b7003f7818d14fc425d80b91dd9badbe27d1eb85f8b37a7131f81266ddbe0ce0"
+    },
+    {
+      "path": "sharepoint.zip",
+      "bytes": 3574,
+      "sha256": "e36a0d2247f23193615e144d3c7da36f35a89b4b24cda9b689140242b2a2fff6"
+    },
+    {
+      "path": "snowflake.zip",
+      "bytes": 12516,
+      "sha256": "4c7a590b1fd8075c8aec3c80f599027bb0df8d6ce8d165ba497873396281f932"
+    },
+    {
+      "path": "streams/cctv/expected.json",
+      "bytes": 8118,
+      "sha256": "cf8d430fcc1b51872184ef74a156ea1c15937966186cf551e92ddb98f35dfafc"
+    },
+    {
+      "path": "streams/cctv/frames.jsonl",
+      "bytes": 12169,
+      "sha256": "075ebc8c8c78d8bcea23ec6a884af752de32d28ba5e78b60609e03df82392718"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-01/0000.jpg",
+      "bytes": 5824,
+      "sha256": "fd45412e6f1a35da28371a2dfa5a4e4530d8ab7d7ac03b18b66f6df24079585e"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-01/0001.jpg",
+      "bytes": 5944,
+      "sha256": "d81f27b58e48a3ed0ae1ff99cde72a668afedf564b1bbc8b931969f8b6778417"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-01/0002.jpg",
+      "bytes": 5553,
+      "sha256": "e38cadccbaff603fe5576a4fccf320e9b8ca167f55d5bb540729761195e4743f"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-01/0003.jpg",
+      "bytes": 5854,
+      "sha256": "4cd492af988b7f78e919d02766e6cec80711d5f626d91d210547106fe5a8f12a"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-01/0004.jpg",
+      "bytes": 5927,
+      "sha256": "21cf34e893cc96ffc84114422d18692359bfe01ac64ca724c63c179d495867dd"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-01/0005.jpg",
+      "bytes": 5602,
+      "sha256": "7c3f8414a5e50bc339da39285cf68d9ca374b2aa8e5def4105fcee5206c847fb"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-01/0006.jpg",
+      "bytes": 5811,
+      "sha256": "e3afe04432b30891cf0a66c7ba08779b7baddd445722de44ae9a5edd5ae7b6f1"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-01/0007.jpg",
+      "bytes": 5885,
+      "sha256": "86695880c1e3cb01e12bc03258359653fda0dd811c3bec47375d8f3013a377a2"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-01/0008.jpg",
+      "bytes": 5535,
+      "sha256": "617a12acc53a790bf5fd92cc12a23fda9269944eaa52638c9aab60c17f1ee74b"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-02/0000.jpg",
+      "bytes": 5800,
+      "sha256": "827082cec2598919b5df1b9fc773524667ba5499c70eb57ba7ef9a923f733178"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-02/0001.jpg",
+      "bytes": 5915,
+      "sha256": "abc98c67b74572dde5118bc89d3218bf79e0ac3b9d1c0a56bb79c83483d3047c"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-02/0002.jpg",
+      "bytes": 5594,
+      "sha256": "b99ea9fa984a1376849282beb1b69707e9a45400e5bbc7ebd88f32570ffa4d98"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-02/0003.jpg",
+      "bytes": 5864,
+      "sha256": "d3d74987ef49865820d2579f74c5ea2863954bac3301b8e3a84333c84e3021e9"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-02/0004.jpg",
+      "bytes": 5945,
+      "sha256": "884d3699f458dbedee3a8529ee355c14ff34d3a04b91f83e6e787c8b7895eecd"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-02/0005.jpg",
+      "bytes": 5592,
+      "sha256": "3b518b31905f1f0c34f4762ae929bfd33dae33bee3d105aa98f0e56445201a29"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-02/0006.jpg",
+      "bytes": 5816,
+      "sha256": "c485bf21ce19037d25b20f57e0de0241a57982e3e451698a204d15f3bec68f66"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-02/0007.jpg",
+      "bytes": 5941,
+      "sha256": "6fddaa837b37ac9c9db83002daeb46f2bef21bb6b2dff8780b46c6a7fe19ed9e"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-02/0008.jpg",
+      "bytes": 5600,
+      "sha256": "8970c1b3aec2117aefd4354b6bc3ac7ef92ad9c4c4b71581bdd03ccde708ebb6"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-03/0000.jpg",
+      "bytes": 5826,
+      "sha256": "e1a6a894e55a8a57ba06ed312d98436d7a885764924f003e9839b923161ef04a"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-03/0001.jpg",
+      "bytes": 5957,
+      "sha256": "72a9463bf24fcfa1e7795d802d501c419367b4b8b0737efc3c34e284659dde5d"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-03/0002.jpg",
+      "bytes": 5603,
+      "sha256": "3981b183e7711478578c0010ccc84eeff37c4cee49a39f84a453ac53b1428f66"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-03/0003.jpg",
+      "bytes": 5848,
+      "sha256": "a8b1470c8113e7aac0d2c068cc9025ccf6a4925e6e8ae4b67b95904caf3e0da1"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-03/0004.jpg",
+      "bytes": 5979,
+      "sha256": "ee29d04bc51ebf97f8b7da428fe5b19c3d8627574a51c596d0b88b8cdea663d8"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-03/0005.jpg",
+      "bytes": 5610,
+      "sha256": "13c4ef7b8d8cebd0416e957ccb0871681d48f6a540c13d53aeaa454b6500c18f"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-EAST-03/0006.jpg",
+      "bytes": 4357,
+      "sha256": "c95da49ac3ed4987a0883a93d31dff504722b10027d278e680f221a59b9fcfa9"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-01/0000.jpg",
+      "bytes": 5857,
+      "sha256": "8c6daf8664907ddca0261fdc475e572eb7839c7cd5d0dcba292abd79233ed171"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-01/0001.jpg",
+      "bytes": 5972,
+      "sha256": "14192069e2bc8b7941b6ed38a87ad59d68559af0262025a771a39d1cb79d359f"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-01/0002.jpg",
+      "bytes": 5641,
+      "sha256": "ef4acbb7286ef1a3d221dc5b3f1da507f303facf8a3ea7668277977b50a9eae8"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-01/0003.jpg",
+      "bytes": 5909,
+      "sha256": "f69e446c50f96ade0460dc4149021d29e9ac3302243569b266b30284eefe534c"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-01/0004.jpg",
+      "bytes": 5991,
+      "sha256": "56535a235c90f8e2817f85d6527fc37ccbd4e609539980df68e668cd27c11d13"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-01/0005.jpg",
+      "bytes": 5640,
+      "sha256": "520708a1b1f24221157f9050e086c5c3ba15382dd6b0052fe66434071d4bd5e8"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-02/0000.jpg",
+      "bytes": 5891,
+      "sha256": "8ae0276af5d38109735b8182e2ba92ed3b5b0d661ad5e16587495286533f099d"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-02/0001.jpg",
+      "bytes": 6008,
+      "sha256": "856e4a6c02e46aff3d66106441d60677ef651799ca5895f435b5461e5916d649"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-02/0002.jpg",
+      "bytes": 5655,
+      "sha256": "1916a4f3445829ad460cdb7caec0d3b32c80345bae3ae504ba6f5ae8786c82a4"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-02/0003.jpg",
+      "bytes": 5895,
+      "sha256": "7ea78e13801f898e5809a7e55f3be8ee583b17ca6ecde6e488a35dcfbfbf503f"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-02/0004.jpg",
+      "bytes": 6008,
+      "sha256": "d08f58abfab52a9914fc4150138cf9f0bf7b05c94ccef19b7e71cfecbb7e31c0"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-02/0005.jpg",
+      "bytes": 5635,
+      "sha256": "7a8a205240440373d6edd52c1e16dba4103a10ef4c61ba8cb087e01663dfa60a"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-03/0000.jpg",
+      "bytes": 5825,
+      "sha256": "c8df87349755cb82b99da0c1523dfcd72b655e3ffc341130e5d422e51b87f71f"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-03/0001.jpg",
+      "bytes": 5968,
+      "sha256": "bec24de1dae3c68dadd7879d00ce50a236f13ebd747f857e0b7f44dceea212e2"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-03/0002.jpg",
+      "bytes": 5618,
+      "sha256": "05a2b9622ed2e2a545a14f8299c9db7ceac65ac18f1eedfea479ba2c9b570cfc"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-03/0003.jpg",
+      "bytes": 5898,
+      "sha256": "3c817899ce22a39e4b954cf042d03123010150db43dccb24f4c9a01c46a147c2"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-03/0004.jpg",
+      "bytes": 6021,
+      "sha256": "7b7cda139acf6a27d4a776c219410fb834babd9bef42cc5ce73a08451bb85cee"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-03/0005.jpg",
+      "bytes": 5671,
+      "sha256": "68bdeeacb96b60020b1a95b162b1a18a9e4fbbba7563947318b590a0c01a4602"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-03/0006.jpg",
+      "bytes": 5857,
+      "sha256": "af558ee301ffb6c1fedfd76d4b0f0db050fd2e6b8aae453d21931565ebc8af63"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-03/0007.jpg",
+      "bytes": 5975,
+      "sha256": "d3ca8e1f4c43da26d381ff1eab5e810c32e49407384f3b26afc8826e6bb59a63"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-03/0008.jpg",
+      "bytes": 5623,
+      "sha256": "85cfdf1de8b16edb653bcff2c4a1307dc0d2f5dd7c97b828fec0f61f659fe2a5"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-03/0009.jpg",
+      "bytes": 5913,
+      "sha256": "fe8bb81a648ffb1e001999c3fd7baa174098a70a008e31ee27570e9d8b888a9f"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-03/0010.jpg",
+      "bytes": 5984,
+      "sha256": "39332f18d9ddafa897694493b5c72bcaa4f77df8470fba4839ce482af156ede7"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-NORTH-03/0011.jpg",
+      "bytes": 5654,
+      "sha256": "a90c4f83f5e1a9e303d59fb8c98bd954514c2b3a000274f9ba8ad7fa51955c41"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-01/0000.jpg",
+      "bytes": 5860,
+      "sha256": "f3d0ab78e45254a392c92fccb04221402271d2d8ef9ad7805f01ec7573a5445d"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-01/0001.jpg",
+      "bytes": 5957,
+      "sha256": "08f1d69d67b0400eee845b02fb6dd8e43965b30ad9424959d7687fc55854c4e5"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-01/0002.jpg",
+      "bytes": 5632,
+      "sha256": "a9781758173b68dfa84936dc265943024e310a00454fe9afbe7a4a9af3d1263b"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-01/0003.jpg",
+      "bytes": 5903,
+      "sha256": "d9313346ed419e6100cd430c15ac88b51ad14a711e28ae1b7fd9b335facb3f8e"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-01/0004.jpg",
+      "bytes": 6004,
+      "sha256": "b2f76f4b8cc0d4fc373976dd7c484951721caa27e72857374efd82454abaed60"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-01/0005.jpg",
+      "bytes": 5613,
+      "sha256": "391850217680966c2c10a5c418718b38315e56529fc374d537ee7519d355f3ad"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-01/0006.jpg",
+      "bytes": 5869,
+      "sha256": "060317b1169e6423196d0647a5c4ca26689f94846c3a98456d0540e87c47f352"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-01/0007.jpg",
+      "bytes": 6019,
+      "sha256": "633191dd429f7aeec5fe4d29c11e5c1bf5002ea642fede045fc37fb58a619130"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-01/0008.jpg",
+      "bytes": 5608,
+      "sha256": "f054872a69554b45dacf40568a4d20f11cb65b9c7509f56aa3f7e284e619b230"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-01/0009.jpg",
+      "bytes": 5894,
+      "sha256": "20f17057798bdd41a4d945e0bb8a7367a1b6a36bbb3bd7989d81495ef1acb99f"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-01/0010.jpg",
+      "bytes": 5995,
+      "sha256": "0d1f18262a7e4e9388b742ce30ad650134f43f6671d2919973e14e7729917674"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-01/0011.jpg",
+      "bytes": 5618,
+      "sha256": "cc1cd01094cfcc89ff9aadf2c472b1acdc1e982699b77c44f0f8194afdf51f2f"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-02/0000.jpg",
+      "bytes": 5865,
+      "sha256": "e6572fd7042b9cad22f92578a17a8eab32b15da8f8c5fcd71ac06db518f37cdd"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-02/0001.jpg",
+      "bytes": 5940,
+      "sha256": "cf981a508a3fbb622e057aa351642e9211b59c3f59df804c2124af3a8416f3b5"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-02/0002.jpg",
+      "bytes": 5577,
+      "sha256": "fcf77e6cc9d362e7013b0158ea5c0f0c8b2bfeacd9e5cbb9f599bde91fd3461a"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-02/0003.jpg",
+      "bytes": 5907,
+      "sha256": "220f79610d18de84c5059dac5a4f4772e69444f65bb144e6d7251d87066a4840"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-02/0004.jpg",
+      "bytes": 5999,
+      "sha256": "1334786eac987babbf0650bbdb9603c8221822d2964f894eea25a90474df5844"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-02/0005.jpg",
+      "bytes": 5614,
+      "sha256": "e0956858a993309290c74e939a0356a1e9fca2b034c87986f7dc98ae9fe34d3e"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-03/0000.jpg",
+      "bytes": 5888,
+      "sha256": "3bb01ae09c9e32ec536103c3dbec9c06e2d764bf6df63af03df5a1a5aa04ff21"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-03/0001.jpg",
+      "bytes": 5995,
+      "sha256": "3c38b9bcbffb20865d228e497c2932fc23d68e379bab28efa19c1de268e53738"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-03/0002.jpg",
+      "bytes": 5616,
+      "sha256": "1627df00f3c77eca9d72280cccb0e486fc89a7397609846cc1dc8fa31ead39f7"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-03/0003.jpg",
+      "bytes": 5897,
+      "sha256": "bf007ec5d3fafe8aee071461321c2f046f323f8259dc442fd8ac331488cdee6a"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-03/0004.jpg",
+      "bytes": 6013,
+      "sha256": "75c665a7187b34d6f4b0950e67d425a431d463b2a7c54b3add570bd3a3d06d30"
+    },
+    {
+      "path": "streams/cctv/frames/CAM-SOUTH-03/0005.jpg",
+      "bytes": 5655,
+      "sha256": "86f6f4a9099da42cb2e2e4ae5940653b24354e15efe984f4b44261e4465ae4ea"
+    },
+    {
+      "path": "streams/cctv/manifest.json",
+      "bytes": 600,
+      "sha256": "3ca82b2e028b03cb36cb4cd56809a2670e105f7385c488fe868442656ecb1281"
+    },
+    {
+      "path": "streams/gps/assets.json",
+      "bytes": 983,
+      "sha256": "bc1eb2a32eae274a6a9d18edd56b17fe8cc1bf241588bd1cf40b3bb154950239"
+    },
+    {
+      "path": "streams/gps/expected.json",
+      "bytes": 2073,
+      "sha256": "4fdf37ba83ac1b67c7044e67f4d85a647620cc43b612902b66e0fb10870d26dc"
+    },
+    {
+      "path": "streams/gps/manifest.json",
+      "bytes": 799,
+      "sha256": "e5deccd0f0b5935f2e7e6cb893212c5ea8e5f02e6a2d596c121d69d34e9b0c3d"
+    },
+    {
+      "path": "streams/gps/nmea/GPS-101.nmea",
+      "bytes": 1397,
+      "sha256": "34615210155ff7974c2eca91c3c90dd7e87c57eba0417beeb250c51f71fa6bd7"
+    },
+    {
+      "path": "streams/gps/nmea/GPS-102.nmea",
+      "bytes": 1393,
+      "sha256": "4d94471990743cd887b4853d73402b1bd46e61fccb9e9ca2bd745a61f4cc5270"
+    },
+    {
+      "path": "streams/gps/nmea/GPS-103.nmea",
+      "bytes": 1396,
+      "sha256": "c0eaf4a2c7ac49d13f53f8615894c849c34f25a0d90875d3e529bda82a5ee441"
+    },
+    {
+      "path": "streams/gps/nmea/GPS-104.nmea",
+      "bytes": 1185,
+      "sha256": "936be6d8c8139a9f687cbd2beef985d24df2f0a170b85f18e1058c5ad3b4290a"
+    },
+    {
+      "path": "streams/gps/nmea/GPS-105.nmea",
+      "bytes": 2092,
+      "sha256": "9e8495cbf827b78978bd6b703c480c1490f22c84e1fe53c20d61052710541d6b"
+    },
+    {
+      "path": "streams/gps/nmea/GPS-106.nmea",
+      "bytes": 2093,
+      "sha256": "85a6a724477b2f61098e047c1ff4a2f7eeab6947ba12073d3a81f1e2eaa92544"
+    },
+    {
+      "path": "streams/gps/nmea/GPS-107.nmea",
+      "bytes": 1882,
+      "sha256": "32f41365f394a398d2eb1ed934554144d414b4b9712973e2eef92907a8607f92"
+    },
+    {
+      "path": "streams/gps/nmea/GPS-108.nmea",
+      "bytes": 1880,
+      "sha256": "d218358ecd8786aeb28be45f5e6c644c1b532bbaf13625de012a534f9e36ca3b"
+    },
+    {
+      "path": "streams/gps/nmea/GPS-109.nmea",
+      "bytes": 1395,
+      "sha256": "294bc42ecf52be82c1ae4459144969aab617236bb693d58da366a39352553845"
+    },
+    {
+      "path": "streams/gps/nmea/GPS-110.nmea",
+      "bytes": 1394,
+      "sha256": "7f8b64e21da911ff69c2d1aa4e6b6dc6e6b3b41009db42e929ff6065b2d5779c"
+    },
+    {
+      "path": "streams/iot/expected.json",
+      "bytes": 1456,
+      "sha256": "c9648f76462928f09548399b8e50910790021a6dd7c712a3e05a2ff09c86023a"
+    },
+    {
+      "path": "streams/iot/manifest.json",
+      "bytes": 338,
+      "sha256": "d2ab22ec1f8388cd3d4df143e0fca0f8e9ed02adb8604342b747f1d31a5f30b2"
+    },
+    {
+      "path": "streams/iot/messages.jsonl",
+      "bytes": 12380,
+      "sha256": "2dcfb19bc9361b21ce7f4bf64eaea2411f762f0e40036232f979323e2a3cef29"
+    },
+    {
+      "path": "streams/kafka/expected.json",
+      "bytes": 23241,
+      "sha256": "a77002107c3cfb07125d54980f367e4c122176570187885b1c9811db2f1fcfaa"
+    },
+    {
+      "path": "streams/kafka/ksqldb/list-queries.json",
+      "bytes": 1385,
+      "sha256": "afd5faead119ba49022784cf8ba6c82a35fed9ba9a6abf3901ecd03c7c9dc7c8"
+    },
+    {
+      "path": "streams/kafka/ksqldb/list-streams-extended.json",
+      "bytes": 13337,
+      "sha256": "85599bfe68ca8c0ad48025d991175e1c9840f79208c1c33c2a49df4c3d4b6c5e"
+    },
+    {
+      "path": "streams/kafka/ksqldb/list-tables-extended.json",
+      "bytes": 5903,
+      "sha256": "c0f58b927f6f137a48edea50203686b40e510a25f2752db629484d4d073cb215"
+    },
+    {
+      "path": "streams/kafka/manifest.json",
+      "bytes": 1345,
+      "sha256": "8c2c78fe374716bb6329960cc7c4c5c7aafc9daf8d4f046b9c6a74024ab18b2b"
+    },
+    {
+      "path": "streams/kafka/records.jsonl",
+      "bytes": 55908,
+      "sha256": "67bbdbff31718c4f7099fe17abfe7942c86ac11a5f4087609522e88c62ec46ad"
+    },
+    {
+      "path": "streams/kafka/schema-registry/config.json",
+      "bytes": 39,
+      "sha256": "6e12e5ee514765500dc65c406c21fb1076934c54b23d26ada02aa4a7210b74df"
+    },
+    {
+      "path": "streams/kafka/schema-registry/config/quillmere.freight.invoice.posted.v1-invalid.quillmere.freight.InvoicePosted.json",
+      "bytes": 46,
+      "sha256": "df0b56937a03656bf576ce4ecf1e121861b6500411a9625b794d29376334e4eb"
+    },
+    {
+      "path": "streams/kafka/schema-registry/config/quillmere.shipment.export.v0-value.json",
+      "bytes": 35,
+      "sha256": "0b54ea011ec0ba0e0566c6712c042132eaee709e93cb36d51d2fdd6acaa1d2c0"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects.json",
+      "bytes": 493,
+      "sha256": "34456af47b31d2f2001cc71924c7a4883bd12c787318c3ec6bb5b84954bd28b6"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.coldchain.excursions.v1-value/versions.json",
+      "bytes": 8,
+      "sha256": "fa81ea526219857828f87f11fa5521a61121e9c90a85a0856d3ae62d77ae19ad"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.coldchain.excursions.v1-value/versions/1.json",
+      "bytes": 611,
+      "sha256": "42abf3a5249e96950b24ab3cd901a4aa3b13165bd9bc7882baf105de537bdf4c"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.freight.invoice.posted.v1-invalid.quillmere.freight.InvoicePosted/versions.json",
+      "bytes": 13,
+      "sha256": "7970da714a88ff04cb7e10fba378231199dd7f8879ba411dd6e65b57b58a9d23"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.freight.invoice.posted.v1-invalid.quillmere.freight.InvoicePosted/versions/1.json",
+      "bytes": 641,
+      "sha256": "c63bc2d246bb05ed8c6833365257849777fabcafe72e4656b36cbd20bc0a5223"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.freight.invoice.posted.v1-invalid.quillmere.freight.InvoicePosted/versions/2.json",
+      "bytes": 785,
+      "sha256": "7427460b98f29203ed0921ad90e3aa2970cdea0c54ac8a8c59ffc6970d8400b5"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.freight.rate-variance.v1-value/versions.json",
+      "bytes": 8,
+      "sha256": "fa81ea526219857828f87f11fa5521a61121e9c90a85a0856d3ae62d77ae19ad"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.freight.rate-variance.v1-value/versions/1.json",
+      "bytes": 652,
+      "sha256": "f4876a65b4e9313b035ed04f04928f69d91b079048db9dfd9c4a4d5411dcadc4"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.order.created.v1-key/versions.json",
+      "bytes": 8,
+      "sha256": "fa81ea526219857828f87f11fa5521a61121e9c90a85a0856d3ae62d77ae19ad"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.order.created.v1-key/versions/1.json",
+      "bytes": 103,
+      "sha256": "665de8e056b0f31986055187eb0229eded572f17eadd60acca4614bb5db6a40b"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.order.created.v1-value/versions.json",
+      "bytes": 8,
+      "sha256": "fa81ea526219857828f87f11fa5521a61121e9c90a85a0856d3ae62d77ae19ad"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.order.created.v1-value/versions/1.json",
+      "bytes": 514,
+      "sha256": "3e6e4c0815f3696c3211c631e0f79b936947c9fa87dda60d011e96ae7c1180b3"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.order.po-duplicates.v1-key/versions.json",
+      "bytes": 8,
+      "sha256": "fa81ea526219857828f87f11fa5521a61121e9c90a85a0856d3ae62d77ae19ad"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.order.po-duplicates.v1-key/versions/1.json",
+      "bytes": 350,
+      "sha256": "5aae10c8a0f09853854524bdcb121949751b28e6a0ab48a9efaf642fe1939023"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.order.po-duplicates.v1-value/versions.json",
+      "bytes": 8,
+      "sha256": "fa81ea526219857828f87f11fa5521a61121e9c90a85a0856d3ae62d77ae19ad"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.order.po-duplicates.v1-value/versions/1.json",
+      "bytes": 526,
+      "sha256": "3549c4d6ef8b473657828c1ab0043e547a60b9a720c0f5698128c2b2291dabcc"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.reefer.alerts.v1-value/versions.json",
+      "bytes": 13,
+      "sha256": "7970da714a88ff04cb7e10fba378231199dd7f8879ba411dd6e65b57b58a9d23"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.reefer.alerts.v1-value/versions/1.json",
+      "bytes": 607,
+      "sha256": "d043259f8611ee3230a0d05d1111bdf4fa49bb1ec096a5888c47dd1281635c1f"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.reefer.alerts.v1-value/versions/2.json",
+      "bytes": 567,
+      "sha256": "7dbbd48f8e6338467d65a7fa9265d052ffb77318929e26e0f55f1bcb2ef18bb3"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.shipment.export.v0-value/versions.json",
+      "bytes": 8,
+      "sha256": "fa81ea526219857828f87f11fa5521a61121e9c90a85a0856d3ae62d77ae19ad"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.shipment.export.v0-value/versions/1.json",
+      "bytes": 474,
+      "sha256": "7c8b23dbd44a28bc83fd5f583535a2964ffa2ddb4eeebd361fe38e2932e12ba4"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.shipment.latest.v1-value/versions.json",
+      "bytes": 8,
+      "sha256": "fa81ea526219857828f87f11fa5521a61121e9c90a85a0856d3ae62d77ae19ad"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.shipment.latest.v1-value/versions/1.json",
+      "bytes": 515,
+      "sha256": "5dcd82b6a73e7a1673364eaa5aafc3010c1eb7e30697677198d311dddd1843b9"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.shipment.status.v1-value/versions.json",
+      "bytes": 13,
+      "sha256": "7970da714a88ff04cb7e10fba378231199dd7f8879ba411dd6e65b57b58a9d23"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.shipment.status.v1-value/versions/1.json",
+      "bytes": 555,
+      "sha256": "c20ebbbdd79a2186478b38610b21178422ec6a5f0a95756015b52657ca8b123d"
+    },
+    {
+      "path": "streams/kafka/schema-registry/subjects/quillmere.shipment.status.v1-value/versions/2.json",
+      "bytes": 507,
+      "sha256": "eb7a0620fb5d20c8951f6676bfc4e479fc3bb8696b7eaeb2cf7675906d8c1da2"
+    },
+    {
+      "path": "streams/kafka/schemas/quillmere.coldchain.excursions.v1-value.avsc",
+      "bytes": 617,
+      "sha256": "563717e071534974b3253fb14db7c37e666b8ccfbac068767323e367eec7cf50"
+    },
+    {
+      "path": "streams/kafka/schemas/quillmere.freight.invoice.posted.v1-value.avsc",
+      "bytes": 853,
+      "sha256": "d0ae6c9af66040d0049125b4bd4a08ce46a0fd175820c6a255b002295a4545a2"
+    },
+    {
+      "path": "streams/kafka/schemas/quillmere.freight.rate-variance.v1-value.avsc",
+      "bytes": 685,
+      "sha256": "c964efa05f225d8abe6b75c4b62e0e2593be6a4dbe7036e6e82c445018cafcd2"
+    },
+    {
+      "path": "streams/kafka/schemas/quillmere.order.created.v1-value.avsc",
+      "bytes": 538,
+      "sha256": "7464a612fbfbbf3e122988098f62a0b829a9c46d4d240356768e525a39a5be35"
+    },
+    {
+      "path": "streams/kafka/schemas/quillmere.order.po-duplicates.v1-value.avsc",
+      "bytes": 532,
+      "sha256": "f4b245f0ee017d26ace723bab97cd711bf25cdc79a6198f23b0913b89f78e46e"
+    },
+    {
+      "path": "streams/kafka/schemas/quillmere.reefer.alerts.v1-value.avsc",
+      "bytes": 609,
+      "sha256": "bbb53fb047e2eaad5e4ffce71a3dc4c17f1eb259e4fe2625237d2b3b90db5a4e"
+    },
+    {
+      "path": "streams/kafka/schemas/quillmere.shipment.export.v0-value.avsc",
+      "bytes": 492,
+      "sha256": "e35a135458b00c5202cbe7602d836b041028e251e06cab8a66e06dd9a344f872"
+    },
+    {
+      "path": "streams/kafka/schemas/quillmere.shipment.latest.v1-value.avsc",
+      "bytes": 536,
+      "sha256": "6046269a3596761eaf2b7cd3d1a180e56f4c66bfb8dfd88a9351ebfc1fd626f0"
+    },
+    {
+      "path": "streams/kafka/schemas/quillmere.shipment.status.v1-value.avsc",
+      "bytes": 529,
+      "sha256": "4b5e5dbc822ee31be77876e7c883ed66f4991abe1361e82a2f75a02a37a6c953"
+    },
+    {
+      "path": "streams/mqtt/expected.json",
+      "bytes": 2339,
+      "sha256": "e65f230db166af0936191f89798fc0e1dd87657ba2fdcd208763f00d8fb691e9"
+    },
+    {
+      "path": "streams/mqtt/manifest.json",
+      "bytes": 400,
+      "sha256": "6418d663c0e30ad66ddaefb808aee0569f1b3a02d4b7149114debb4ad5c1d9a6"
+    },
+    {
+      "path": "streams/mqtt/messages.jsonl",
+      "bytes": 25239,
+      "sha256": "dda6382224b3d018da55478190f9a1bc2c8f38dbea38bfadb7af08784bae39a1"
+    },
+    {
+      "path": "streams/rfid/expected.json",
+      "bytes": 4830,
+      "sha256": "6a94820619a84200004298931970067c24c63da9074a91d5f9a6d73f6dbb6238"
+    },
+    {
+      "path": "streams/rfid/manifest.json",
+      "bytes": 514,
+      "sha256": "f8b156e91e6c88a6029d99a39fefdb52c169a22190bad5d782a95c60d301b846"
+    },
+    {
+      "path": "streams/rfid/tag_reports.jsonl",
+      "bytes": 12123,
+      "sha256": "f38276fb204ebb08403a631b67f22acd8027ecccad3b0ec45d05394c21e5832b"
+    },
+    {
+      "path": "streams/sensorgateway/expected.json",
+      "bytes": 2261,
+      "sha256": "7e81ddfaa581f005c7530b963268641f8bfb8804cdc688fe745edbd868d4a190"
+    },
+    {
+      "path": "streams/sensorgateway/manifest.json",
+      "bytes": 504,
+      "sha256": "a113bba5f4b7e589e9bbff1f4f98159af7109ed36fb607922a76aa9963d2597c"
+    },
+    {
+      "path": "streams/sensorgateway/polls.jsonl",
+      "bytes": 8472,
+      "sha256": "bbe2b8ba5f093b5ee1a9ff1255a956fad20430f29ce51a615b19582576f361ab"
+    },
+    {
+      "path": "streams/sensorgateway/register_map.json",
+      "bytes": 166,
+      "sha256": "164fddc671b6176f62e8b71954969ce2f7bfa1b0e957d367b58c0734a6ba0e88"
+    },
+    {
+      "path": "tms.zip",
+      "bytes": 30190,
+      "sha256": "4c796e2b480ac4bd532b80b7aa96d3ac8820af399954a48e6b90b4fab3b761f1"
+    },
+    {
+      "path": "universe.json",
+      "bytes": 42047,
+      "sha256": "008297cbf7e75900cf106e0fdbdc1decf601c8b82780ed2b78d3b1583b1633a1"
+    },
+    {
+      "path": "whs.zip",
+      "bytes": 10990,
+      "sha256": "1f6496b8b0406ad34d7bc24539c14322898efeef891c4d5e89cd2fffd5593185"
+    },
+    {
+      "path": "yms.zip",
+      "bytes": 18609,
+      "sha256": "80c7e8ef756829dd448a016de2fd13f400bb25b0da95eeae73cc624d9af1b5c6"
+    }
+  ]
+}

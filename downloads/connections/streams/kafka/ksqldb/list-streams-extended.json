@@ -1,0 +1,525 @@
+[
+  {
+    "@type": "source_descriptions",
+    "sourceDescriptions": [
+      {
+        "name": "ORDER_CREATED",
+        "windowType": null,
+        "readQueries": [
+          {
+            "sinks": [
+              "ORDER_PO_DUPLICATES"
+            ],
+            "sinkKafkaTopics": [
+              "quillmere.order.po-duplicates.v1"
+            ],
+            "id": "CTAS_ORDER_PO_DUPLICATES_3",
+            "statusCount": {
+              "RUNNING": 1
+            },
+            "queryType": "PERSISTENT",
+            "state": "RUNNING"
+          }
+        ],
+        "writeQueries": [],
+        "fields": [
+          {
+            "name": "order_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            },
+            "type": "KEY"
+          },
+          {
+            "name": "customer_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "customer_po",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "line_count",
+            "schema": {
+              "type": "INTEGER",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "total",
+            "schema": {
+              "type": "DOUBLE",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "at",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          }
+        ],
+        "type": "STREAM",
+        "timestamp": "",
+        "statistics": "consumer-messages-per-sec: 0.000004 consumer-total-messages: 24",
+        "errorStats": "consumer-failed-messages: 0",
+        "extended": true,
+        "keyFormat": "KAFKA",
+        "valueFormat": "AVRO",
+        "topic": "quillmere.order.created.v1",
+        "partitions": 3,
+        "replication": 3
+      },
+      {
+        "name": "SHIPMENT_STATUS",
+        "windowType": null,
+        "readQueries": [
+          {
+            "sinks": [
+              "SHIPMENT_LATEST"
+            ],
+            "sinkKafkaTopics": [
+              "quillmere.shipment.latest.v1"
+            ],
+            "id": "CTAS_SHIPMENT_LATEST_5",
+            "statusCount": {
+              "RUNNING": 1
+            },
+            "queryType": "PERSISTENT",
+            "state": "RUNNING"
+          }
+        ],
+        "writeQueries": [],
+        "fields": [
+          {
+            "name": "shipment_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            },
+            "type": "KEY"
+          },
+          {
+            "name": "order_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "status",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "at",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "dock_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "trailer_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          }
+        ],
+        "type": "STREAM",
+        "timestamp": "",
+        "statistics": "consumer-messages-per-sec: 0.000011 consumer-total-messages: 69",
+        "errorStats": "consumer-failed-messages: 0",
+        "extended": true,
+        "keyFormat": "KAFKA",
+        "valueFormat": "AVRO",
+        "topic": "quillmere.shipment.status.v1",
+        "partitions": 3,
+        "replication": 3
+      },
+      {
+        "name": "LEGACY_SHIPMENT_EXPORT",
+        "windowType": null,
+        "readQueries": [],
+        "writeQueries": [],
+        "fields": [
+          {
+            "name": "shipment_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            },
+            "type": "KEY"
+          },
+          {
+            "name": "order_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "status",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "dock_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "trailer_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "exported_at",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          }
+        ],
+        "type": "STREAM",
+        "timestamp": "",
+        "statistics": "consumer-messages-per-sec: 0 consumer-total-messages: 0",
+        "errorStats": "",
+        "extended": true,
+        "keyFormat": "KAFKA",
+        "valueFormat": "AVRO",
+        "topic": "quillmere.shipment.export.v0",
+        "partitions": 3,
+        "replication": 3
+      },
+      {
+        "name": "REEFER_ALERTS",
+        "windowType": null,
+        "readQueries": [
+          {
+            "sinks": [
+              "REEFER_EXCURSIONS"
+            ],
+            "sinkKafkaTopics": [
+              "quillmere.coldchain.excursions.v1"
+            ],
+            "id": "CTAS_REEFER_EXCURSIONS_7",
+            "statusCount": {
+              "RUNNING": 1
+            },
+            "queryType": "PERSISTENT",
+            "state": "RUNNING"
+          }
+        ],
+        "writeQueries": [],
+        "fields": [
+          {
+            "name": "alert_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "trailer_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            },
+            "type": "KEY"
+          },
+          {
+            "name": "shipment_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "device_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "temp_c",
+            "schema": {
+              "type": "DOUBLE",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "threshold_c",
+            "schema": {
+              "type": "DOUBLE",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "at",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          }
+        ],
+        "type": "STREAM",
+        "timestamp": "",
+        "statistics": "consumer-messages-per-sec: 0.000001 consumer-total-messages: 4",
+        "errorStats": "consumer-failed-messages: 0",
+        "extended": true,
+        "keyFormat": "KAFKA",
+        "valueFormat": "AVRO",
+        "topic": "quillmere.reefer.alerts.v1",
+        "partitions": 3,
+        "replication": 3
+      },
+      {
+        "name": "INVOICE_POSTED",
+        "windowType": null,
+        "readQueries": [
+          {
+            "sinks": [
+              "INVOICE_RATE_VARIANCE"
+            ],
+            "sinkKafkaTopics": [
+              "quillmere.freight.rate-variance.v1"
+            ],
+            "id": "CSAS_INVOICE_RATE_VARIANCE_9",
+            "statusCount": {
+              "RUNNING": 1
+            },
+            "queryType": "PERSISTENT",
+            "state": "RUNNING"
+          }
+        ],
+        "writeQueries": [],
+        "fields": [
+          {
+            "name": "invoice_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            },
+            "type": "KEY"
+          },
+          {
+            "name": "shipment_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "carrier_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "miles",
+            "schema": {
+              "type": "DOUBLE",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "rate_per_mile",
+            "schema": {
+              "type": "DOUBLE",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "contracted_rate_per_mile",
+            "schema": {
+              "type": "DOUBLE",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "fuel",
+            "schema": {
+              "type": "DOUBLE",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "billed",
+            "schema": {
+              "type": "DOUBLE",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "at",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          }
+        ],
+        "type": "STREAM",
+        "timestamp": "",
+        "statistics": "consumer-messages-per-sec: 0.000004 consumer-total-messages: 24",
+        "errorStats": "consumer-failed-messages: 0",
+        "extended": true,
+        "keyFormat": "KAFKA",
+        "valueFormat": "AVRO",
+        "topic": "quillmere.freight.invoice.posted.v1",
+        "partitions": 3,
+        "replication": 3
+      },
+      {
+        "name": "INVOICE_RATE_VARIANCE",
+        "windowType": null,
+        "readQueries": [],
+        "writeQueries": [
+          {
+            "sinks": [
+              "INVOICE_RATE_VARIANCE"
+            ],
+            "sinkKafkaTopics": [
+              "quillmere.freight.rate-variance.v1"
+            ],
+            "id": "CSAS_INVOICE_RATE_VARIANCE_9",
+            "statusCount": {
+              "RUNNING": 1
+            },
+            "queryType": "PERSISTENT",
+            "state": "RUNNING"
+          }
+        ],
+        "fields": [
+          {
+            "name": "invoice_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            },
+            "type": "KEY"
+          },
+          {
+            "name": "shipment_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "carrier_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "rate_per_mile",
+            "schema": {
+              "type": "DOUBLE",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "contracted_rate_per_mile",
+            "schema": {
+              "type": "DOUBLE",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "variance_pct",
+            "schema": {
+              "type": "DOUBLE",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "at",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          }
+        ],
+        "type": "STREAM",
+        "timestamp": "",
+        "statistics": "messages-per-sec: 0.000000 total-messages: 1",
+        "errorStats": "",
+        "extended": true,
+        "keyFormat": "KAFKA",
+        "valueFormat": "AVRO",
+        "topic": "quillmere.freight.rate-variance.v1",
+        "partitions": 3,
+        "replication": 3
+      }
+    ],
+    "warnings": []
+  }
+]
