@@ -1,0 +1,100 @@
+{
+  "type": "mqtt",
+  "fixture_kind": "stream",
+  "root": "streams/mqtt",
+  "discovery_today": "no catalogue RPC exists in MQTT: FACE subscribes for collect_seconds and infers topic shapes from payloads",
+  "credential_placeholder": "change-me",
+  "replay": "go run ./cmd/synth replay mqtt --broker localhost:1883   # PUBLISH to a broker you run",
+  "connections": [
+    {
+      "name": "Reefer telemetry broker",
+      "settings": {
+        "broker_url": "mqtts://mqtt.quillmere.invalid:8883",
+        "topics": "quillmere/reefer/+/temperature,quillmere/reefer/+/unit",
+        "qos": 1,
+        "client_id": "face-collector",
+        "username": "face-reader",
+        "collect_seconds": 60,
+        "max_messages": 5000,
+        "protocol_version": "3.1.1",
+        "use_tls": true
+      },
+      "credentials": [
+        "password"
+      ]
+    }
+  ],
+  "datasets": [
+    {
+      "name": "quillmere/reefer/+/temperature",
+      "kind": "topic_filter",
+      "domain": "cold_chain",
+      "fields": [
+        {
+          "name": "device",
+          "type": "string",
+          "joins": "device"
+        },
+        {
+          "name": "trailer",
+          "type": "string",
+          "joins": "trailer"
+        },
+        {
+          "name": "shipment",
+          "type": "string",
+          "joins": "shipment"
+        },
+        {
+          "name": "ts",
+          "type": "timestamp"
+        },
+        {
+          "name": "temp_c",
+          "type": "decimal"
+        },
+        {
+          "name": "setpoint.min_c",
+          "type": "decimal"
+        },
+        {
+          "name": "setpoint.max_c",
+          "type": "decimal"
+        }
+      ],
+      "paths": [
+        "streams/mqtt/messages.jsonl"
+      ],
+      "row_count": 96
+    },
+    {
+      "name": "quillmere/reefer/+/unit",
+      "kind": "topic_filter",
+      "domain": "cold_chain",
+      "fields": [
+        {
+          "name": "device",
+          "type": "string",
+          "joins": "device"
+        },
+        {
+          "name": "trailer",
+          "type": "string",
+          "joins": "trailer"
+        },
+        {
+          "name": "ts",
+          "type": "timestamp"
+        },
+        {
+          "name": "state",
+          "type": "string"
+        }
+      ],
+      "paths": [
+        "streams/mqtt/messages.jsonl"
+      ],
+      "row_count": 4
+    }
+  ]
+}

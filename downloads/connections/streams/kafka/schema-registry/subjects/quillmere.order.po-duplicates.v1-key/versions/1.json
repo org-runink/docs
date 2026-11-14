@@ -1,0 +1,7 @@
+{
+  "subject": "quillmere.order.po-duplicates.v1-key",
+  "version": 1,
+  "id": 11,
+  "schemaType": "JSON",
+  "schema": "{\"type\":\"object\",\"title\":\"OrderPoDuplicateKey\",\"properties\":{\"customer_id\":{\"type\":\"string\"},\"customer_po\":{\"type\":\"string\"}},\"required\":[\"customer_id\",\"customer_po\"],\"additionalProperties\":false}"
+}

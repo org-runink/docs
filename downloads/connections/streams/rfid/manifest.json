@@ -1,0 +1,12 @@
+{
+  "type": "rfid",
+  "protocol": "llrp-1.0.1 (RO_ACCESS_REPORT TagReportData, as JSON)",
+  "recordings": [
+    "streams/rfid/tag_reports.jsonl"
+  ],
+  "messages": 49,
+  "first_at": "2026-07-13T15:35:00Z",
+  "last_at": "2026-09-28T21:43:00Z",
+  "replay": "go run ./cmd/synth replay rfid            # tag reports at http://localhost:8084/events",
+  "notes": "LLRP has no authentication; these connections carry no credential. The replayer serves the same reports over the reader HTTP event shape (protocol=http)"
+}
