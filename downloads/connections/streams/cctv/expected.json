@@ -1,0 +1,245 @@
+{
+  "type": "cctv",
+  "fixture_kind": "stream",
+  "root": "streams/cctv",
+  "discovery_today": "real against a camera: FACE asks it what it is (RTSP DESCRIBE / ONVIF, cctv_discovery.go); frames are sampled up to max_frames at fetch time",
+  "credential_placeholder": "change-me",
+  "replay": "go run ./cmd/synth replay cctv            # MJPEG over HTTP at http://localhost:8086/<camera_id>",
+  "connections": [
+    {
+      "name": "Dock camera CAM-NORTH-01",
+      "settings": {
+        "endpoint_url": "rtsp://cam-dock-north-01.quillmere.invalid:554/stream1",
+        "username": "viewer",
+        "max_frames": 12,
+        "transport": "tcp",
+        "device_capture": false
+      },
+      "credentials": [
+        "password"
+      ]
+    },
+    {
+      "name": "Dock camera CAM-NORTH-02",
+      "settings": {
+        "endpoint_url": "rtsp://cam-dock-north-02.quillmere.invalid:554/stream1",
+        "username": "viewer",
+        "max_frames": 12,
+        "transport": "tcp",
+        "device_capture": false
+      },
+      "credentials": [
+        "password"
+      ]
+    },
+    {
+      "name": "Dock camera CAM-NORTH-03",
+      "settings": {
+        "endpoint_url": "rtsp://cam-dock-north-03.quillmere.invalid:554/stream1",
+        "username": "viewer",
+        "max_frames": 12,
+        "transport": "tcp",
+        "device_capture": false
+      },
+      "credentials": [
+        "password"
+      ]
+    },
+    {
+      "name": "Dock camera CAM-EAST-01",
+      "settings": {
+        "endpoint_url": "rtsp://cam-dock-east-01.quillmere.invalid:554/stream1",
+        "username": "viewer",
+        "max_frames": 12,
+        "transport": "tcp",
+        "device_capture": false
+      },
+      "credentials": [
+        "password"
+      ]
+    },
+    {
+      "name": "Dock camera CAM-EAST-02",
+      "settings": {
+        "endpoint_url": "rtsp://cam-dock-east-02.quillmere.invalid:554/stream1",
+        "username": "viewer",
+        "max_frames": 12,
+        "transport": "tcp",
+        "device_capture": false
+      },
+      "credentials": [
+        "password"
+      ]
+    },
+    {
+      "name": "Dock camera CAM-EAST-03",
+      "settings": {
+        "endpoint_url": "rtsp://cam-dock-east-03.quillmere.invalid:554/stream1",
+        "username": "viewer",
+        "max_frames": 12,
+        "transport": "tcp",
+        "device_capture": false
+      },
+      "credentials": [
+        "password"
+      ]
+    },
+    {
+      "name": "Dock camera CAM-SOUTH-01",
+      "settings": {
+        "endpoint_url": "rtsp://cam-dock-south-01.quillmere.invalid:554/stream1",
+        "username": "viewer",
+        "max_frames": 12,
+        "transport": "tcp",
+        "device_capture": false
+      },
+      "credentials": [
+        "password"
+      ]
+    },
+    {
+      "name": "Dock camera CAM-SOUTH-02",
+      "settings": {
+        "endpoint_url": "rtsp://cam-dock-south-02.quillmere.invalid:554/stream1",
+        "username": "viewer",
+        "max_frames": 12,
+        "transport": "tcp",
+        "device_capture": false
+      },
+      "credentials": [
+        "password"
+      ]
+    },
+    {
+      "name": "Dock camera CAM-SOUTH-03",
+      "settings": {
+        "endpoint_url": "rtsp://cam-dock-south-03.quillmere.invalid:554/stream1",
+        "username": "viewer",
+        "max_frames": 12,
+        "transport": "tcp",
+        "device_capture": false
+      },
+      "credentials": [
+        "password"
+      ]
+    }
+  ],
+  "datasets": [
+    {
+      "name": "frames",
+      "kind": "video_frame_sequence",
+      "domain": "dock_vision",
+      "fields": [
+        {
+          "name": "camera_id",
+          "type": "string",
+          "joins": "device"
+        },
+        {
+          "name": "dock_id",
+          "type": "string",
+          "joins": "dock"
+        },
+        {
+          "name": "n",
+          "type": "int"
+        },
+        {
+          "name": "pts_ms",
+          "type": "int"
+        },
+        {
+          "name": "at",
+          "type": "timestamp"
+        },
+        {
+          "name": "file",
+          "type": "string"
+        },
+        {
+          "name": "trailer_id",
+          "type": "string",
+          "nullable": true,
+          "joins": "trailer"
+        }
+      ],
+      "paths": [
+        "streams/cctv/frames.jsonl",
+        "streams/cctv/frames/CAM-EAST-01/0000.jpg",
+        "streams/cctv/frames/CAM-EAST-01/0001.jpg",
+        "streams/cctv/frames/CAM-EAST-01/0002.jpg",
+        "streams/cctv/frames/CAM-EAST-01/0003.jpg",
+        "streams/cctv/frames/CAM-EAST-01/0004.jpg",
+        "streams/cctv/frames/CAM-EAST-01/0005.jpg",
+        "streams/cctv/frames/CAM-EAST-01/0006.jpg",
+        "streams/cctv/frames/CAM-EAST-01/0007.jpg",
+        "streams/cctv/frames/CAM-EAST-01/0008.jpg",
+        "streams/cctv/frames/CAM-EAST-02/0000.jpg",
+        "streams/cctv/frames/CAM-EAST-02/0001.jpg",
+        "streams/cctv/frames/CAM-EAST-02/0002.jpg",
+        "streams/cctv/frames/CAM-EAST-02/0003.jpg",
+        "streams/cctv/frames/CAM-EAST-02/0004.jpg",
+        "streams/cctv/frames/CAM-EAST-02/0005.jpg",
+        "streams/cctv/frames/CAM-EAST-02/0006.jpg",
+        "streams/cctv/frames/CAM-EAST-02/0007.jpg",
+        "streams/cctv/frames/CAM-EAST-02/0008.jpg",
+        "streams/cctv/frames/CAM-EAST-03/0000.jpg",
+        "streams/cctv/frames/CAM-EAST-03/0001.jpg",
+        "streams/cctv/frames/CAM-EAST-03/0002.jpg",
+        "streams/cctv/frames/CAM-EAST-03/0003.jpg",
+        "streams/cctv/frames/CAM-EAST-03/0004.jpg",
+        "streams/cctv/frames/CAM-EAST-03/0005.jpg",
+        "streams/cctv/frames/CAM-EAST-03/0006.jpg",
+        "streams/cctv/frames/CAM-NORTH-01/0000.jpg",
+        "streams/cctv/frames/CAM-NORTH-01/0001.jpg",
+        "streams/cctv/frames/CAM-NORTH-01/0002.jpg",
+        "streams/cctv/frames/CAM-NORTH-01/0003.jpg",
+        "streams/cctv/frames/CAM-NORTH-01/0004.jpg",
+        "streams/cctv/frames/CAM-NORTH-01/0005.jpg",
+        "streams/cctv/frames/CAM-NORTH-02/0000.jpg",
+        "streams/cctv/frames/CAM-NORTH-02/0001.jpg",
+        "streams/cctv/frames/CAM-NORTH-02/0002.jpg",
+        "streams/cctv/frames/CAM-NORTH-02/0003.jpg",
+        "streams/cctv/frames/CAM-NORTH-02/0004.jpg",
+        "streams/cctv/frames/CAM-NORTH-02/0005.jpg",
+        "streams/cctv/frames/CAM-NORTH-03/0000.jpg",
+        "streams/cctv/frames/CAM-NORTH-03/0001.jpg",
+        "streams/cctv/frames/CAM-NORTH-03/0002.jpg",
+        "streams/cctv/frames/CAM-NORTH-03/0003.jpg",
+        "streams/cctv/frames/CAM-NORTH-03/0004.jpg",
+        "streams/cctv/frames/CAM-NORTH-03/0005.jpg",
+        "streams/cctv/frames/CAM-NORTH-03/0006.jpg",
+        "streams/cctv/frames/CAM-NORTH-03/0007.jpg",
+        "streams/cctv/frames/CAM-NORTH-03/0008.jpg",
+        "streams/cctv/frames/CAM-NORTH-03/0009.jpg",
+        "streams/cctv/frames/CAM-NORTH-03/0010.jpg",
+        "streams/cctv/frames/CAM-NORTH-03/0011.jpg",
+        "streams/cctv/frames/CAM-SOUTH-01/0000.jpg",
+        "streams/cctv/frames/CAM-SOUTH-01/0001.jpg",
+        "streams/cctv/frames/CAM-SOUTH-01/0002.jpg",
+        "streams/cctv/frames/CAM-SOUTH-01/0003.jpg",
+        "streams/cctv/frames/CAM-SOUTH-01/0004.jpg",
+        "streams/cctv/frames/CAM-SOUTH-01/0005.jpg",
+        "streams/cctv/frames/CAM-SOUTH-01/0006.jpg",
+        "streams/cctv/frames/CAM-SOUTH-01/0007.jpg",
+        "streams/cctv/frames/CAM-SOUTH-01/0008.jpg",
+        "streams/cctv/frames/CAM-SOUTH-01/0009.jpg",
+        "streams/cctv/frames/CAM-SOUTH-01/0010.jpg",
+        "streams/cctv/frames/CAM-SOUTH-01/0011.jpg",
+        "streams/cctv/frames/CAM-SOUTH-02/0000.jpg",
+        "streams/cctv/frames/CAM-SOUTH-02/0001.jpg",
+        "streams/cctv/frames/CAM-SOUTH-02/0002.jpg",
+        "streams/cctv/frames/CAM-SOUTH-02/0003.jpg",
+        "streams/cctv/frames/CAM-SOUTH-02/0004.jpg",
+        "streams/cctv/frames/CAM-SOUTH-02/0005.jpg",
+        "streams/cctv/frames/CAM-SOUTH-03/0000.jpg",
+        "streams/cctv/frames/CAM-SOUTH-03/0001.jpg",
+        "streams/cctv/frames/CAM-SOUTH-03/0002.jpg",
+        "streams/cctv/frames/CAM-SOUTH-03/0003.jpg",
+        "streams/cctv/frames/CAM-SOUTH-03/0004.jpg",
+        "streams/cctv/frames/CAM-SOUTH-03/0005.jpg"
+      ],
+      "row_count": 73
+    }
+  ]
+}

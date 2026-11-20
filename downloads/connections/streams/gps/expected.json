@@ -1,0 +1,80 @@
+{
+  "type": "gps",
+  "fixture_kind": "stream",
+  "root": "streams/gps",
+  "discovery_today": "no catalogue: an NMEA feed is a raw TCP socket; FACE reads sentences for collect_seconds and attributes them to asset_ids",
+  "replay": "go run ./cmd/synth replay gps             # NMEA 0183 on tcp://localhost:10110",
+  "connections": [
+    {
+      "name": "Trailer GPS gateway",
+      "settings": {
+        "provider": "nmea",
+        "endpoint": "gps-gw.quillmere.invalid:10110",
+        "asset_ids": "GPS-101,GPS-102,GPS-103,GPS-104,GPS-105,GPS-106,GPS-107,GPS-108,GPS-109,GPS-110",
+        "lookback_minutes": 60,
+        "collect_seconds": 30,
+        "include_sensors": false
+      }
+    }
+  ],
+  "datasets": [
+    {
+      "name": "GPRMC",
+      "kind": "nmea_sentence",
+      "domain": "telematics",
+      "fields": [
+        {
+          "name": "device_id",
+          "type": "string",
+          "joins": "device"
+        },
+        {
+          "name": "utc_time",
+          "type": "string"
+        },
+        {
+          "name": "lat",
+          "type": "string"
+        },
+        {
+          "name": "lat_hemisphere",
+          "type": "string"
+        },
+        {
+          "name": "lon",
+          "type": "string"
+        },
+        {
+          "name": "lon_hemisphere",
+          "type": "string"
+        },
+        {
+          "name": "speed_knots",
+          "type": "decimal"
+        },
+        {
+          "name": "course_deg",
+          "type": "decimal"
+        },
+        {
+          "name": "utc_date",
+          "type": "string"
+        }
+      ],
+      "paths": [
+        "streams/gps/nmea/GPS-101.nmea",
+        "streams/gps/nmea/GPS-102.nmea",
+        "streams/gps/nmea/GPS-103.nmea",
+        "streams/gps/nmea/GPS-104.nmea",
+        "streams/gps/nmea/GPS-105.nmea",
+        "streams/gps/nmea/GPS-106.nmea",
+        "streams/gps/nmea/GPS-107.nmea",
+        "streams/gps/nmea/GPS-108.nmea",
+        "streams/gps/nmea/GPS-109.nmea",
+        "streams/gps/nmea/GPS-110.nmea",
+        "streams/gps/assets.json"
+      ],
+      "row_count": 231
+    }
+  ]
+}

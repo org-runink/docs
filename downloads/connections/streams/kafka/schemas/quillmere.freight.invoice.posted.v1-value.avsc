@@ -1,0 +1,49 @@
+{
+  "type": "record",
+  "name": "InvoicePosted",
+  "namespace": "invalid.quillmere.freight",
+  "fields": [
+    {
+      "name": "invoice_id",
+      "type": "string"
+    },
+    {
+      "name": "shipment_id",
+      "type": "string"
+    },
+    {
+      "name": "carrier_id",
+      "type": "string"
+    },
+    {
+      "name": "miles",
+      "type": "double"
+    },
+    {
+      "name": "rate_per_mile",
+      "type": "double",
+      "doc": "the rate per mile the carrier billed"
+    },
+    {
+      "name": "contracted_rate_per_mile",
+      "type": [
+        "null",
+        "double"
+      ],
+      "doc": "the rate per mile in the carrier's contract",
+      "default": null
+    },
+    {
+      "name": "fuel",
+      "type": "double"
+    },
+    {
+      "name": "billed",
+      "type": "double"
+    },
+    {
+      "name": "at",
+      "type": "string"
+    }
+  ]
+}
