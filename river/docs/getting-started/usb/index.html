@@ -1,0 +1,970 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Create a USB stick · Runink River</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 7.0.1">
+        <meta name="author" content="Runink">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-runink-copy/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../_brand/favicon.svg" type="image/svg+xml">
+
+    
+    <link rel="next" href="../install/" />
+    
+    
+    <link rel="prev" href="../download/" />
+    
+
+    
+    
+    <meta property="og:site_name" content="Runink River">
+    <meta property="og:title" content="Create a USB stick">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Runink River is an optimized developer workstation on s6: the DEsk desktop, the linux-runink kernel, an encrypted ZFS root with boot environments, a default-deny firewall and a graphical installer, for data, analytics and AI development on hardware you own.">
+    <meta name="twitter:title" content="Create a USB stick">
+    <meta name="twitter:description" content="Runink River is an optimized developer workstation on s6: the DEsk desktop, the linux-runink kernel, an encrypted ZFS root with boot environments, a default-deny firewall and a graphical installer, for data, analytics and AI development on hardware you own.">
+    
+    <meta name="twitter:card" content="summary">
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak font-size-2 font-family-1 color-theme-2">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Runink River
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    Getting started
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../download/">
+            
+                <a href="../download/">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    Download & verify
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    Create a USB stick
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../install/">
+            
+                <a href="../install/">
+            
+                    
+                        <b>1.2.1.3.</b>
+                    
+                    Install
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../first-boot/">
+            
+                <a href="../first-boot/">
+            
+                    
+                        <b>1.2.1.4.</b>
+                    
+                    First boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../desktop/">
+            
+                <a href="../desktop/">
+            
+                    
+                        <b>1.2.1.5.</b>
+                    
+                    The desktop
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../features/">
+            
+                <a href="../../features/">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Features
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../features/s6/">
+            
+                <a href="../../features/s6/">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    s6 init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../features/kernel/">
+            
+                <a href="../../features/kernel/">
+            
+                    
+                        <b>1.2.2.2.</b>
+                    
+                    Kernel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../features/zfs-encryption/">
+            
+                <a href="../../features/zfs-encryption/">
+            
+                    
+                        <b>1.2.2.3.</b>
+                    
+                    ZFS & encryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../features/firewall/">
+            
+                <a href="../../features/firewall/">
+            
+                    
+                        <b>1.2.2.4.</b>
+                    
+                    Firewall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../../features/sandbox/">
+            
+                <a href="../../features/sandbox/">
+            
+                    
+                        <b>1.2.2.5.</b>
+                    
+                    river-sandbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../../features/installer/">
+            
+                <a href="../../features/installer/">
+            
+                    
+                        <b>1.2.2.6.</b>
+                    
+                    Installer & planner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../../features/install-guide/">
+            
+                <a href="../../features/install-guide/">
+            
+                    
+                        <b>1.2.2.7.</b>
+                    
+                    Offline install guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../configuration/">
+            
+                <a href="../../configuration/">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../configuration/boot-environments/">
+            
+                <a href="../../configuration/boot-environments/">
+            
+                    
+                        <b>1.2.3.1.</b>
+                    
+                    Boot environments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../configuration/services/">
+            
+                <a href="../../configuration/services/">
+            
+                    
+                        <b>1.2.3.2.</b>
+                    
+                    Services (s6)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../configuration/updates/">
+            
+                <a href="../../configuration/updates/">
+            
+                    
+                        <b>1.2.3.3.</b>
+                    
+                    Updates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../../configuration/package-repository/">
+            
+                <a href="../../configuration/package-repository/">
+            
+                    
+                        <b>1.2.3.4.</b>
+                    
+                    Package repository
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../../configuration/blackarch/">
+            
+                <a href="../../configuration/blackarch/">
+            
+                    
+                        <b>1.2.3.5.</b>
+                    
+                    Security tools on the live stick
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="../../configuration/keyboard-locale/">
+            
+                <a href="../../configuration/keyboard-locale/">
+            
+                    
+                        <b>1.2.3.6.</b>
+                    
+                    Keyboard & language
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="../../configuration/networking/">
+            
+                <a href="../../configuration/networking/">
+            
+                    
+                        <b>1.2.3.7.</b>
+                    
+                    Networking
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../troubleshooting/">
+            
+                <a href="../../troubleshooting/">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../hardware/">
+            
+                <a href="../../hardware/">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    Hardware support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../architecture/">
+            
+                <a href="../../architecture/">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../concepts/">
+            
+                <a href="../../concepts/">
+            
+                    
+                        <b>1.2.7.</b>
+                    
+                    Design principles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../build/">
+            
+                <a href="../../build/">
+            
+                    
+                        <b>1.2.8.</b>
+                    
+                    Build from source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../kernel-on-arch/">
+            
+                <a href="../../kernel-on-arch/">
+            
+                    
+                        <b>1.2.9.</b>
+                    
+                    Kernel on Arch (AUR)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../../security/">
+            
+                <a href="../../security/">
+            
+                    
+                        <b>1.2.10.</b>
+                    
+                    Security
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.10.1" data-path="../../security/reporting/">
+            
+                <a href="../../security/reporting/">
+            
+                    
+                        <b>1.2.10.1.</b>
+                    
+                    Report a vulnerability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.2" data-path="../../security/verify/">
+            
+                <a href="../../security/verify/">
+            
+                    
+                        <b>1.2.10.2.</b>
+                    
+                    Verify a release
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.3" data-path="../../security/release-signing/">
+            
+                <a href="../../security/release-signing/">
+            
+                    
+                        <b>1.2.10.3.</b>
+                    
+                    Release signing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.4" data-path="../../security/secure-boot/">
+            
+                <a href="../../security/secure-boot/">
+            
+                    
+                        <b>1.2.10.4.</b>
+                    
+                    Secure Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../../releases/">
+            
+                <a href="../../releases/">
+            
+                    
+                        <b>1.2.11.</b>
+                    
+                    Releases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../../contributing/">
+            
+                <a href="../../contributing/">
+            
+                    
+                        <b>1.2.12.</b>
+                    
+                    Contributing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.12.1" data-path="../../contributing/governance/">
+            
+                <a href="../../contributing/governance/">
+            
+                    
+                        <b>1.2.12.1.</b>
+                    
+                    Governance & community
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../../governance/">
+            
+                <a href="../../governance/">
+            
+                    
+                        <b>1.2.13.</b>
+                    
+                    Licensing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../../contributing-issues/">
+            
+                <a href="../../contributing-issues/">
+            
+                    
+                        <b>1.2.14.</b>
+                    
+                    Bugs & features
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../../faq/">
+            
+                <a href="../../faq/">
+            
+                    
+                        <b>1.2.15.</b>
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../../roadmap/">
+            
+                <a href="../../roadmap/">
+            
+                    
+                        <b>1.2.16.</b>
+                    
+                    Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../../brand/">
+            
+                <a href="../../brand/">
+            
+                    
+                        <b>1.2.17.</b>
+                    
+                    Brand assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Create a USB stick</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+    
+                                <h1 id="create-a-usb-stick">Create a USB stick</h1>
+<!--
+SPDX-FileCopyrightText: 2026 The RIVER Authors
+SPDX-License-Identifier: MIT
+-->
+<p>The ISO is a hybrid image: write it to the whole stick, not to a partition. A stick of
+8 GB or more is enough. <strong>Everything on the stick is erased.</strong> Write only an image you have
+verified (<a href="../download/">Download &amp; verify</a>).</p>
+<h2 id="with-installsh-linux">With install.sh (Linux)</h2>
+<blockquote>
+<p><strong>Warning:</strong> <code>install.sh</code> downloads <strong>the latest published release</strong>. Until the first River release is
+tagged and published, there is nothing for it to fetch and this path cannot work — use
+<strong>By hand</strong> below with a locally built image. See <a href="../../releases/">Releases</a> for what exists.</p>
+</blockquote>
+<p><code>install.sh</code> downloads and verifies the image first, then writes it:</p>
+<pre><code class="lang-bash">curl -fsSL https://raw.githubusercontent.com/org-runink/river/main/install.sh | sh -s -- --write /dev/sdX
+</code></pre>
+<p>It refuses a device that is not a whole disk, is neither USB nor removable, is mounted, or
+reports no serial number. Before it writes, it shows the stick's model, size and serial and
+asks you to type the serial, so a typo in <code>/dev/sdX</code> cannot erase the wrong disk. For a
+scripted run, pass the serial you checked with <code>--yes-i-have-checked-serial=SERIAL</code>.</p>
+<p>The script never runs <code>sudo</code>. Run as a normal user, it verifies the image and the stick, then
+prints the one command that needs root, for you to run:</p>
+<pre><code class="lang-text">sudo dd if=./runink-river-&lt;YYYYMMDD&gt;-x86_64.iso of=/dev/sdX bs=4M conv=fsync oflag=direct status=progress
+</code></pre>
+<p>Add <code>--dry-run</code> to see what it would write without writing anything, and <code>--out DIR</code> when the
+image is in, or should go to, another directory. Every flag is described on
+<a href="../download/#flags">Download &amp; verify</a>.</p>
+<h2 id="by-hand-linux">By hand (Linux)</h2>
+<p>Find the stick, check its size, model and serial, unmount anything mounted from it, then
+write the verified image:</p>
+<pre><code class="lang-bash">lsblk -o NAME,SIZE,MODEL,SERIAL,TRAN,MOUNTPOINTS   <span class="hljs-comment"># the stick shows TRAN=usb</span>
+<span class="hljs-built_in">sudo</span> umount /dev/sdX1                              <span class="hljs-comment"># for each mounted partition of the stick</span>
+<span class="hljs-built_in">sudo</span> <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=runink-river-&lt;YYYYMMDD&gt;-x86_64.iso of=/dev/sdX bs=4M conv=fsync oflag=direct status=progress
+<span class="hljs-built_in">sync</span>
+</code></pre>
+<p><code>/dev/sdX</code> is the whole device (<code>/dev/sdb</code>), never a partition (<code>/dev/sdb1</code>).</p>
+<h3 id="check-the-stick-afterwards">Check the stick afterwards</h3>
+<p><code>dd</code> reporting success is not the same as the stick holding the image. A failing or
+counterfeit stick accepts every write and returns different bytes on the next read, and
+<code>conv=fsync</code> cannot detect that. Read it back and compare:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">sudo</span> cmp -n $(<span class="hljs-built_in">stat</span> -c %s runink-river-&lt;YYYYMMDD&gt;-x86_64.iso) \
+     runink-river-&lt;YYYYMMDD&gt;-x86_64.iso /dev/sdX &amp;&amp; <span class="hljs-built_in">echo</span> <span class="hljs-string">"the stick matches the image"</span>
+</code></pre>
+<p><code>cmp</code> prints nothing and exits 0 when every byte matches; it names the first differing byte
+otherwise. The <code>-n</code> limit stops it at the image's length, because the stick is larger than
+the image and everything past the end is expected to differ.</p>
+<p>A stick that writes without error and fails this is the one that boots to a GRUB rescue
+prompt or a kernel panic much later, when the cause is no longer obvious.</p>
+<h2 id="from-windows-or-macos">From Windows or macOS</h2>
+<p>Any tool that writes a raw disk image byte for byte works. Pick "write an image as-is"
+(dd mode) if the tool asks, and verify the image before you write it.</p>
+<h2 id="boot-it">Boot it</h2>
+<p>Plug the stick in, open your firmware's boot menu (often F12, F11, F8 or Esc at power-on)
+and pick the USB stick's <strong>UEFI</strong> entry. Turn Secure Boot off first: the image does not boot
+with Secure Boot on yet (<a href="../../security/secure-boot/">Secure Boot</a>).</p>
+<p>The stick's live system then opens the installer by itself:
+<a href="../install/">Install</a>. It does not start?
+<a href="../../troubleshooting/#the-usb-stick">Troubleshooting</a>.</p>
+<h2 id="reuse-the-stick-afterwards">Reuse the stick afterwards</h2>
+<p>The installer never offers the stick as a target and never saves the recovery key to it. To
+use the stick for files again, recreate a partition table and a filesystem on it with
+<code>parted</code> or <code>gdisk</code> (on the installed system) or any partitioning tool.</p>
+
+                                
+    
+    <footer class="runink-footer" role="contentinfo">
+        <img class="runink-brand" src="../../../_brand/logo.svg" alt="">
+        
+    </footer>
+    
+
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../download/" class="navigation navigation-prev " aria-label="Previous page: Download & verify">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../install/" class="navigation navigation-next " aria-label="Next page: Install">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    
+    <script type="application/json" id="honkit-page-context">{"page":{"title":"Create a USB stick","level":"1.2.1.2","depth":3,"next":{"title":"Install","level":"1.2.1.3","depth":3,"path":"docs/getting-started/install/README.md","ref":"docs/getting-started/install/README.md","articles":[]},"previous":{"title":"Download & verify","level":"1.2.1.1","depth":3,"path":"docs/getting-started/download/README.md","ref":"docs/getting-started/download/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","runink-copy"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"lunr":{"maxIndexSize":100000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"runink-copy":{},"highlight":{},"search":{}},"theme":"default","author":"Runink","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"logo":"_brand/logo.svg","siteURL":"https://docs.runink.org/river/"},"title":"Runink River","language":"en","gitbook":"7.0.1","description":"Runink River is an optimized developer workstation on s6: the DEsk desktop, the linux-runink kernel, an encrypted ZFS root with boot environments, a default-deny firewall and a graphical installer, for data, analytics and AI development on hardware you own."},"file":{"path":"docs/getting-started/usb/README.md","mtime":"","type":"markdown"},"gitbook":{"version":"7.0.1","time":""},"basePath":"../../..","book":{"language":""}}</script>
+</div>
+
+        
+    <noscript>
+        <link rel="stylesheet" href="../../../gitbook/noscript.css">
+    </noscript>
+    
+    <script src="../../../gitbook/boot.js"></script>
+    
+    <script src="../../../gitbook/gitbook.js" defer></script>
+    <script src="../../../gitbook/theme.js" defer></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-runink-copy/copy.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/@honkit/honkit-plugin-lunr/lunr.min.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/@honkit/honkit-plugin-lunr/search-lunr.js" defer></script>
+        
+    
+
+    </body>
+</html>
+

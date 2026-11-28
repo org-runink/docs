@@ -1,0 +1,2418 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Troubleshooting · PULSE Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 7.0.1">
+        <meta name="author" content="Runink">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-runink-copy/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../privacy/" />
+    
+    
+    <link rel="prev" href="../api-reference/common-types/" />
+    
+
+    
+    
+    <meta property="og:site_name" content="PULSE Documentation">
+    <meta property="og:title" content="Troubleshooting">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Runink PULSE: Prescriptive Unified Lead & Social Engine is a marketing agency in an app: it checks how your business looks online, plans campaigns, writes and makes the posts, and publishes them only after you approve, on models that run on Runink's own platform.">
+    <meta name="twitter:title" content="Troubleshooting">
+    <meta name="twitter:description" content="Runink PULSE: Prescriptive Unified Lead & Social Engine is a marketing agency in an app: it checks how your business looks online, plans campaigns, writes and makes the posts, and publishes them only after you approve, on models that run on Runink's own platform.">
+    
+    <meta property="og:image" content="https://docs.runink.org/pulse/_brand/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://docs.runink.org/pulse/_brand/og.png">
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak font-size-2 font-family-1 color-theme-2">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    PULSE Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../concepts/">
+            
+                <a href="../concepts/">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../concepts/measured-and-not-measured/">
+            
+                <a href="../concepts/measured-and-not-measured/">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    Measured and not measured
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../concepts/plan-gate/">
+            
+                <a href="../concepts/plan-gate/">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    The plan gate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../concepts/drafts-approval-publishing/">
+            
+                <a href="../concepts/drafts-approval-publishing/">
+            
+                    
+                        <b>1.2.1.3.</b>
+                    
+                    Drafts, approval and publishing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../concepts/personas/">
+            
+                <a href="../concepts/personas/">
+            
+                    
+                        <b>1.2.1.4.</b>
+                    
+                    Personas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../concepts/sovereign-inference/">
+            
+                <a href="../concepts/sovereign-inference/">
+            
+                    
+                        <b>1.2.1.5.</b>
+                    
+                    Sovereign inference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../concepts/agent-activity/">
+            
+                <a href="../concepts/agent-activity/">
+            
+                    
+                        <b>1.2.1.6.</b>
+                    
+                    Agent activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../architecture/">
+            
+                <a href="../architecture/">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    User guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../user-guide/getting-started/">
+            
+                <a href="../user-guide/getting-started/">
+            
+                    
+                        <b>1.2.3.1.</b>
+                    
+                    Getting started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../user-guide/sign-in/">
+            
+                <a href="../user-guide/sign-in/">
+            
+                    
+                        <b>1.2.3.2.</b>
+                    
+                    Signing in
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../user-guide/ninety-day-plan/">
+            
+                <a href="../user-guide/ninety-day-plan/">
+            
+                    
+                        <b>1.2.3.3.</b>
+                    
+                    90-day plan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../user-guide/brand-analysis/">
+            
+                <a href="../user-guide/brand-analysis/">
+            
+                    
+                        <b>1.2.3.4.</b>
+                    
+                    Brand Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../user-guide/brand-analysis-pages/">
+            
+                <a href="../user-guide/brand-analysis-pages/">
+            
+                    
+                        <b>1.2.3.5.</b>
+                    
+                    Brand Analysis pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="../user-guide/site-score-report/">
+            
+                <a href="../user-guide/site-score-report/">
+            
+                    
+                        <b>1.2.3.6.</b>
+                    
+                    Site-score report
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="../user-guide/audit-a-domain/">
+            
+                <a href="../user-guide/audit-a-domain/">
+            
+                    
+                        <b>1.2.3.7.</b>
+                    
+                    Audit a domain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="../user-guide/leads/">
+            
+                <a href="../user-guide/leads/">
+            
+                    
+                        <b>1.2.3.8.</b>
+                    
+                    Leads
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="../user-guide/outreach-sequences/">
+            
+                <a href="../user-guide/outreach-sequences/">
+            
+                    
+                        <b>1.2.3.9.</b>
+                    
+                    Outreach sequences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="../user-guide/email-from-your-mailbox/">
+            
+                <a href="../user-guide/email-from-your-mailbox/">
+            
+                    
+                        <b>1.2.3.10.</b>
+                    
+                    Email from your mailbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.11" data-path="../user-guide/ai-calls/">
+            
+                <a href="../user-guide/ai-calls/">
+            
+                    
+                        <b>1.2.3.11.</b>
+                    
+                    AI calls to leads
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" data-path="../user-guide/cold-calls-from-sequences/">
+            
+                <a href="../user-guide/cold-calls-from-sequences/">
+            
+                    
+                        <b>1.2.3.12.</b>
+                    
+                    Cold and follow-up calls from Leads
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.13" data-path="../user-guide/website-form/">
+            
+                <a href="../user-guide/website-form/">
+            
+                    
+                        <b>1.2.3.13.</b>
+                    
+                    Website form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.14" data-path="../user-guide/website-chat/">
+            
+                <a href="../user-guide/website-chat/">
+            
+                    
+                        <b>1.2.3.14.</b>
+                    
+                    Website chat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.15" data-path="../user-guide/attribution/">
+            
+                <a href="../user-guide/attribution/">
+            
+                    
+                        <b>1.2.3.15.</b>
+                    
+                    Attribution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.16" data-path="../user-guide/google-business-profile/">
+            
+                <a href="../user-guide/google-business-profile/">
+            
+                    
+                        <b>1.2.3.16.</b>
+                    
+                    Google reviews
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.17" data-path="../user-guide/weekly-results-review/">
+            
+                <a href="../user-guide/weekly-results-review/">
+            
+                    
+                        <b>1.2.3.17.</b>
+                    
+                    Weekly results review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.18" data-path="../user-guide/campaigns/">
+            
+                <a href="../user-guide/campaigns/">
+            
+                    
+                        <b>1.2.3.18.</b>
+                    
+                    Campaigns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.19" data-path="../user-guide/weekly-site-reaudit/">
+            
+                <a href="../user-guide/weekly-site-reaudit/">
+            
+                    
+                        <b>1.2.3.19.</b>
+                    
+                    Weekly site re-audit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.20" data-path="../user-guide/studio/">
+            
+                <a href="../user-guide/studio/">
+            
+                    
+                        <b>1.2.3.20.</b>
+                    
+                    Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.21" data-path="../user-guide/weekly-growth-advisor/">
+            
+                <a href="../user-guide/weekly-growth-advisor/">
+            
+                    
+                        <b>1.2.3.21.</b>
+                    
+                    Weekly growth advisor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.22" data-path="../user-guide/digital-twins/">
+            
+                <a href="../user-guide/digital-twins/">
+            
+                    
+                        <b>1.2.3.22.</b>
+                    
+                    Digital twins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.23" data-path="../user-guide/market-memory/">
+            
+                <a href="../user-guide/market-memory/">
+            
+                    
+                        <b>1.2.3.23.</b>
+                    
+                    What PULSE has learned about your market
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.24" data-path="../user-guide/meeting-detection/">
+            
+                <a href="../user-guide/meeting-detection/">
+            
+                    
+                        <b>1.2.3.24.</b>
+                    
+                    Meeting detection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.25" data-path="../user-guide/short-videos/">
+            
+                <a href="../user-guide/short-videos/">
+            
+                    
+                        <b>1.2.3.25.</b>
+                    
+                    Short videos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.26" data-path="../user-guide/answer-vendor-pitches/">
+            
+                <a href="../user-guide/answer-vendor-pitches/">
+            
+                    
+                        <b>1.2.3.26.</b>
+                    
+                    Answer vendor pitches
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.27" data-path="../user-guide/lip-synced-presenter-videos/">
+            
+                <a href="../user-guide/lip-synced-presenter-videos/">
+            
+                    
+                        <b>1.2.3.27.</b>
+                    
+                    Lip-synced presenter videos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.28" data-path="../user-guide/weekly-roadmap-suggestions/">
+            
+                <a href="../user-guide/weekly-roadmap-suggestions/">
+            
+                    
+                        <b>1.2.3.28.</b>
+                    
+                    Weekly roadmap suggestions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.29" data-path="../user-guide/autopilot-and-agencies/">
+            
+                <a href="../user-guide/autopilot-and-agencies/">
+            
+                    
+                        <b>1.2.3.29.</b>
+                    
+                    Autopilot and agencies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.30" data-path="../user-guide/create-an-image/">
+            
+                <a href="../user-guide/create-an-image/">
+            
+                    
+                        <b>1.2.3.30.</b>
+                    
+                    Create an image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.31" data-path="../user-guide/first-response-to-enquiries/">
+            
+                <a href="../user-guide/first-response-to-enquiries/">
+            
+                    
+                        <b>1.2.3.31.</b>
+                    
+                    First response to enquiries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.32" data-path="../user-guide/inbox/">
+            
+                <a href="../user-guide/inbox/">
+            
+                    
+                        <b>1.2.3.32.</b>
+                    
+                    Inbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.33" data-path="../user-guide/youtube-and-instagram-engagement/">
+            
+                <a href="../user-guide/youtube-and-instagram-engagement/">
+            
+                    
+                        <b>1.2.3.33.</b>
+                    
+                    Comments on YouTube and Instagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.34" data-path="../user-guide/results-and-reports/">
+            
+                <a href="../user-guide/results-and-reports/">
+            
+                    
+                        <b>1.2.3.34.</b>
+                    
+                    Results and reports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.35" data-path="../user-guide/voice-over-studio/">
+            
+                <a href="../user-guide/voice-over-studio/">
+            
+                    
+                        <b>1.2.3.35.</b>
+                    
+                    Voice-over studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.36" data-path="../user-guide/integrations/">
+            
+                <a href="../user-guide/integrations/">
+            
+                    
+                        <b>1.2.3.36.</b>
+                    
+                    Settings → Integrations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.37" data-path="../user-guide/voice-over-own-voice/">
+            
+                <a href="../user-guide/voice-over-own-voice/">
+            
+                    
+                        <b>1.2.3.37.</b>
+                    
+                    Voice-overs in your own voice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.38" data-path="../user-guide/assistant-and-voice/">
+            
+                <a href="../user-guide/assistant-and-voice/">
+            
+                    
+                        <b>1.2.3.38.</b>
+                    
+                    Assistant and voice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.39" data-path="../user-guide/questions-from-pulse/">
+            
+                <a href="../user-guide/questions-from-pulse/">
+            
+                    
+                        <b>1.2.3.39.</b>
+                    
+                    Questions from PULSE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40" data-path="../user-guide/tools/">
+            
+                <a href="../user-guide/tools/">
+            
+                    
+                        <b>1.2.3.40.</b>
+                    
+                    AI tools
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.40.1" data-path="../user-guide/tools/diagnostic-analyst/">
+            
+                <a href="../user-guide/tools/diagnostic-analyst/">
+            
+                    
+                        <b>1.2.3.40.1.</b>
+                    
+                    Diagnostic analyst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.2" data-path="../user-guide/tools/market-research/">
+            
+                <a href="../user-guide/tools/market-research/">
+            
+                    
+                        <b>1.2.3.40.2.</b>
+                    
+                    Market research
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.3" data-path="../user-guide/tools/strategy-planner/">
+            
+                <a href="../user-guide/tools/strategy-planner/">
+            
+                    
+                        <b>1.2.3.40.3.</b>
+                    
+                    Strategy planner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.4" data-path="../user-guide/tools/channel-content-creator/">
+            
+                <a href="../user-guide/tools/channel-content-creator/">
+            
+                    
+                        <b>1.2.3.40.4.</b>
+                    
+                    Channel content creator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.5" data-path="../user-guide/tools/long-form-studio/">
+            
+                <a href="../user-guide/tools/long-form-studio/">
+            
+                    
+                        <b>1.2.3.40.5.</b>
+                    
+                    Long-form studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.6" data-path="../user-guide/tools/partnership-outreach/">
+            
+                <a href="../user-guide/tools/partnership-outreach/">
+            
+                    
+                        <b>1.2.3.40.6.</b>
+                    
+                    Partnership outreach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.7" data-path="../user-guide/tools/sales-and-voice-agent/">
+            
+                <a href="../user-guide/tools/sales-and-voice-agent/">
+            
+                    
+                        <b>1.2.3.40.7.</b>
+                    
+                    Sales and voice agent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.8" data-path="../user-guide/tools/content-strategy-and-roadmaps/">
+            
+                <a href="../user-guide/tools/content-strategy-and-roadmaps/">
+            
+                    
+                        <b>1.2.3.40.8.</b>
+                    
+                    Content strategy and roadmaps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.9" data-path="../user-guide/tools/pulse-assistant/">
+            
+                <a href="../user-guide/tools/pulse-assistant/">
+            
+                    
+                        <b>1.2.3.40.9.</b>
+                    
+                    PULSE assistant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.10" data-path="../user-guide/tools/self-healing/">
+            
+                <a href="../user-guide/tools/self-healing/">
+            
+                    
+                        <b>1.2.3.40.10.</b>
+                    
+                    Self-healing operations agent
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.41" data-path="../user-guide/glossary/">
+            
+                <a href="../user-guide/glossary/">
+            
+                    
+                        <b>1.2.3.41.</b>
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.42" data-path="../user-guide/delete-your-account/">
+            
+                <a href="../user-guide/delete-your-account/">
+            
+                    
+                        <b>1.2.3.42.</b>
+                    
+                    Delete your account
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.43" data-path="../user-guide/old-names/">
+            
+                <a href="../user-guide/old-names/">
+            
+                    
+                        <b>1.2.3.43.</b>
+                    
+                    Old names and addresses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.44" data-path="../user-guide/why-it-wasnt-sent/">
+            
+                <a href="../user-guide/why-it-wasnt-sent/">
+            
+                    
+                        <b>1.2.3.44.</b>
+                    
+                    Why it wasn't sent
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../admin-guide/">
+            
+                <a href="../admin-guide/">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    Admin guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../admin-guide/configuration/">
+            
+                <a href="../admin-guide/configuration/">
+            
+                    
+                        <b>1.2.4.1.</b>
+                    
+                    Configuration reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../admin-guide/users-and-access/">
+            
+                <a href="../admin-guide/users-and-access/">
+            
+                    
+                        <b>1.2.4.2.</b>
+                    
+                    Users and access
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../admin-guide/setup/">
+            
+                <a href="../admin-guide/setup/">
+            
+                    
+                        <b>1.2.4.3.</b>
+                    
+                    Setup
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.3.1" data-path="../admin-guide/setup/business-profile/">
+            
+                <a href="../admin-guide/setup/business-profile/">
+            
+                    
+                        <b>1.2.4.3.1.</b>
+                    
+                    Business profile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.2" data-path="../admin-guide/setup/connections/">
+            
+                <a href="../admin-guide/setup/connections/">
+            
+                    
+                        <b>1.2.4.3.2.</b>
+                    
+                    Connections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.3" data-path="../admin-guide/setup/public-address/">
+            
+                <a href="../admin-guide/setup/public-address/">
+            
+                    
+                        <b>1.2.4.3.3.</b>
+                    
+                    Public address and redirects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.4" data-path="../admin-guide/setup/meta/">
+            
+                <a href="../admin-guide/setup/meta/">
+            
+                    
+                        <b>1.2.4.3.4.</b>
+                    
+                    Meta (Instagram)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.5" data-path="../admin-guide/setup/google/">
+            
+                <a href="../admin-guide/setup/google/">
+            
+                    
+                        <b>1.2.4.3.5.</b>
+                    
+                    Google
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.6" data-path="../admin-guide/setup/linkedin/">
+            
+                <a href="../admin-guide/setup/linkedin/">
+            
+                    
+                        <b>1.2.4.3.6.</b>
+                    
+                    LinkedIn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.7" data-path="../admin-guide/setup/website-repository/">
+            
+                <a href="../admin-guide/setup/website-repository/">
+            
+                    
+                        <b>1.2.4.3.7.</b>
+                    
+                    Website repository
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.8" data-path="../admin-guide/setup/email/">
+            
+                <a href="../admin-guide/setup/email/">
+            
+                    
+                        <b>1.2.4.3.8.</b>
+                    
+                    Email
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.9" data-path="../admin-guide/setup/voice/">
+            
+                <a href="../admin-guide/setup/voice/">
+            
+                    
+                        <b>1.2.4.3.9.</b>
+                    
+                    Voice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="../admin-guide/switches-and-arming-order/">
+            
+                <a href="../admin-guide/switches-and-arming-order/">
+            
+                    
+                        <b>1.2.4.4.</b>
+                    
+                    Switches and arming order
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../admin-guide/publishing-controls/">
+            
+                <a href="../admin-guide/publishing-controls/">
+            
+                    
+                        <b>1.2.4.5.</b>
+                    
+                    Publishing controls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="../admin-guide/site-pipeline/">
+            
+                <a href="../admin-guide/site-pipeline/">
+            
+                    
+                        <b>1.2.4.6.</b>
+                    
+                    Site pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="../admin-guide/billing/">
+            
+                <a href="../admin-guide/billing/">
+            
+                    
+                        <b>1.2.4.7.</b>
+                    
+                    Billing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8" data-path="../admin-guide/plans/">
+            
+                <a href="../admin-guide/plans/">
+            
+                    
+                        <b>1.2.4.8.</b>
+                    
+                    Plans
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.9" data-path="../admin-guide/telephony-and-messaging/">
+            
+                <a href="../admin-guide/telephony-and-messaging/">
+            
+                    
+                        <b>1.2.4.9.</b>
+                    
+                    Telephony and messaging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.10" data-path="../admin-guide/operations/">
+            
+                <a href="../admin-guide/operations/">
+            
+                    
+                        <b>1.2.4.10.</b>
+                    
+                    Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.11" data-path="../admin-guide/web-reading/">
+            
+                <a href="../admin-guide/web-reading/">
+            
+                    
+                        <b>1.2.4.11.</b>
+                    
+                    Web reading settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.12" data-path="../admin-guide/agents-reach-the-user/">
+            
+                <a href="../admin-guide/agents-reach-the-user/">
+            
+                    
+                        <b>1.2.4.12.</b>
+                    
+                    Agents that reach the user
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.13" data-path="../admin-guide/answer-vendor-pitches/">
+            
+                <a href="../admin-guide/answer-vendor-pitches/">
+            
+                    
+                        <b>1.2.4.13.</b>
+                    
+                    Answer vendor pitches
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.14" data-path="../admin-guide/first-response-to-enquiries/">
+            
+                <a href="../admin-guide/first-response-to-enquiries/">
+            
+                    
+                        <b>1.2.4.14.</b>
+                    
+                    First response to enquiries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.15" data-path="../admin-guide/knowledge-probe/">
+            
+                <a href="../admin-guide/knowledge-probe/">
+            
+                    
+                        <b>1.2.4.15.</b>
+                    
+                    Knowledge probe
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../developer-guide/">
+            
+                <a href="../developer-guide/">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    Developer guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../developer-guide/calling-the-api/">
+            
+                <a href="../developer-guide/calling-the-api/">
+            
+                    
+                        <b>1.2.5.1.</b>
+                    
+                    Calling the API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../api-reference/">
+            
+                <a href="../api-reference/">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    API reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../api-reference/http-endpoints/">
+            
+                <a href="../api-reference/http-endpoints/">
+            
+                    
+                        <b>1.2.6.1.</b>
+                    
+                    HTTP endpoints
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../api-reference/analysis/">
+            
+                <a href="../api-reference/analysis/">
+            
+                    
+                        <b>1.2.6.2.</b>
+                    
+                    Brand analysis and audits
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="../api-reference/leads-and-accounts/">
+            
+                <a href="../api-reference/leads-and-accounts/">
+            
+                    
+                        <b>1.2.6.3.</b>
+                    
+                    Leads, tenders and accounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="../api-reference/campaigns-and-results/">
+            
+                <a href="../api-reference/campaigns-and-results/">
+            
+                    
+                        <b>1.2.6.4.</b>
+                    
+                    Campaigns and results
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.5" data-path="../api-reference/content/">
+            
+                <a href="../api-reference/content/">
+            
+                    
+                        <b>1.2.6.5.</b>
+                    
+                    Studio and content
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="../api-reference/ai-and-platform/">
+            
+                <a href="../api-reference/ai-and-platform/">
+            
+                    
+                        <b>1.2.6.6.</b>
+                    
+                    AI and platform
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.7" data-path="../api-reference/shared-components/">
+            
+                <a href="../api-reference/shared-components/">
+            
+                    
+                        <b>1.2.6.7.</b>
+                    
+                    Shared components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.8" data-path="../api-reference/common-types/">
+            
+                <a href="../api-reference/common-types/">
+            
+                    
+                        <b>1.2.6.8.</b>
+                    
+                    Common types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.7.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../privacy/">
+            
+                <a href="../../privacy/">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    PULSE — Privacy Policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Troubleshooting</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+    
+                                <h1 id="troubleshooting">Troubleshooting</h1>
+<!--
+SPDX-FileCopyrightText: 2026 Runink
+SPDX-License-Identifier: LicenseRef-Runink-Proprietary
+-->
+<p>Find the message you see, then read the cause and the fix. Messages are quoted
+from the source; <code>...</code> marks a part that varies.</p>
+<h2 id="the-server-will-not-start">The server will not start</h2>
+<table>
+<thead>
+<tr>
+<th>Message</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>refusing to start: no session signing key configured (PULSE_JWT_SECRET unset)</code></td>
+<td><code>PULSE_JWT_SECRET</code> is unset</td>
+<td>Set it to a new random value. There is no default and none is generated.</td>
+</tr>
+<tr>
+<td><code>refusing to start: the pulse appfs root cannot be mounted: ...</code></td>
+<td>The sealed app root has no usable backend</td>
+<td>Check the object store settings, or <code>PULSE_APPFS_DIR</code> for a local root.</td>
+</tr>
+<tr>
+<td><code>Failed to initialize database: ...</code></td>
+<td>Usually <code>TIDDE_ENVELOPE_KEK</code> is missing; PULSE's store refuses to open without it</td>
+<td>Ask Runink to set the key.</td>
+</tr>
+<tr>
+<td><code>refusing to start in production: insecure configuration: ...</code></td>
+<td><code>PULSE_ENV=production</code> and a check failed</td>
+<td>Fix each listed problem. For the CORS problem, set <code>CORS_ALLOWED_ORIGINS</code> to pinned origins (no wildcard); the backend serves no web bundle, so there is no same-origin exemption.</td>
+</tr>
+<tr>
+<td><code>TLS misconfigured: set BOTH PULSE_TLS_CERT and PULSE_TLS_KEY (or neither)</code></td>
+<td>Only one of the two is set</td>
+<td>Set both, or neither.</td>
+</tr>
+<tr>
+<td><code>MESH_MTLS=true but mesh identity unavailable: ...</code></td>
+<td>No mesh identity could be set up</td>
+<td>Provide <code>MESH_ISSUER_URL</code> and <code>MESH_CA_CERT</code> (preferred), or the older <code>MESH_CA_CERT</code> and <code>MESH_CA_KEY</code>; or turn off <code>MESH_MTLS</code>.</td>
+</tr>
+<tr>
+<td>Server exits with no output, no log file</td>
+<td>Locally: <code>pkill -f 'pulse-server serve'</code> matches the shell running that command, so it kills your own session</td>
+<td>Stop the server by its PID instead.</td>
+</tr>
+<tr>
+<td><code>address already in use</code></td>
+<td>A previous server holds the port</td>
+<td>Stop it by PID, then restart.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="signing-in">Signing in</h2>
+<table>
+<thead>
+<tr>
+<th>Message</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>invalid credentials</code></td>
+<td>The break-glass admin's username or password is wrong, or no break-glass admin was seeded (people sign in with Google)</td>
+<td>Use the break-glass username, not an email. On a local server, start it with <code>PULSE_ADMIN_PASSWORD</code>.</td>
+</tr>
+<tr>
+<td><code>authorization token is not provided</code></td>
+<td>The call had no bearer token</td>
+<td>Send <code>authorization: Bearer &lt;accessToken&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>invalid token: ...</code></td>
+<td>The token expired, or its session was signed out</td>
+<td>Sign in again.</td>
+</tr>
+<tr>
+<td><code>a cookie session requires the x-pulse-csrf header and a trusted Origin</code></td>
+<td>A browser call authenticated by the session cookie arrived without the <code>x-pulse-csrf: 1</code> header, or from an origin this deployment does not trust</td>
+<td>For a browser front end, add its origin to <code>CORS_ALLOWED_ORIGINS</code> exactly; a wildcard is never accepted.</td>
+</tr>
+<tr>
+<td><code>token contains an invalid number of segments</code></td>
+<td>A script read <code>.token</code>; the field is <code>accessToken</code></td>
+<td>Read <code>accessToken</code>.</td>
+</tr>
+<tr>
+<td>Google sign-in: "not set up on this PULSE" (<code>/auth/google</code> answers <code>not_configured</code>)</td>
+<td>Google sign-in is off</td>
+<td>Set <code>GOOGLE_CLIENT_ID</code>.</td>
+</tr>
+<tr>
+<td>Google sign-in: "Nobody can sign in with Google on this PULSE yet" (<code>sso_closed</code>)</td>
+<td><code>AUTH_ALLOWED_EMAILS</code> is empty</td>
+<td>Add the allowed addresses.</td>
+</tr>
+<tr>
+<td>Google sign-in: "… is not on this PULSE's list of people allowed to sign in" (<code>not_allowed</code>)</td>
+<td>The email is not on the allowlist</td>
+<td>Add it to <code>AUTH_ALLOWED_EMAILS</code>.</td>
+</tr>
+<tr>
+<td>Google sign-in: "Google signed you in for a different app" (<code>wrong_client</code>)</td>
+<td>The ID token was issued to another OAuth client than <code>GOOGLE_CLIENT_ID</code></td>
+<td>Use the web client's ID in <code>GOOGLE_CLIENT_ID</code>; the Android app asks Google for a token for that same client.</td>
+</tr>
+<tr>
+<td>Android: "This copy of the app is not registered with Google yet"</td>
+<td>The Google project of <code>GOOGLE_CLIENT_ID</code> has no <strong>Android</strong> OAuth client for <code>org.runink.pulse</code> with the SHA-1 of the key the installed app is signed with</td>
+<td>Add one for each key the app is signed with.</td>
+</tr>
+<tr>
+<td><code>license expired or invalid</code></td>
+<td>A configured licence failed verification</td>
+<td>Install a valid licence.</td>
+</tr>
+<tr>
+<td>Log: <code>AUTHENTICATION DISABLED — every request will be rejected as Unauthenticated</code></td>
+<td>This deployment's session key is one PULSE refuses to sign or verify with, so no token can be accepted</td>
+<td>Replace <code>PULSE_JWT_SECRET</code> with a fresh value that has never been committed to a repository, and restart.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ai-features">AI features</h2>
+<table>
+<thead>
+<tr>
+<th>Message</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>inference server is not running</code> / <code>model service is not ready — the inference server is not running</code></td>
+<td>No inference server, or it is still loading</td>
+<td>Check <code>INFERENCE_REMOTE_URL</code> or the local model files. Watch <code>model_ready</code> on <code>/health</code>.</td>
+</tr>
+<tr>
+<td><code>the inference plane is at capacity and declined this request; nothing was generated — retry in a few minutes</code></td>
+<td>The server is busy</td>
+<td>Retry in a few minutes.</td>
+</tr>
+<tr>
+<td><code>the model returned no content for ...</code></td>
+<td>The model produced an empty response</td>
+<td>Retry. Check the inference server's log.</td>
+</tr>
+<tr>
+<td><code>still-image generation is not available: the image-generation tier was retired ...</code></td>
+<td>Still images and videos are not made from a prompt</td>
+<td>Make a document or a podcast, or make a short video from a piece's script (<a href="../user-guide/short-videos/">Short videos</a>).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="site-score-and-audit-fixes">Site score and audit fixes</h2>
+<table>
+<thead>
+<tr>
+<th>Message</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>could not read ... — a reachable website with readable content is required to run the diagnostic</code></td>
+<td>PULSE could not load the site</td>
+<td>Check the URL is public and returns readable HTML.</td>
+</tr>
+<tr>
+<td><code>url is required</code> / <code>repo_path is required</code></td>
+<td>A field is missing in <code>ApplyAuditActions</code></td>
+<td>Fill it in.</td>
+</tr>
+<tr>
+<td><code>apply modes are disabled on this server; set PULSE_APPLY_ENABLED=true (exactly, lowercase) and PULSE_AUDIT_APPLY=true to allow write/commit/pr</code></td>
+<td>The kill switch or <code>PULSE_AUDIT_APPLY</code> is off</td>
+<td>Use <code>plan</code>, or have an admin arm both.</td>
+</tr>
+<tr>
+<td><code>apply modes require an administrator</code></td>
+<td>Your role is not admin</td>
+<td>Ask an admin to apply the fixes.</td>
+</tr>
+<tr>
+<td><code>repo_path is not an allowed repository on this server</code></td>
+<td>The path is outside <code>PULSE_APPLY_ROOT</code>, missing, or escapes it</td>
+<td>Use a checkout inside the root.</td>
+</tr>
+<tr>
+<td><code>audit apply has no repository root on this server; an administrator must set PULSE_APPLY_ROOT</code></td>
+<td><code>PULSE_APPLY_ROOT</code> is unset</td>
+<td>Set it to the directory holding site checkouts.</td>
+</tr>
+<tr>
+<td><code>github integration is missing a target owner/repo — ...</code></td>
+<td><code>pr</code> mode without a target</td>
+<td>Set <code>owner</code> and <code>repo</code> on the GitHub connection.</td>
+</tr>
+<tr>
+<td><code>scoring config: ...</code></td>
+<td><code>PULSE_SCORING_CONFIG</code> is unreadable or invalid, or the profile is unknown</td>
+<td>Fix the file or the profile name.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-one-line-audit">The one-line audit</h3>
+<table>
+<thead>
+<tr>
+<th>On the audit card</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>"…" is not a domain (expected something like example.com)</code></td>
+<td>You gave an IP address, <code>localhost</code>, or something that is not a host name</td>
+<td>Type a public domain, for example <code>Audit example.com</code>.</td>
+</tr>
+<tr>
+<td>Nothing happens; the assistant answers in chat instead</td>
+<td>The line has a question mark, or no verb it recognizes</td>
+<td>Write <code>Audit example.com</code>, with no <code>?</code>. See <a href="../user-guide/audit-a-domain/#what-you-type">Audit a domain</a>.</td>
+</tr>
+<tr>
+<td><strong>Waiting for the model (position N in the queue)</strong></td>
+<td>Another audit's model calls are ahead of yours</td>
+<td>Nothing. Your steps run in turn.</td>
+</tr>
+<tr>
+<td><strong>Publishing schedule</strong> is <code>skipped</code>: <code>no draft to put the plan's times on</code></td>
+<td>The plan had no draft to carry its dates</td>
+<td>Expected. The tasks are on the <strong>90-day plan</strong>; the audit is not partial because of it.</td>
+</tr>
+<tr>
+<td>A post in the <strong>Scheduled</strong> column of <strong>Campaigns</strong> says <strong>missed</strong></td>
+<td>Its time passed while the piece was waiting for approval</td>
+<td>Reschedule it, or remove it. A missed post is never sent late.</td>
+</tr>
+<tr>
+<td>A step is <code>skipped</code> with <code>blocked: …</code></td>
+<td>A step it needs did not finish, for example <code>blocked: the site could not be read (…)</code></td>
+<td>Fix the first failed step, then <strong>Resume the audit</strong>.</td>
+</tr>
+<tr>
+<td>A phase reads <code>… — not completed within the 3-minute budget</code></td>
+<td>The diagnosis has a time limit. A phase that did not finish inside it is reported as not done rather than left to look finished</td>
+<td>Expected under load. Run it again when the inference server is quieter.</td>
+</tr>
+<tr>
+<td><code>diagnosis: …</code> or <code>the analysis was written but no plan was produced</code></td>
+<td>The model returned nothing usable, or the plan step failed</td>
+<td><strong>Resume the audit</strong>. Steps already done are not repeated.</td>
+</tr>
+<tr>
+<td><code>every lead discovery search failed (…) — the web was not reached</code></td>
+<td>No lead search answered</td>
+<td>Check the server's web access, then resume.</td>
+</tr>
+<tr>
+<td><code>this domain was audited at … UTC (less than 24h ago) — returning that run</code></td>
+<td>A finished audit of the domain is less than a day old</td>
+<td>Use <strong>Run it again</strong> to force a fresh one.</td>
+</tr>
+<tr>
+<td><code>PermissionDenied</code> when you start an audit</td>
+<td>Your role is viewer</td>
+<td>Ask an admin to make you an editor.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="leads-and-connections">Leads and connections</h2>
+<table>
+<thead>
+<tr>
+<th>Message</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>HubSpot isn't connected yet — configure it on the Integrations page first</code></td>
+<td>No HubSpot connection</td>
+<td>Connect it on the <strong>HubSpot</strong> card in <strong>Settings → Integrations</strong>.</td>
+</tr>
+<tr>
+<td><code>HubSpot integration has no access token configured</code></td>
+<td>The connection has no token</td>
+<td>Rotate the credential.</td>
+</tr>
+<tr>
+<td><code>HubSpot sync failed: ...</code></td>
+<td>HubSpot rejected the call</td>
+<td>Check the token's scopes.</td>
+</tr>
+<tr>
+<td><code>unsupported lead platform: ... (only hubspot is supported today)</code></td>
+<td><code>SyncLeads</code> with another platform</td>
+<td>Use <code>hubspot</code>.</td>
+</tr>
+<tr>
+<td><code>a niche is required to prospect for leads</code></td>
+<td><code>ScrapeLeads</code> without a niche</td>
+<td>Provide one.</td>
+</tr>
+<tr>
+<td><code>a lead needs at least a name, email, or company</code></td>
+<td>Empty <code>CreateLead</code></td>
+<td>Fill one in.</td>
+</tr>
+<tr>
+<td>`invalid pipeline stage "..." (want new\</td>
+<td>contacted\</td>
+<td>qualified\</td>
+<td>won\</td>
+<td>lost)`</td>
+<td>Unknown stage</td>
+<td>Use one of the five.</td>
+</tr>
+<tr>
+<td><code>outbound calling is disabled on this server; an administrator must set PULSE_OUTBOUND_CALLS=true</code></td>
+<td>Calls are not armed</td>
+<td>Have an admin set it.</td>
+</tr>
+<tr>
+<td><code>outbound calls require an editor or administrator</code></td>
+<td>Your role is viewer</td>
+<td>Ask an admin to change your role.</td>
+</tr>
+<tr>
+<td>Scheduled post <code>withheld</code>: <code>... is owner-gated: user "&lt;user-id&gt;" is not in PULSE_PUBLISHER_USER_IDS</code></td>
+<td>The channel publishes as the deployment and the content's owner is not allowlisted</td>
+<td>Add the owner's user id, or leave it withheld.</td>
+</tr>
+<tr>
+<td><code>/podcast/feed.xml</code> returns 404</td>
+<td>Both <code>podcast</code> and <code>audiobook</code> are disarmed</td>
+<td>Arm one, if the feed should exist.</td>
+</tr>
+<tr>
+<td><code>lead has no phone number</code></td>
+<td>Nothing to dial</td>
+<td>Add a phone number.</td>
+</tr>
+<tr>
+<td><code>Google Analytics isn't connected yet — configure it on the Integrations page first</code></td>
+<td>No GA4 connection</td>
+<td>Connect it on the <strong>Google Analytics</strong> card in <strong>Settings → Integrations</strong>.</td>
+</tr>
+<tr>
+<td><code>no GA4 property ID configured — set it when connecting Google Analytics</code></td>
+<td>The connection lacks a property ID</td>
+<td>Reconnect with the property ID.</td>
+</tr>
+<tr>
+<td>A forecast shows history only (<code>too_few_days</code>)</td>
+<td>Fewer than four days of Google Analytics data are synced</td>
+<td>Run <code>SyncGaData</code> with a longer lookback.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sign-in-connections-and-the-website-repository-administrators">Sign-in connections and the website repository (administrators)</h2>
+<table>
+<thead>
+<tr>
+<th>Message</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Instagram sign-in isn't set up on this server yet: an administrator must set META_APP_ID and META_APP_SECRET</code> (also <code>YouTube … GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET</code>, <code>LinkedIn … LINKEDIN_CLIENT_ID and LINKEDIN_CLIENT_SECRET</code>)</td>
+<td>The platform's app client is not configured</td>
+<td>Set both keys; see <a href="../admin-guide/setup/meta/">Meta</a>, <a href="../admin-guide/setup/google/">Google</a>, <a href="../admin-guide/setup/linkedin/">LinkedIn</a>. Until then the card accepts a pasted token.</td>
+</tr>
+<tr>
+<td><code>… sign-in isn't set up on this server yet: an administrator must set PULSE_PUBLIC_BASE_URL to the https address the sign-in returns to</code></td>
+<td><code>PULSE_PUBLIC_BASE_URL</code> is unset or not https</td>
+<td>Set the https address; see <a href="../admin-guide/setup/public-address/">Public address and redirects</a>.</td>
+</tr>
+<tr>
+<td><code>Company pages aren't set up on this server yet: …</code></td>
+<td><code>LINKEDIN_COMPANY_PAGES</code> is off</td>
+<td>Turn it on only after LinkedIn approved the Community Management API.</td>
+</tr>
+<tr>
+<td>The platform says the redirect URI does not match</td>
+<td>The callback is not registered exactly in the developer console</td>
+<td>Register <code>&lt;PULSE_PUBLIC_BASE_URL&gt;/oauth/social/callback</code> (or <code>/oauth/search-console/callback</code>, <code>/oauth/mail/callback</code>), https, no trailing slash.</td>
+</tr>
+<tr>
+<td>Sign-in completes at the platform but the card stays not connected</td>
+<td>The public edge did not send the callback to the backend, or the connect link was older than ten minutes</td>
+<td>Route the <code>/oauth/…/callback</code> paths to the backend; start the connection again.</td>
+</tr>
+<tr>
+<td><code>your Search Console properties could not be read: …</code></td>
+<td>The Google Search Console API is not enabled in the client's project, or the account has no property</td>
+<td>Enable the API; add the site to Search Console.</td>
+</tr>
+<tr>
+<td><code>GitHub rejected the website repository token; reconnect it in Settings → Integrations</code></td>
+<td>The token expired or was revoked</td>
+<td>Create a new fine-grained token and reconnect.</td>
+</tr>
+<tr>
+<td><code>GitHub refused to …: the token is missing a permission (…)</code></td>
+<td>The token lacks Contents or Pull requests (read and write), or does not cover the repository</td>
+<td>Regenerate it with both permissions on that repository.</td>
+</tr>
+<tr>
+<td><code>apply modes are disabled on this server; …</code> on <strong>Propose as pull request</strong></td>
+<td><code>PULSE_APPLY_ENABLED</code> or <code>PULSE_AUDIT_APPLY</code> is off</td>
+<td>Arm both, if proposals are wanted.</td>
+</tr>
+<tr>
+<td><code>No video was made: video is not available on this server.</code></td>
+<td>The server's video tool is missing, or did not pass its check when the server started</td>
+<td>Look at the <code>video</code> part of <code>/health</code>, and use the backend image.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="publishing">Publishing</h2>
+<table>
+<thead>
+<tr>
+<th>Message</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>website publishing is disabled: ...</code></td>
+<td>The blog channel is not armed</td>
+<td>See <a href="../admin-guide/publishing-controls/">Publishing controls</a>. The message names the layer.</td>
+</tr>
+<tr>
+<td><code>PULSE_SITE_REPO is not set — refusing to publish; set it to YOUR site repo as owner/repo</code></td>
+<td>No target repository</td>
+<td>Set <code>PULSE_SITE_REPO</code>.</td>
+</tr>
+<tr>
+<td><code>no github integration/token configured for user ...</code></td>
+<td>The content owner has no GitHub token</td>
+<td>Paste one on the <strong>Website</strong> card in <strong>Settings → Integrations</strong>.</td>
+</tr>
+<tr>
+<td><code>no publishing integration for channel ... yet</code></td>
+<td>The post was scheduled to a channel PULSE drafts for but does not post to, for example Facebook or X</td>
+<td><strong>Download</strong> it and post it yourself. See <a href="../user-guide/studio/#publishing">Publishing</a>.</td>
+</tr>
+<tr>
+<td>A scheduled post shows <code>withheld</code></td>
+<td>Its channel was disarmed when it came due</td>
+<td>Arm the channel, then schedule the content again.</td>
+</tr>
+<tr>
+<td>LinkedIn post <code>withheld</code>: <code>LinkedIn publishing is not configured: … (drafts-only: the content stays approved for manual posting)</code></td>
+<td>No LinkedIn token or author is configured</td>
+<td>Expected on a drafts-only deployment. <strong>Download</strong> it from its card and post it by hand.</td>
+</tr>
+<tr>
+<td>Startup warning that <code>PULSE_APPLY_ENABLED</code> is ambiguous</td>
+<td>The value is not exactly <code>true</code></td>
+<td>Write <code>true</code>, lowercase.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="voice-billing-media">Voice, billing, media</h2>
+<table>
+<thead>
+<tr>
+<th>Message</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>voice calling is not configured</code> (HTTP 503)</td>
+<td>Voice calling is not set up on this deployment</td>
+<td>Ask Runink to set it up.</td>
+</tr>
+<tr>
+<td><code>speech synthesis is not configured</code></td>
+<td>The platform's speech service is not available on this deployment</td>
+<td>Ask Runink to set it up. See <a href="../admin-guide/setup/voice/">Voice</a>.</td>
+</tr>
+<tr>
+<td><code>media storage is not available: ...</code> / <code>media unavailable</code></td>
+<td>The sealed media store is not mounted</td>
+<td>Check the app root's backend.</td>
+</tr>
+<tr>
+<td>Log: <code>Site Audit Engine: NOT started — no target site; ...</code></td>
+<td>No daily audit target</td>
+<td>Set <code>PULSE_SITE_AUDIT_URL</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-app-looks-empty">The app looks empty</h2>
+<p>PULSE never fills a gap with an estimate. A figure it could not read is drawn
+as <code>—</code>, and a page with nothing behind it reads as empty rather than as a row
+of zeros. An empty page is usually a missing input, not a fault.</p>
+<ul>
+<li><strong>Brand Analysis says "No check-up yet", and its cards say "Not checked
+yet".</strong> Choose <strong>New site audit</strong>. See <a href="../user-guide/getting-started/">Getting started</a>.</li>
+<li><strong>Results read "Not measured".</strong> Nothing measured the period yet. Connect
+Google Analytics, Google Ads or Search Console in <strong>Settings →
+Integrations</strong>. The work PULSE did is still counted, under <strong>What PULSE
+did</strong>. See <a href="../user-guide/results-and-reports/">Results and reports</a>.</li>
+<li><strong>"Results of your posts: not measured yet".</strong> No platform reported results
+for your posts this week: connect Instagram, LinkedIn or YouTube, or wait
+for the first results after a post goes out.</li>
+<li><strong>Campaigns has no drafts, and Leads has no tasks.</strong> Run a check-up. A
+finished check-up fills them.</li>
+<li><strong>A card shows <code>—</code> where you expected a number.</strong> PULSE could not read that
+figure — usually a connection that is not set up, or a run that has not
+happened yet. Nothing is wrong with the card. See
+<a href="../concepts/measured-and-not-measured/">Measured and not measured</a>.</li>
+</ul>
+<h2 id="connecting-accounts-and-planning">Connecting accounts and planning</h2>
+<table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>… sign-in isn't set up on this server</strong>, with a list of settings</td>
+<td>Your administrator has not registered PULSE with that platform</td>
+<td>Paste a token instead, or ask your administrator to set what the card lists. See <a href="../admin-guide/setup/connections/">Connections</a>.</td>
+</tr>
+<tr>
+<td><strong>The sign-in has ended. Reconnect … to keep publishing.</strong></td>
+<td>The platform ended the sign-in, or renewing it failed</td>
+<td><strong>Reconnect</strong> on the card.</td>
+</tr>
+<tr>
+<td><strong>Missing permission: …. Reconnect and allow it.</strong></td>
+<td>You declined a permission when signing in</td>
+<td><strong>Reconnect</strong> and allow it.</td>
+</tr>
+<tr>
+<td><strong>The sign-in page could not be opened</strong></td>
+<td>The browser blocked the pop-up</td>
+<td>Allow pop-ups for PULSE and try again.</td>
+</tr>
+<tr>
+<td><strong>This Google account has no verified site in Search Console</strong></td>
+<td>The Google account you signed in with owns no Search Console property</td>
+<td>Add your site at search.google.com/search-console, then reconnect.</td>
+</tr>
+<tr>
+<td>Website repository: <strong>Missing permission</strong>, <strong>Token rejected</strong> or <strong>Base branch not found</strong></td>
+<td>The fine-grained token lacks Contents or Pull requests (Read and write), has expired, or the branch name is wrong</td>
+<td>Fix the token or the branch, then <strong>Check again</strong>. See <a href="../user-guide/integrations/#website-repository">Website repository</a>.</td>
+</tr>
+<tr>
+<td><code>connect your website repository in Settings → Integrations first</code></td>
+<td><strong>Propose as pull request</strong> with no repository connected</td>
+<td>Connect it.</td>
+</tr>
+<tr>
+<td><code>PULSE does not know who you talk to yet: run a site audit (it asks who buys from you) or add leads, then plan again</code></td>
+<td>A campaign plan needs at least one <a href="../concepts/personas/">persona</a></td>
+<td>Run a check-up, or add leads, then plan again.</td>
+</tr>
+<tr>
+<td><strong>This can't move from … to …</strong> / <strong>A post moves to Sent only when it goes out.</strong></td>
+<td>A move the board does not allow</td>
+<td>See <a href="../user-guide/campaigns/#approve-and-schedule">Approve and schedule</a>.</td>
+</tr>
+<tr>
+<td><strong>Not connected, so PULSE will not post it</strong></td>
+<td>The piece's channel has no connected account</td>
+<td><strong>Download</strong> it and post it yourself, or connect the channel.</td>
+</tr>
+</tbody>
+</table>
+
+                                
+    
+    <footer class="runink-footer" role="contentinfo">
+        <img class="runink-brand" src="../../_brand/logo.png" alt="">
+        
+    </footer>
+    
+
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../api-reference/common-types/" class="navigation navigation-prev " aria-label="Previous page: Common types">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../privacy/" class="navigation navigation-next " aria-label="Next page: PULSE — Privacy Policy">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    
+    <script type="application/json" id="honkit-page-context">{"page":{"title":"Troubleshooting","level":"1.2.7","depth":2,"next":{"title":"PULSE — Privacy Policy","level":"1.3","depth":1,"path":"privacy/README.md","ref":"privacy/README.md","articles":[]},"previous":{"title":"Common types","level":"1.2.6.8","depth":3,"path":"docs/api-reference/common-types/README.md","ref":"docs/api-reference/common-types/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","runink-copy"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"lunr":{"maxIndexSize":100000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"runink-copy":{},"highlight":{},"search":{}},"theme":"default","author":"Runink","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"logo":"_brand/logo.png","ogImage":"_brand/og.png","siteURL":"https://docs.runink.org/pulse/"},"title":"PULSE Documentation","language":"en","gitbook":"7.0.1","description":"Runink PULSE: Prescriptive Unified Lead & Social Engine is a marketing agency in an app: it checks how your business looks online, plans campaigns, writes and makes the posts, and publishes them only after you approve, on models that run on Runink's own platform."},"file":{"path":"docs/troubleshooting/README.md","mtime":"","type":"markdown"},"gitbook":{"version":"7.0.1","time":""},"basePath":"../..","book":{"language":""}}</script>
+</div>
+
+        
+    <noscript>
+        <link rel="stylesheet" href="../../gitbook/noscript.css">
+    </noscript>
+    
+    <script src="../../gitbook/boot.js"></script>
+    
+    <script src="../../gitbook/gitbook.js" defer></script>
+    <script src="../../gitbook/theme.js" defer></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-runink-copy/copy.js" defer></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js" defer></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js" defer></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-lunr/lunr.min.js" defer></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-lunr/search-lunr.js" defer></script>
+        
+    
+
+    </body>
+</html>
+

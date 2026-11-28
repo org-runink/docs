@@ -1,0 +1,21 @@
+{
+  "type": "kafka",
+  "protocol": "kafka",
+  "recordings": [
+    "streams/kafka/records.jsonl",
+    "streams/kafka/schemas/quillmere.order.created.v1-value.avsc",
+    "streams/kafka/schemas/quillmere.order.po-duplicates.v1-value.avsc",
+    "streams/kafka/schemas/quillmere.shipment.status.v1-value.avsc",
+    "streams/kafka/schemas/quillmere.shipment.latest.v1-value.avsc",
+    "streams/kafka/schemas/quillmere.shipment.export.v0-value.avsc",
+    "streams/kafka/schemas/quillmere.reefer.alerts.v1-value.avsc",
+    "streams/kafka/schemas/quillmere.coldchain.excursions.v1-value.avsc",
+    "streams/kafka/schemas/quillmere.freight.invoice.posted.v1-value.avsc",
+    "streams/kafka/schemas/quillmere.freight.rate-variance.v1-value.avsc"
+  ],
+  "messages": 200,
+  "first_at": "2026-07-11T21:00:00Z",
+  "last_at": "2026-09-23T19:00:00Z",
+  "replay": "go run ./cmd/synth replay kafka --out DIR # one kcat file per topic; --registry also serves the Schema Registry and ksqlDB answers on http://localhost:8081",
+  "notes": "3 partitions per topic; key = the record's business ID (a JSON key for the JSON_SR table); value schemas under TopicNameStrategy (<topic>-value) except the freight team's TopicRecordNameStrategy subject. schema-registry/ and ksqldb/ hold the Schema Registry's and ksqlDB's REST answers; `replay kafka --registry` serves them"
+}

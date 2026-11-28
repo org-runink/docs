@@ -1,0 +1,235 @@
+[
+  {
+    "@type": "source_descriptions",
+    "sourceDescriptions": [
+      {
+        "name": "ORDER_PO_DUPLICATES",
+        "windowType": null,
+        "readQueries": [],
+        "writeQueries": [
+          {
+            "sinks": [
+              "ORDER_PO_DUPLICATES"
+            ],
+            "sinkKafkaTopics": [
+              "quillmere.order.po-duplicates.v1"
+            ],
+            "id": "CTAS_ORDER_PO_DUPLICATES_3",
+            "statusCount": {
+              "RUNNING": 1
+            },
+            "queryType": "PERSISTENT",
+            "state": "RUNNING"
+          }
+        ],
+        "fields": [
+          {
+            "name": "customer_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            },
+            "type": "KEY"
+          },
+          {
+            "name": "customer_po",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            },
+            "type": "KEY"
+          },
+          {
+            "name": "order_count",
+            "schema": {
+              "type": "INTEGER",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "order_ids",
+            "schema": {
+              "type": "ARRAY",
+              "fields": null,
+              "memberSchema": {
+                "type": "STRING",
+                "fields": null,
+                "memberSchema": null
+              }
+            }
+          }
+        ],
+        "type": "TABLE",
+        "timestamp": "",
+        "statistics": "messages-per-sec: 0.000000 total-messages: 1",
+        "errorStats": "",
+        "extended": true,
+        "keyFormat": "JSON_SR",
+        "valueFormat": "AVRO",
+        "topic": "quillmere.order.po-duplicates.v1",
+        "partitions": 3,
+        "replication": 3
+      },
+      {
+        "name": "SHIPMENT_LATEST",
+        "windowType": null,
+        "readQueries": [],
+        "writeQueries": [
+          {
+            "sinks": [
+              "SHIPMENT_LATEST"
+            ],
+            "sinkKafkaTopics": [
+              "quillmere.shipment.latest.v1"
+            ],
+            "id": "CTAS_SHIPMENT_LATEST_5",
+            "statusCount": {
+              "RUNNING": 1
+            },
+            "queryType": "PERSISTENT",
+            "state": "RUNNING"
+          }
+        ],
+        "fields": [
+          {
+            "name": "shipment_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            },
+            "type": "KEY"
+          },
+          {
+            "name": "order_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "status",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "at",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "dock_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "trailer_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          }
+        ],
+        "type": "TABLE",
+        "timestamp": "",
+        "statistics": "messages-per-sec: 0.000011 total-messages: 69",
+        "errorStats": "",
+        "extended": true,
+        "keyFormat": "KAFKA",
+        "valueFormat": "AVRO",
+        "topic": "quillmere.shipment.latest.v1",
+        "partitions": 3,
+        "replication": 3
+      },
+      {
+        "name": "REEFER_EXCURSIONS",
+        "windowType": null,
+        "readQueries": [],
+        "writeQueries": [
+          {
+            "sinks": [
+              "REEFER_EXCURSIONS"
+            ],
+            "sinkKafkaTopics": [
+              "quillmere.coldchain.excursions.v1"
+            ],
+            "id": "CTAS_REEFER_EXCURSIONS_7",
+            "statusCount": {
+              "RUNNING": 1
+            },
+            "queryType": "PERSISTENT",
+            "state": "RUNNING"
+          }
+        ],
+        "fields": [
+          {
+            "name": "shipment_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            },
+            "type": "KEY"
+          },
+          {
+            "name": "trailer_id",
+            "schema": {
+              "type": "STRING",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "breach_count",
+            "schema": {
+              "type": "INTEGER",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "peak_celsius",
+            "schema": {
+              "type": "DOUBLE",
+              "fields": null,
+              "memberSchema": null
+            }
+          },
+          {
+            "name": "limit_celsius",
+            "schema": {
+              "type": "DOUBLE",
+              "fields": null,
+              "memberSchema": null
+            }
+          }
+        ],
+        "type": "TABLE",
+        "timestamp": "",
+        "statistics": "messages-per-sec: 0.000001 total-messages: 4",
+        "errorStats": "",
+        "extended": true,
+        "keyFormat": "KAFKA",
+        "valueFormat": "AVRO",
+        "topic": "quillmere.coldchain.excursions.v1",
+        "partitions": 3,
+        "replication": 3
+      }
+    ],
+    "warnings": []
+  }
+]

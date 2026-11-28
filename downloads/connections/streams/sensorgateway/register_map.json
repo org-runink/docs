@@ -1,0 +1,9 @@
+{
+  "function": 3,
+  "scale": "raw / 10 = degrees C",
+  "registers": {
+    "100": "dock 01 staging",
+    "101": "dock 02 staging",
+    "102": "dock 03 staging"
+  }
+}

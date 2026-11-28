@@ -1,0 +1,10 @@
+/* Branding mechanism proof: two colours only, taken from the current site. */
+:root { --chassis: #151312; --mint: #3DDC97; }
+.book, .book .book-body, .book .book-body .body-inner, .book .book-body .page-wrapper .page-inner section.normal,
+.book.color-theme-2 .book-body, .book.color-theme-2 .book-body .body-inner { background: var(--chassis); }
+.book .book-summary { background: var(--chassis); }
+.book .book-body .page-wrapper .page-inner section.normal a { color: var(--mint); }
+.book .book-summary ul.summary li.active > a { color: var(--mint); }
+.book .book-header h1 a, .book .book-header h1 { color: var(--mint); }
+.runink-footer { padding: 1rem; font-size: 0.8rem; color: var(--mint); border-top: 1px solid var(--mint); }
+.runink-brand { height: 28px; vertical-align: middle; }

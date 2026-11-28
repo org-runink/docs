@@ -1,0 +1,853 @@
+{
+  "type": "kafka",
+  "fixture_kind": "stream",
+  "root": "streams/kafka",
+  "discovery_today": "real: topic list via Metadata + value schemas via Schema Registry; records are not read during discovery. The registry read (store estate/connect) adds every subject's versions, compatibility and namespace, and ksqlDB's streams, tables, persistent queries and runtime statistics; it reads no record and no query text",
+  "credential_placeholder": "change-me",
+  "replay": "go run ./cmd/synth replay kafka --out DIR # one kcat file per topic; --registry also serves the Schema Registry and ksqlDB answers on http://localhost:8081",
+  "connections": [
+    {
+      "name": "Quillmere event bus",
+      "settings": {
+        "bootstrap_servers": "kafka.quillmere.invalid:9092",
+        "topics": "quillmere.",
+        "client_id": "face-discovery",
+        "security_protocol": "SASL_SSL",
+        "sasl_mechanism": "SCRAM-SHA-512",
+        "username": "face-reader",
+        "schema_registry_url": "https://schema-registry.quillmere.invalid",
+        "schema_registry_username": "face-reader"
+      },
+      "extra": {
+        "ksqldb_url": "https://ksqldb.quillmere.invalid:8088"
+      },
+      "credentials": [
+        "password",
+        "schema_registry_password"
+      ]
+    }
+  ],
+  "datasets": [
+    {
+      "name": "quillmere.order.created.v1",
+      "kind": "topic",
+      "domain": "orders",
+      "fields": [
+        {
+          "name": "order_id",
+          "type": "string",
+          "joins": "order"
+        },
+        {
+          "name": "customer_id",
+          "type": "string",
+          "joins": "customer"
+        },
+        {
+          "name": "customer_po",
+          "type": "string",
+          "joins": "customer_po"
+        },
+        {
+          "name": "line_count",
+          "type": "int"
+        },
+        {
+          "name": "total",
+          "type": "decimal"
+        },
+        {
+          "name": "at",
+          "type": "timestamp"
+        }
+      ],
+      "paths": [
+        "streams/kafka/records.jsonl",
+        "streams/kafka/schemas/quillmere.order.created.v1-value.avsc"
+      ],
+      "row_count": 24
+    },
+    {
+      "name": "quillmere.order.po-duplicates.v1",
+      "kind": "topic",
+      "domain": "orders",
+      "fields": [
+        {
+          "name": "customer_id",
+          "type": "string",
+          "joins": "customer"
+        },
+        {
+          "name": "customer_po",
+          "type": "string",
+          "joins": "customer_po"
+        },
+        {
+          "name": "order_count",
+          "type": "int"
+        },
+        {
+          "name": "order_ids",
+          "type": "array"
+        }
+      ],
+      "paths": [
+        "streams/kafka/records.jsonl",
+        "streams/kafka/schemas/quillmere.order.po-duplicates.v1-value.avsc"
+      ],
+      "row_count": 1
+    },
+    {
+      "name": "quillmere.shipment.status.v1",
+      "kind": "topic",
+      "domain": "shipments",
+      "fields": [
+        {
+          "name": "shipment_id",
+          "type": "string",
+          "joins": "shipment"
+        },
+        {
+          "name": "order_id",
+          "type": "string",
+          "joins": "order"
+        },
+        {
+          "name": "status",
+          "type": "string"
+        },
+        {
+          "name": "at",
+          "type": "timestamp"
+        },
+        {
+          "name": "dock_id",
+          "type": "string",
+          "joins": "dock"
+        },
+        {
+          "name": "trailer_id",
+          "type": "string",
+          "joins": "trailer"
+        }
+      ],
+      "paths": [
+        "streams/kafka/records.jsonl",
+        "streams/kafka/schemas/quillmere.shipment.status.v1-value.avsc"
+      ],
+      "row_count": 69
+    },
+    {
+      "name": "quillmere.shipment.latest.v1",
+      "kind": "topic",
+      "domain": "shipments",
+      "fields": [
+        {
+          "name": "shipment_id",
+          "type": "string",
+          "joins": "shipment"
+        },
+        {
+          "name": "order_id",
+          "type": "string",
+          "joins": "order"
+        },
+        {
+          "name": "status",
+          "type": "string"
+        },
+        {
+          "name": "at",
+          "type": "timestamp"
+        },
+        {
+          "name": "dock_id",
+          "type": "string",
+          "joins": "dock"
+        },
+        {
+          "name": "trailer_id",
+          "type": "string",
+          "joins": "trailer"
+        }
+      ],
+      "paths": [
+        "streams/kafka/records.jsonl",
+        "streams/kafka/schemas/quillmere.shipment.latest.v1-value.avsc"
+      ],
+      "row_count": 69
+    },
+    {
+      "name": "quillmere.shipment.export.v0",
+      "kind": "topic",
+      "domain": "shipments",
+      "fields": [
+        {
+          "name": "shipment_id",
+          "type": "string",
+          "joins": "shipment"
+        },
+        {
+          "name": "order_id",
+          "type": "string",
+          "joins": "order"
+        },
+        {
+          "name": "status",
+          "type": "string"
+        },
+        {
+          "name": "dock_id",
+          "type": "string",
+          "joins": "dock"
+        },
+        {
+          "name": "trailer_id",
+          "type": "string",
+          "joins": "trailer"
+        },
+        {
+          "name": "exported_at",
+          "type": "timestamp"
+        }
+      ],
+      "paths": [
+        "streams/kafka/records.jsonl",
+        "streams/kafka/schemas/quillmere.shipment.export.v0-value.avsc"
+      ],
+      "row_count": 4
+    },
+    {
+      "name": "quillmere.reefer.alerts.v1",
+      "kind": "topic",
+      "domain": "cold_chain",
+      "fields": [
+        {
+          "name": "alert_id",
+          "type": "string"
+        },
+        {
+          "name": "trailer_id",
+          "type": "string",
+          "joins": "trailer"
+        },
+        {
+          "name": "shipment_id",
+          "type": "string",
+          "joins": "shipment"
+        },
+        {
+          "name": "device_id",
+          "type": "string",
+          "joins": "device"
+        },
+        {
+          "name": "temp_c",
+          "type": "decimal"
+        },
+        {
+          "name": "threshold_c",
+          "type": "decimal"
+        },
+        {
+          "name": "at",
+          "type": "timestamp"
+        }
+      ],
+      "paths": [
+        "streams/kafka/records.jsonl",
+        "streams/kafka/schemas/quillmere.reefer.alerts.v1-value.avsc"
+      ],
+      "row_count": 4
+    },
+    {
+      "name": "quillmere.coldchain.excursions.v1",
+      "kind": "topic",
+      "domain": "cold_chain",
+      "fields": [
+        {
+          "name": "shipment_id",
+          "type": "string",
+          "joins": "shipment"
+        },
+        {
+          "name": "trailer_id",
+          "type": "string",
+          "joins": "trailer"
+        },
+        {
+          "name": "breach_count",
+          "type": "int"
+        },
+        {
+          "name": "peak_celsius",
+          "type": "decimal"
+        },
+        {
+          "name": "limit_celsius",
+          "type": "decimal"
+        }
+      ],
+      "paths": [
+        "streams/kafka/records.jsonl",
+        "streams/kafka/schemas/quillmere.coldchain.excursions.v1-value.avsc"
+      ],
+      "row_count": 4
+    },
+    {
+      "name": "quillmere.freight.invoice.posted.v1",
+      "kind": "topic",
+      "domain": "freight_audit",
+      "fields": [
+        {
+          "name": "invoice_id",
+          "type": "string",
+          "joins": "invoice"
+        },
+        {
+          "name": "shipment_id",
+          "type": "string",
+          "joins": "shipment"
+        },
+        {
+          "name": "carrier_id",
+          "type": "string",
+          "joins": "carrier"
+        },
+        {
+          "name": "miles",
+          "type": "decimal"
+        },
+        {
+          "name": "rate_per_mile",
+          "type": "decimal"
+        },
+        {
+          "name": "contracted_rate_per_mile",
+          "type": "decimal",
+          "nullable": true
+        },
+        {
+          "name": "fuel",
+          "type": "decimal"
+        },
+        {
+          "name": "billed",
+          "type": "decimal"
+        },
+        {
+          "name": "at",
+          "type": "timestamp"
+        }
+      ],
+      "paths": [
+        "streams/kafka/records.jsonl",
+        "streams/kafka/schemas/quillmere.freight.invoice.posted.v1-value.avsc"
+      ],
+      "row_count": 24
+    },
+    {
+      "name": "quillmere.freight.rate-variance.v1",
+      "kind": "topic",
+      "domain": "freight_audit",
+      "fields": [
+        {
+          "name": "invoice_id",
+          "type": "string",
+          "joins": "invoice"
+        },
+        {
+          "name": "shipment_id",
+          "type": "string",
+          "joins": "shipment"
+        },
+        {
+          "name": "carrier_id",
+          "type": "string",
+          "joins": "carrier"
+        },
+        {
+          "name": "rate_per_mile",
+          "type": "decimal"
+        },
+        {
+          "name": "contracted_rate_per_mile",
+          "type": "decimal"
+        },
+        {
+          "name": "variance_pct",
+          "type": "decimal"
+        },
+        {
+          "name": "at",
+          "type": "timestamp"
+        }
+      ],
+      "paths": [
+        "streams/kafka/records.jsonl",
+        "streams/kafka/schemas/quillmere.freight.rate-variance.v1-value.avsc"
+      ],
+      "row_count": 1
+    }
+  ],
+  "registry": {
+    "schema_registry": {
+      "url_setting": "schema_registry_url",
+      "global_compatibility": "BACKWARD",
+      "subjects": [
+        {
+          "subject": "quillmere.coldchain.excursions.v1-value",
+          "topic": "quillmere.coldchain.excursions.v1",
+          "role": "value",
+          "strategy": "TopicNameStrategy",
+          "schema_type": "AVRO",
+          "versions": [
+            1
+          ],
+          "latest_version": 1,
+          "schema_id": 13,
+          "compatibility": "BACKWARD",
+          "record_namespace": "invalid.quillmere.coldchain",
+          "record_name": "ReeferExcursion"
+        },
+        {
+          "subject": "quillmere.freight.invoice.posted.v1-invalid.quillmere.freight.InvoicePosted",
+          "topic": "quillmere.freight.invoice.posted.v1",
+          "role": "value",
+          "strategy": "TopicRecordNameStrategy",
+          "schema_type": "AVRO",
+          "versions": [
+            1,
+            2
+          ],
+          "latest_version": 2,
+          "schema_id": 9,
+          "compatibility": "FULL_TRANSITIVE",
+          "record_namespace": "invalid.quillmere.freight",
+          "record_name": "InvoicePosted"
+        },
+        {
+          "subject": "quillmere.freight.rate-variance.v1-value",
+          "topic": "quillmere.freight.rate-variance.v1",
+          "role": "value",
+          "strategy": "TopicNameStrategy",
+          "schema_type": "AVRO",
+          "versions": [
+            1
+          ],
+          "latest_version": 1,
+          "schema_id": 14,
+          "compatibility": "BACKWARD",
+          "record_namespace": "invalid.quillmere.freight",
+          "record_name": "InvoiceRateVariance"
+        },
+        {
+          "subject": "quillmere.order.created.v1-key",
+          "topic": "quillmere.order.created.v1",
+          "role": "key",
+          "strategy": "TopicNameStrategy",
+          "schema_type": "AVRO",
+          "versions": [
+            1
+          ],
+          "latest_version": 1,
+          "schema_id": 2,
+          "compatibility": "BACKWARD"
+        },
+        {
+          "subject": "quillmere.order.created.v1-value",
+          "topic": "quillmere.order.created.v1",
+          "role": "value",
+          "strategy": "TopicNameStrategy",
+          "schema_type": "AVRO",
+          "versions": [
+            1
+          ],
+          "latest_version": 1,
+          "schema_id": 1,
+          "compatibility": "BACKWARD",
+          "record_namespace": "invalid.quillmere.orders",
+          "record_name": "OrderCreated"
+        },
+        {
+          "subject": "quillmere.order.po-duplicates.v1-key",
+          "topic": "quillmere.order.po-duplicates.v1",
+          "role": "key",
+          "strategy": "TopicNameStrategy",
+          "schema_type": "JSON",
+          "versions": [
+            1
+          ],
+          "latest_version": 1,
+          "schema_id": 11,
+          "compatibility": "BACKWARD"
+        },
+        {
+          "subject": "quillmere.order.po-duplicates.v1-value",
+          "topic": "quillmere.order.po-duplicates.v1",
+          "role": "value",
+          "strategy": "TopicNameStrategy",
+          "schema_type": "AVRO",
+          "versions": [
+            1
+          ],
+          "latest_version": 1,
+          "schema_id": 10,
+          "compatibility": "BACKWARD",
+          "record_namespace": "invalid.quillmere.orders",
+          "record_name": "OrderPoDuplicate"
+        },
+        {
+          "subject": "quillmere.reefer.alerts.v1-value",
+          "topic": "quillmere.reefer.alerts.v1",
+          "role": "value",
+          "strategy": "TopicNameStrategy",
+          "schema_type": "AVRO",
+          "versions": [
+            1,
+            2
+          ],
+          "latest_version": 2,
+          "schema_id": 7,
+          "compatibility": "BACKWARD",
+          "record_namespace": "invalid.quillmere.coldchain",
+          "record_name": "ReeferAlert"
+        },
+        {
+          "subject": "quillmere.shipment.export.v0-value",
+          "topic": "quillmere.shipment.export.v0",
+          "role": "value",
+          "strategy": "TopicNameStrategy",
+          "schema_type": "AVRO",
+          "versions": [
+            1
+          ],
+          "latest_version": 1,
+          "schema_id": 5,
+          "compatibility": "NONE",
+          "record_namespace": "invalid.quillmere.shipments",
+          "record_name": "ShipmentExport"
+        },
+        {
+          "subject": "quillmere.shipment.latest.v1-value",
+          "topic": "quillmere.shipment.latest.v1",
+          "role": "value",
+          "strategy": "TopicNameStrategy",
+          "schema_type": "AVRO",
+          "versions": [
+            1
+          ],
+          "latest_version": 1,
+          "schema_id": 12,
+          "compatibility": "BACKWARD",
+          "record_namespace": "invalid.quillmere.shipments",
+          "record_name": "ShipmentLatest"
+        },
+        {
+          "subject": "quillmere.shipment.status.v1-value",
+          "topic": "quillmere.shipment.status.v1",
+          "role": "value",
+          "strategy": "TopicNameStrategy",
+          "schema_type": "AVRO",
+          "versions": [
+            1,
+            2
+          ],
+          "latest_version": 2,
+          "schema_id": 4,
+          "compatibility": "BACKWARD",
+          "record_namespace": "invalid.quillmere.shipments",
+          "record_name": "ShipmentStatus"
+        }
+      ]
+    },
+    "ksqldb": {
+      "url_extra": "ksqldb_url",
+      "sources": [
+        {
+          "name": "INVOICE_POSTED",
+          "type": "STREAM",
+          "topic": "quillmere.freight.invoice.posted.v1",
+          "key_format": "KAFKA",
+          "value_format": "AVRO"
+        },
+        {
+          "name": "INVOICE_RATE_VARIANCE",
+          "type": "STREAM",
+          "topic": "quillmere.freight.rate-variance.v1",
+          "key_format": "KAFKA",
+          "value_format": "AVRO"
+        },
+        {
+          "name": "LEGACY_SHIPMENT_EXPORT",
+          "type": "STREAM",
+          "topic": "quillmere.shipment.export.v0",
+          "key_format": "KAFKA",
+          "value_format": "AVRO"
+        },
+        {
+          "name": "ORDER_CREATED",
+          "type": "STREAM",
+          "topic": "quillmere.order.created.v1",
+          "key_format": "KAFKA",
+          "value_format": "AVRO"
+        },
+        {
+          "name": "ORDER_PO_DUPLICATES",
+          "type": "TABLE",
+          "topic": "quillmere.order.po-duplicates.v1",
+          "key_format": "JSON_SR",
+          "value_format": "AVRO"
+        },
+        {
+          "name": "REEFER_ALERTS",
+          "type": "STREAM",
+          "topic": "quillmere.reefer.alerts.v1",
+          "key_format": "KAFKA",
+          "value_format": "AVRO"
+        },
+        {
+          "name": "REEFER_EXCURSIONS",
+          "type": "TABLE",
+          "topic": "quillmere.coldchain.excursions.v1",
+          "key_format": "KAFKA",
+          "value_format": "AVRO"
+        },
+        {
+          "name": "SHIPMENT_LATEST",
+          "type": "TABLE",
+          "topic": "quillmere.shipment.latest.v1",
+          "key_format": "KAFKA",
+          "value_format": "AVRO"
+        },
+        {
+          "name": "SHIPMENT_STATUS",
+          "type": "STREAM",
+          "topic": "quillmere.shipment.status.v1",
+          "key_format": "KAFKA",
+          "value_format": "AVRO"
+        }
+      ],
+      "queries": [
+        {
+          "id": "CSAS_INVOICE_RATE_VARIANCE_9",
+          "query_type": "PERSISTENT",
+          "state": "RUNNING",
+          "sources": [
+            "INVOICE_POSTED"
+          ],
+          "sinks": [
+            "INVOICE_RATE_VARIANCE"
+          ],
+          "sink_topics": [
+            "quillmere.freight.rate-variance.v1"
+          ]
+        },
+        {
+          "id": "CTAS_ORDER_PO_DUPLICATES_3",
+          "query_type": "PERSISTENT",
+          "state": "RUNNING",
+          "sources": [
+            "ORDER_CREATED"
+          ],
+          "sinks": [
+            "ORDER_PO_DUPLICATES"
+          ],
+          "sink_topics": [
+            "quillmere.order.po-duplicates.v1"
+          ]
+        },
+        {
+          "id": "CTAS_REEFER_EXCURSIONS_7",
+          "query_type": "PERSISTENT",
+          "state": "RUNNING",
+          "sources": [
+            "REEFER_ALERTS"
+          ],
+          "sinks": [
+            "REEFER_EXCURSIONS"
+          ],
+          "sink_topics": [
+            "quillmere.coldchain.excursions.v1"
+          ]
+        },
+        {
+          "id": "CTAS_SHIPMENT_LATEST_5",
+          "query_type": "PERSISTENT",
+          "state": "RUNNING",
+          "sources": [
+            "SHIPMENT_STATUS"
+          ],
+          "sinks": [
+            "SHIPMENT_LATEST"
+          ],
+          "sink_topics": [
+            "quillmere.shipment.latest.v1"
+          ]
+        }
+      ]
+    },
+    "lineage": [
+      {
+        "from": "quillmere.freight.invoice.posted.v1",
+        "to": "quillmere.freight.rate-variance.v1",
+        "kind": "STREAM_QUERY",
+        "via": "CSAS_INVOICE_RATE_VARIANCE_9"
+      },
+      {
+        "from": "quillmere.order.created.v1",
+        "to": "quillmere.order.po-duplicates.v1",
+        "kind": "STREAM_QUERY",
+        "via": "CTAS_ORDER_PO_DUPLICATES_3"
+      },
+      {
+        "from": "quillmere.reefer.alerts.v1",
+        "to": "quillmere.coldchain.excursions.v1",
+        "kind": "STREAM_QUERY",
+        "via": "CTAS_REEFER_EXCURSIONS_7"
+      },
+      {
+        "from": "quillmere.shipment.status.v1",
+        "to": "quillmere.shipment.latest.v1",
+        "kind": "STREAM_QUERY",
+        "via": "CTAS_SHIPMENT_LATEST_5"
+      }
+    ],
+    "activity": [
+      {
+        "topic": "quillmere.order.created.v1",
+        "messages_per_sec": 0.000004,
+        "total_messages": 24,
+        "dormant": false
+      },
+      {
+        "topic": "quillmere.order.po-duplicates.v1",
+        "messages_per_sec": 0.000000,
+        "total_messages": 1,
+        "dormant": false
+      },
+      {
+        "topic": "quillmere.shipment.status.v1",
+        "messages_per_sec": 0.000011,
+        "total_messages": 69,
+        "dormant": false
+      },
+      {
+        "topic": "quillmere.shipment.latest.v1",
+        "messages_per_sec": 0.000011,
+        "total_messages": 69,
+        "dormant": false
+      },
+      {
+        "topic": "quillmere.shipment.export.v0",
+        "messages_per_sec": 0.000000,
+        "total_messages": 0,
+        "dormant": true
+      },
+      {
+        "topic": "quillmere.reefer.alerts.v1",
+        "messages_per_sec": 0.000001,
+        "total_messages": 4,
+        "dormant": false
+      },
+      {
+        "topic": "quillmere.coldchain.excursions.v1",
+        "messages_per_sec": 0.000001,
+        "total_messages": 4,
+        "dormant": false
+      },
+      {
+        "topic": "quillmere.freight.invoice.posted.v1",
+        "messages_per_sec": 0.000004,
+        "total_messages": 24,
+        "dormant": false
+      },
+      {
+        "topic": "quillmere.freight.rate-variance.v1",
+        "messages_per_sec": 0.000000,
+        "total_messages": 1,
+        "dormant": false
+      }
+    ],
+    "never_read": [
+      "record payloads: the registry read sends no Fetch and no ksqlDB SELECT or PRINT",
+      "query text: no queryString, statement or statementText is in these fixtures, and store's reader has no field to decode one into",
+      "values: nothing is sampled, so nothing is unmasked"
+    ]
+  },
+  "inference": {
+    "scope": "this connection alone, store estate/graph with its default floors (EstateGraphOptions{}); without = BuildEstateGraph over the discovered topics, with = BuildEstateGraphWithRegistries over the same topics plus this connection's registry read",
+    "without_registry": {
+      "domains": [
+        {
+          "domain": "orders",
+          "datasets": [
+            "quillmere.order.created.v1",
+            "quillmere.order.po-duplicates.v1"
+          ]
+        },
+        {
+          "domain": "shipments",
+          "datasets": [
+            "quillmere.shipment.status.v1",
+            "quillmere.shipment.latest.v1",
+            "quillmere.shipment.export.v0"
+          ]
+        },
+        {
+          "domain": "freight_audit",
+          "datasets": [
+            "quillmere.freight.invoice.posted.v1",
+            "quillmere.freight.rate-variance.v1"
+          ]
+        }
+      ],
+      "withheld_dormant": [],
+      "unplaced": [
+        "quillmere.reefer.alerts.v1",
+        "quillmere.coldchain.excursions.v1"
+      ]
+    },
+    "with_registry": {
+      "domains": [
+        {
+          "domain": "orders",
+          "datasets": [
+            "quillmere.order.created.v1",
+            "quillmere.order.po-duplicates.v1"
+          ]
+        },
+        {
+          "domain": "shipments",
+          "datasets": [
+            "quillmere.shipment.status.v1",
+            "quillmere.shipment.latest.v1"
+          ]
+        },
+        {
+          "domain": "cold_chain",
+          "datasets": [
+            "quillmere.reefer.alerts.v1",
+            "quillmere.coldchain.excursions.v1"
+          ]
+        },
+        {
+          "domain": "freight_audit",
+          "datasets": [
+            "quillmere.freight.invoice.posted.v1",
+            "quillmere.freight.rate-variance.v1"
+          ]
+        }
+      ],
+      "withheld_dormant": [
+        "quillmere.shipment.export.v0"
+      ],
+      "unplaced": []
+    },
+    "noise_reduced": [
+      "quillmere.shipment.export.v0 shares the live shipment feed's vocabulary, so names alone put it in the shipments domain; ksqlDB states it carried 0 messages and nothing records a flow to or from it, so it is withheld",
+      "quillmere.coldchain.excursions.v1 shares no column vocabulary with quillmere.reefer.alerts.v1, so names alone place neither; their shared Avro namespace and the excursion fields' docs, which name the reefer alerts, put both in cold_chain",
+      "the excursion table is ksqlDB's own flag of a temperature excursion, and it holds exactly one shipment: the planted one"
+    ]
+  }
+}

@@ -1,0 +1,1580 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>forge.yaml & pipeline files · Runink TIDDE Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 7.0.1">
+        <meta name="author" content="Runink">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-runink-copy/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../deployment-guide/" />
+    
+    
+    <link rel="prev" href="../getting-started/" />
+    
+
+    
+    
+    <meta property="og:site_name" content="Runink TIDDE Documentation">
+    <meta property="og:title" content="forge.yaml & pipeline files">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Runink TIDDE documentation: overview, concepts, architecture, and the User, Admin and Developer guides.">
+    <meta name="twitter:title" content="forge.yaml & pipeline files">
+    <meta name="twitter:description" content="Runink TIDDE documentation: overview, concepts, architecture, and the User, Admin and Developer guides.">
+    
+    <meta property="og:image" content="https://docs.runink.org/tidde/_brand/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://docs.runink.org/tidde/_brand/og.png">
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak font-size-2 font-family-1 color-theme-2">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Runink TIDDE Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../overview/">
+            
+                <a href="../../../overview/">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../concepts/">
+            
+                <a href="../../../concepts/">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../../concepts/goals-plans-autonomy/">
+            
+                <a href="../../../concepts/goals-plans-autonomy/">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    Goals, plans and autonomy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../../concepts/status-and-provenance/">
+            
+                <a href="../../../concepts/status-and-provenance/">
+            
+                    
+                        <b>1.2.2.2.</b>
+                    
+                    Status and provenance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../../concepts/agent-cards/">
+            
+                <a href="../../../concepts/agent-cards/">
+            
+                    
+                        <b>1.2.2.3.</b>
+                    
+                    Model cards
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="../../../concepts/agent-cards/code-reviewer/">
+            
+                <a href="../../../concepts/agent-cards/code-reviewer/">
+            
+                    
+                        <b>1.2.2.3.1.</b>
+                    
+                    Code Reviewer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="../../../concepts/agent-cards/fix-drafter/">
+            
+                <a href="../../../concepts/agent-cards/fix-drafter/">
+            
+                    
+                        <b>1.2.2.3.2.</b>
+                    
+                    Fix Drafter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.3" data-path="../../../concepts/agent-cards/ci-doctor/">
+            
+                <a href="../../../concepts/agent-cards/ci-doctor/">
+            
+                    
+                        <b>1.2.2.3.3.</b>
+                    
+                    CI Doctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.4" data-path="../../../concepts/agent-cards/issue-triager/">
+            
+                <a href="../../../concepts/agent-cards/issue-triager/">
+            
+                    
+                        <b>1.2.2.3.4.</b>
+                    
+                    Issue Triager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.5" data-path="../../../concepts/agent-cards/backlog-hunter/">
+            
+                <a href="../../../concepts/agent-cards/backlog-hunter/">
+            
+                    
+                        <b>1.2.2.3.5.</b>
+                    
+                    Backlog Hunter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.6" data-path="../../../concepts/agent-cards/dependency-risk/">
+            
+                <a href="../../../concepts/agent-cards/dependency-risk/">
+            
+                    
+                        <b>1.2.2.3.6.</b>
+                    
+                    Dependency Risk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.7" data-path="../../../concepts/agent-cards/compliance-evidence/">
+            
+                <a href="../../../concepts/agent-cards/compliance-evidence/">
+            
+                    
+                        <b>1.2.2.3.7.</b>
+                    
+                    Compliance Evidence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.8" data-path="../../../concepts/agent-cards/release-curator/">
+            
+                <a href="../../../concepts/agent-cards/release-curator/">
+            
+                    
+                        <b>1.2.2.3.8.</b>
+                    
+                    Release Curator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9" data-path="../../../concepts/agent-cards/independent-assessor/">
+            
+                <a href="../../../concepts/agent-cards/independent-assessor/">
+            
+                    
+                        <b>1.2.2.3.9.</b>
+                    
+                    Independent Assessor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.10" data-path="../../../concepts/agent-cards/data-governance-checker/">
+            
+                <a href="../../../concepts/agent-cards/data-governance-checker/">
+            
+                    
+                        <b>1.2.2.3.10.</b>
+                    
+                    Data Governance Checker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.11" data-path="../../../concepts/agent-cards/task-deployer/">
+            
+                <a href="../../../concepts/agent-cards/task-deployer/">
+            
+                    
+                        <b>1.2.2.3.11.</b>
+                    
+                    Task Deployer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.12" data-path="../../../concepts/agent-cards/ask-core/">
+            
+                <a href="../../../concepts/agent-cards/ask-core/">
+            
+                    
+                        <b>1.2.2.3.12.</b>
+                    
+                    Ask TIDDE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.13" data-path="../../../concepts/agent-cards/forge/">
+            
+                <a href="../../../concepts/agent-cards/forge/">
+            
+                    
+                        <b>1.2.2.3.13.</b>
+                    
+                    FORGE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../architecture/">
+            
+                <a href="../../../architecture/">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../../architecture/models-inference/">
+            
+                <a href="../../../architecture/models-inference/">
+            
+                    
+                        <b>1.2.3.1.</b>
+                    
+                    Models & inference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    User guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../sign-in/">
+            
+                <a href="../../sign-in/">
+            
+                    
+                        <b>1.2.4.1.</b>
+                    
+                    Sign in
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../../devex/">
+            
+                <a href="../../devex/">
+            
+                    
+                        <b>1.2.4.2.</b>
+                    
+                    DevEx
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.2.1" data-path="../../devex/application-consoles/">
+            
+                <a href="../../devex/application-consoles/">
+            
+                    
+                        <b>1.2.4.2.1.</b>
+                    
+                    Clusters (Overview section)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.2" data-path="../../devex/cluster/">
+            
+                <a href="../../devex/cluster/">
+            
+                    
+                        <b>1.2.4.2.2.</b>
+                    
+                    Clusters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.3" data-path="../../devex/agent-runs/">
+            
+                <a href="../../devex/agent-runs/">
+            
+                    
+                        <b>1.2.4.2.3.</b>
+                    
+                    Agent runs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.4" data-path="../../devex/reviews/">
+            
+                <a href="../../devex/reviews/">
+            
+                    
+                        <b>1.2.4.2.4.</b>
+                    
+                    Reviews
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.5" data-path="../../devex/audit-chain/">
+            
+                <a href="../../devex/audit-chain/">
+            
+                    
+                        <b>1.2.4.2.5.</b>
+                    
+                    Audit chain and lineage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.6" data-path="../../devex/getting-started/">
+            
+                <a href="../../devex/getting-started/">
+            
+                    
+                        <b>1.2.4.2.6.</b>
+                    
+                    CLI quickstart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.7" data-path="../../devex/coding-sessions/">
+            
+                <a href="../../devex/coding-sessions/">
+            
+                    
+                        <b>1.2.4.2.7.</b>
+                    
+                    Coding sessions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.8" data-path="../../devex/troubleshooting/">
+            
+                <a href="../../devex/troubleshooting/">
+            
+                    
+                        <b>1.2.4.2.8.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../../overview-page/">
+            
+                <a href="../../overview-page/">
+            
+                    
+                        <b>1.2.4.3.</b>
+                    
+                    Overview page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="../../console-map/">
+            
+                <a href="../../console-map/">
+            
+                    
+                        <b>1.2.4.4.</b>
+                    
+                    Console map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../../agents/">
+            
+                <a href="../../agents/">
+            
+                    
+                        <b>1.2.4.5.</b>
+                    
+                    AGENTS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.5.1" data-path="../../agents/command/">
+            
+                <a href="../../agents/command/">
+            
+                    
+                        <b>1.2.4.5.1.</b>
+                    
+                    Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5.2" data-path="../../agents/fleet/">
+            
+                <a href="../../agents/fleet/">
+            
+                    
+                        <b>1.2.4.5.2.</b>
+                    
+                    Fleet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5.3" data-path="../../agents/judge/">
+            
+                <a href="../../agents/judge/">
+            
+                    
+                        <b>1.2.4.5.3.</b>
+                    
+                    Judge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5.4" data-path="../../agents/autonomy/">
+            
+                <a href="../../agents/autonomy/">
+            
+                    
+                        <b>1.2.4.5.4.</b>
+                    
+                    Autonomy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5.5" data-path="../../agents/swarm/">
+            
+                <a href="../../agents/swarm/">
+            
+                    
+                        <b>1.2.4.5.5.</b>
+                    
+                    Swarm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5.6" data-path="../../agents/loops/">
+            
+                <a href="../../agents/loops/">
+            
+                    
+                        <b>1.2.4.5.6.</b>
+                    
+                    Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5.7" data-path="../../agents/improvements/">
+            
+                <a href="../../agents/improvements/">
+            
+                    
+                        <b>1.2.4.5.7.</b>
+                    
+                    Improvements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5.8" data-path="../../agents/what-tidde-knows/">
+            
+                <a href="../../agents/what-tidde-knows/">
+            
+                    
+                        <b>1.2.4.5.8.</b>
+                    
+                    What TIDDE knows
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="../../dataex/">
+            
+                <a href="../../dataex/">
+            
+                    
+                        <b>1.2.4.6.</b>
+                    
+                    DataEx
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.6.1" data-path="../../dataex/trust/">
+            
+                <a href="../../dataex/trust/">
+            
+                    
+                        <b>1.2.4.6.1.</b>
+                    
+                    Harness findings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6.2" data-path="../../dataex/governance-rules/">
+            
+                <a href="../../dataex/governance-rules/">
+            
+                    
+                        <b>1.2.4.6.2.</b>
+                    
+                    Data governance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6.3" data-path="../../dataex/troubleshooting/">
+            
+                <a href="../../dataex/troubleshooting/">
+            
+                    
+                        <b>1.2.4.6.3.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.2.4.7.</b>
+                    
+                    FORGE
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.7.1" data-path="../getting-started/">
+            
+                <a href="../getting-started/">
+            
+                    
+                        <b>1.2.4.7.1.</b>
+                    
+                    Chats and projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4.7.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.4.7.2.</b>
+                    
+                    forge.yaml & pipeline files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7.3" data-path="../deployment-guide/">
+            
+                <a href="../deployment-guide/">
+            
+                    
+                        <b>1.2.4.7.3.</b>
+                    
+                    Central verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7.4" data-path="../builders-reference/">
+            
+                <a href="../builders-reference/">
+            
+                    
+                        <b>1.2.4.7.4.</b>
+                    
+                    Verification profiles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7.5" data-path="../troubleshooting/">
+            
+                <a href="../troubleshooting/">
+            
+                    
+                        <b>1.2.4.7.5.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8" data-path="../../intelligence/">
+            
+                <a href="../../intelligence/">
+            
+                    
+                        <b>1.2.4.8.</b>
+                    
+                    Intelligence
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.8.1" data-path="../../intelligence/overview/">
+            
+                <a href="../../intelligence/overview/">
+            
+                    
+                        <b>1.2.4.8.1.</b>
+                    
+                    Intelligence overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8.2" data-path="../../intelligence/estate/">
+            
+                <a href="../../intelligence/estate/">
+            
+                    
+                        <b>1.2.4.8.2.</b>
+                    
+                    Estate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8.3" data-path="../../intelligence/knowledge-graph/">
+            
+                <a href="../../intelligence/knowledge-graph/">
+            
+                    
+                        <b>1.2.4.8.3.</b>
+                    
+                    Knowledge graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8.4" data-path="../../intelligence/audits-lineage/">
+            
+                <a href="../../intelligence/audits-lineage/">
+            
+                    
+                        <b>1.2.4.8.4.</b>
+                    
+                    Data audit & lineage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8.5" data-path="../../intelligence/troubleshooting/">
+            
+                <a href="../../intelligence/troubleshooting/">
+            
+                    
+                        <b>1.2.4.8.5.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.9" data-path="../../troubleshooting/">
+            
+                <a href="../../troubleshooting/">
+            
+                    
+                        <b>1.2.4.9.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../../admin-guide/">
+            
+                <a href="../../../admin-guide/">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    Admin guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../../../admin-guide/access-and-roles/">
+            
+                <a href="../../../admin-guide/access-and-roles/">
+            
+                    
+                        <b>1.2.5.1.</b>
+                    
+                    Access and roles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../../../admin-guide/integrations/">
+            
+                <a href="../../../admin-guide/integrations/">
+            
+                    
+                        <b>1.2.5.2.</b>
+                    
+                    Connections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../../../admin-guide/runners/">
+            
+                <a href="../../../admin-guide/runners/">
+            
+                    
+                        <b>1.2.5.3.</b>
+                    
+                    Runners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="../../../admin-guide/personas/">
+            
+                <a href="../../../admin-guide/personas/">
+            
+                    
+                        <b>1.2.5.4.</b>
+                    
+                    Personas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.5" data-path="../../../admin-guide/trial-and-subscription/">
+            
+                <a href="../../../admin-guide/trial-and-subscription/">
+            
+                    
+                        <b>1.2.5.5.</b>
+                    
+                    Trial and subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../../developer-guide/">
+            
+                <a href="../../../developer-guide/">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    Developer guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../../../developer-guide/forge-api/">
+            
+                <a href="../../../developer-guide/forge-api/">
+            
+                    
+                        <b>1.2.6.1.</b>
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../../../developer-guide/http-api/">
+            
+                <a href="../../../developer-guide/http-api/">
+            
+                    
+                        <b>1.2.6.2.</b>
+                    
+                    HTTP route reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="../../../developer-guide/dataex-api/">
+            
+                <a href="../../../developer-guide/dataex-api/">
+            
+                    
+                        <b>1.2.6.3.</b>
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="../../../developer-guide/intelligence-api/">
+            
+                <a href="../../../developer-guide/intelligence-api/">
+            
+                    
+                        <b>1.2.6.4.</b>
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.5" data-path="../../../developer-guide/cli-reference/">
+            
+                <a href="../../../developer-guide/cli-reference/">
+            
+                    
+                        <b>1.2.6.5.</b>
+                    
+                    CLI reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="../../../developer-guide/ci-workflows/">
+            
+                <a href="../../../developer-guide/ci-workflows/">
+            
+                    
+                        <b>1.2.6.6.</b>
+                    
+                    CI workflows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.7" data-path="../../../developer-guide/mcp-tools/">
+            
+                <a href="../../../developer-guide/mcp-tools/">
+            
+                    
+                        <b>1.2.6.7.</b>
+                    
+                    Agent tools & MCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../../faq/">
+            
+                <a href="../../../faq/">
+            
+                    
+                        <b>1.2.7.</b>
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../../privacy/">
+            
+                <a href="../../../../privacy/">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    Runink TIDDE — Privacy Policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >forge.yaml & pipeline files</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+    
+                                <h1 id="project-manifest-forgeyaml--pipeline-files">Project manifest (forge.yaml) &amp; pipeline files</h1>
+<!--
+SPDX-FileCopyrightText: 2026 Runink
+SPDX-License-Identifier: LicenseRef-Runink-Proprietary
+-->
+<p>FORGE writes a project's layout into <code>forge.yaml</code> at the repository root. Runink TIDDE only <strong>reads</strong> it, to verify each component separately. This page gives the manifest spec exactly as TIDDE's validator enforces it, and describes the narrow check TIDDE applies to RIVER pipeline files.</p>
+<h2 id="forgeyaml-spec-v1">forge.yaml, spec v1</h2>
+<p>A FORGE project is <strong>one repository with several lanes</strong>. Each lane is a component folder. When a forged repository (web or pipeline, never <code>forge</code> itself) carries a <code>forge.yaml</code>, central verification ignores the repository's topic profile and verifies every lane in its own folder. See <a href="../deployment-guide/">Central verification</a>.</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">version:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">project:</span> <span class="hljs-string">social-ops</span>                  <span class="hljs-comment"># the repo name (informational)</span>
+<span class="hljs-attr">lanes:</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">source-mapping</span>               <span class="hljs-comment"># ^[a-z0-9][a-z0-9-]{0,38}$, unique</span>
+    <span class="hljs-attr">name:</span> <span class="hljs-string">Source</span> <span class="hljs-string">mapping</span>             <span class="hljs-comment"># free text, &lt;= 80 characters</span>
+    <span class="hljs-attr">kind:</span> <span class="hljs-string">pipeline</span>                   <span class="hljs-comment"># pipeline | web</span>
+    <span class="hljs-attr">path:</span> <span class="hljs-string">pipelines/source-mapping</span>   <span class="hljs-comment"># relative + clean, unique, never nested</span>
+    <span class="hljs-attr">components:</span> [<span class="hljs-string">source.postgres</span>]    <span class="hljs-comment"># catalog ids — informational, ignored</span>
+</code></pre>
+<h3 id="fields">Fields</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>version</code></td>
+<td>Must be the integer <code>1</code>. A missing version is refused with <em>"no version (want version: 1)"</em>. A quoted <code>"1"</code> or a <code>1.5</code> is refused with <em>"version … is not supported (want 1)"</em></td>
+</tr>
+<tr>
+<td><code>project</code></td>
+<td>Informational. Not checked</td>
+</tr>
+<tr>
+<td><code>lanes</code></td>
+<td>At least one lane, at most <strong>50</strong></td>
+</tr>
+<tr>
+<td><code>lanes[].id</code></td>
+<td>Must match <code>^[a-z0-9][a-z0-9-]{0,38}$</code>, and must be unique. It becomes the status context <code>core/ci/&lt;id&gt;</code></td>
+</tr>
+<tr>
+<td><code>lanes[].name</code></td>
+<td>Free text, at most 80 characters</td>
+</tr>
+<tr>
+<td><code>lanes[].kind</code></td>
+<td><code>pipeline</code> or <code>web</code></td>
+</tr>
+<tr>
+<td><code>lanes[].path</code></td>
+<td>A relative, clean folder inside the repo. Not empty, not absolute, no trailing <code>/</code>, no backslash, NUL or control character, no <code>..</code> segment, and unchanged by path cleaning (no <code>./</code>, <code>//</code> or trailing <code>.</code>). Paths must be unique, and no lane may sit inside another lane's folder. <code>"."</code> is allowed only when there is exactly one lane</td>
+</tr>
+<tr>
+<td><code>lanes[].components</code></td>
+<td>Catalog ids. Informational, ignored by the verifier</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Unknown keys are ignored</strong>, at the top level and per lane, so FORGE can add fields before TIDDE learns about them. Anything else that is wrong makes the <strong>whole</strong> manifest invalid. Verification then posts <code>core/ci</code> = <code>failure</code> with the description <code>forge.yaml is invalid: &lt;first reason&gt;</code> and <strong>no</strong> per-lane status, because a half-read manifest could report on components FORGE did not mean.</p>
+<p>The file itself must be:</p>
+<ul>
+<li>a regular file. A symlink is refused as <em>"forge.yaml is a symlink; it must be a regular file"</em>;</li>
+<li>no larger than 1 MiB;</li>
+<li>a single YAML document. A second document is refused as <em>"more than one YAML document"</em>.</li>
+</ul>
+<h3 id="a-two-lane-example">A two-lane example</h3>
+<p>This manifest passes <code>forgecheck manifest</code>. It was checked against the validator built from this repository:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">version:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">project:</span> <span class="hljs-string">social-ops</span>
+<span class="hljs-attr">lanes:</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">source-mapping</span>
+    <span class="hljs-attr">name:</span> <span class="hljs-string">Source</span> <span class="hljs-string">mapping</span>
+    <span class="hljs-attr">kind:</span> <span class="hljs-string">pipeline</span>
+    <span class="hljs-attr">path:</span> <span class="hljs-string">pipelines/source-mapping</span>
+    <span class="hljs-attr">components:</span> [<span class="hljs-string">source.postgres</span>]
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">dashboard</span>
+    <span class="hljs-attr">name:</span> <span class="hljs-string">Operations</span> <span class="hljs-string">dashboard</span>
+    <span class="hljs-attr">kind:</span> <span class="hljs-string">web</span>
+    <span class="hljs-attr">path:</span> <span class="hljs-string">apps/dashboard</span>
+</code></pre>
+<pre><code class="lang-text">$ forgecheck manifest -file forge.yaml
+lane source-mapping                           pipeline pipelines/source-mapping
+lane dashboard                                web      apps/dashboard
+forgecheck: forge.yaml is valid, 2 lane(s)
+</code></pre>
+<p>If neither folder exists yet, the manifest is still valid, and both lanes report <em>"Nothing to verify yet"</em>. FORGE declares a lane before its agent writes it.</p>
+<h3 id="what-each-lane-kind-must-contain">What each lane kind must contain</h3>
+<table>
+<thead>
+<tr>
+<th>Kind</th>
+<th>Verified when the folder has…</th>
+<th>Otherwise</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pipeline</code></td>
+<td><code>.dsl</code> / <code>.herd</code> files (TOML-parsed) and/or Go packages of a module, meaning its own <code>go.mod</code> or the repo's root <code>go.mod</code> above it (<code>go build</code>, <code>go vet</code>, <code>go test ./...</code>)</td>
+<td><code>Nothing to verify yet: no .dsl or .herd file and no Go package in &lt;path&gt;</code></td>
+</tr>
+<tr>
+<td><code>web</code></td>
+<td>a <code>go.mod</code> in the folder (<code>go build</code>/<code>vet</code>/<code>test ./...</code>) and/or a <code>package.json</code> in the folder or in its <code>web/</code> subfolder (<code>npm ci</code>, <code>npm run build</code>, and <code>npm run lint</code> when the package declares a <code>lint</code> script)</td>
+<td><code>Nothing to verify yet: no go.mod or package.json in &lt;path&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="pipeline-files-dsl-herd">Pipeline files (.dsl, .herd)</h2>
+<p>RIVER pipeline definitions are TOML files, <code>features/*.dsl</code> and <code>herd/*.herd</code>. TIDDE's check on them is <strong>syntax only</strong>:</p>
+<ul>
+<li>every <code>*.dsl</code> and <code>*.herd</code> file under the tree must parse as TOML 1.0;</li>
+<li>the check is syntax only: the meaning of the keys (<code>[metadata]</code>, <code>[dag]</code>, <code>[[dag.step]]</code>, <code>[golden]</code>) and <code>.contract</code> files are outside it;</li>
+<li>the scan never enters <code>.git</code>, <code>.github</code>, <code>node_modules</code>, <code>vendor</code>, <code>testdata</code>, or any directory whose name starts with <code>.</code> or <code>_</code>.</li>
+</ul>
+<p>This documentation gives no pipeline grammar beyond "valid TOML", because TIDDE does not define one. A file that fails to parse is reported by file with its position:</p>
+<pre><code class="lang-text">::error file=bad.dsl::not valid TOML: line 1, column 5: toml: array is incomplete
+ok  ok.herd
+forgecheck: 2 pipeline file(s), 1 invalid; 0 Go package(s)
+::error::1 of 2 pipeline file(s) not valid TOML, first: bad.dsl
+</code></pre>
+<p>An empty pipeline (no <code>.dsl</code>/<code>.herd</code> file and no Go package) is a <strong>failure</strong> with the description <code>Nothing to verify yet: no .dsl or .herd file and no Go package</code>. It is deliberately not a skip: a skipped check concludes success in GitHub Actions, and FORGE would show a pipeline with nothing in it as green.</p>
+<p>See <a href="../builders-reference/">Verification profiles</a> for the exact commands.</p>
+
+                                
+    
+    <footer class="runink-footer" role="contentinfo">
+        <img class="runink-brand" src="../../../../_brand/logo.png" alt="">
+        
+    </footer>
+    
+
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../getting-started/" class="navigation navigation-prev " aria-label="Previous page: Chats and projects">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../deployment-guide/" class="navigation navigation-next " aria-label="Next page: Central verification">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    
+    <script type="application/json" id="honkit-page-context">{"page":{"title":"forge.yaml & pipeline files","level":"1.2.4.7.2","depth":4,"next":{"title":"Central verification","level":"1.2.4.7.3","depth":4,"path":"docs/user-guide/forge/deployment-guide/README.md","ref":"docs/user-guide/forge/deployment-guide/README.md","articles":[]},"previous":{"title":"Chats and projects","level":"1.2.4.7.1","depth":4,"path":"docs/user-guide/forge/getting-started/README.md","ref":"docs/user-guide/forge/getting-started/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","runink-copy"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"lunr":{"maxIndexSize":100000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"runink-copy":{},"highlight":{},"search":{}},"theme":"default","author":"Runink","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"logo":"_brand/logo.png","ogImage":"_brand/og.png","siteURL":"https://docs.runink.org/tidde/"},"title":"Runink TIDDE Documentation","language":"en","gitbook":"7.0.1","description":"Runink TIDDE documentation: overview, concepts, architecture, and the User, Admin and Developer guides."},"file":{"path":"docs/user-guide/forge/pipeline-syntax/README.md","mtime":"","type":"markdown"},"gitbook":{"version":"7.0.1","time":""},"basePath":"../../../..","book":{"language":""}}</script>
+</div>
+
+        
+    <noscript>
+        <link rel="stylesheet" href="../../../../gitbook/noscript.css">
+    </noscript>
+    
+    <script src="../../../../gitbook/boot.js"></script>
+    
+    <script src="../../../../gitbook/gitbook.js" defer></script>
+    <script src="../../../../gitbook/theme.js" defer></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-runink-copy/copy.js" defer></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js" defer></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js" defer></script>
+        
+    
+        
+        <script src="../../../../gitbook/@honkit/honkit-plugin-lunr/lunr.min.js" defer></script>
+        
+    
+        
+        <script src="../../../../gitbook/@honkit/honkit-plugin-lunr/search-lunr.js" defer></script>
+        
+    
+
+    </body>
+</html>
+

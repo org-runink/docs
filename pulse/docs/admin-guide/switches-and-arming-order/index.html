@@ -1,0 +1,2401 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Switches and arming order · PULSE Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 7.0.1">
+        <meta name="author" content="Runink">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-runink-copy/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../publishing-controls/" />
+    
+    
+    <link rel="prev" href="../setup/voice/" />
+    
+
+    
+    
+    <meta property="og:site_name" content="PULSE Documentation">
+    <meta property="og:title" content="Switches and arming order">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Runink PULSE: Prescriptive Unified Lead & Social Engine is a marketing agency in an app: it checks how your business looks online, plans campaigns, writes and makes the posts, and publishes them only after you approve, on models that run on Runink's own platform.">
+    <meta name="twitter:title" content="Switches and arming order">
+    <meta name="twitter:description" content="Runink PULSE: Prescriptive Unified Lead & Social Engine is a marketing agency in an app: it checks how your business looks online, plans campaigns, writes and makes the posts, and publishes them only after you approve, on models that run on Runink's own platform.">
+    
+    <meta property="og:image" content="https://docs.runink.org/pulse/_brand/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://docs.runink.org/pulse/_brand/og.png">
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak font-size-2 font-family-1 color-theme-2">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    PULSE Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../concepts/">
+            
+                <a href="../../concepts/">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../concepts/measured-and-not-measured/">
+            
+                <a href="../../concepts/measured-and-not-measured/">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    Measured and not measured
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../concepts/plan-gate/">
+            
+                <a href="../../concepts/plan-gate/">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    The plan gate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../concepts/drafts-approval-publishing/">
+            
+                <a href="../../concepts/drafts-approval-publishing/">
+            
+                    
+                        <b>1.2.1.3.</b>
+                    
+                    Drafts, approval and publishing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../concepts/personas/">
+            
+                <a href="../../concepts/personas/">
+            
+                    
+                        <b>1.2.1.4.</b>
+                    
+                    Personas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../../concepts/sovereign-inference/">
+            
+                <a href="../../concepts/sovereign-inference/">
+            
+                    
+                        <b>1.2.1.5.</b>
+                    
+                    Sovereign inference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../../concepts/agent-activity/">
+            
+                <a href="../../concepts/agent-activity/">
+            
+                    
+                        <b>1.2.1.6.</b>
+                    
+                    Agent activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../architecture/">
+            
+                <a href="../../architecture/">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../user-guide/">
+            
+                <a href="../../user-guide/">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    User guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../user-guide/getting-started/">
+            
+                <a href="../../user-guide/getting-started/">
+            
+                    
+                        <b>1.2.3.1.</b>
+                    
+                    Getting started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../user-guide/sign-in/">
+            
+                <a href="../../user-guide/sign-in/">
+            
+                    
+                        <b>1.2.3.2.</b>
+                    
+                    Signing in
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../user-guide/ninety-day-plan/">
+            
+                <a href="../../user-guide/ninety-day-plan/">
+            
+                    
+                        <b>1.2.3.3.</b>
+                    
+                    90-day plan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../../user-guide/brand-analysis/">
+            
+                <a href="../../user-guide/brand-analysis/">
+            
+                    
+                        <b>1.2.3.4.</b>
+                    
+                    Brand Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../../user-guide/brand-analysis-pages/">
+            
+                <a href="../../user-guide/brand-analysis-pages/">
+            
+                    
+                        <b>1.2.3.5.</b>
+                    
+                    Brand Analysis pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="../../user-guide/site-score-report/">
+            
+                <a href="../../user-guide/site-score-report/">
+            
+                    
+                        <b>1.2.3.6.</b>
+                    
+                    Site-score report
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="../../user-guide/audit-a-domain/">
+            
+                <a href="../../user-guide/audit-a-domain/">
+            
+                    
+                        <b>1.2.3.7.</b>
+                    
+                    Audit a domain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="../../user-guide/leads/">
+            
+                <a href="../../user-guide/leads/">
+            
+                    
+                        <b>1.2.3.8.</b>
+                    
+                    Leads
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="../../user-guide/outreach-sequences/">
+            
+                <a href="../../user-guide/outreach-sequences/">
+            
+                    
+                        <b>1.2.3.9.</b>
+                    
+                    Outreach sequences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="../../user-guide/email-from-your-mailbox/">
+            
+                <a href="../../user-guide/email-from-your-mailbox/">
+            
+                    
+                        <b>1.2.3.10.</b>
+                    
+                    Email from your mailbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.11" data-path="../../user-guide/ai-calls/">
+            
+                <a href="../../user-guide/ai-calls/">
+            
+                    
+                        <b>1.2.3.11.</b>
+                    
+                    AI calls to leads
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" data-path="../../user-guide/cold-calls-from-sequences/">
+            
+                <a href="../../user-guide/cold-calls-from-sequences/">
+            
+                    
+                        <b>1.2.3.12.</b>
+                    
+                    Cold and follow-up calls from Leads
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.13" data-path="../../user-guide/website-form/">
+            
+                <a href="../../user-guide/website-form/">
+            
+                    
+                        <b>1.2.3.13.</b>
+                    
+                    Website form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.14" data-path="../../user-guide/website-chat/">
+            
+                <a href="../../user-guide/website-chat/">
+            
+                    
+                        <b>1.2.3.14.</b>
+                    
+                    Website chat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.15" data-path="../../user-guide/attribution/">
+            
+                <a href="../../user-guide/attribution/">
+            
+                    
+                        <b>1.2.3.15.</b>
+                    
+                    Attribution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.16" data-path="../../user-guide/google-business-profile/">
+            
+                <a href="../../user-guide/google-business-profile/">
+            
+                    
+                        <b>1.2.3.16.</b>
+                    
+                    Google reviews
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.17" data-path="../../user-guide/weekly-results-review/">
+            
+                <a href="../../user-guide/weekly-results-review/">
+            
+                    
+                        <b>1.2.3.17.</b>
+                    
+                    Weekly results review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.18" data-path="../../user-guide/campaigns/">
+            
+                <a href="../../user-guide/campaigns/">
+            
+                    
+                        <b>1.2.3.18.</b>
+                    
+                    Campaigns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.19" data-path="../../user-guide/weekly-site-reaudit/">
+            
+                <a href="../../user-guide/weekly-site-reaudit/">
+            
+                    
+                        <b>1.2.3.19.</b>
+                    
+                    Weekly site re-audit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.20" data-path="../../user-guide/studio/">
+            
+                <a href="../../user-guide/studio/">
+            
+                    
+                        <b>1.2.3.20.</b>
+                    
+                    Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.21" data-path="../../user-guide/weekly-growth-advisor/">
+            
+                <a href="../../user-guide/weekly-growth-advisor/">
+            
+                    
+                        <b>1.2.3.21.</b>
+                    
+                    Weekly growth advisor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.22" data-path="../../user-guide/digital-twins/">
+            
+                <a href="../../user-guide/digital-twins/">
+            
+                    
+                        <b>1.2.3.22.</b>
+                    
+                    Digital twins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.23" data-path="../../user-guide/market-memory/">
+            
+                <a href="../../user-guide/market-memory/">
+            
+                    
+                        <b>1.2.3.23.</b>
+                    
+                    What PULSE has learned about your market
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.24" data-path="../../user-guide/meeting-detection/">
+            
+                <a href="../../user-guide/meeting-detection/">
+            
+                    
+                        <b>1.2.3.24.</b>
+                    
+                    Meeting detection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.25" data-path="../../user-guide/short-videos/">
+            
+                <a href="../../user-guide/short-videos/">
+            
+                    
+                        <b>1.2.3.25.</b>
+                    
+                    Short videos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.26" data-path="../../user-guide/answer-vendor-pitches/">
+            
+                <a href="../../user-guide/answer-vendor-pitches/">
+            
+                    
+                        <b>1.2.3.26.</b>
+                    
+                    Answer vendor pitches
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.27" data-path="../../user-guide/lip-synced-presenter-videos/">
+            
+                <a href="../../user-guide/lip-synced-presenter-videos/">
+            
+                    
+                        <b>1.2.3.27.</b>
+                    
+                    Lip-synced presenter videos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.28" data-path="../../user-guide/weekly-roadmap-suggestions/">
+            
+                <a href="../../user-guide/weekly-roadmap-suggestions/">
+            
+                    
+                        <b>1.2.3.28.</b>
+                    
+                    Weekly roadmap suggestions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.29" data-path="../../user-guide/autopilot-and-agencies/">
+            
+                <a href="../../user-guide/autopilot-and-agencies/">
+            
+                    
+                        <b>1.2.3.29.</b>
+                    
+                    Autopilot and agencies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.30" data-path="../../user-guide/create-an-image/">
+            
+                <a href="../../user-guide/create-an-image/">
+            
+                    
+                        <b>1.2.3.30.</b>
+                    
+                    Create an image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.31" data-path="../../user-guide/first-response-to-enquiries/">
+            
+                <a href="../../user-guide/first-response-to-enquiries/">
+            
+                    
+                        <b>1.2.3.31.</b>
+                    
+                    First response to enquiries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.32" data-path="../../user-guide/inbox/">
+            
+                <a href="../../user-guide/inbox/">
+            
+                    
+                        <b>1.2.3.32.</b>
+                    
+                    Inbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.33" data-path="../../user-guide/youtube-and-instagram-engagement/">
+            
+                <a href="../../user-guide/youtube-and-instagram-engagement/">
+            
+                    
+                        <b>1.2.3.33.</b>
+                    
+                    Comments on YouTube and Instagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.34" data-path="../../user-guide/results-and-reports/">
+            
+                <a href="../../user-guide/results-and-reports/">
+            
+                    
+                        <b>1.2.3.34.</b>
+                    
+                    Results and reports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.35" data-path="../../user-guide/voice-over-studio/">
+            
+                <a href="../../user-guide/voice-over-studio/">
+            
+                    
+                        <b>1.2.3.35.</b>
+                    
+                    Voice-over studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.36" data-path="../../user-guide/integrations/">
+            
+                <a href="../../user-guide/integrations/">
+            
+                    
+                        <b>1.2.3.36.</b>
+                    
+                    Settings → Integrations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.37" data-path="../../user-guide/voice-over-own-voice/">
+            
+                <a href="../../user-guide/voice-over-own-voice/">
+            
+                    
+                        <b>1.2.3.37.</b>
+                    
+                    Voice-overs in your own voice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.38" data-path="../../user-guide/assistant-and-voice/">
+            
+                <a href="../../user-guide/assistant-and-voice/">
+            
+                    
+                        <b>1.2.3.38.</b>
+                    
+                    Assistant and voice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.39" data-path="../../user-guide/questions-from-pulse/">
+            
+                <a href="../../user-guide/questions-from-pulse/">
+            
+                    
+                        <b>1.2.3.39.</b>
+                    
+                    Questions from PULSE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40" data-path="../../user-guide/tools/">
+            
+                <a href="../../user-guide/tools/">
+            
+                    
+                        <b>1.2.3.40.</b>
+                    
+                    AI tools
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.40.1" data-path="../../user-guide/tools/diagnostic-analyst/">
+            
+                <a href="../../user-guide/tools/diagnostic-analyst/">
+            
+                    
+                        <b>1.2.3.40.1.</b>
+                    
+                    Diagnostic analyst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.2" data-path="../../user-guide/tools/market-research/">
+            
+                <a href="../../user-guide/tools/market-research/">
+            
+                    
+                        <b>1.2.3.40.2.</b>
+                    
+                    Market research
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.3" data-path="../../user-guide/tools/strategy-planner/">
+            
+                <a href="../../user-guide/tools/strategy-planner/">
+            
+                    
+                        <b>1.2.3.40.3.</b>
+                    
+                    Strategy planner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.4" data-path="../../user-guide/tools/channel-content-creator/">
+            
+                <a href="../../user-guide/tools/channel-content-creator/">
+            
+                    
+                        <b>1.2.3.40.4.</b>
+                    
+                    Channel content creator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.5" data-path="../../user-guide/tools/long-form-studio/">
+            
+                <a href="../../user-guide/tools/long-form-studio/">
+            
+                    
+                        <b>1.2.3.40.5.</b>
+                    
+                    Long-form studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.6" data-path="../../user-guide/tools/partnership-outreach/">
+            
+                <a href="../../user-guide/tools/partnership-outreach/">
+            
+                    
+                        <b>1.2.3.40.6.</b>
+                    
+                    Partnership outreach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.7" data-path="../../user-guide/tools/sales-and-voice-agent/">
+            
+                <a href="../../user-guide/tools/sales-and-voice-agent/">
+            
+                    
+                        <b>1.2.3.40.7.</b>
+                    
+                    Sales and voice agent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.8" data-path="../../user-guide/tools/content-strategy-and-roadmaps/">
+            
+                <a href="../../user-guide/tools/content-strategy-and-roadmaps/">
+            
+                    
+                        <b>1.2.3.40.8.</b>
+                    
+                    Content strategy and roadmaps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.9" data-path="../../user-guide/tools/pulse-assistant/">
+            
+                <a href="../../user-guide/tools/pulse-assistant/">
+            
+                    
+                        <b>1.2.3.40.9.</b>
+                    
+                    PULSE assistant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.40.10" data-path="../../user-guide/tools/self-healing/">
+            
+                <a href="../../user-guide/tools/self-healing/">
+            
+                    
+                        <b>1.2.3.40.10.</b>
+                    
+                    Self-healing operations agent
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.41" data-path="../../user-guide/glossary/">
+            
+                <a href="../../user-guide/glossary/">
+            
+                    
+                        <b>1.2.3.41.</b>
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.42" data-path="../../user-guide/delete-your-account/">
+            
+                <a href="../../user-guide/delete-your-account/">
+            
+                    
+                        <b>1.2.3.42.</b>
+                    
+                    Delete your account
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.43" data-path="../../user-guide/old-names/">
+            
+                <a href="../../user-guide/old-names/">
+            
+                    
+                        <b>1.2.3.43.</b>
+                    
+                    Old names and addresses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.44" data-path="../../user-guide/why-it-wasnt-sent/">
+            
+                <a href="../../user-guide/why-it-wasnt-sent/">
+            
+                    
+                        <b>1.2.3.44.</b>
+                    
+                    Why it wasn't sent
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    Admin guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../configuration/">
+            
+                <a href="../configuration/">
+            
+                    
+                        <b>1.2.4.1.</b>
+                    
+                    Configuration reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../users-and-access/">
+            
+                <a href="../users-and-access/">
+            
+                    
+                        <b>1.2.4.2.</b>
+                    
+                    Users and access
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../setup/">
+            
+                <a href="../setup/">
+            
+                    
+                        <b>1.2.4.3.</b>
+                    
+                    Setup
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.3.1" data-path="../setup/business-profile/">
+            
+                <a href="../setup/business-profile/">
+            
+                    
+                        <b>1.2.4.3.1.</b>
+                    
+                    Business profile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.2" data-path="../setup/connections/">
+            
+                <a href="../setup/connections/">
+            
+                    
+                        <b>1.2.4.3.2.</b>
+                    
+                    Connections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.3" data-path="../setup/public-address/">
+            
+                <a href="../setup/public-address/">
+            
+                    
+                        <b>1.2.4.3.3.</b>
+                    
+                    Public address and redirects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.4" data-path="../setup/meta/">
+            
+                <a href="../setup/meta/">
+            
+                    
+                        <b>1.2.4.3.4.</b>
+                    
+                    Meta (Instagram)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.5" data-path="../setup/google/">
+            
+                <a href="../setup/google/">
+            
+                    
+                        <b>1.2.4.3.5.</b>
+                    
+                    Google
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.6" data-path="../setup/linkedin/">
+            
+                <a href="../setup/linkedin/">
+            
+                    
+                        <b>1.2.4.3.6.</b>
+                    
+                    LinkedIn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.7" data-path="../setup/website-repository/">
+            
+                <a href="../setup/website-repository/">
+            
+                    
+                        <b>1.2.4.3.7.</b>
+                    
+                    Website repository
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.8" data-path="../setup/email/">
+            
+                <a href="../setup/email/">
+            
+                    
+                        <b>1.2.4.3.8.</b>
+                    
+                    Email
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.9" data-path="../setup/voice/">
+            
+                <a href="../setup/voice/">
+            
+                    
+                        <b>1.2.4.3.9.</b>
+                    
+                    Voice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.4.4.</b>
+                    
+                    Switches and arming order
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../publishing-controls/">
+            
+                <a href="../publishing-controls/">
+            
+                    
+                        <b>1.2.4.5.</b>
+                    
+                    Publishing controls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="../site-pipeline/">
+            
+                <a href="../site-pipeline/">
+            
+                    
+                        <b>1.2.4.6.</b>
+                    
+                    Site pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="../billing/">
+            
+                <a href="../billing/">
+            
+                    
+                        <b>1.2.4.7.</b>
+                    
+                    Billing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8" data-path="../plans/">
+            
+                <a href="../plans/">
+            
+                    
+                        <b>1.2.4.8.</b>
+                    
+                    Plans
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.9" data-path="../telephony-and-messaging/">
+            
+                <a href="../telephony-and-messaging/">
+            
+                    
+                        <b>1.2.4.9.</b>
+                    
+                    Telephony and messaging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.10" data-path="../operations/">
+            
+                <a href="../operations/">
+            
+                    
+                        <b>1.2.4.10.</b>
+                    
+                    Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.11" data-path="../web-reading/">
+            
+                <a href="../web-reading/">
+            
+                    
+                        <b>1.2.4.11.</b>
+                    
+                    Web reading settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.12" data-path="../agents-reach-the-user/">
+            
+                <a href="../agents-reach-the-user/">
+            
+                    
+                        <b>1.2.4.12.</b>
+                    
+                    Agents that reach the user
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.13" data-path="../answer-vendor-pitches/">
+            
+                <a href="../answer-vendor-pitches/">
+            
+                    
+                        <b>1.2.4.13.</b>
+                    
+                    Answer vendor pitches
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.14" data-path="../first-response-to-enquiries/">
+            
+                <a href="../first-response-to-enquiries/">
+            
+                    
+                        <b>1.2.4.14.</b>
+                    
+                    First response to enquiries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.15" data-path="../knowledge-probe/">
+            
+                <a href="../knowledge-probe/">
+            
+                    
+                        <b>1.2.4.15.</b>
+                    
+                    Knowledge probe
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../developer-guide/">
+            
+                <a href="../../developer-guide/">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    Developer guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../../developer-guide/calling-the-api/">
+            
+                <a href="../../developer-guide/calling-the-api/">
+            
+                    
+                        <b>1.2.5.1.</b>
+                    
+                    Calling the API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../api-reference/">
+            
+                <a href="../../api-reference/">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    API reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../../api-reference/http-endpoints/">
+            
+                <a href="../../api-reference/http-endpoints/">
+            
+                    
+                        <b>1.2.6.1.</b>
+                    
+                    HTTP endpoints
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../../api-reference/analysis/">
+            
+                <a href="../../api-reference/analysis/">
+            
+                    
+                        <b>1.2.6.2.</b>
+                    
+                    Brand analysis and audits
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="../../api-reference/leads-and-accounts/">
+            
+                <a href="../../api-reference/leads-and-accounts/">
+            
+                    
+                        <b>1.2.6.3.</b>
+                    
+                    Leads, tenders and accounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="../../api-reference/campaigns-and-results/">
+            
+                <a href="../../api-reference/campaigns-and-results/">
+            
+                    
+                        <b>1.2.6.4.</b>
+                    
+                    Campaigns and results
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.5" data-path="../../api-reference/content/">
+            
+                <a href="../../api-reference/content/">
+            
+                    
+                        <b>1.2.6.5.</b>
+                    
+                    Studio and content
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="../../api-reference/ai-and-platform/">
+            
+                <a href="../../api-reference/ai-and-platform/">
+            
+                    
+                        <b>1.2.6.6.</b>
+                    
+                    AI and platform
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.7" data-path="../../api-reference/shared-components/">
+            
+                <a href="../../api-reference/shared-components/">
+            
+                    
+                        <b>1.2.6.7.</b>
+                    
+                    Shared components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.8" data-path="../../api-reference/common-types/">
+            
+                <a href="../../api-reference/common-types/">
+            
+                    
+                        <b>1.2.6.8.</b>
+                    
+                    Common types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../troubleshooting/">
+            
+                <a href="../../troubleshooting/">
+            
+                    
+                        <b>1.2.7.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../privacy/">
+            
+                <a href="../../../privacy/">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    PULSE — Privacy Policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Switches and arming order</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+    
+                                <h1 id="switches-and-arming-order">Switches and arming order</h1>
+<!--
+SPDX-FileCopyrightText: 2026 Runink
+SPDX-License-Identifier: LicenseRef-Runink-Proprietary
+-->
+<p><strong>Runink PULSE: Prescriptive Unified Lead &amp; Social Engine</strong> ships with every
+outward action switched off. This page lists each switch in one place: what it
+defaults to, what it does, and the order to turn them on safely. The detail
+behind each one is on <a href="../publishing-controls/">Publishing controls</a>
+and <a href="../users-and-access/">Users and access</a>.</p>
+<p>These are set by Runink on your deployment; ask Runink to change one.</p>
+<h2 id="yes-and-no-values">Yes and no values</h2>
+<p>The keys do not all parse yes and no the same way, and the difference matters:</p>
+<ul>
+<li><strong><code>PULSE_APPLY_ENABLED</code></strong> arms only on the exact value <code>true</code>. <code>yes</code>, <code>on</code>,
+<code>1</code>, and <code>TRUE</code> leave it off, and the server warns about it at startup.</li>
+<li><strong><code>PULSE_PUBLISH_&lt;CHANNEL&gt;</code>, <code>PULSE_PUBLISH_AUTOMATIONS</code>, <code>PULSE_AUDIT_APPLY</code>,
+<code>PULSE_OUTBOUND_CALLS</code> and <code>PULSE_AI_CALLS</code></strong> accept <code>1</code>, <code>t</code>, <code>true</code>, <code>y</code>, <code>yes</code>, <code>on</code> and <code>0</code>, <code>f</code>, <code>false</code>, <code>n</code>, <code>no</code>,
+<code>off</code>, in any case. Anything else, including empty, counts as unset, which
+for the last four means off.</li>
+<li><strong><code>AUTH_GOOGLE_ONLY</code></strong> is on only for the exact value <code>true</code>.
+<strong><code>PULSE_GRPC_REFLECTION</code></strong> is on for <code>true</code> in any case.</li>
+<li><strong><code>SELF_HEAL_AUTONOMOUS</code></strong> and <strong><code>PULSE_OPPORTUNITIES_DISCOVERY</code></strong> default to
+<strong>on</strong>, so they read the other way round: they take the same tokens, and
+unset or unparseable leaves them on. Only an explicit no turns them off.</li>
+<li><strong><code>PULSE_LIPSYNC</code></strong> is on for <code>on</code>, <code>true</code>, <code>1</code> and <code>yes</code> (any case); anything else, including empty, is off.</li>
+<li><strong><code>PULSE_IMAGEGEN</code></strong> reads the same way: <code>on</code>, <code>true</code>, <code>1</code> and <code>yes</code> (any case) are on; anything else, including empty, is off.</li>
+<li><strong><code>PULSE_JUDGEMENT</code></strong> is on unless set to <code>off</code> (any case).</li>
+<li><strong><code>PULSE_RERANKER</code></strong> is on unless set to <code>off</code> (any case).</li>
+<li><strong><code>LINKEDIN_COMPANY_PAGES</code></strong> is on for <code>1</code>, <code>t</code>, <code>T</code>, <code>true</code>, <code>TRUE</code> or
+<code>True</code>; anything else, including <code>yes</code>, leaves it off.</li>
+<li><strong><code>PULSE_WHATSAPP_AUTOREPLY</code></strong> takes the same tokens and is off unless set to
+an explicit yes.</li>
+</ul>
+<h2 id="the-switches">The switches</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PULSE_APPLY_ENABLED</code></td>
+<td>off</td>
+<td>The global kill switch for every outward channel, the first half of the audit-apply gate, and what starts the daily site-audit engine. While it is off, nothing publishes, and approving a draft does not queue it at its planned date.</td>
+</tr>
+<tr>
+<td><code>PULSE_PUBLISH_&lt;CHANNEL&gt;</code></td>
+<td>follows the kill switch</td>
+<td>Narrows one channel: <code>BLOG</code>, <code>PODCAST</code>, <code>AUDIOBOOK</code>, <code>YOUTUBE</code>, <code>INSTAGRAM</code>, <code>SPOTIFY</code>, <code>LINKEDIN</code>, <code>EMAIL</code>, <code>WHATSAPP</code>, <code>SMS</code>. Can only turn a channel off.</td>
+</tr>
+<tr>
+<td><code>PULSE_PUBLISH_INSTAGRAM</code></td>
+<td>follows the kill switch</td>
+<td>Approving (or a schedule or Autopilot reaching) an Instagram piece publishes it by what it is: a <strong>post</strong> (one photo, with caption, hashtags and alt text), a <strong>carousel</strong> (its rendered 1080×1350 slides), a <strong>Reel</strong> (the owner's own video, attached in Studio; MP4/MOV, 3 s to 15 min, at most 300 MB and 1920 px wide, index at the start) or <strong>Stories</strong> (each attached photo or video, 3 to 60 s; no caption, and stickers cannot be posted through the API). A Reel or Story with no video of the owner's gets one made by PULSE at approval (or on download), and so does a YouTube Short (9:16, at most 3 min, uploaded through <code>PULSE_PUBLISH_YOUTUBE</code>; the owner's own video goes first). Reels made by PULSE are at most 90 s and Stories are split into parts of at most 60 s; Instagram's API publishes no stickers, so a Story's stickers are listed on a checklist to add by hand. Without speech the video is silent and says so; a server that cannot make video says "video is not available on this server". A piece without its media is refused for scheduling and withheld at approval with "needs a video / photo: upload one in Studio". Instagram fetches every file from <code>PULSE_PUBLIC_BASE_URL</code> at an unguessable, signed address that expires within two hours; without that URL the channel is not ready. Before publishing PULSE reads the account's <code>content_publishing_limit</code>; at the limit the post moves to after the 24-hour window with the reason. Mentions go in the caption as @name; each one is looked up again with business discovery right before posting and only a found (business or creator) account is sent in <code>user_tags</code> (a photo at its centre, a Reel or the first Story by username); one that cannot be looked up is not tagged. Needs the Instagram professional account connected with <code>instagram_basic</code> and <code>instagram_content_publish</code> (Meta app review); a missing permission is recorded as "reconnect Instagram to allow …".</td>
+</tr>
+<tr>
+<td><code>META_APP_ID</code>, <code>META_APP_SECRET</code></td>
+<td>unset</td>
+<td>The instance's own Meta app (Facebook Login for Business). With both set, Settings › Integrations shows <strong>Connect with Instagram</strong>: the person signs in at Facebook, PULSE stores a sealed long-lived token, finds the Instagram professional account through their Page, and renews the token in its last ten days (a failed renewal is shown on the card). The app must allow the redirect <code>PULSE_PUBLIC_BASE_URL/oauth/social/callback</code>. Unset: the card says sign-in is not set up and accepts a pasted token instead.</td>
+</tr>
+<tr>
+<td><code>LINKEDIN_CLIENT_ID</code>, <code>LINKEDIN_CLIENT_SECRET</code></td>
+<td>unset</td>
+<td>The instance's own LinkedIn app. With both set (and an https <code>PULSE_PUBLIC_BASE_URL</code>), the LinkedIn card shows <strong>Connect with LinkedIn</strong>: the person signs in at LinkedIn (<code>openid profile w_member_social</code>), PULSE stores the sealed token and the member, and approved LinkedIn posts use that token. LinkedIn tokens last 60 days; PULSE renews them only when LinkedIn issued a refresh token, otherwise the card shows "reconnect before" the date. The app must allow the redirect <code>PULSE_PUBLIC_BASE_URL/oauth/social/callback</code>. Unset: the card accepts a pasted token instead. <code>PULSE_PUBLISH_LINKEDIN</code> and <code>PULSE_PUBLISHER_USER_IDS</code> still decide whether anything is posted.</td>
+</tr>
+<tr>
+<td><code>LINKEDIN_COMPANY_PAGES</code></td>
+<td>off</td>
+<td>Set <code>true</code> only once LinkedIn approved the app for the Community Management API. The card then offers <strong>Connect company pages</strong>, which also asks for <code>r_organization_social</code>, <code>w_organization_social</code> and <code>rw_organization_admin</code>, and lists the pages the member administers to post as.</td>
+</tr>
+<tr>
+<td><code>PULSE_PUBLISH_EMAIL</code></td>
+<td>follows the kill switch</td>
+<td><strong>Send</strong> on a lead's email draft (<code>SendOutreachEmail</code>): one email, sent when the user taps Send, from that user's <strong>own</strong> connected mailbox (Gmail, Microsoft 365 or SMTP, see <a href="../setup/connections/#email">Connections</a>). There is no shared sender, so <code>PULSE_PUBLISHER_USER_IDS</code> does not apply. Off, a send is recorded <code>withheld</code> and the sheet keeps Copy and Open in email. Editors and admins only.</td>
+</tr>
+<tr>
+<td><code>PULSE_PUBLISH_WHATSAPP</code>, <code>PULSE_PUBLISH_SMS</code></td>
+<td>follows the kill switch</td>
+<td>A WhatsApp message or SMS through the shared Twilio carrier: <strong>Do it</strong> on a lead's next step under Leads › To do today, and <strong>Send</strong> on a result. Each send needs the person to confirm its preview. Recipients are the contacts an admin added under Settings › Messaging, plus, for SMS only, the person's own open leads whose phone number has a recorded source (see below). Off, the send is refused as "not configured" with the switch named; nothing is sent. Calls are not affected.</td>
+</tr>
+<tr>
+<td><code>PULSE_PUBLISH_LINKEDIN_REPLIES</code>, <code>PULSE_PUBLISH_INSTAGRAM_REPLIES</code>, <code>PULSE_PUBLISH_YOUTUBE_REPLIES</code></td>
+<td>follows the kill switch</td>
+<td>Replies PULSE sends from the Autopilot reply queue (Campaigns › Approvals): an answer to a comment (and, on Instagram, to a post that tags the account). A reply needs this switch <strong>and</strong> the channel's own <code>PULSE_PUBLISH_&lt;CHANNEL&gt;</code>, so <code>false</code> here keeps posting on and answering off. Off, an approved reply is recorded <code>withheld</code> with the switch named; nothing is sent.</td>
+</tr>
+<tr>
+<td><code>PULSE_PUBLISH_INSTAGRAM_DMS</code></td>
+<td>follows the kill switch</td>
+<td>Answers to Instagram direct messages from the reply queue. Needs <code>PULSE_PUBLISH_INSTAGRAM</code> too. Independently of every switch, a message is answered only within 24 hours of the person's last message (Meta's window); after that the reply is <code>withheld</code> with that reason.</td>
+</tr>
+<tr>
+<td><code>PULSE_PUBLISH_YOUTUBE_COMMENTS</code></td>
+<td><strong>off</strong> (unlike the other switches, the kill switch alone does not arm it)</td>
+<td>A comment on <strong>someone else's</strong> YouTube video, posted as the account's own channel, only after a person approved the suggestion in Campaigns › Approvals. Needs <code>true</code> here <strong>and</strong> <code>PULSE_APPLY_ENABLED</code> <strong>and</strong> <code>PULSE_PUBLISH_YOUTUBE</code>, and the account's own switch (Settings › Account › Suggest comments on other people's videos, default off). Off, an approved comment stays recorded <code>withheld</code> with this switch named; nothing is sent. There is no automatic option: no setting makes PULSE post one without a person. See <a href="../setup/google/">Google</a>.</td>
+</tr>
+<tr>
+<td><code>PULSE_AB_MIN_SENDS</code></td>
+<td><code>30</code></td>
+<td>The subject test of outreach sequences (it only exists once a person writes a second subject): how many emails each subject needs before the Subject test card shows a comparison (1 to 100000). Below it the card shows the counts only. PULSE never picks or switches a winner. Opens are not measured.</td>
+</tr>
+<tr>
+<td><code>PULSE_YT_COMMENT_DAILY_CAP</code>, <code>PULSE_YT_COMMENT_CHANNEL_COOLDOWN_DAYS</code></td>
+<td><code>3</code>, <code>14</code></td>
+<td>Per account: how many comment suggestions are staged and how many are posted in 24 hours (1 to 10), and how many days a channel is left alone after a suggestion on one of its videos (1 to 90). Both hold again when a person approves: past the cap the comment waits in the queue with the reason.</td>
+</tr>
+<tr>
+<td><code>PULSE_YT_QUOTA_DAILY_BUDGET</code></td>
+<td><code>8000</code></td>
+<td>Units of the YouTube Data API's daily quota (10,000 by default per Google Cloud project) PULSE may spend in this process: 1 per read, 50 per comment or hide. A call that would go over is not made. Counted in memory by Pacific-time day (when Google resets), so it is not shared across replicas or kept over a restart; keep it under the project's quota with room for other tools. At most 10,000.</td>
+</tr>
+<tr>
+<td><code>PULSE_ENGAGEMENT_WINDOW_DAYS</code>, <code>PULSE_ENGAGEMENT_MAX_PAGES</code></td>
+<td><code>14</code>, <code>4</code></td>
+<td>How far back Autopilot reads comments, mentions and direct messages on the account's posts (1 to 60 days), and how many pages it follows per post or inbox in one pass (1 to 10; 50 Instagram comments or up to 100 YouTube comment threads a page). A value that is unset, zero, negative or not a number counts as the default; one above the maximum counts as the maximum. YouTube pages cost 1 unit each.</td>
+</tr>
+<tr>
+<td><code>PULSE_META_WEBHOOK</code></td>
+<td><strong>off</strong></td>
+<td>Arms the secure Meta webhook (<code>GET</code> and <code>POST</code> <code>/meta/webhook</code>) that brings Instagram story mentions, story replies, comments and direct messages into Campaigns › Approvals as soon as Meta reports them. The route is registered only when this is <code>on</code> <strong>and</strong> both files of the optional Secret <code>meta-webhook-secrets</code> (<code>verify-token</code>, <code>app-secret</code>, mounted under <code>/etc/runink/meta-webhook/</code>) are present; otherwise it answers 404. It sends nothing: every reply keeps the kill switch, the channel switches, My rules and the conscience check. See <a href="../setup/meta/">Meta (Instagram)</a>.</td>
+</tr>
+<tr>
+<td><code>PULSE_META_WEBHOOK_MAX_BODY</code>, <code>PULSE_META_WEBHOOK_DEDUPE_HOURS</code></td>
+<td><code>262144</code>, <code>48</code></td>
+<td>The largest notification body the webhook reads, in bytes (4096 to 1048576), and how many hours an event id is remembered so a retry or replay is dropped (1 to 168; Meta retries for up to 36). A value that is unset, zero, negative or not a number counts as the default; one above the maximum counts as the maximum.</td>
+</tr>
+<tr>
+<td><code>PULSE_META_WEBHOOK_SECRETS_DIR</code></td>
+<td><code>/etc/runink/meta-webhook</code></td>
+<td>The directory the two secret files are read from. Only a test or an unusual mount changes it.</td>
+</tr>
+<tr>
+<td><code>PULSE_PUBLISH_GBP</code></td>
+<td>follows the kill switch</td>
+<td>Approving a Google Business Profile post (update, offer, event) publishes it on the managed location it names, with the account's own Google sign-in. Not connected, or a location PULSE no longer manages, is <code>withheld</code> with the reason.</td>
+</tr>
+<tr>
+<td><code>PULSE_PUBLISH_GBP_REPLIES</code></td>
+<td>follows the kill switch</td>
+<td>A reply to a Google review, posted only when a person approves it (a negative review also needs the person to confirm they read it). Needs <code>PULSE_PUBLISH_GBP</code> too, so <code>false</code> here keeps posts on and review replies off. Off, the approval is recorded <code>withheld</code> with the switch named.</td>
+</tr>
+<tr>
+<td><code>PULSE_EMAIL_DAILY_LIMIT</code></td>
+<td><code>50</code></td>
+<td>Emails one user may send in any 24 hours, to protect their mailbox's reputation. A positive whole number; anything else means 50.</td>
+</tr>
+<tr>
+<td><code>GOOGLE_CLIENT_ID</code>, <code>GOOGLE_CLIENT_SECRET</code></td>
+<td>unset</td>
+<td>The instance's own Google OAuth client. Also used for sign-in and token refresh. Needed for <strong>Connect Gmail</strong>, which asks for <code>gmail.send</code> and, to see replies, <code>gmail.readonly</code>. Also <strong>Connect with YouTube</strong> (asks for <code>youtube.upload</code>, <code>youtube.force-ssl</code>, <code>yt-analytics.readonly</code>; redirect <code>PULSE_PUBLIC_BASE_URL/oauth/social/callback</code> must be allowed on the client). Unset: the YouTube card accepts a pasted token instead. The same client connects <strong>Google Search Console</strong> (read-only <code>webmasters.readonly</code>, redirect <code>PULSE_PUBLIC_BASE_URL/oauth/search-console/callback</code>); see <a href="../setup/google/">Google</a>.</td>
+</tr>
+<tr>
+<td><code>MICROSOFT_CLIENT_ID</code>, <code>MICROSOFT_CLIENT_SECRET</code>, <code>MICROSOFT_TENANT_ID</code></td>
+<td>unset, unset, <code>common</code></td>
+<td>The instance's own Microsoft Entra app registration, for <strong>Connect Microsoft 365</strong> (delegated <code>Mail.Send</code>, <code>Mail.Read</code> for replies, <code>User.Read</code>, <code>offline_access</code>). Set the secret from the instance's configuration, never from a repository secret.</td>
+</tr>
+<tr>
+<td><code>PULSE_PUBLISH_CONFIG_PATH</code>, <code>PULSE_PUBLISH_CONFIG_JSON</code></td>
+<td>a file set by Runink, none</td>
+<td>The same per-channel opinions as a file, or inline JSON. An environment key wins over the file.</td>
+</tr>
+<tr>
+<td><code>PULSE_PUBLISHER_USER_IDS</code></td>
+<td>empty, which means nobody</td>
+<td>User ids (as shown in <strong>Admin</strong>, not emails) allowed to publish through the channels that post <strong>as the deployment</strong>: LinkedIn, blog, podcast, and audiobook. Anyone else's dispatch is recorded <code>withheld</code>.</td>
+</tr>
+<tr>
+<td>Settings › Integrations › <strong>Active</strong> (per user, not an env var)</td>
+<td>every channel active until the user saves</td>
+<td>A channel its owner switched off gets no daily drafts, and its queued posts are recorded <code>withheld: channel not active</code>. It can only narrow: it never arms a channel the switches above leave off.</td>
+</tr>
+<tr>
+<td><code>PULSE_PUBLISH_LINKEDIN</code></td>
+<td>follows the kill switch</td>
+<td>Keep this <code>false</code> to keep LinkedIn drafts-only. See <a href="../publishing-controls/#the-daily-linkedin-draft">the daily LinkedIn draft</a>.</td>
+</tr>
+<tr>
+<td>Settings › Integrations › <strong>Autopilot</strong> (per account, not an env var)</td>
+<td>off for every account</td>
+<td>After a person approves a post, PULSE queues it at the account's best time instead of sending it at once, and the publishing worker sends it through the same gate as any scheduled post: the kill switch, <code>PULSE_PUBLISH_&lt;CHANNEL&gt;</code>, <code>PULSE_PUBLISHER_USER_IDS</code> and the <strong>Active</strong> switch above all still decide at send time. Autopilot never queues content nobody approved, and never queues on a disarmed channel (the approval then sends, and is recorded <code>withheld</code>, as before). It pauses the account by itself on an expired connection, a rate limit, or repeated failed sends, and says so under Leads › To do today with a Reconnect link. Turning Autopilot off withholds its queued posts. See <a href="../../user-guide/autopilot-and-agencies/">Autopilot and agencies</a>.</td>
+</tr>
+<tr>
+<td>Autopilot › <strong>Answer simple comments by itself</strong> (per account)</td>
+<td>off</td>
+<td>Replies to comments PULSE reads (LinkedIn, Instagram and YouTube; on Instagram also mentions and direct messages) are drafted into Campaigns › Approvals. A person may let three low-risk kinds go out by themselves: thanks, an answer taken from approved FAQ content, and a link to the business's own site. Each one must pass PULSE's safety rules and the plan gate (with <code>PULSE_JUDGEMENT=off</code> nothing replies by itself) and is logged on its row. A reply is an outbound post on the channel, so it also needs the kill switch, <code>PULSE_PUBLISH_&lt;CHANNEL&gt;</code>, the channel's reply switch (<code>PULSE_PUBLISH_&lt;CHANNEL&gt;_REPLIES</code>, or <code>PULSE_PUBLISH_INSTAGRAM_DMS</code> for a direct message), the publisher allowlist and the <strong>Active</strong> switch.</td>
+</tr>
+<tr>
+<td>Settings › Account › <strong>Answer vendor pitches</strong> (per account, not an env var)</td>
+<td>off for every account</td>
+<td>An unsolicited vendor pitch that reaches the account (website form; Instagram direct messages; not LinkedIn, WhatsApp, SMS or website chat, and mail that only arrives in the mailbox only when the account also switched on <strong>Read my inbox for vendor pitches</strong>, below) is answered with the account's own counter-offer and no per-message approval once the account turns it on and fills in its terms, its Outreach sender name and postal address (and <code>PULSE_PUBLIC_BASE_URL</code> is https). Each answer still needs the kill switch, the channel's own switch (<code>PULSE_PUBLISH_EMAIL</code> for the form's answer; <code>PULSE_PUBLISH_INSTAGRAM</code> and <code>PULSE_PUBLISH_INSTAGRAM_DMS</code> for a direct message), My rules and the conscience gate, the loop gate, ten answers a day and one per sender. A refused answer waits in the partner pipeline for a person. See <a href="../answer-vendor-pitches/">Answer vendor pitches</a>.</td>
+</tr>
+<tr>
+<td>Settings › Account › <strong>Read my inbox for vendor pitches</strong> (per account, not an env var; with a sub-option for promotions)</td>
+<td>off for every account</td>
+<td>New mail in the account's connected Gmail inbox, read-only, is given to Answer vendor pitches: inbox folder only (promotions, updates, social and forums with the sub-option; spam and sent mail never), only mail received after the switch was turned on, at most 7 days back. Needs Answer vendor pitches on too and <code>gmail.readonly</code> (a restricted Google scope; verification for users outside the project is still to be decided). Gmail only for now. See <a href="../answer-vendor-pitches/">Answer vendor pitches</a>.</td>
+</tr>
+<tr>
+<td><code>PULSE_VENDOR_INSIGHTS_WINDOW_DAYS</code>, <code>PULSE_VENDOR_INSIGHTS_MIN_PITCHES</code></td>
+<td>unset, unset</td>
+<td>The window in days and the fewest pitches for <strong>What vendors pitching us tell us</strong>. Either unset: the card shows nothing and names what is missing. Fewer pitches than the minimum: nothing is said. Nothing is sent: a weekly digest is a record in the app. See <a href="../answer-vendor-pitches/">Answer vendor pitches</a>.</td>
+</tr>
+<tr>
+<td>Settings › Account › <strong>First response to website enquiries</strong> (per account, not an env var)</td>
+<td>off for every account; the second switch, <strong>Send acknowledgements automatically</strong>, is also off</td>
+<td>A new website-form enquiry from a business email address gets a short acknowledgement composed from a template and the account's own words. Switched on, it only prepares a <strong>draft</strong> that waits for a person's tap; with the second switch on, the clearest cases go without the tap. Nothing happens until the account's Outreach sender name and postal address are filled in and <code>PULSE_PUBLIC_BASE_URL</code> is https. Each send still needs the kill switch, <code>PULSE_PUBLISH_EMAIL</code>, the account's working hours and daily cap, My rules and the conscience gate, the loop gate, and goes at most once per lead. See <a href="../first-response-to-enquiries/">First response to enquiries</a>.</td>
+</tr>
+<tr>
+<td><code>PULSE_MESSAGE_STEP_DAILY_CAP</code>, and the step <strong>Send a WhatsApp or SMS (with your tap)</strong></td>
+<td><code>10</code>; the step is an outbound automation step (needs <code>PULSE_PUBLISH_AUTOMATIONS</code>, the kill switch <code>PULSE_APPLY_ENABLED</code> and the channel's own <code>PULSE_PUBLISH_SMS</code> / <code>PULSE_PUBLISH_WHATSAPP</code>)</td>
+<td>The most messages a day (1 to 200) the step may make or send per account; past it the step is refused with the reason. The step only MAKES a message: each one waits for a person's tap (Content › Automations › Messages), and only a contact with a consent a person recorded for that channel is messaged. A STOP reply, the account's contact hours and the switches are checked again at the tap. No consent, no message.</td>
+</tr>
+<tr>
+<td>Content › Automations › <strong>Re-engage a quiet lead</strong> (per account, not an env var)</td>
+<td>off for every account</td>
+<td>Switching it on installs the automation "Re-engage a quiet lead" <strong>disarmed</strong>; arming it stays the person's own step. Each morning it takes the leads in stage Contacted that never replied and, for each one whose last email from PULSE is at least the quiet period old (default 14 days, 3 to 90), drafts ONE short follow-up that waits for a person's approval in the lead's sequence. It sends nothing itself: after the tap the email goes through the same send as every sequence email (working hours, daily cap, suppression list, footer with the unsubscribe link, My rules, <code>PULSE_PUBLISH_EMAIL</code>). At most 2 re-engagements per lead ever and 10 drafts a day per account. It stops on a reply, a bounce or an unsubscribe.</td>
+</tr>
+<tr>
+<td><code>PULSE_RESPONSE_TIME_WINDOW_DAYS</code>, <code>PULSE_RESPONSE_TIME_MIN_LEADS</code></td>
+<td>unset, unset</td>
+<td>The window in days and the fewest answered leads for the <strong>Response time</strong> card on Leads › Inbound. Either unset, or too few leads: it says <strong>Not measured</strong>, never zero. Nothing is sent. See <a href="../first-response-to-enquiries/">First response to enquiries</a>.</td>
+</tr>
+<tr>
+<td><code>PULSE_VENDOR_PITCH_RETENTION_DAYS</code></td>
+<td><code>90</code></td>
+<td>Days before an answered pitch's sender address, company, quoted sentence and draft are erased (codes and stage stay).</td>
+</tr>
+<tr>
+<td><code>PULSE_LINKEDIN_CTA_URL</code></td>
+<td><code>https://runink.org</code></td>
+<td>The address the daily LinkedIn draft ends with.</td>
+</tr>
+<tr>
+<td><code>PULSE_AUDIT_APPLY</code></td>
+<td>off</td>
+<td>The second half of the audit-apply gate. With the kill switch, it allows the <code>apply</code>, <code>commit</code>, and <code>pr</code> modes of <code>ApplyAuditActions</code> (audit fixes), and <strong>Propose as pull request</strong> on the website repository, for administrators only. Off (or the kill switch off) refuses both before anything is read from or sent to GitHub.</td>
+</tr>
+<tr>
+<td>Settings › Integrations › <strong>Website repository</strong> (per account, not an env var)</td>
+<td>not connected</td>
+<td>The customer's own site repository on GitHub, with a fine-grained token limited to that repository (Contents and Pull requests: read and write), sealed with the envelope key. An administrator connects it; the card shows connected, missing permission, token rejected, branch not found or unreachable. A proposal is one branch <code>pulse/&lt;audit&gt;-&lt;finding&gt;</code> and one pull request through the GitHub API: PULSE never pushes to the base branch, never merges, never edits <code>.github/workflows/</code> or <code>.git/</code>, refuses <code>..</code> paths and links, and caps a proposal at 20 files, 256 KiB each and 1 MiB in all. The plan gate judges the edit before the pull request is opened; a dissent opens nothing.</td>
+</tr>
+<tr>
+<td><code>PULSE_APPLY_ROOT</code></td>
+<td>unset, which refuses every mode</td>
+<td>The only directory an audit fix's <code>repo_path</code> may resolve into. Applies to <code>plan</code> too.</td>
+</tr>
+<tr>
+<td><code>PULSE_PUBLISH_AUTOMATIONS</code></td>
+<td>off</td>
+<td>Lets automations (the automation card a person opens on a lead or a campaign item) do outbound work: schedule a post, write to HubSpot, send email from the owner's mailbox, and place AI calls (which also need <code>PULSE_OUTBOUND_CALLS</code>, <code>PULSE_AI_CALLS</code> and the lead's consent record). Under the kill switch: both must be on, and each step still needs its own channel switch and the publisher allowlist. Each automation must also be armed by its owner; a dry run never sends.</td>
+</tr>
+<tr>
+<td><code>PULSE_OPPORTUNITIES_DISCOVERY</code></td>
+<td>on</td>
+<td>The daily read of open procurement data (EU TED, UK Find a Tender and Contracts Finder, Brazil PNCP, CanadaBuys, and US SAM.gov for accounts that added their own key) and of requests for proposals found by PULSE's crawler, for every account with an offering to match. Reading only: nothing is sent or submitted, and the kill switch does not apply. Off stops the daily read; <strong>Find → Public tenders: look now</strong> on Leads still reads for the person who presses it. Drafting a response (on request, or the opt-in auto-draft) spends model time on the account's own inference.</td>
+</tr>
+<tr>
+<td><code>PULSE_OUTBOUND_CALLS</code></td>
+<td>off</td>
+<td>One of the switches an AI call needs (with <code>PULSE_AI_CALLS</code> and the kill switch). The caller must also be an editor or admin.</td>
+</tr>
+<tr>
+<td><code>PULSE_AI_CALL_ALLOWED_NUMBERS</code></td>
+<td>unset</td>
+<td>A comma-separated list of E.164 numbers. While it is set, this server places a call (AI call from the Call sheet, a plan, a sequence or an automation, or a Send / Call to a saved contact) only to a number on the list; every other number is refused with a plain reason, and only the last four digits are ever logged. Unset: no restriction. Set it to the test number before the first call and unset it afterwards. <code>GET /health</code> shows <code>call_guard</code> (list set yes/no and its size, the three switches), never a number.</td>
+</tr>
+<tr>
+<td>Settings › Integrations › AI calls › <strong>Pause all AI calls now</strong> (per instance, not an env var)</td>
+<td>running</td>
+<td>An administrator pauses every AI call on this instance at once, with no restart, and resumes them later. Read at every call gate and again at the dial (a Send / Call to a saved contact too); a setting that cannot be read refuses the call. A call dialled but not yet answered is hung up; a conversation already running ends when someone hangs up. Each change is an audited record (who, when). <code>GET /health</code> <code>call_guard.calls_pause</code> shows <code>running</code>, <code>paused</code> or <code>unreadable</code>, and <code>call_guard.languages</code> the languages calls can speak: calls speak English until a translated call wording exists, whatever the account language is.</td>
+</tr>
+<tr>
+<td><code>PULSE_AI_CALLS</code></td>
+<td>off</td>
+<td>Allows AI voice calls to leads (<code>AICallService.PlaceAICall</code>, <a href="../../user-guide/ai-calls/">AI calls</a>). Needs <code>PULSE_APPLY_ENABLED=true</code> and <code>PULSE_OUTBOUND_CALLS</code> as well, an editor or admin, Twilio voice settings, <code>PULSE_PUBLIC_BASE_URL</code> (https), and for each lead a recorded consent, a time zone and a drafted call script.</td>
+</tr>
+<tr>
+<td>Settings › Integrations › <strong>AI calls</strong> (per account, not an env var)</td>
+<td>off</td>
+<td>The account's switch for AI calls from outreach sequences (<a href="../../user-guide/cold-calls-from-sequences/">Cold and follow-up calls from Leads</a>). Only an administrator changes it. Off: a sequence's call step stays a task for the person and no call plan is drafted. On: the call step drafts a plan that a person must approve, call by call; the call is then placed through <code>AICallService.PlaceAICall</code>, so every switch and guard above still applies. Also per account: AI calls a day, how long transcripts are kept, how long an approval lasts, and the calling hours (inside allowed hours). <strong>Nothing about this feature is on by default</strong>, and recording is not an option: no audio is kept.</td>
+</tr>
+<tr>
+<td><code>PULSE_AI_CALL_DAILY_CAP_DEFAULT</code>, <code>PULSE_AI_CALL_DAILY_CAP_MAX</code></td>
+<td><code>5</code>, <code>20</code></td>
+<td>An account's AI calls in 24 hours: the default, and the most an account may set.</td>
+</tr>
+<tr>
+<td><code>PULSE_AI_CALL_RETENTION_DAYS_DEFAULT</code>, <code>PULSE_AI_CALL_RETENTION_DAYS_MAX</code></td>
+<td><code>7</code>, <code>90</code></td>
+<td>How long a call's transcript is kept (sealed) before it is erased; the outcome, answers and summary stay on the lead. The most an account may set.</td>
+</tr>
+<tr>
+<td><code>PULSE_AI_CALL_APPROVAL_HOURS_DEFAULT</code>, <code>PULSE_AI_CALL_APPROVAL_HOURS_MAX</code></td>
+<td><code>24</code>, <code>168</code></td>
+<td>How long an approved call plan may wait for the calling window before it lapses and must be approved again.</td>
+</tr>
+<tr>
+<td><code>PULSE_SITE_CHAT_SITE_MESSAGES_PER_MINUTE</code>, <code>PULSE_SITE_CHAT_SITE_BURST</code>, <code>PULSE_SITE_CHAT_VISITOR_MESSAGES_PER_MINUTE</code>, <code>PULSE_SITE_CHAT_DAILY_MESSAGES</code></td>
+<td>unset, which turns the website chat's visitor side off (503)</td>
+<td>The <strong>website chat</strong> (Settings › Website chat): the PULSE assistant answering visitors of the account's own site from its public facts only (offerings, approved FAQ content, pages of its own site), on PULSE's own inference. Each one a positive number: the sustained rate and burst per site key, the rate per visitor address (held in memory only) and the visitor messages one site may send per UTC day (a contact or ask-a-person form counts as one). All four must be set, and <code>PULSE_PUBLIC_BASE_URL</code> too for the snippet; Settings names what is missing. The site key in the snippet is public, works only from the addresses the owner listed, and is revoked or replaced there. Nothing is sent from it: a lead it makes (only with the visitor's consent) waits in Leads › Inbound like a website-form lead.</td>
+</tr>
+<tr>
+<td><code>PULSE_SITE_CHAT_RETENTION_HOURS</code></td>
+<td><code>168</code> (7 days), at most 720</td>
+<td>How long a visitor's chat is kept before the hourly sweep deletes it. The widget states it to the visitor.</td>
+</tr>
+<tr>
+<td><code>PULSE_RESULTS_PLAN_WINDOW_DAYS</code>, <code>PULSE_RESULTS_PLAN_MIN_EVIDENCE</code></td>
+<td>unset, which stops the <strong>weekly results review</strong> from proposing anything (Settings names what is missing)</td>
+<td>The weekly results-to-plan loop (per-account switch in Settings › Account, default off; loop <code>results-to-plan</code>, L1, one run per account per week, one structured model call): how many days of results it reads, and how many outcomes (leads, posts with readable results, replies) one row needs before it may decide anything. Both positive whole numbers; an unset, zero, negative or non-numeric value counts as unset. Runink's recommended starting values are 42 days and 6 outcomes, pending the owner's confirmation. Setting them does not switch the review on: each account still switches it on itself. It only proposes: a person approves or rejects on the plan page, and the live plan changes only on approval.</td>
+</tr>
+<tr>
+<td><code>PULSE_MARKET_MEMORY_WINDOW_DAYS</code>, <code>PULSE_MARKET_MEMORY_MIN_EVIDENCE</code></td>
+<td>unset, which stops the <strong>weekly market learning</strong> from learning anything (Settings names what is missing)</td>
+<td>The weekly market-learning loop (per-account switch in Settings › Account, default off): how many days of results it reads, and how many outcomes one row needs before anything is remembered from it. Both positive whole numbers; an unset, zero, negative or non-numeric value counts as unset. Runink's recommended starting values are 60 days and 5 outcomes, pending the owner's confirmation. Setting them does not switch learning on: each account still switches it on itself.</td>
+</tr>
+<tr>
+<td>Settings › Account › <strong>Use what PULSE learned when drafting</strong> (per account, not an env var), <code>PULSE_MEMORY_DRAFT_MAX_FACTS</code></td>
+<td>off for every account; the cap is 5 when unset</td>
+<td>Lets PULSE give a drafting skill (posts, captions, stories, reels, video scripts, LinkedIn company updates, newsletters, blog articles; never a reply, a message or an extraction) a few of the entries of <strong>What PULSE has learned about your market</strong>, fenced as data and ranked in code by channel and topic, then confidence, then recency. Needs weekly learning on and the two <code>PULSE_MARKET_MEMORY_</code> settings above; Settings names what is missing, or says "No learned facts yet". Only active entries built from the account's own counts, not imported and unconfirmed, above the confidence floor, with no link, address or phone number. The cap is a whole number from 1 to 10 (unset, zero or unreadable is 5, above 10 is 10). A draft keeps the entry numbers it used; each saved draft logs one line with counts only. See <a href="../../user-guide/market-memory/">What PULSE has learned</a>.</td>
+</tr>
+<tr>
+<td><code>PULSE_ADVISOR_WINDOW_DAYS</code>, <code>PULSE_ADVISOR_MIN_EVIDENCE</code></td>
+<td>unset, which stops the <strong>weekly growth advisor</strong> from suggesting anything (Settings names what is missing)</td>
+<td>The weekly growth advisor (per-account switch in Settings › Account, default off; loop <code>advise-growth</code>, L1, one run per account per week, no model call): how many days of results it reads, and how many outcomes one row needs before an option may rest on it. Both positive whole numbers; an unset, zero, negative or non-numeric value counts as unset. The owner chooses the values. Setting them does not switch the advisor on: each account still switches it on itself. It only suggests: a person approves (one edit of the plan, as their own) or rejects with a reason, and nothing is sent, published or called.</td>
+</tr>
+<tr>
+<td><code>PULSE_PUBLIC_BASE_URL</code></td>
+<td>unset</td>
+<td>The public origin for absolute podcast-feed links, and the base of the mailbox OAuth callback <code>&lt;PULSE_PUBLIC_BASE_URL&gt;/oauth/mail/callback</code>. Without it, an armed feed answers <code>503</code> instead of rendering links nobody can fetch, and Gmail / Microsoft 365 cannot be connected (SMTP still can). It must be <strong>https</strong> for Connect with Instagram, YouTube, LinkedIn and Search Console to be offered, and for Instagram to fetch media; the TIDDE edge must route <code>/oauth/social/callback</code> and <code>/oauth/search-console/callback</code> to PULSE. See <a href="../setup/public-address/">Public address and redirects</a>.</td>
+</tr>
+<tr>
+<td><code>PULSE_JUDGEMENT</code></td>
+<td>on</td>
+<td><code>off</code> turns the plan gate off: proposals are no longer judged before they are saved, and Autopilot answers nothing by itself (an auto-reply needs the plan gate to agree). Leave it on.</td>
+</tr>
+<tr>
+<td><code>PULSE_RERANKER</code></td>
+<td>on</td>
+<td><code>off</code> (any case) stops the relevance ranking that picks which of the pages and search results gathered for a diagnostic go into the analysis. On, a small ranking service scores each passage against the question and the best ones that fit the budget are kept. Off, or when that service is unreachable or does not answer in time, the passages are ranked by word overlap with the question instead, for the whole set, and the diagnostic's progress card says which ranking was used. Nothing is blocked either way: only the choice of passages can differ.</td>
+</tr>
+<tr>
+<td><code>PULSE_DATA_EXPORT</code></td>
+<td>on</td>
+<td><code>off</code>, <code>0</code>, <code>false</code> or <code>no</code> stops <strong>Export my data</strong>: a request is refused with a plain message and nothing is prepared. <code>PULSE_DATA_EXPORT_MAX_MB</code> (default 200) is the most one copy may hold; a larger one fails with that reason.</td>
+</tr>
+<tr>
+<td><code>PULSE_ROADMAP_WINDOW_DAYS</code>, <code>PULSE_ROADMAP_MIN_EVIDENCE</code></td>
+<td>unset, which stops the <strong>weekly roadmap proposer</strong> from suggesting anything (Settings names what is missing)</td>
+<td>The weekly roadmap proposer (per-account switch in Settings › Account, default off; loop <code>propose-roadmap</code>, L1, one run per account per week): how many days of results it reads, and how many measured outcomes a channel needs before a post may be suggested for it. Both positive whole numbers; an unset, zero, negative or non-numeric value counts as unset. The owner chooses the values. It only suggests new posts (topics from the audit, channels with enough measured results, days inside the account's own weekly capacity, each with its evidence): a person adds them to the roadmap, edits them or rejects them, and nothing is drafted, scheduled, sent or published. See <a href="../../user-guide/weekly-roadmap-suggestions/">Weekly roadmap suggestions</a>.</td>
+</tr>
+<tr>
+<td><code>PULSE_ROADMAP_DRAFT_AHEAD_DAYS</code>, <code>PULSE_ROADMAP_DRAFT_DAILY_CAP</code></td>
+<td><code>3</code>, <code>2</code></td>
+<td>Drafting approved roadmap posts ahead of time (per-account switch in Settings › Account, default off; loop <code>draft-roadmap</code>, L1, one run per account per day): how many days ahead of a post's day its draft is written, and how many drafts one account gets a day. Positive whole numbers; an invalid value is ignored (the default is used) and Settings names it. Only posts a person approved from a roadmap suggestion are drafted, through the same content skills as the Studio and behind the audit work in the model lane; every draft waits in the approval queue (<code>pending_review</code>) and nothing is approved, scheduled or published by it. Switching it on does not publish anything.</td>
+</tr>
+<tr>
+<td><code>PULSE_SHORTS_ENGINE</code>, <code>PULSE_SHORTS_DAILY_CAP</code></td>
+<td>on, <code>1</code></td>
+<td>The daily short-video draft (per-account switch in Settings › Account, default off; loop <code>shorts-engine</code>, L1, one run per account per day): exactly <code>off</code> stops it for every account, and the cap is how many drafts one account gets a day (0 to 10). It only drafts: the piece waits in the approval queue and nothing is scheduled or published until a person approves it. Switching it on does not publish anything. See <a href="../../user-guide/short-videos/">Short videos</a>.</td>
+</tr>
+<tr>
+<td><code>PULSE_VOICEOVER_MAX_PARALLEL</code></td>
+<td><code>1</code></td>
+<td>How many voice-overs are spoken at once on the whole server (1 to 4). The speech service is shared GPU capacity, so the default is one: other jobs show "waiting for a free voice slot". It does not change the per-account rule (one voice-over being made at a time) or the daily limit (20, counted when the voice-over is asked for). See <a href="../../user-guide/voice-over-studio/">Voice-over studio</a>.</td>
+</tr>
+<tr>
+<td><code>PULSE_LIPSYNC</code></td>
+<td>off</td>
+<td>Exactly <code>on</code> (also <code>true</code>, <code>1</code>, <code>yes</code>) lets a person make a <strong>lip-synced presenter video</strong> from their own twin, on the platform's own servers (no third-party AI). Off, or with the service not available, the button is disabled and says why; nothing is sent anywhere. Only for the person's own twin while its appearance consent is active; every video carries a visible "AI-generated" label, and is deleted if the consent is withdrawn or the twin deleted. See <a href="../../user-guide/lip-synced-presenter-videos/">Lip-synced presenter videos</a>.</td>
+</tr>
+<tr>
+<td><code>PULSE_IMAGEGEN</code></td>
+<td>off</td>
+<td>Exactly <code>on</code> (also <code>true</code>, <code>1</code>, <code>yes</code>) lets a person make <strong>still images</strong> from a description (Studio › Create image), on the platform's own servers. Off, or with <code>IMAGEGEND_URL</code> unset, nothing is sent to the service and a person still gets a <strong>branded card</strong> drawn by PULSE in the account's colours (labelled "Branded card"); the switch only turns on the AI upgrade. Each account also has its own switch (Settings › Account, off by default) that governs only the AI picture. Every image is a draft and is never used or sent without a person's approval. See <a href="../../user-guide/create-an-image/">Create an image</a>.</td>
+</tr>
+<tr>
+<td><code>IMAGEGEND_URL</code></td>
+<td>unset</td>
+<td>The address of the platform's image service. Unset means "not set up": a stated state, not an error.</td>
+</tr>
+<tr>
+<td><code>IMAGEGEND_CALLER_KEY_FILE</code></td>
+<td><code>/etc/runink/imagegend-caller/pulse</code></td>
+<td>Where PULSE's caller key for the image service is mounted. The key is read again on every call, so a rotated key needs no restart.</td>
+</tr>
+<tr>
+<td><code>PULSE_IMAGEGEN_DAILY_CAP</code></td>
+<td>20</td>
+<td>Pictures one account may ask for per day (at most four per request). A value that is not a positive number is 20.</td>
+</tr>
+<tr>
+<td><code>PULSE_OWN_VOICE</code></td>
+<td>off</td>
+<td>Exactly <code>on</code> (also <code>true</code>, <code>1</code>, <code>yes</code>) lets a person make <strong>voice-overs in their own voice</strong>, from their own consented recording in Digital twins. Off, or with the account's own switch (Settings &gt; Account, off by default) off, or with the platform's voice service having recorded voices off, the option is not offered or reads "not available on this server", and nothing is sent to the voice service. <strong>The voice service must have custom voices enabled</strong> (its own setting, off by default; it keeps two speech models in memory and uses the server's graphics card, so raise its memory first). A voice is never used for calls and is never described as watermarked. See <a href="../../user-guide/voice-over-own-voice/">Voice-overs in your own voice</a>.</td>
+</tr>
+<tr>
+<td><code>PULSE_OWN_VOICE_DAILY_CAP</code></td>
+<td>5</td>
+<td>Voice-overs in their own voice one account may make per day, on top of the 20 a day all voice-overs share. A value that is not a positive number is 5. A script is at most 3,000 characters.</td>
+</tr>
+<tr>
+<td><code>PULSE_STUDIO_MEDIA</code></td>
+<td>on</td>
+<td>Exactly <code>off</code> is the one emergency flag that stops the <strong>package</strong> a person's Studio request makes for a script (YouTube Short, Reel, Story): its short video and its image (an AI picture, else a branded card). Default on; the shorts-engine and image switches never stop it. The video waits for an encoder (<code>PULSE_VIDEO_ENCODER</code>, default <code>auto</code>: h264, else vp9) and the reason is in <code>/health</code> <code>video</code>.</td>
+</tr>
+<tr>
+<td><code>PULSE_ENV</code></td>
+<td>unset</td>
+<td><code>production</code> (any case) turns the startup security check from a warning into a refusal to start. The platform sets it on production deployments. See <a href="#pulseenvproduction">below</a>.</td>
+</tr>
+<tr>
+<td><code>PULSE_GRPC_REFLECTION</code></td>
+<td>off</td>
+<td><code>true</code> turns on gRPC reflection. For local work only; <code>PULSE_ENV</code> does not affect it.</td>
+</tr>
+<tr>
+<td><code>AUTH_ALLOWED_EMAILS</code></td>
+<td>empty, which means nobody</td>
+<td>Who may sign in with Google.</td>
+</tr>
+<tr>
+<td><code>AUTH_GOOGLE_ONLY</code></td>
+<td>off</td>
+<td>Exactly <code>true</code> hides the password form.</td>
+</tr>
+<tr>
+<td><code>AUTH_SEED_USERS</code></td>
+<td>unset</td>
+<td>Operator-granted roles as <code>email=persona,…</code>, re-applied at every start. See <a href="../users-and-access/#seeded-roles">Seeded roles</a>.</td>
+</tr>
+<tr>
+<td><code>SELF_HEAL_AUTONOMOUS</code></td>
+<td><strong>on</strong></td>
+<td>An explicit no stops the self-healing loop applying anything; plans are still reasoned and recorded. See <a href="../operations/#self-healing">Operations</a>.</td>
+</tr>
+<tr>
+<td><code>PULSE_WHATSAPP_AUTOREPLY</code></td>
+<td>off</td>
+<td>An explicit yes lets PULSE answer inbound WhatsApp and SMS messages with a model-written reply. Each reply is a send, so it also needs <code>PULSE_APPLY_ENABLED=true</code> and <code>PULSE_PUBLISH_WHATSAPP</code> (or <code>PULSE_PUBLISH_SMS</code> for an SMS) not switched off. Each reply also passes My rules and the partnerships agent's limits; one they hold is not sent. Off, messages are still received and nothing is answered. See <a href="../telephony-and-messaging/">Telephony and messaging</a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Every switch is also reported in the server log at startup; ask Runink to
+confirm what is armed.</p>
+<h2 id="safe-arming-order">Safe arming order</h2>
+<p>Turn things on one at a time, and check the startup log after each restart.</p>
+<ol>
+<li><p><a name="confirm-the-production-gate-passes"></a><strong>Confirm the production gate passes</strong></p>
+<p>With <code>PULSE_ENV=production</code>, the server refuses to start on an insecure
+configuration. Before setting it, confirm that the current pod logs
+<code>security config validated</code>. See <a href="../operations/#the-production-gate">Operations</a>.</p>
+</li>
+<li><p><a name="name-who-may-publish-as-the-deployment"></a><strong>Name who may publish as the deployment</strong></p>
+<p>Set <code>PULSE_PUBLISHER_USER_IDS</code> to the owner's <code>&lt;user-id&gt;</code>, as shown in <strong>Admin</strong>. Do this <strong>before</strong> arming, so that the moment the
+kill switch goes on, only the owner's content can leave on LinkedIn, the blog,
+or the podcast feed.</p>
+</li>
+<li><p><a name="narrow-the-channels-you-do-not-want"></a><strong>Narrow the channels you do not want</strong></p>
+<p>Set <code>PULSE_PUBLISH_&lt;CHANNEL&gt;=false</code> for each channel that must stay off,
+including <code>PULSE_PUBLISH_LINKEDIN=false</code> if LinkedIn is to stay drafts-only,
+<code>PULSE_PUBLISH_EMAIL=false</code> if users must not send email from PULSE, and
+<code>PULSE_PUBLISH_WHATSAPP=false</code> / <code>PULSE_PUBLISH_SMS=false</code> if nobody may message
+from PULSE.
+Narrowing first means arming the global turns on only what you meant.</p>
+</li>
+<li><p><a name="set-up-the-sign-in-apps-if-people-should-connect-with-one-click"></a><strong>Set up the sign-in apps, if people should connect with one click</strong></p>
+<p>Set an https <code>PULSE_PUBLIC_BASE_URL</code> routed by the TIDDE edge, then the app
+clients: <code>META_APP_ID</code> / <code>META_APP_SECRET</code>, <code>GOOGLE_CLIENT_ID</code> /
+<code>GOOGLE_CLIENT_SECRET</code>, <code>LINKEDIN_CLIENT_ID</code> / <code>LINKEDIN_CLIENT_SECRET</code>. None of
+them publishes anything: connecting only stores a sealed token. What each
+developer console needs is on <a href="../setup/">Setup</a>. Leave
+<code>LINKEDIN_COMPANY_PAGES</code> off until LinkedIn has approved the Community
+Management API for the app.</p>
+</li>
+<li><p><a name="arm-the-kill-switch"></a><strong>Arm the kill switch</strong></p>
+<p>Set <code>PULSE_APPLY_ENABLED=true</code>. Confirm with Runink that each channel shows as
+armed in the startup log, and that audit-apply is still off.</p>
+</li>
+<li><p><a name="arm-server-writes-only-if-you-need-them"></a><strong>Arm server writes, only if you need them</strong></p>
+<p>To let administrators apply audit fixes, set <code>PULSE_APPLY_ROOT</code> to the
+directory that holds the site checkouts, then <code>PULSE_AUDIT_APPLY=true</code>. Leave
+both unset to keep the server read-only. The same two switches arm <strong>Propose as
+pull request</strong> on a connected website repository (Settings › Integrations ›
+Website repository), which needs no <code>PULSE_APPLY_ROOT</code>: it writes only to a new
+<code>pulse/</code> branch on GitHub and opens a pull request for a person to merge.</p>
+</li>
+<li><p><a name="arm-automations-only-if-you-need-them"></a><strong>Arm automations, only if you need them</strong></p>
+<p>Set <code>PULSE_PUBLISH_AUTOMATIONS=true</code> once the channels the automations use are
+armed and allowlisted. Each automation still runs by itself only after its owner
+arms it, and every step runs with the owner's role.</p>
+</li>
+<li><p><a name="let-accounts-run-on-autopilot-only-if-you-want-that"></a><strong>Let accounts run on Autopilot, only if you want that</strong></p>
+<p>Autopilot is switched on per account by its owner, under Settings ›
+Integrations › Autopilot. It adds no server key: it sends only through
+channels you armed above, so a channel you narrowed stays off for Autopilot
+too. To stop every Autopilot post at once, unset <code>PULSE_APPLY_ENABLED</code> (or the
+channel's <code>PULSE_PUBLISH_&lt;CHANNEL&gt;</code>): queued posts are then recorded
+<code>withheld</code> when they come due and are never replayed when you re-arm.</p>
+<p>Two things are separate from Autopilot's switch and off until someone turns
+them on: suggested YouTube comments on other people's videos (the
+<code>PULSE_PUBLISH_YOUTUBE_COMMENTS</code> row, off even when everything else is armed)
+and hiding spam on the account's own posts (it uses the reply switches). Both
+only ever act after a person approves.</p>
+</li>
+<li><p><a name="arm-outbound-calls-only-if-you-need-them"></a><strong>Arm outbound calls, only if you need them</strong></p>
+<p>Set <code>PULSE_OUTBOUND_CALLS=true</code> and <code>PULSE_AI_CALLS=true</code> once the Twilio voice
+settings are in place and the compliance work for calling real numbers is done. See
+<a href="../telephony-and-messaging/">Telephony and messaging</a>.</p>
+</li>
+</ol>
+<p>To disarm, reverse the order, or simply unset <code>PULSE_APPLY_ENABLED</code>: that stops
+every channel, the audit-apply modes and the daily site-audit engine at once.
+It also stops every automation's outbound steps. It does not stop outbound calls, WhatsApp and SMS replies, or self-healing,
+each of which has its own key.</p>
+<h2 id="pulseenvproduction"><code>PULSE_ENV=production</code></h2>
+<p>The platform sets <code>PULSE_ENV=production</code> on production deployments. With it set, the server refuses to
+start, logging <code>refusing to start in production</code>, when:</p>
+<ul>
+<li>the session key (<code>PULSE_JWT_SECRET</code>) is missing or is one the platform
+refuses, or</li>
+<li><code>CORS_ALLOWED_ORIGINS</code> is unset or contains <code>*</code>. The backend serves no web
+bundle, so there is no same-origin exemption: pin the origins in the
+deployment.</li>
+</ul>
+<p>A missing or refused session key stops startup whatever <code>PULSE_ENV</code> says; what
+production adds is that the CORS problem stops it too, instead of warning.</p>
+<p><code>PULSE_ENV</code> also changes one TLS log line. It does nothing else: no billing,
+usage counting, or plan behavior reads it, and it does not turn reflection on or off.</p>
+<h2 id="messaging-a-lead-at-their-own-number">Messaging a lead at their own number</h2>
+<p><strong>Do it</strong> on a lead's WhatsApp or SMS step can text the lead's own number, not
+only a contact an admin added. Every rule below is enforced on the server:</p>
+<ul>
+<li><strong>SMS only, after a confirm tap.</strong> The person sees the exact text and the
+masked number, and taps to send. It still needs <code>PULSE_APPLY_ENABLED=true</code>
+and <code>PULSE_PUBLISH_SMS</code> not switched off.</li>
+<li><strong>Only a number with a recorded source.</strong> A phone number counts only when
+PULSE recorded where it came from: the lead's own web page (the audit), a
+person typing it into PULSE, your website form, or HubSpot. The Leads page
+shows the source. A number without a source is never texted.</li>
+<li><strong>STOP is honoured.</strong> A reply of STOP (also STOPALL, UNSUBSCRIBE, CANCEL, END,
+QUIT, PARAR, SAIR, BAJA, ARRET) is recorded for that number. After that, the
+lead's step no longer offers WhatsApp or SMS, and a message that was already
+previewed is refused when confirmed. START, YES or UNSTOP lifts the block.
+When Twilio itself refuses a send because the number unsubscribed (error
+21610), PULSE records the same block. For the replies to reach PULSE, set the
+Twilio number's <strong>"A message comes in"</strong> webhook to
+<code>&lt;PULSE_PUBLIC_BASE_URL&gt;/comms/twilio/inbound</code>. PULSE checks Twilio's
+signature on every request, and the webhook refuses everything (503) while no
+auth token is set.</li>
+<li><strong>WhatsApp needs an approved template.</strong> Meta only lets a business start a
+WhatsApp conversation with a template it has approved. The shared carrier
+sends plain text only, so PULSE never starts a WhatsApp conversation with a
+lead. <strong>Do it</strong> says so plainly and offers SMS or email instead. WhatsApp to
+a contact an admin added works as before.</li>
+</ul>
+<h2 id="checked-against-the-code">Checked against the code</h2>
+<p>Every key on this page is read by the backend or,
+for <code>AUTH_ALLOWED_EMAILS</code> and <code>PULSE_JWT_SECRET</code>, by the shared <code>security</code>
+library it uses. The backend also reads these keys, which arm nothing and are
+listed on the <a href="../configuration/">configuration reference</a>:
+<code>LINKEDIN_API_BASE</code>,
+<code>LINKEDIN_API_VERSION</code>, <code>LINKEDIN_ACCESS_TOKEN</code>, <code>LINKEDIN_AUTHOR_URN</code>,
+<code>GOOGLE_TOKEN_ENDPOINT</code>, <code>MESH_ISSUER_URL</code>, <code>MESH_ISSUER_TOKEN_FILE</code>,
+<code>FFMPEG_PATH</code> and the rest of the storage, inference, telephony and billing
+settings.</p>
+<h2 id="knowledge-export-and-import-market-memory">Knowledge export and import (market memory)</h2>
+<p>Settings › Account › market memory can export what PULSE learned as an Open
+Knowledge Format bundle and read one back. There is no switch to set: both
+actions are for a person's own session (an editor or administrator; service
+accounts and automated runs are refused), the export needs the media store the
+data export already uses, and the import needs the account's learning switch on.
+Limits: one export an hour per account, a 1 MiB file, at most 700 files and 4 MiB
+unpacked, and 300 imported entries per account. The export is sealed in the
+media store under the account and removed after two hours; the link is the store's
+signed, short-lived download link, so no new public address exists. Each use is
+one counts-only line in the log.</p>
+
+                                
+    
+    <footer class="runink-footer" role="contentinfo">
+        <img class="runink-brand" src="../../../_brand/logo.png" alt="">
+        
+    </footer>
+    
+
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../setup/voice/" class="navigation navigation-prev " aria-label="Previous page: Voice">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../publishing-controls/" class="navigation navigation-next " aria-label="Next page: Publishing controls">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    
+    <script type="application/json" id="honkit-page-context">{"page":{"title":"Switches and arming order","level":"1.2.4.4","depth":3,"next":{"title":"Publishing controls","level":"1.2.4.5","depth":3,"path":"docs/admin-guide/publishing-controls/README.md","ref":"docs/admin-guide/publishing-controls/README.md","articles":[]},"previous":{"title":"Voice","level":"1.2.4.3.9","depth":4,"path":"docs/admin-guide/setup/voice/README.md","ref":"docs/admin-guide/setup/voice/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","runink-copy"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"lunr":{"maxIndexSize":100000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"runink-copy":{},"highlight":{},"search":{}},"theme":"default","author":"Runink","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"logo":"_brand/logo.png","ogImage":"_brand/og.png","siteURL":"https://docs.runink.org/pulse/"},"title":"PULSE Documentation","language":"en","gitbook":"7.0.1","description":"Runink PULSE: Prescriptive Unified Lead & Social Engine is a marketing agency in an app: it checks how your business looks online, plans campaigns, writes and makes the posts, and publishes them only after you approve, on models that run on Runink's own platform."},"file":{"path":"docs/admin-guide/switches-and-arming-order/README.md","mtime":"","type":"markdown"},"gitbook":{"version":"7.0.1","time":""},"basePath":"../../..","book":{"language":""}}</script>
+</div>
+
+        
+    <noscript>
+        <link rel="stylesheet" href="../../../gitbook/noscript.css">
+    </noscript>
+    
+    <script src="../../../gitbook/boot.js"></script>
+    
+    <script src="../../../gitbook/gitbook.js" defer></script>
+    <script src="../../../gitbook/theme.js" defer></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-runink-copy/copy.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/@honkit/honkit-plugin-lunr/lunr.min.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/@honkit/honkit-plugin-lunr/search-lunr.js" defer></script>
+        
+    
+
+    </body>
+</html>
+

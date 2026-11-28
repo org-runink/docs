@@ -1,0 +1,2748 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Fetch pipeline · FACE Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 7.0.1">
+        <meta name="author" content="Runink">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-runink-copy/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../sovereign-models/" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    
+    
+    <meta property="og:site_name" content="FACE Documentation">
+    <meta property="og:title" content="Fetch pipeline">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="FACE by Runink (Fulfilment Autonomous Claims Engine) is Runink's sovereign operational-intelligence product: it connects to your warehouses, ERPs, telematics, sensors and cameras, reasons over them with models Runink runs for you or that you host (never a third-party AI service), and produces…">
+    <meta name="twitter:title" content="Fetch pipeline">
+    <meta name="twitter:description" content="FACE by Runink (Fulfilment Autonomous Claims Engine) is Runink's sovereign operational-intelligence product: it connects to your warehouses, ERPs, telematics, sensors and cameras, reasons over them with models Runink runs for you or that you host (never a third-party AI service), and produces…">
+    
+    <meta name="twitter:card" content="summary">
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak font-size-2 font-family-1 color-theme-2">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    FACE Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../overview/">
+            
+                <a href="../../overview/">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../overview/what-is-face/">
+            
+                <a href="../../overview/what-is-face/">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    What FACE is
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../overview/sustainability-dangerous-goods-luxury/">
+            
+                <a href="../../overview/sustainability-dangerous-goods-luxury/">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    Sustainability: dangerous goods and luxury assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    Fetch pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../sovereign-models/">
+            
+                <a href="../sovereign-models/">
+            
+                    
+                        <b>1.2.2.2.</b>
+                    
+                    Sovereign models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../structured-output/">
+            
+                <a href="../structured-output/">
+            
+                    
+                        <b>1.2.2.3.</b>
+                    
+                    Structured output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../grounding/">
+            
+                <a href="../grounding/">
+            
+                    
+                        <b>1.2.2.4.</b>
+                    
+                    Grounding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../evidence-documents/">
+            
+                <a href="../evidence-documents/">
+            
+                    
+                        <b>1.2.2.5.</b>
+                    
+                    Evidence documents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../action-cards-and-money/">
+            
+                <a href="../action-cards-and-money/">
+            
+                    
+                        <b>1.2.2.6.</b>
+                    
+                    Action cards & money
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../statistics-and-ml/">
+            
+                <a href="../statistics-and-ml/">
+            
+                    
+                        <b>1.2.2.7.</b>
+                    
+                    Statistics & ML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../posture-and-maturity/">
+            
+                <a href="../posture-and-maturity/">
+            
+                    
+                        <b>1.2.2.8.</b>
+                    
+                    Posture & maturity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="../simulation-and-twins/">
+            
+                <a href="../simulation-and-twins/">
+            
+                    
+                        <b>1.2.2.9.</b>
+                    
+                    Simulation & twins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="../compliance-finance-operations/">
+            
+                <a href="../compliance-finance-operations/">
+            
+                    
+                        <b>1.2.2.10.</b>
+                    
+                    Compliance, finance, operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="../twin-ontology/">
+            
+                <a href="../twin-ontology/">
+            
+                    
+                        <b>1.2.2.11.</b>
+                    
+                    Twin ontology & graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="../vision/">
+            
+                <a href="../vision/">
+            
+                    
+                        <b>1.2.2.12.</b>
+                    
+                    Vision & CCTV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="../agents-and-oversight/">
+            
+                <a href="../agents-and-oversight/">
+            
+                    
+                        <b>1.2.2.13.</b>
+                    
+                    Agents & oversight
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../architecture/">
+            
+                <a href="../../architecture/">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../architecture/security/">
+            
+                <a href="../../architecture/security/">
+            
+                    
+                        <b>1.2.3.1.</b>
+                    
+                    Security & trust
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1.1" data-path="../../architecture/security/zero-trust/">
+            
+                <a href="../../architecture/security/zero-trust/">
+            
+                    
+                        <b>1.2.3.1.1.</b>
+                    
+                    Defence in depth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.2" data-path="../../architecture/security/identity-access/">
+            
+                <a href="../../architecture/security/identity-access/">
+            
+                    
+                        <b>1.2.3.1.2.</b>
+                    
+                    Identity & access
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.3" data-path="../../architecture/security/encryption/">
+            
+                <a href="../../architecture/security/encryption/">
+            
+                    
+                        <b>1.2.3.1.3.</b>
+                    
+                    Encryption at rest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.4" data-path="../../architecture/security/sovereign-inference/">
+            
+                <a href="../../architecture/security/sovereign-inference/">
+            
+                    
+                        <b>1.2.3.1.4.</b>
+                    
+                    Sovereign inference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.5" data-path="../../architecture/security/ai-safety/">
+            
+                <a href="../../architecture/security/ai-safety/">
+            
+                    
+                        <b>1.2.3.1.5.</b>
+                    
+                    AI safety
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.6" data-path="../../architecture/security/audit-lineage/">
+            
+                <a href="../../architecture/security/audit-lineage/">
+            
+                    
+                        <b>1.2.3.1.6.</b>
+                    
+                    Auditability & lineage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.7" data-path="../../architecture/security/network-egress/">
+            
+                <a href="../../architecture/security/network-egress/">
+            
+                    
+                        <b>1.2.3.1.7.</b>
+                    
+                    Network egress controls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.8" data-path="../../architecture/security/compliance/">
+            
+                <a href="../../architecture/security/compliance/">
+            
+                    
+                        <b>1.2.3.1.8.</b>
+                    
+                    Compliance posture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../user-guide/">
+            
+                <a href="../../user-guide/">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    User guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../user-guide/agents/">
+            
+                <a href="../../user-guide/agents/">
+            
+                    
+                        <b>1.2.4.1.</b>
+                    
+                    Model cards
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1.1" data-path="../../user-guide/agents/claims-recovery/">
+            
+                <a href="../../user-guide/agents/claims-recovery/">
+            
+                    
+                        <b>1.2.4.1.1.</b>
+                    
+                    Claims & recovery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.2" data-path="../../user-guide/agents/freight-invoice-audit/">
+            
+                <a href="../../user-guide/agents/freight-invoice-audit/">
+            
+                    
+                        <b>1.2.4.1.2.</b>
+                    
+                    Freight invoice audit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.3" data-path="../../user-guide/agents/customs-trade-documents/">
+            
+                <a href="../../user-guide/agents/customs-trade-documents/">
+            
+                    
+                        <b>1.2.4.1.3.</b>
+                    
+                    Customs & trade documents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.4" data-path="../../user-guide/agents/compliance-review/">
+            
+                <a href="../../user-guide/agents/compliance-review/">
+            
+                    
+                        <b>1.2.4.1.4.</b>
+                    
+                    Compliance review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.5" data-path="../../user-guide/agents/insurance-claim-files/">
+            
+                <a href="../../user-guide/agents/insurance-claim-files/">
+            
+                    
+                        <b>1.2.4.1.5.</b>
+                    
+                    Insurance claim files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.6" data-path="../../user-guide/agents/cold-chain-telemetry/">
+            
+                <a href="../../user-guide/agents/cold-chain-telemetry/">
+            
+                    
+                        <b>1.2.4.1.6.</b>
+                    
+                    Cold chain & telemetry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.7" data-path="../../user-guide/agents/maintenance/">
+            
+                <a href="../../user-guide/agents/maintenance/">
+            
+                    
+                        <b>1.2.4.1.7.</b>
+                    
+                    Maintenance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.8" data-path="../../user-guide/agents/stock-and-demand/">
+            
+                <a href="../../user-guide/agents/stock-and-demand/">
+            
+                    
+                        <b>1.2.4.1.8.</b>
+                    
+                    Stock & demand
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.9" data-path="../../user-guide/agents/returns/">
+            
+                <a href="../../user-guide/agents/returns/">
+            
+                    
+                        <b>1.2.4.1.9.</b>
+                    
+                    Returns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.10" data-path="../../user-guide/agents/yard-and-transport/">
+            
+                <a href="../../user-guide/agents/yard-and-transport/">
+            
+                    
+                        <b>1.2.4.1.10.</b>
+                    
+                    Yard & transport
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.11" data-path="../../user-guide/agents/options-and-approvals/">
+            
+                <a href="../../user-guide/agents/options-and-approvals/">
+            
+                    
+                        <b>1.2.4.1.11.</b>
+                    
+                    Options & approvals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.12" data-path="../../user-guide/agents/field-readings/">
+            
+                <a href="../../user-guide/agents/field-readings/">
+            
+                    
+                        <b>1.2.4.1.12.</b>
+                    
+                    Field readings (edge)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.13" data-path="../../user-guide/agents/data-posture/">
+            
+                <a href="../../user-guide/agents/data-posture/">
+            
+                    
+                        <b>1.2.4.1.13.</b>
+                    
+                    Data posture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.14" data-path="../../user-guide/agents/voice-dispatch/">
+            
+                <a href="../../user-guide/agents/voice-dispatch/">
+            
+                    
+                        <b>1.2.4.1.14.</b>
+                    
+                    Voice dispatch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.15" data-path="../../user-guide/agents/documents-and-plans/">
+            
+                <a href="../../user-guide/agents/documents-and-plans/">
+            
+                    
+                        <b>1.2.4.1.15.</b>
+                    
+                    Documents & plans (vision)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.16" data-path="../../user-guide/agents/claims-leakage/">
+            
+                <a href="../../user-guide/agents/claims-leakage/">
+            
+                    
+                        <b>1.2.4.1.16.</b>
+                    
+                    Claims leakage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.17" data-path="../../user-guide/agents/freight-market-analyst/">
+            
+                <a href="../../user-guide/agents/freight-market-analyst/">
+            
+                    
+                        <b>1.2.4.1.17.</b>
+                    
+                    Freight market analyst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.18" data-path="../../user-guide/agents/self-healing/">
+            
+                <a href="../../user-guide/agents/self-healing/">
+            
+                    
+                        <b>1.2.4.1.18.</b>
+                    
+                    Self-healing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.19" data-path="../../user-guide/agents/counterparty-background-check/">
+            
+                <a href="../../user-guide/agents/counterparty-background-check/">
+            
+                    
+                        <b>1.2.4.1.19.</b>
+                    
+                    Counterparty background check
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.20" data-path="../../user-guide/agents/fraud-detection/">
+            
+                <a href="../../user-guide/agents/fraud-detection/">
+            
+                    
+                        <b>1.2.4.1.20.</b>
+                    
+                    Fraud indicators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.21" data-path="../../user-guide/agents/customer-analysis/">
+            
+                <a href="../../user-guide/agents/customer-analysis/">
+            
+                    
+                        <b>1.2.4.1.21.</b>
+                    
+                    Customer analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../../user-guide/sign-in/">
+            
+                <a href="../../user-guide/sign-in/">
+            
+                    
+                        <b>1.2.4.2.</b>
+                    
+                    Sign in
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../../user-guide/navigation/">
+            
+                <a href="../../user-guide/navigation/">
+            
+                    
+                        <b>1.2.4.3.</b>
+                    
+                    Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="../../user-guide/overview/">
+            
+                <a href="../../user-guide/overview/">
+            
+                    
+                        <b>1.2.4.4.</b>
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../../user-guide/ask/">
+            
+                <a href="../../user-guide/ask/">
+            
+                    
+                        <b>1.2.4.5.</b>
+                    
+                    Ask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="../../user-guide/briefs/">
+            
+                <a href="../../user-guide/briefs/">
+            
+                    
+                        <b>1.2.4.6.</b>
+                    
+                    Briefs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="../../user-guide/options/">
+            
+                <a href="../../user-guide/options/">
+            
+                    
+                        <b>1.2.4.7.</b>
+                    
+                    Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8" data-path="../../user-guide/why/">
+            
+                <a href="../../user-guide/why/">
+            
+                    
+                        <b>1.2.4.8.</b>
+                    
+                    Why
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.9" data-path="../../user-guide/live-sensing/">
+            
+                <a href="../../user-guide/live-sensing/">
+            
+                    
+                        <b>1.2.4.9.</b>
+                    
+                    Live sensing and vision
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.10" data-path="../../user-guide/actionable-twins/">
+            
+                <a href="../../user-guide/actionable-twins/">
+            
+                    
+                        <b>1.2.4.10.</b>
+                    
+                    Actionable Twins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.11" data-path="../../user-guide/fleet-and-control/">
+            
+                <a href="../../user-guide/fleet-and-control/">
+            
+                    
+                        <b>1.2.4.11.</b>
+                    
+                    Routes and fleet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.12" data-path="../../user-guide/contacts-and-verification/">
+            
+                <a href="../../user-guide/contacts-and-verification/">
+            
+                    
+                        <b>1.2.4.12.</b>
+                    
+                    Contacts and verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.13" data-path="../../user-guide/voice-and-calls/">
+            
+                <a href="../../user-guide/voice-and-calls/">
+            
+                    
+                        <b>1.2.4.13.</b>
+                    
+                    Voice and calls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.14" data-path="../../user-guide/settings/">
+            
+                <a href="../../user-guide/settings/">
+            
+                    
+                        <b>1.2.4.14.</b>
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.15" data-path="../../user-guide/account-deletion/">
+            
+                <a href="../../user-guide/account-deletion/">
+            
+                    
+                        <b>1.2.4.15.</b>
+                    
+                    Delete your account
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.16" data-path="../../user-guide/accessibility/">
+            
+                <a href="../../user-guide/accessibility/">
+            
+                    
+                        <b>1.2.4.16.</b>
+                    
+                    Accessibility and languages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.17" data-path="../../user-guide/troubleshooting/">
+            
+                <a href="../../user-guide/troubleshooting/">
+            
+                    
+                        <b>1.2.4.17.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../admin-guide/">
+            
+                <a href="../../admin-guide/">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    Admin guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../../admin-guide/access-and-trial/">
+            
+                <a href="../../admin-guide/access-and-trial/">
+            
+                    
+                        <b>1.2.5.1.</b>
+                    
+                    Access and the trial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../../admin-guide/admin-page/">
+            
+                <a href="../../admin-guide/admin-page/">
+            
+                    
+                        <b>1.2.5.2.</b>
+                    
+                    Admin page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../../admin-guide/data-sources/">
+            
+                <a href="../../admin-guide/data-sources/">
+            
+                    
+                        <b>1.2.5.3.</b>
+                    
+                    Data sources
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.1" data-path="../../admin-guide/data-sources/connections/">
+            
+                <a href="../../admin-guide/data-sources/connections/">
+            
+                    
+                        <b>1.2.5.3.1.</b>
+                    
+                    Connections and credentials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2" data-path="../../admin-guide/data-sources/quickstarts/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/">
+            
+                    
+                        <b>1.2.5.3.2.</b>
+                    
+                    Quickstarts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.1" data-path="../../admin-guide/data-sources/quickstarts/all-connectors/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/all-connectors/">
+            
+                    
+                        <b>1.2.5.3.2.1.</b>
+                    
+                    See all connectors at once
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2" data-path="../../admin-guide/data-sources/quickstarts/databases/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/databases/">
+            
+                    
+                        <b>1.2.5.3.2.2.</b>
+                    
+                    Databases & warehouses
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.1" data-path="../../admin-guide/data-sources/quickstarts/databases/postgres/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/databases/postgres/">
+            
+                    
+                        <b>1.2.5.3.2.2.1.</b>
+                    
+                    PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.2" data-path="../../admin-guide/data-sources/quickstarts/databases/mysql/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/databases/mysql/">
+            
+                    
+                        <b>1.2.5.3.2.2.2.</b>
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.3" data-path="../../admin-guide/data-sources/quickstarts/databases/snowflake/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/databases/snowflake/">
+            
+                    
+                        <b>1.2.5.3.2.2.3.</b>
+                    
+                    Snowflake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.4" data-path="../../admin-guide/data-sources/quickstarts/databases/databricks/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/databases/databricks/">
+            
+                    
+                        <b>1.2.5.3.2.2.4.</b>
+                    
+                    Databricks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.5" data-path="../../admin-guide/data-sources/quickstarts/databases/redshift/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/databases/redshift/">
+            
+                    
+                        <b>1.2.5.3.2.2.5.</b>
+                    
+                    Amazon Redshift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.6" data-path="../../admin-guide/data-sources/quickstarts/databases/bigquery/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/databases/bigquery/">
+            
+                    
+                        <b>1.2.5.3.2.2.6.</b>
+                    
+                    Google BigQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3" data-path="../../admin-guide/data-sources/quickstarts/business-apps/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/business-apps/">
+            
+                    
+                        <b>1.2.5.3.2.3.</b>
+                    
+                    Business apps
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.1" data-path="../../admin-guide/data-sources/quickstarts/business-apps/salesforce/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/business-apps/salesforce/">
+            
+                    
+                        <b>1.2.5.3.2.3.1.</b>
+                    
+                    Salesforce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.2" data-path="../../admin-guide/data-sources/quickstarts/business-apps/sap/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/business-apps/sap/">
+            
+                    
+                        <b>1.2.5.3.2.3.2.</b>
+                    
+                    SAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.3" data-path="../../admin-guide/data-sources/quickstarts/business-apps/guidewire/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/business-apps/guidewire/">
+            
+                    
+                        <b>1.2.5.3.2.3.3.</b>
+                    
+                    Guidewire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.4" data-path="../../admin-guide/data-sources/quickstarts/business-apps/servicenow/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/business-apps/servicenow/">
+            
+                    
+                        <b>1.2.5.3.2.3.4.</b>
+                    
+                    ServiceNow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.5" data-path="../../admin-guide/data-sources/quickstarts/business-apps/hubspot/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/business-apps/hubspot/">
+            
+                    
+                        <b>1.2.5.3.2.3.5.</b>
+                    
+                    HubSpot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.6" data-path="../../admin-guide/data-sources/quickstarts/business-apps/d365/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/business-apps/d365/">
+            
+                    
+                        <b>1.2.5.3.2.3.6.</b>
+                    
+                    Microsoft Dynamics 365
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.7" data-path="../../admin-guide/data-sources/quickstarts/business-apps/sharepoint/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/business-apps/sharepoint/">
+            
+                    
+                        <b>1.2.5.3.2.3.7.</b>
+                    
+                    SharePoint lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.8" data-path="../../admin-guide/data-sources/quickstarts/business-apps/github/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/business-apps/github/">
+            
+                    
+                        <b>1.2.5.3.2.3.8.</b>
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4" data-path="../../admin-guide/data-sources/quickstarts/logistics/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/logistics/">
+            
+                    
+                        <b>1.2.5.3.2.4.</b>
+                    
+                    Logistics systems
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.1" data-path="../../admin-guide/data-sources/quickstarts/logistics/oms/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/logistics/oms/">
+            
+                    
+                        <b>1.2.5.3.2.4.1.</b>
+                    
+                    Order management (OMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.2" data-path="../../admin-guide/data-sources/quickstarts/logistics/tms/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/logistics/tms/">
+            
+                    
+                        <b>1.2.5.3.2.4.2.</b>
+                    
+                    Transport management (TMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.3" data-path="../../admin-guide/data-sources/quickstarts/logistics/whs/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/logistics/whs/">
+            
+                    
+                        <b>1.2.5.3.2.4.3.</b>
+                    
+                    Warehouse (WHS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.4" data-path="../../admin-guide/data-sources/quickstarts/logistics/yms/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/logistics/yms/">
+            
+                    
+                        <b>1.2.5.3.2.4.4.</b>
+                    
+                    Yard management (YMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.5" data-path="../../admin-guide/data-sources/quickstarts/logistics/ims/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/logistics/ims/">
+            
+                    
+                        <b>1.2.5.3.2.4.5.</b>
+                    
+                    Inventory management (IMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.6" data-path="../../admin-guide/data-sources/quickstarts/logistics/inventory/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/logistics/inventory/">
+            
+                    
+                        <b>1.2.5.3.2.4.6.</b>
+                    
+                    Inventory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.7" data-path="../../admin-guide/data-sources/quickstarts/logistics/logisticsapi/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/logistics/logisticsapi/">
+            
+                    
+                        <b>1.2.5.3.2.4.7.</b>
+                    
+                    Logistics API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5" data-path="../../admin-guide/data-sources/quickstarts/files/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/files/">
+            
+                    
+                        <b>1.2.5.3.2.5.</b>
+                    
+                    Files
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.1" data-path="../../admin-guide/data-sources/quickstarts/files/files/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/files/files/">
+            
+                    
+                        <b>1.2.5.3.2.5.1.</b>
+                    
+                    Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.2" data-path="../../admin-guide/data-sources/quickstarts/files/excel/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/files/excel/">
+            
+                    
+                        <b>1.2.5.3.2.5.2.</b>
+                    
+                    Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.3" data-path="../../admin-guide/data-sources/quickstarts/files/document/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/files/document/">
+            
+                    
+                        <b>1.2.5.3.2.5.3.</b>
+                    
+                    Document (legacy type)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.4" data-path="../../admin-guide/data-sources/quickstarts/files/objectstore/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/files/objectstore/">
+            
+                    
+                        <b>1.2.5.3.2.5.4.</b>
+                    
+                    Object store
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6" data-path="../../admin-guide/data-sources/quickstarts/streams/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/streams/">
+            
+                    
+                        <b>1.2.5.3.2.6.</b>
+                    
+                    Streams
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.1" data-path="../../admin-guide/data-sources/quickstarts/streams/kafka/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/streams/kafka/">
+            
+                    
+                        <b>1.2.5.3.2.6.1.</b>
+                    
+                    Apache Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.2" data-path="../../admin-guide/data-sources/quickstarts/streams/kafka-live/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/streams/kafka-live/">
+            
+                    
+                        <b>1.2.5.3.2.6.2.</b>
+                    
+                    Apache Kafka, live estate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.3" data-path="../../admin-guide/data-sources/quickstarts/streams/mqtt/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/streams/mqtt/">
+            
+                    
+                        <b>1.2.5.3.2.6.3.</b>
+                    
+                    MQTT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.4" data-path="../../admin-guide/data-sources/quickstarts/streams/iot/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/streams/iot/">
+            
+                    
+                        <b>1.2.5.3.2.6.4.</b>
+                    
+                    IoT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.5" data-path="../../admin-guide/data-sources/quickstarts/streams/rfid/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/streams/rfid/">
+            
+                    
+                        <b>1.2.5.3.2.6.5.</b>
+                    
+                    RFID readers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.6" data-path="../../admin-guide/data-sources/quickstarts/streams/gps/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/streams/gps/">
+            
+                    
+                        <b>1.2.5.3.2.6.6.</b>
+                    
+                    GPS and telematics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.7" data-path="../../admin-guide/data-sources/quickstarts/streams/sensorgateway/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/streams/sensorgateway/">
+            
+                    
+                        <b>1.2.5.3.2.6.7.</b>
+                    
+                    Sensor gateway
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.8" data-path="../../admin-guide/data-sources/quickstarts/streams/cctv/">
+            
+                <a href="../../admin-guide/data-sources/quickstarts/streams/cctv/">
+            
+                    
+                        <b>1.2.5.3.2.6.8.</b>
+                    
+                    CCTV cameras
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.3" data-path="../../admin-guide/data-sources/discovery/">
+            
+                <a href="../../admin-guide/data-sources/discovery/">
+            
+                    
+                        <b>1.2.5.3.3.</b>
+                    
+                    Explore, sample and profile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.4" data-path="../../admin-guide/data-sources/sql-warehouses/">
+            
+                <a href="../../admin-guide/data-sources/sql-warehouses/">
+            
+                    
+                        <b>1.2.5.3.4.</b>
+                    
+                    SQL warehouses and databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.5" data-path="../../admin-guide/data-sources/enterprise-saas/">
+            
+                <a href="../../admin-guide/data-sources/enterprise-saas/">
+            
+                    
+                        <b>1.2.5.3.5.</b>
+                    
+                    Enterprise SaaS and ERP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.6" data-path="../../admin-guide/data-sources/files-object-storage/">
+            
+                <a href="../../admin-guide/data-sources/files-object-storage/">
+            
+                    
+                        <b>1.2.5.3.6.</b>
+                    
+                    Files and object storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.7" data-path="../../admin-guide/data-sources/streaming-kafka/">
+            
+                <a href="../../admin-guide/data-sources/streaming-kafka/">
+            
+                    
+                        <b>1.2.5.3.7.</b>
+                    
+                    Streaming: Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.8" data-path="../../admin-guide/data-sources/event-listeners/">
+            
+                <a href="../../admin-guide/data-sources/event-listeners/">
+            
+                    
+                        <b>1.2.5.3.8.</b>
+                    
+                    Event listeners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.9" data-path="../../admin-guide/data-sources/telemetry/">
+            
+                <a href="../../admin-guide/data-sources/telemetry/">
+            
+                    
+                        <b>1.2.5.3.9.</b>
+                    
+                    Telemetry: MQTT, RFID, GPS, sensors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.10" data-path="../../admin-guide/data-sources/logistics-systems/">
+            
+                <a href="../../admin-guide/data-sources/logistics-systems/">
+            
+                    
+                        <b>1.2.5.3.10.</b>
+                    
+                    Logistics systems of record
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.11" data-path="../../admin-guide/data-sources/cctv-video/">
+            
+                <a href="../../admin-guide/data-sources/cctv-video/">
+            
+                    
+                        <b>1.2.5.3.11.</b>
+                    
+                    CCTV and video
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.12" data-path="../../admin-guide/data-sources/edge-flipper/">
+            
+                <a href="../../admin-guide/data-sources/edge-flipper/">
+            
+                    
+                        <b>1.2.5.3.12.</b>
+                    
+                    Flipper edge reader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.13" data-path="../../admin-guide/data-sources/web/">
+            
+                <a href="../../admin-guide/data-sources/web/">
+            
+                    
+                        <b>1.2.5.3.13.</b>
+                    
+                    Web and crawler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.14" data-path="../../admin-guide/data-sources/runners/">
+            
+                <a href="../../admin-guide/data-sources/runners/">
+            
+                    
+                        <b>1.2.5.3.14.</b>
+                    
+                    Runners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.15" data-path="../../admin-guide/data-sources/networking/">
+            
+                <a href="../../admin-guide/data-sources/networking/">
+            
+                    
+                        <b>1.2.5.3.15.</b>
+                    
+                    Networking and address policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.16" data-path="../../admin-guide/data-sources/troubleshooting/">
+            
+                <a href="../../admin-guide/data-sources/troubleshooting/">
+            
+                    
+                        <b>1.2.5.3.16.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="../../admin-guide/deployment/">
+            
+                <a href="../../admin-guide/deployment/">
+            
+                    
+                        <b>1.2.5.4.</b>
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../developer-guide/">
+            
+                <a href="../../developer-guide/">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    Developer guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../../developer-guide/connector-model/">
+            
+                <a href="../../developer-guide/connector-model/">
+            
+                    
+                        <b>1.2.6.1.</b>
+                    
+                    Connector model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../../developer-guide/api/">
+            
+                <a href="../../developer-guide/api/">
+            
+                    
+                        <b>1.2.6.2.</b>
+                    
+                    gRPC API reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.2.1" data-path="../../developer-guide/api/identity/">
+            
+                <a href="../../developer-guide/api/identity/">
+            
+                    
+                        <b>1.2.6.2.1.</b>
+                    
+                    Identity, licences & landing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.2" data-path="../../developer-guide/api/connections/">
+            
+                <a href="../../developer-guide/api/connections/">
+            
+                    
+                        <b>1.2.6.2.2.</b>
+                    
+                    Configuration, connections & runners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.3" data-path="../../developer-guide/api/fetch/">
+            
+                <a href="../../developer-guide/api/fetch/">
+            
+                    
+                        <b>1.2.6.2.3.</b>
+                    
+                    Fetch & traces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.4" data-path="../../developer-guide/api/twins/">
+            
+                <a href="../../developer-guide/api/twins/">
+            
+                    
+                        <b>1.2.6.2.4.</b>
+                    
+                    Twins, simulation & claims
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.5" data-path="../../developer-guide/api/analysis/">
+            
+                <a href="../../developer-guide/api/analysis/">
+            
+                    
+                        <b>1.2.6.2.5.</b>
+                    
+                    Analysis, posture & rules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.6" data-path="../../developer-guide/api/compliance/">
+            
+                <a href="../../developer-guide/api/compliance/">
+            
+                    
+                        <b>1.2.6.2.6.</b>
+                    
+                    Compliance, finance & operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.7" data-path="../../developer-guide/api/sql/">
+            
+                <a href="../../developer-guide/api/sql/">
+            
+                    
+                        <b>1.2.6.2.7.</b>
+                    
+                    SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.8" data-path="../../developer-guide/api/lineage-activity/">
+            
+                <a href="../../developer-guide/api/lineage-activity/">
+            
+                    
+                        <b>1.2.6.2.8.</b>
+                    
+                    Lineage & activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.9" data-path="../../developer-guide/api/vision/">
+            
+                <a href="../../developer-guide/api/vision/">
+            
+                    
+                        <b>1.2.6.2.9.</b>
+                    
+                    CCTV, surveillance & documents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.10" data-path="../../developer-guide/api/calling-support/">
+            
+                <a href="../../developer-guide/api/calling-support/">
+            
+                    
+                        <b>1.2.6.2.10.</b>
+                    
+                    Calling & support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.11" data-path="../../developer-guide/api/orchestrator/">
+            
+                <a href="../../developer-guide/api/orchestrator/">
+            
+                    
+                        <b>1.2.6.2.11.</b>
+                    
+                    Agent orchestrator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.12" data-path="../../developer-guide/api/metering-schedules/">
+            
+                <a href="../../developer-guide/api/metering-schedules/">
+            
+                    
+                        <b>1.2.6.2.12.</b>
+                    
+                    Schedules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.13" data-path="../../developer-guide/api/web-crm/">
+            
+                <a href="../../developer-guide/api/web-crm/">
+            
+                    
+                        <b>1.2.6.2.13.</b>
+                    
+                    Crawler, metasearch & CRM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../privacy/">
+            
+                <a href="../../../privacy/">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    FACE app privacy policy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../privacy/es/">
+            
+                <a href="../../../privacy/es/">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    Política de privacidad de la app FACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../privacy/fr-ca/">
+            
+                <a href="../../../privacy/fr-ca/">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Politique de confidentialité de l'application FACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../../privacy/pt-br/">
+            
+                <a href="../../../privacy/pt-br/">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    Política de privacidade do app FACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Fetch pipeline</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+    
+                                <h1 id="fetch-pipeline">Fetch pipeline</h1>
+<!--
+SPDX-FileCopyrightText: 2026 Runink
+SPDX-License-Identifier: LicenseRef-Runink-Proprietary
+-->
+<p>You ask a question on <strong>Ask</strong>, and FACE answers it from your own connected sources. That
+answer is one <strong>fetch</strong>: one run of FACE's analysis. A fetch reads the data, profiles and
+clusters it, runs the analysis agents, and returns a <code>FetchAnalysisResult</code> with
+decisions, action cards and evidence documents. A <strong>brief</strong> on the <strong>Briefs</strong> page runs
+the same fetch on a clock or when new data arrives.</p>
+<p>Where you see the result:</p>
+<ul>
+<li><strong>Ask</strong> shows the answer first, with its confidence chips. Each run is kept at
+<code>/fetch/run/&lt;run id&gt;</code>.</li>
+<li><strong>Options</strong> shows what you could do about it, and <strong>Why</strong> shows the rules and
+sources behind it.</li>
+<li><strong>Actionable Twins</strong> shows the action cards the run drafted, waiting for a person.</li>
+</ul>
+<p>All of this is served by <code>FetchService</code>.</p>
+<table>
+<thead>
+<tr>
+<th>RPC</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>RunFetch</code></td>
+<td>Runs a fetch and returns one <code>RunFetchResponse</code>.</td>
+</tr>
+<tr>
+<td><code>RunFetchStream</code></td>
+<td>Runs the same fetch and streams <code>RunFetchUpdate</code> events as each phase finishes. The last event carries the full result.</td>
+</tr>
+<tr>
+<td><code>ListTraces</code> / <code>GetTraceDetails</code></td>
+<td>Read back the recorded execution history.</td>
+</tr>
+<tr>
+<td><code>GenerateSOP</code></td>
+<td>Drafts a Standard Operating Procedure as markdown.</td>
+</tr>
+<tr>
+<td><code>ListFetchStarters</code></td>
+<td>Returns the suggested questions shown on Ask.</td>
+</tr>
+</tbody>
+</table>
+<p>Briefs are a separate service, <code>SchedulesService</code>, and are covered
+<a href="#briefs">below</a>.</p>
+<h2 id="where-a-fetch-runs">Where a fetch runs</h2>
+<p>The FACE server (the control plane) never runs the pipeline itself. <code>RunFetchStream</code>
+forwards the request to a dedicated runner and relays that runner's stream back. If no
+runner can be dialled, the stream ends with a terminal <code>final</code> event that says the
+fetch did not run: <em>"dedicated runner unavailable — fetch does not run on the control
+plane"</em>. It never falls back to running the fetch locally.</p>
+<p>The server resolves the connection records the fetch needs and sends them with
+the request in <code>dispatched_connections</code>. Credentials travel separately: each bundle is
+sealed to the runner's ephemeral key for that one dispatch (<code>dispatched_credentials</code>,
+with <code>dispatch_id</code>). A client can't set any of these fields, because the server
+overwrites them on the forward. How the sealing works is covered in
+<a href="../../architecture/security/">Security</a>.</p>
+<h2 id="phases">Phases</h2>
+<p>Who talks to whom, in order — the <strong>FACE app</strong>, the <strong>FACE server</strong>, the <strong>Runner</strong>, and the <strong>Model plane</strong>:</p>
+<ol>
+<li>The FACE app calls <code>RunFetchStream(RunFetchRequest)</code> on the FACE server.</li>
+<li>The server forwards it to the Runner — the records plus the sealed credentials.</li>
+<li>The Runner streams <code>phase=data_health (done=false)</code> back to the app, then reads the sources and profiles them.</li>
+<li>The Runner sends the profile to the Model plane for analysis, then streams <code>phase=data_health (done=true)</code>.</li>
+<li>The Runner streams <code>phase=scenarios</code>, then <code>phase=recommendations</code>.</li>
+<li>Finally the Runner streams <code>phase=final</code> with the <code>RunFetchResponse</code>.</li>
+</ol>
+<p><code>RunFetchUpdate.phase</code> names the stage an event reports. The contract lists
+<code>data_health</code>, <code>rules</code>, <code>scenarios</code>, <code>recommendations</code>, <code>final</code> and <code>model_text</code> (the
+text a model call is producing, as it is produced).
+The server also sends progress labels such as <code>sources</code> and <code>data_prep</code> while a stage
+runs, so a client should not treat the list as closed. <code>done=false</code> means a stage is
+still running. The terminal event always has <code>phase="final"</code>, <code>done=true</code>, and a
+<code>result</code>.</p>
+<p>The pipeline has three stages:</p>
+<ol>
+<li><strong>Data alignment.</strong> FACE reads and profiles the fetched data, and records the relationships it measures between data domains.</li>
+<li><strong>Scenarios.</strong> FACE tests the scenarios your estate suggests. The scenarios appear on <strong>Options</strong>. See
+<a href="../simulation-and-twins/">Simulation &amp; twins</a>.</li>
+<li><strong>Twins decision.</strong> FACE turns the findings and simulations into decisions and action cards for a person to decide. The accepted cards appear on <strong>Actionable
+Twins</strong>. See <a href="../agents-and-oversight/">Agents &amp; oversight</a>.</li>
+</ol>
+<p><strong>A data-only fetch.</strong> When <code>session_eda</code> is set, the fetch returns data domains, maturity, rules and the knowledge graph only, without scenarios or twin decisions. The FACE app does not set it; a question on Ask, a brief and an API call
+without it run the full pipeline.</p>
+<p><strong>Unary <code>RunFetch</code> returns early.</strong> <code>RunFetch</code> returns the data-alignment result, and the later stages keep running in the background. <code>RunFetchStream</code> waits until
+the recommendations are ready.</p>
+<h2 id="what-the-result-carries">What the result carries</h2>
+<p><code>FetchAnalysisResult</code> includes the following fields, among others:</p>
+<ul>
+<li><code>decisions</code> and <code>action_cards</code>: the structured twin output. See
+<a href="../action-cards-and-money/">Action cards &amp; money</a>.</li>
+<li><code>graph_nodes</code> and <code>graph_edges</code>: the knowledge graph for the fetched domains.</li>
+<li><code>hypothesis_scenarios</code>, <code>hypothesis_impacts</code>, <code>hypothesis_traces</code>,
+<code>hypothesis_forecasts</code> and <code>hypothesis_anomalies</code>: the results of the scenarios tested
+for the run, listed side by side.</li>
+<li><code>hypothesis_scenarios_inferred</code>, <code>hypothesis_agents_dispatched</code> and
+<code>hypothesis_agents_succeeded</code>: how many scenarios were inferred and tested, and how
+many produced a result. These counts are only meaningful when <code>hypothesis_swarm_ran</code>
+is true.</li>
+<li><code>source_notices</code>: sentences about sources that could not be read, or about where a
+source's SQL actually ran. <strong>An empty list does not mean every source was fine.</strong></li>
+<li><code>action_judgements</code>: the review verdict on every proposed action, whether
+accepted or rejected. A rejected action appears nowhere else.</li>
+<li><code>provenance</code>: how the answer was produced, set by the server.</li>
+<li><code>metrics</code> (<code>EvaluationMetrics</code>): these scores are not filled in by the fetch. The
+response sets <code>unmeasured_reason</code> to <em>"no evaluation harness ran for this fetch —
+these scores are absent, not zero"</em>. A client must not render the scores as
+percentages when that field is set.</li>
+<li><code>sql_generated</code>: SQL text drafted by the model from the fetched schemas. It's
+informational output, not a record of what was executed.</li>
+</ul>
+<p><strong>Repeat fetches can be answered from an earlier run.</strong> A recent identical question can be answered from the earlier run. <code>provenance</code> says so, and its message says the answer is a replay.</p>
+<h2 id="traces">Traces</h2>
+<p><code>ListTraces</code> and <code>GetTraceDetails</code> read the session records that each fetch saves to
+the durable record store. A <code>Trace</code> from these RPCs carries the transaction id, the
+command, the analysis text and the drafted SQL. If the process has no session store,
+<code>ListTraces</code> answers <code>FailedPrecondition</code> instead of returning an empty list, because
+"never read" and "nothing recorded" are different answers.</p>
+<p>Observed data lineage, meaning which source was read when and where the rows went, is a
+different record. It's served by <code>LineageService.GetSourceActivity</code>. See
+<a href="../posture-and-maturity/#lineage">Posture &amp; maturity</a>.</p>
+<h2 id="sop-generation">SOP generation</h2>
+<p><code>GenerateSOP</code> takes a <code>topic</code>, a <code>process_name</code> and optional <code>steps</code>. The prompt is
+screened before it reaches the model. A refused prompt returns <code>InvalidArgument</code>, and
+the refusal is audit-logged.</p>
+<p>The response carries markdown in <code>sop_content</code> and an <code>sop_id</code>. If the model call fails
+after the prompt is accepted, the content is the literal <code>SOP Generation Failed</code>.</p>
+<h2 id="suggested-questions-on-ask">Suggested questions on Ask</h2>
+<p><code>ListFetchStarters</code> returns up to four <code>FetchStarter</code> questions, each with an icon, a
+title, a subtitle and <code>prompt_text</code>. They come from the caller's own data, newest
+findings first:</p>
+<ul>
+<li><strong>The newest fetch.</strong> The newest run in the caller's history that succeeded, or the
+newest with an analysis: its broken measured rules, its flagged routes and its
+scenario verdicts. Run history is scoped as <code>ListFetchRuns</code> is.</li>
+<li><strong>A quick sample of the sources.</strong> A bounded read of each active source, with no
+model and no fetch run, so a question can name a figure before any fetch has run.
+A question built this way carries <code>sample_rows</code> and <code>sampled_at_unix_ms</code>.</li>
+<li><strong>The connections.</strong> What each source's last Explore described: its tables, row
+counts and topics.</li>
+</ul>
+<p>Each question names its <code>play</code> (<code>claims</code>, <code>disruptions</code>, <code>routes</code>, <code>fulfilment</code>,
+<code>cold_chain</code>, <code>maintenance</code>, <code>inventory</code> or <code>fleet</code>), which Ask's play chips filter on.
+The call reads no store: it answers with the set built in the background, says it is
+still being prepared (<code>loading</code>), or says why it could not be read.</p>
+<h2 id="briefs">Briefs</h2>
+<p>A <strong>brief</strong> is a scheduled question, and you manage briefs on the <strong>Briefs</strong> page. Each
+brief is written for one persona and reads the sources picked for it. With none
+picked, it reads every connection the instance has when the run fires. Its runs open
+on Ask like any other run, and the cards they draft wait on Actionable Twins.</p>
+<p><code>SchedulesService</code> provides <code>ListSchedules</code>, <code>CreateSchedule</code>, <code>UpdateSchedule</code>,
+<code>SetScheduleActive</code> and <code>DeleteSchedule</code>. A brief fires on one of two triggers:</p>
+<ul>
+<li><strong>Time.</strong> A free-text <code>frequency</code> maps to an interval: hourly, every 6 hours, daily,
+weekly or monthly. Unrecognised text maps to hourly.</li>
+<li><strong>Event.</strong> A connection's data listener sees the events the trigger asks for. The
+brief fires when enough matching events are pending, the first has waited its
+debounce time, the cooldown since its last run has passed, and its previous run has
+finished. The run is marked <code>TRIGGER_TYPE_EVENT</code>.</li>
+</ul>
+<p>How briefs behave:</p>
+<ul>
+<li><strong>Execution is opt-in.</strong> A due brief runs a real fetch only when
+<code>SCHEDULE_EXECUTE_FETCH=true</code> on the server. Otherwise it is recorded as skipped,
+not as a success, and <code>run_count</code> does not increase.</li>
+<li><strong>Briefs run as a service account.</strong> A scheduled fetch runs under a service account (<code>ROLE_SERVICE_ACCOUNT</code>).</li>
+<li><strong>A picked source that is gone is named.</strong> At fire time a picked connection that no
+longer exists is dropped, and the run's last-run line names it. When none is left,
+the run is refused with that reason.</li>
+<li><strong>A brief can tell someone.</strong> Its <code>notify</code> setting (WhatsApp, call or email, and a
+condition) sends a notice once the run's background phases end, to the numbers and
+mailbox on <strong>Settings › Integrations</strong> (Channels). The outcome is recorded in
+<code>last_notify</code>: sent, not needed, not sent (with the reason), or waiting.</li>
+<li><strong>Outcomes are recorded as they happened.</strong> <code>last_run_success</code> reflects what the fetch
+actually returned. A fetch the pipeline declined is recorded as a failure. A brief whose previous run hasn't finished skips that
+interval instead of stacking.</li>
+</ul>
+<h2 id="reading-the-results">Reading the results</h2>
+<ul>
+<li><strong>A completed fetch is not a complete fetch.</strong> Read <code>source_notices</code> and the scenario
+counts before treating the result as covering every selected source and scenario.</li>
+<li><strong>Progress events report pipeline stages, not answer quality.</strong> A <code>final</code> event with
+<code>success=true</code> means the pipeline finished. It doesn't mean the model's answer is
+correct.</li>
+<li><strong><code>EvaluationMetrics</code> is not a quality score</strong> while <code>unmeasured_reason</code> is set.</li>
+<li><strong>A repeated answer is a replay</strong> of an earlier run. Its <code>provenance.computed_at</code> says
+when it was produced.</li>
+</ul>
+
+                                
+    
+    <footer class="runink-footer" role="contentinfo">
+        <img class="runink-brand" src="../../../_brand/logo.png" alt="">
+        
+    </footer>
+    
+
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Concepts">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../sovereign-models/" class="navigation navigation-next " aria-label="Next page: Sovereign models">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    
+    <script type="application/json" id="honkit-page-context">{"page":{"title":"Fetch pipeline","level":"1.2.2.1","depth":3,"next":{"title":"Sovereign models","level":"1.2.2.2","depth":3,"path":"docs/concepts/sovereign-models/README.md","ref":"docs/concepts/sovereign-models/README.md","articles":[]},"previous":{"title":"Concepts","level":"1.2.2","depth":2,"path":"docs/concepts/README.md","ref":"docs/concepts/README.md","articles":[{"title":"Fetch pipeline","level":"1.2.2.1","depth":3,"path":"docs/concepts/fetch-pipeline/README.md","ref":"docs/concepts/fetch-pipeline/README.md","articles":[]},{"title":"Sovereign models","level":"1.2.2.2","depth":3,"path":"docs/concepts/sovereign-models/README.md","ref":"docs/concepts/sovereign-models/README.md","articles":[]},{"title":"Structured output","level":"1.2.2.3","depth":3,"path":"docs/concepts/structured-output/README.md","ref":"docs/concepts/structured-output/README.md","articles":[]},{"title":"Grounding","level":"1.2.2.4","depth":3,"path":"docs/concepts/grounding/README.md","ref":"docs/concepts/grounding/README.md","articles":[]},{"title":"Evidence documents","level":"1.2.2.5","depth":3,"path":"docs/concepts/evidence-documents/README.md","ref":"docs/concepts/evidence-documents/README.md","articles":[]},{"title":"Action cards & money","level":"1.2.2.6","depth":3,"path":"docs/concepts/action-cards-and-money/README.md","ref":"docs/concepts/action-cards-and-money/README.md","articles":[]},{"title":"Statistics & ML","level":"1.2.2.7","depth":3,"path":"docs/concepts/statistics-and-ml/README.md","ref":"docs/concepts/statistics-and-ml/README.md","articles":[]},{"title":"Posture & maturity","level":"1.2.2.8","depth":3,"path":"docs/concepts/posture-and-maturity/README.md","ref":"docs/concepts/posture-and-maturity/README.md","articles":[]},{"title":"Simulation & twins","level":"1.2.2.9","depth":3,"path":"docs/concepts/simulation-and-twins/README.md","ref":"docs/concepts/simulation-and-twins/README.md","articles":[]},{"title":"Compliance, finance, operations","level":"1.2.2.10","depth":3,"path":"docs/concepts/compliance-finance-operations/README.md","ref":"docs/concepts/compliance-finance-operations/README.md","articles":[]},{"title":"Twin ontology & graph","level":"1.2.2.11","depth":3,"path":"docs/concepts/twin-ontology/README.md","ref":"docs/concepts/twin-ontology/README.md","articles":[]},{"title":"Vision & CCTV","level":"1.2.2.12","depth":3,"path":"docs/concepts/vision/README.md","ref":"docs/concepts/vision/README.md","articles":[]},{"title":"Agents & oversight","level":"1.2.2.13","depth":3,"path":"docs/concepts/agents-and-oversight/README.md","ref":"docs/concepts/agents-and-oversight/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","runink-copy"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"lunr":{"maxIndexSize":100000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"runink-copy":{},"highlight":{},"search":{}},"theme":"default","author":"Runink","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"logo":"_brand/logo.png","siteURL":"https://docs.runink.org/face/"},"title":"FACE Documentation","language":"en","gitbook":"7.0.1","description":"FACE by Runink (Fulfilment Autonomous Claims Engine) is Runink's sovereign operational-intelligence product: it connects to your warehouses, ERPs, telematics, sensors and cameras, reasons over them with models Runink runs for you or that you host (never a third-party AI service), and produces…"},"file":{"path":"docs/concepts/fetch-pipeline/README.md","mtime":"","type":"markdown"},"gitbook":{"version":"7.0.1","time":""},"basePath":"../../..","book":{"language":""}}</script>
+</div>
+
+        
+    <noscript>
+        <link rel="stylesheet" href="../../../gitbook/noscript.css">
+    </noscript>
+    
+    <script src="../../../gitbook/boot.js"></script>
+    
+    <script src="../../../gitbook/gitbook.js" defer></script>
+    <script src="../../../gitbook/theme.js" defer></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-runink-copy/copy.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/@honkit/honkit-plugin-lunr/lunr.min.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/@honkit/honkit-plugin-lunr/search-lunr.js" defer></script>
+        
+    
+
+    </body>
+</html>
+

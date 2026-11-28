@@ -1,0 +1,761 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>runi/bm25 · Runi</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 7.0.1">
+        <meta name="author" content="Runink">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-runink-copy/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../salvage/" />
+    
+    
+    <link rel="prev" href="../season/" />
+    
+
+    
+    
+    <meta property="og:site_name" content="Runi">
+    <meta property="og:title" content="runi/bm25">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="BSD-3-Clause · zero dependencies">
+    <meta name="twitter:title" content="runi/bm25">
+    <meta name="twitter:description" content="BSD-3-Clause · zero dependencies">
+    
+    <meta name="twitter:card" content="summary">
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak font-size-2 font-family-1 color-theme-2">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Runi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../guide/">
+            
+                <a href="../../guide/">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    User Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../guide/install/">
+            
+                <a href="../../guide/install/">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    Installing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../guide/choosing/">
+            
+                <a href="../../guide/choosing/">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    Choosing a package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../guide/where-it-runs/">
+            
+                <a href="../../guide/where-it-runs/">
+            
+                    
+                        <b>1.2.1.3.</b>
+                    
+                    Where it runs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../guide/compatibility/">
+            
+                <a href="../../guide/compatibility/">
+            
+                    
+                        <b>1.2.1.4.</b>
+                    
+                    Compatibility
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../stats/">
+            
+                <a href="../stats/">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    runi/stats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../arimax/">
+            
+                <a href="../arimax/">
+            
+                    
+                        <b>1.2.2.2.</b>
+                    
+                    runi/arimax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../season/">
+            
+                <a href="../season/">
+            
+                    
+                        <b>1.2.2.3.</b>
+                    
+                    runi/season
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.2.4.</b>
+                    
+                    runi/bm25
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../salvage/">
+            
+                <a href="../salvage/">
+            
+                    
+                        <b>1.2.2.5.</b>
+                    
+                    runi/salvage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../avro/">
+            
+                <a href="../avro/">
+            
+                    
+                        <b>1.2.2.6.</b>
+                    
+                    runi/avro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../barn/">
+            
+                <a href="../barn/">
+            
+                    
+                        <b>1.2.2.7.</b>
+                    
+                    runi/barn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../memo/">
+            
+                <a href="../memo/">
+            
+                    
+                        <b>1.2.2.8.</b>
+                    
+                    runi/memo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="../lazy/">
+            
+                <a href="../lazy/">
+            
+                    
+                        <b>1.2.2.9.</b>
+                    
+                    runi/lazy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="../budget/">
+            
+                <a href="../budget/">
+            
+                    
+                        <b>1.2.2.10.</b>
+                    
+                    runi/budget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="../chain/">
+            
+                <a href="../chain/">
+            
+                    
+                        <b>1.2.2.11.</b>
+                    
+                    runi/chain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="../toon/">
+            
+                <a href="../toon/">
+            
+                    
+                        <b>1.2.2.12.</b>
+                    
+                    runi/toon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="../toml/">
+            
+                <a href="../toml/">
+            
+                    
+                        <b>1.2.2.13.</b>
+                    
+                    runi/toml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14" data-path="../drift/">
+            
+                <a href="../drift/">
+            
+                    
+                        <b>1.2.2.14.</b>
+                    
+                    runi/drift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.15" data-path="../rate/">
+            
+                <a href="../rate/">
+            
+                    
+                        <b>1.2.2.15.</b>
+                    
+                    runi/rate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.16" data-path="../tree/">
+            
+                <a href="../tree/">
+            
+                    
+                        <b>1.2.2.16.</b>
+                    
+                    runi/tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.17" data-path="../sustain/">
+            
+                <a href="../sustain/">
+            
+                    
+                        <b>1.2.2.17.</b>
+                    
+                    runi/sustain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.18" data-path="../throttle/">
+            
+                <a href="../throttle/">
+            
+                    
+                        <b>1.2.2.18.</b>
+                    
+                    runi/throttle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../develop/">
+            
+                <a href="../../develop/">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Developer Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >runi/bm25</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+    
+                                <h1 id="runibm25">runi/bm25</h1>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> <span class="hljs-string">"github.com/org-runink/runi/bm25"</span>
+</code></pre>
+<p>Package bm25 ranks documents against a query by the words they share.</p>
+<p>BM25 is the ranking function most search engines were built on before
+embeddings, and it remains the strongest thing you can run with no model, no
+vector store, and no GPU. It scores a document higher when it contains the
+query's rarer words, more often, in fewer total words.</p>
+<h2 id="when-this-beats-an-embedding-search">When this beats an embedding search</h2>
+<ul>
+<li>Exact terms matter: identifiers, SKUs, error codes, names, version
+numbers. An embedding of "ERR-4021" is near the embedding of "ERR-4022",
+which is exactly wrong.</li>
+<li>You need to explain a result. [Result.Terms] reports which query terms
+matched and what each contributed, so a ranking can be justified rather
+than asserted.</li>
+<li>The corpus changes constantly. Indexing is a pass over the text; there is
+nothing to re-embed.</li>
+<li>There is no budget for a model in the request path.</li>
+</ul>
+<h2 id="when-it-does-not">When it does not</h2>
+<p>BM25 matches words, not meaning. A query for "car" will not find a document
+that only says "automobile". If your users paraphrase, BM25 alone will
+disappoint them — the usual answer is to run both and combine the rankings.</p>
+<h2 id="scores-are-not-probabilities">Scores are not probabilities</h2>
+<p>A BM25 score is only meaningful compared with other scores for the SAME
+query. It is unbounded above and depends on corpus statistics, so "score &gt;
+0.8" is not a usable relevance threshold and a score from one query cannot be
+compared with a score from another. Rank, then cut by position.</p>
+<h2 id="measured-against-rankbm25-and-scikit-learn">Measured against rank_bm25 and scikit-learn</h2>
+<p>5,000 synthetic documents, 200 queries:</p>
+<pre><code>                    bm25    rank_bm25   sklearn TfidfVectorizer
+</code></pre><p>index 5,000 docs      19.3 ms     93.5 ms                  171.3 ms
+200 queries            3.92 ms   628.3 ms                         -</p>
+<p>4.8x faster to index than rank_bm25, 8.9x faster than building a TF-IDF
+matrix with scikit-learn, and 160x faster to query.</p>
+<p>Both numbers are mostly about allocation rather than arithmetic. The build
+does 65 allocations where it once did 20,031: documents emit (term, count)
+pairs into one flat buffer, and the postings arena is filled by a counting
+sort instead of appending to 2,000 separately growing slices. Search does
+4,800 where it once did 337,826: the per-document score breakdown is now
+rebuilt only for the documents actually returned, and the top-k comes off a
+bounded heap rather than a full sort of every candidate -- which mattered
+more than it sounds, because on a corpus of equal-length documents nearly
+every pair of candidates ties on score and the comparison falls through to
+comparing document IDs.</p>
+<p>Measured on an ASUS Ascent GX10, 20 cores, aarch64, Go 1.27.2, with
+rank-bm25 and scikit-learn 1.9.1 on Python 3.12.3.</p>
+<h3 id="index">Index</h3>
+<ul>
+<li><code>type</code> <a href="#document">Document</a></li>
+<li><code>type</code> <a href="#index">Index</a></li>
+<li><code>type</code> <a href="#options">Options</a></li>
+<li><code>type</code> <a href="#result">Result</a></li>
+<li><code>method</code> <a href="#indexlen">Index.Len</a></li>
+<li><code>method</code> <a href="#indexsearch">Index.Search</a></li>
+<li><code>func</code> <a href="#new">New</a></li>
+<li><code>func</code> <a href="#simpletokenise">SimpleTokenise</a></li>
+</ul>
+<h4 id="document">Document</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Document <span class="hljs-keyword">struct</span>
+</code></pre>
+<p>Document is one indexed item.</p>
+<p><small>Defined in <code>bm25/bm25.go</code>.</small></p>
+<h4 id="index">Index</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Index <span class="hljs-keyword">struct</span>
+</code></pre>
+<p>Index is a searchable corpus. Build it with [New]; it is read-only and safe
+for concurrent use once built.</p>
+<p>The zero value is an empty index: Len reports 0 and Search returns nil.</p>
+<p><small>Defined in <code>bm25/bm25.go</code>.</small></p>
+<h4 id="options">Options</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Options <span class="hljs-keyword">struct</span>
+</code></pre>
+<p>Options configures an [Index]. The zero value uses the defaults above.</p>
+<p><small>Defined in <code>bm25/bm25.go</code>.</small></p>
+<h4 id="result">Result</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Result <span class="hljs-keyword">struct</span>
+</code></pre>
+<p>Result is one ranked hit.</p>
+<p><small>Defined in <code>bm25/bm25.go</code>.</small></p>
+<h4 id="indexlen">Index.Len</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(ix *Index)</span></span> Len() <span class="hljs-type">int</span>
+</code></pre>
+<p>Len reports how many documents are indexed.</p>
+<p><small>Defined in <code>bm25/bm25.go</code>.</small></p>
+<h4 id="indexsearch">Index.Search</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(ix *Index)</span></span> Search(query <span class="hljs-type">string</span>, k <span class="hljs-type">int</span>) []Result
+</code></pre>
+<p>Search returns the top-k documents for a query, highest score first. A k of
+zero or less returns every document that matched at least one term.</p>
+<p>Ties are broken by document ID so that the same corpus and query always
+produce the same order — an unstable ranking makes a result impossible to
+reproduce in a bug report.</p>
+<p><small>Defined in <code>bm25/bm25.go</code>.</small></p>
+<h4 id="new">New</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">New</span><span class="hljs-params">(docs []Document, opts Options)</span></span> *Index
+</code></pre>
+<p>New builds an index over docs. Documents with empty text are indexed with
+length zero and can never match, which is deliberate: dropping them would
+make the returned corpus size disagree with the input.</p>
+<p><small>Defined in <code>bm25/bm25.go</code>.</small></p>
+<h4 id="simpletokenise">SimpleTokenise</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">SimpleTokenise</span><span class="hljs-params">(s <span class="hljs-type">string</span>)</span></span> []<span class="hljs-type">string</span>
+</code></pre>
+<p>SimpleTokenise lowercases text and splits it on anything that is not a letter
+or a digit. It keeps digits joined to letters, so "err-4021" yields "err" and
+"4021" while "v2" stays "v2".</p>
+<p>It does no stemming: "run" and "running" are different terms. Stemming helps
+recall and costs precision, and which you want depends on the corpus, so it
+is left to a custom Tokenise rather than imposed.</p>
+<p><small>Defined in <code>bm25/bm25.go</code>.</small></p>
+
+                                
+    
+    <footer class="runink-footer" role="contentinfo">
+        <img class="runink-brand" src="../../../_brand/logo.png" alt="">
+        
+    </footer>
+    
+
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../season/" class="navigation navigation-prev " aria-label="Previous page: runi/season">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../salvage/" class="navigation navigation-next " aria-label="Next page: runi/salvage">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    
+    <script type="application/json" id="honkit-page-context">{"page":{"title":"runi/bm25","level":"1.2.2.4","depth":3,"next":{"title":"runi/salvage","level":"1.2.2.5","depth":3,"path":"docs/api/salvage/README.md","ref":"docs/api/salvage/README.md","articles":[]},"previous":{"title":"runi/season","level":"1.2.2.3","depth":3,"path":"docs/api/season/README.md","ref":"docs/api/season/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","runink-copy"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"lunr":{"maxIndexSize":100000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"runink-copy":{},"highlight":{},"search":{}},"theme":"default","author":"Runink","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"logo":"_brand/logo.png","siteURL":"https://docs.runink.org/runi/"},"title":"Runi","language":"en","gitbook":"7.0.1","description":"BSD-3-Clause · zero dependencies"},"file":{"path":"docs/api/bm25/README.md","mtime":"","type":"markdown"},"gitbook":{"version":"7.0.1","time":""},"basePath":"../../..","book":{"language":""}}</script>
+</div>
+
+        
+    <noscript>
+        <link rel="stylesheet" href="../../../gitbook/noscript.css">
+    </noscript>
+    
+    <script src="../../../gitbook/boot.js"></script>
+    
+    <script src="../../../gitbook/gitbook.js" defer></script>
+    <script src="../../../gitbook/theme.js" defer></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-runink-copy/copy.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/@honkit/honkit-plugin-lunr/lunr.min.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/@honkit/honkit-plugin-lunr/search-lunr.js" defer></script>
+        
+    
+
+    </body>
+</html>
+

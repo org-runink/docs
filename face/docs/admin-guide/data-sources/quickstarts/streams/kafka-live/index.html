@@ -1,0 +1,3135 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Apache Kafka, live estate · FACE Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 7.0.1">
+        <meta name="author" content="Runink">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-runink-copy/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../mqtt/" />
+    
+    
+    <link rel="prev" href="../kafka/" />
+    
+
+    
+    
+    <meta property="og:site_name" content="FACE Documentation">
+    <meta property="og:title" content="Apache Kafka, live estate">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="FACE by Runink (Fulfilment Autonomous Claims Engine) is Runink's sovereign operational-intelligence product: it connects to your warehouses, ERPs, telematics, sensors and cameras, reasons over them with models Runink runs for you or that you host (never a third-party AI service), and produces…">
+    <meta name="twitter:title" content="Apache Kafka, live estate">
+    <meta name="twitter:description" content="FACE by Runink (Fulfilment Autonomous Claims Engine) is Runink's sovereign operational-intelligence product: it connects to your warehouses, ERPs, telematics, sensors and cameras, reasons over them with models Runink runs for you or that you host (never a third-party AI service), and produces…">
+    
+    <meta name="twitter:card" content="summary">
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak font-size-2 font-family-1 color-theme-2">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../../../">
+            
+                <a href="../../../../../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    FACE Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../../../">
+            
+                <a href="../../../../../">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../../../overview/">
+            
+                <a href="../../../../../overview/">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../../../../overview/what-is-face/">
+            
+                <a href="../../../../../overview/what-is-face/">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    What FACE is
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../../../../overview/sustainability-dangerous-goods-luxury/">
+            
+                <a href="../../../../../overview/sustainability-dangerous-goods-luxury/">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    Sustainability: dangerous goods and luxury assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../../../concepts/">
+            
+                <a href="../../../../../concepts/">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../../../../concepts/fetch-pipeline/">
+            
+                <a href="../../../../../concepts/fetch-pipeline/">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    Fetch pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../../../../concepts/sovereign-models/">
+            
+                <a href="../../../../../concepts/sovereign-models/">
+            
+                    
+                        <b>1.2.2.2.</b>
+                    
+                    Sovereign models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../../../../concepts/structured-output/">
+            
+                <a href="../../../../../concepts/structured-output/">
+            
+                    
+                        <b>1.2.2.3.</b>
+                    
+                    Structured output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../../../../concepts/grounding/">
+            
+                <a href="../../../../../concepts/grounding/">
+            
+                    
+                        <b>1.2.2.4.</b>
+                    
+                    Grounding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../../../../../concepts/evidence-documents/">
+            
+                <a href="../../../../../concepts/evidence-documents/">
+            
+                    
+                        <b>1.2.2.5.</b>
+                    
+                    Evidence documents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../../../../../concepts/action-cards-and-money/">
+            
+                <a href="../../../../../concepts/action-cards-and-money/">
+            
+                    
+                        <b>1.2.2.6.</b>
+                    
+                    Action cards & money
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../../../../../concepts/statistics-and-ml/">
+            
+                <a href="../../../../../concepts/statistics-and-ml/">
+            
+                    
+                        <b>1.2.2.7.</b>
+                    
+                    Statistics & ML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../../../../../concepts/posture-and-maturity/">
+            
+                <a href="../../../../../concepts/posture-and-maturity/">
+            
+                    
+                        <b>1.2.2.8.</b>
+                    
+                    Posture & maturity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="../../../../../concepts/simulation-and-twins/">
+            
+                <a href="../../../../../concepts/simulation-and-twins/">
+            
+                    
+                        <b>1.2.2.9.</b>
+                    
+                    Simulation & twins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="../../../../../concepts/compliance-finance-operations/">
+            
+                <a href="../../../../../concepts/compliance-finance-operations/">
+            
+                    
+                        <b>1.2.2.10.</b>
+                    
+                    Compliance, finance, operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="../../../../../concepts/twin-ontology/">
+            
+                <a href="../../../../../concepts/twin-ontology/">
+            
+                    
+                        <b>1.2.2.11.</b>
+                    
+                    Twin ontology & graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="../../../../../concepts/vision/">
+            
+                <a href="../../../../../concepts/vision/">
+            
+                    
+                        <b>1.2.2.12.</b>
+                    
+                    Vision & CCTV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="../../../../../concepts/agents-and-oversight/">
+            
+                <a href="../../../../../concepts/agents-and-oversight/">
+            
+                    
+                        <b>1.2.2.13.</b>
+                    
+                    Agents & oversight
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../../../architecture/">
+            
+                <a href="../../../../../architecture/">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../../../../architecture/security/">
+            
+                <a href="../../../../../architecture/security/">
+            
+                    
+                        <b>1.2.3.1.</b>
+                    
+                    Security & trust
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1.1" data-path="../../../../../architecture/security/zero-trust/">
+            
+                <a href="../../../../../architecture/security/zero-trust/">
+            
+                    
+                        <b>1.2.3.1.1.</b>
+                    
+                    Defence in depth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.2" data-path="../../../../../architecture/security/identity-access/">
+            
+                <a href="../../../../../architecture/security/identity-access/">
+            
+                    
+                        <b>1.2.3.1.2.</b>
+                    
+                    Identity & access
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.3" data-path="../../../../../architecture/security/encryption/">
+            
+                <a href="../../../../../architecture/security/encryption/">
+            
+                    
+                        <b>1.2.3.1.3.</b>
+                    
+                    Encryption at rest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.4" data-path="../../../../../architecture/security/sovereign-inference/">
+            
+                <a href="../../../../../architecture/security/sovereign-inference/">
+            
+                    
+                        <b>1.2.3.1.4.</b>
+                    
+                    Sovereign inference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.5" data-path="../../../../../architecture/security/ai-safety/">
+            
+                <a href="../../../../../architecture/security/ai-safety/">
+            
+                    
+                        <b>1.2.3.1.5.</b>
+                    
+                    AI safety
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.6" data-path="../../../../../architecture/security/audit-lineage/">
+            
+                <a href="../../../../../architecture/security/audit-lineage/">
+            
+                    
+                        <b>1.2.3.1.6.</b>
+                    
+                    Auditability & lineage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.7" data-path="../../../../../architecture/security/network-egress/">
+            
+                <a href="../../../../../architecture/security/network-egress/">
+            
+                    
+                        <b>1.2.3.1.7.</b>
+                    
+                    Network egress controls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.8" data-path="../../../../../architecture/security/compliance/">
+            
+                <a href="../../../../../architecture/security/compliance/">
+            
+                    
+                        <b>1.2.3.1.8.</b>
+                    
+                    Compliance posture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../../../../user-guide/">
+            
+                <a href="../../../../../user-guide/">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    User guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../../../../user-guide/agents/">
+            
+                <a href="../../../../../user-guide/agents/">
+            
+                    
+                        <b>1.2.4.1.</b>
+                    
+                    Model cards
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1.1" data-path="../../../../../user-guide/agents/claims-recovery/">
+            
+                <a href="../../../../../user-guide/agents/claims-recovery/">
+            
+                    
+                        <b>1.2.4.1.1.</b>
+                    
+                    Claims & recovery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.2" data-path="../../../../../user-guide/agents/freight-invoice-audit/">
+            
+                <a href="../../../../../user-guide/agents/freight-invoice-audit/">
+            
+                    
+                        <b>1.2.4.1.2.</b>
+                    
+                    Freight invoice audit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.3" data-path="../../../../../user-guide/agents/customs-trade-documents/">
+            
+                <a href="../../../../../user-guide/agents/customs-trade-documents/">
+            
+                    
+                        <b>1.2.4.1.3.</b>
+                    
+                    Customs & trade documents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.4" data-path="../../../../../user-guide/agents/compliance-review/">
+            
+                <a href="../../../../../user-guide/agents/compliance-review/">
+            
+                    
+                        <b>1.2.4.1.4.</b>
+                    
+                    Compliance review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.5" data-path="../../../../../user-guide/agents/insurance-claim-files/">
+            
+                <a href="../../../../../user-guide/agents/insurance-claim-files/">
+            
+                    
+                        <b>1.2.4.1.5.</b>
+                    
+                    Insurance claim files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.6" data-path="../../../../../user-guide/agents/cold-chain-telemetry/">
+            
+                <a href="../../../../../user-guide/agents/cold-chain-telemetry/">
+            
+                    
+                        <b>1.2.4.1.6.</b>
+                    
+                    Cold chain & telemetry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.7" data-path="../../../../../user-guide/agents/maintenance/">
+            
+                <a href="../../../../../user-guide/agents/maintenance/">
+            
+                    
+                        <b>1.2.4.1.7.</b>
+                    
+                    Maintenance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.8" data-path="../../../../../user-guide/agents/stock-and-demand/">
+            
+                <a href="../../../../../user-guide/agents/stock-and-demand/">
+            
+                    
+                        <b>1.2.4.1.8.</b>
+                    
+                    Stock & demand
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.9" data-path="../../../../../user-guide/agents/returns/">
+            
+                <a href="../../../../../user-guide/agents/returns/">
+            
+                    
+                        <b>1.2.4.1.9.</b>
+                    
+                    Returns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.10" data-path="../../../../../user-guide/agents/yard-and-transport/">
+            
+                <a href="../../../../../user-guide/agents/yard-and-transport/">
+            
+                    
+                        <b>1.2.4.1.10.</b>
+                    
+                    Yard & transport
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.11" data-path="../../../../../user-guide/agents/options-and-approvals/">
+            
+                <a href="../../../../../user-guide/agents/options-and-approvals/">
+            
+                    
+                        <b>1.2.4.1.11.</b>
+                    
+                    Options & approvals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.12" data-path="../../../../../user-guide/agents/field-readings/">
+            
+                <a href="../../../../../user-guide/agents/field-readings/">
+            
+                    
+                        <b>1.2.4.1.12.</b>
+                    
+                    Field readings (edge)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.13" data-path="../../../../../user-guide/agents/data-posture/">
+            
+                <a href="../../../../../user-guide/agents/data-posture/">
+            
+                    
+                        <b>1.2.4.1.13.</b>
+                    
+                    Data posture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.14" data-path="../../../../../user-guide/agents/voice-dispatch/">
+            
+                <a href="../../../../../user-guide/agents/voice-dispatch/">
+            
+                    
+                        <b>1.2.4.1.14.</b>
+                    
+                    Voice dispatch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.15" data-path="../../../../../user-guide/agents/documents-and-plans/">
+            
+                <a href="../../../../../user-guide/agents/documents-and-plans/">
+            
+                    
+                        <b>1.2.4.1.15.</b>
+                    
+                    Documents & plans (vision)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.16" data-path="../../../../../user-guide/agents/claims-leakage/">
+            
+                <a href="../../../../../user-guide/agents/claims-leakage/">
+            
+                    
+                        <b>1.2.4.1.16.</b>
+                    
+                    Claims leakage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.17" data-path="../../../../../user-guide/agents/freight-market-analyst/">
+            
+                <a href="../../../../../user-guide/agents/freight-market-analyst/">
+            
+                    
+                        <b>1.2.4.1.17.</b>
+                    
+                    Freight market analyst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.18" data-path="../../../../../user-guide/agents/self-healing/">
+            
+                <a href="../../../../../user-guide/agents/self-healing/">
+            
+                    
+                        <b>1.2.4.1.18.</b>
+                    
+                    Self-healing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.19" data-path="../../../../../user-guide/agents/counterparty-background-check/">
+            
+                <a href="../../../../../user-guide/agents/counterparty-background-check/">
+            
+                    
+                        <b>1.2.4.1.19.</b>
+                    
+                    Counterparty background check
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.20" data-path="../../../../../user-guide/agents/fraud-detection/">
+            
+                <a href="../../../../../user-guide/agents/fraud-detection/">
+            
+                    
+                        <b>1.2.4.1.20.</b>
+                    
+                    Fraud indicators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.21" data-path="../../../../../user-guide/agents/customer-analysis/">
+            
+                <a href="../../../../../user-guide/agents/customer-analysis/">
+            
+                    
+                        <b>1.2.4.1.21.</b>
+                    
+                    Customer analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../../../../../user-guide/sign-in/">
+            
+                <a href="../../../../../user-guide/sign-in/">
+            
+                    
+                        <b>1.2.4.2.</b>
+                    
+                    Sign in
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../../../../../user-guide/navigation/">
+            
+                <a href="../../../../../user-guide/navigation/">
+            
+                    
+                        <b>1.2.4.3.</b>
+                    
+                    Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="../../../../../user-guide/overview/">
+            
+                <a href="../../../../../user-guide/overview/">
+            
+                    
+                        <b>1.2.4.4.</b>
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../../../../../user-guide/ask/">
+            
+                <a href="../../../../../user-guide/ask/">
+            
+                    
+                        <b>1.2.4.5.</b>
+                    
+                    Ask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="../../../../../user-guide/briefs/">
+            
+                <a href="../../../../../user-guide/briefs/">
+            
+                    
+                        <b>1.2.4.6.</b>
+                    
+                    Briefs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="../../../../../user-guide/options/">
+            
+                <a href="../../../../../user-guide/options/">
+            
+                    
+                        <b>1.2.4.7.</b>
+                    
+                    Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8" data-path="../../../../../user-guide/why/">
+            
+                <a href="../../../../../user-guide/why/">
+            
+                    
+                        <b>1.2.4.8.</b>
+                    
+                    Why
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.9" data-path="../../../../../user-guide/live-sensing/">
+            
+                <a href="../../../../../user-guide/live-sensing/">
+            
+                    
+                        <b>1.2.4.9.</b>
+                    
+                    Live sensing and vision
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.10" data-path="../../../../../user-guide/actionable-twins/">
+            
+                <a href="../../../../../user-guide/actionable-twins/">
+            
+                    
+                        <b>1.2.4.10.</b>
+                    
+                    Actionable Twins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.11" data-path="../../../../../user-guide/fleet-and-control/">
+            
+                <a href="../../../../../user-guide/fleet-and-control/">
+            
+                    
+                        <b>1.2.4.11.</b>
+                    
+                    Routes and fleet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.12" data-path="../../../../../user-guide/contacts-and-verification/">
+            
+                <a href="../../../../../user-guide/contacts-and-verification/">
+            
+                    
+                        <b>1.2.4.12.</b>
+                    
+                    Contacts and verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.13" data-path="../../../../../user-guide/voice-and-calls/">
+            
+                <a href="../../../../../user-guide/voice-and-calls/">
+            
+                    
+                        <b>1.2.4.13.</b>
+                    
+                    Voice and calls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.14" data-path="../../../../../user-guide/settings/">
+            
+                <a href="../../../../../user-guide/settings/">
+            
+                    
+                        <b>1.2.4.14.</b>
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.15" data-path="../../../../../user-guide/account-deletion/">
+            
+                <a href="../../../../../user-guide/account-deletion/">
+            
+                    
+                        <b>1.2.4.15.</b>
+                    
+                    Delete your account
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.16" data-path="../../../../../user-guide/accessibility/">
+            
+                <a href="../../../../../user-guide/accessibility/">
+            
+                    
+                        <b>1.2.4.16.</b>
+                    
+                    Accessibility and languages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.17" data-path="../../../../../user-guide/troubleshooting/">
+            
+                <a href="../../../../../user-guide/troubleshooting/">
+            
+                    
+                        <b>1.2.4.17.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    Admin guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../../../../access-and-trial/">
+            
+                <a href="../../../../access-and-trial/">
+            
+                    
+                        <b>1.2.5.1.</b>
+                    
+                    Access and the trial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../../../../admin-page/">
+            
+                <a href="../../../../admin-page/">
+            
+                    
+                        <b>1.2.5.2.</b>
+                    
+                    Admin page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                        <b>1.2.5.3.</b>
+                    
+                    Data sources
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.1" data-path="../../../connections/">
+            
+                <a href="../../../connections/">
+            
+                    
+                        <b>1.2.5.3.1.</b>
+                    
+                    Connections and credentials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.2.5.3.2.</b>
+                    
+                    Quickstarts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.1" data-path="../../all-connectors/">
+            
+                <a href="../../all-connectors/">
+            
+                    
+                        <b>1.2.5.3.2.1.</b>
+                    
+                    See all connectors at once
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2" data-path="../../databases/">
+            
+                <a href="../../databases/">
+            
+                    
+                        <b>1.2.5.3.2.2.</b>
+                    
+                    Databases & warehouses
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.1" data-path="../../databases/postgres/">
+            
+                <a href="../../databases/postgres/">
+            
+                    
+                        <b>1.2.5.3.2.2.1.</b>
+                    
+                    PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.2" data-path="../../databases/mysql/">
+            
+                <a href="../../databases/mysql/">
+            
+                    
+                        <b>1.2.5.3.2.2.2.</b>
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.3" data-path="../../databases/snowflake/">
+            
+                <a href="../../databases/snowflake/">
+            
+                    
+                        <b>1.2.5.3.2.2.3.</b>
+                    
+                    Snowflake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.4" data-path="../../databases/databricks/">
+            
+                <a href="../../databases/databricks/">
+            
+                    
+                        <b>1.2.5.3.2.2.4.</b>
+                    
+                    Databricks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.5" data-path="../../databases/redshift/">
+            
+                <a href="../../databases/redshift/">
+            
+                    
+                        <b>1.2.5.3.2.2.5.</b>
+                    
+                    Amazon Redshift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.6" data-path="../../databases/bigquery/">
+            
+                <a href="../../databases/bigquery/">
+            
+                    
+                        <b>1.2.5.3.2.2.6.</b>
+                    
+                    Google BigQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3" data-path="../../business-apps/">
+            
+                <a href="../../business-apps/">
+            
+                    
+                        <b>1.2.5.3.2.3.</b>
+                    
+                    Business apps
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.1" data-path="../../business-apps/salesforce/">
+            
+                <a href="../../business-apps/salesforce/">
+            
+                    
+                        <b>1.2.5.3.2.3.1.</b>
+                    
+                    Salesforce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.2" data-path="../../business-apps/sap/">
+            
+                <a href="../../business-apps/sap/">
+            
+                    
+                        <b>1.2.5.3.2.3.2.</b>
+                    
+                    SAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.3" data-path="../../business-apps/guidewire/">
+            
+                <a href="../../business-apps/guidewire/">
+            
+                    
+                        <b>1.2.5.3.2.3.3.</b>
+                    
+                    Guidewire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.4" data-path="../../business-apps/servicenow/">
+            
+                <a href="../../business-apps/servicenow/">
+            
+                    
+                        <b>1.2.5.3.2.3.4.</b>
+                    
+                    ServiceNow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.5" data-path="../../business-apps/hubspot/">
+            
+                <a href="../../business-apps/hubspot/">
+            
+                    
+                        <b>1.2.5.3.2.3.5.</b>
+                    
+                    HubSpot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.6" data-path="../../business-apps/d365/">
+            
+                <a href="../../business-apps/d365/">
+            
+                    
+                        <b>1.2.5.3.2.3.6.</b>
+                    
+                    Microsoft Dynamics 365
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.7" data-path="../../business-apps/sharepoint/">
+            
+                <a href="../../business-apps/sharepoint/">
+            
+                    
+                        <b>1.2.5.3.2.3.7.</b>
+                    
+                    SharePoint lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.8" data-path="../../business-apps/github/">
+            
+                <a href="../../business-apps/github/">
+            
+                    
+                        <b>1.2.5.3.2.3.8.</b>
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4" data-path="../../logistics/">
+            
+                <a href="../../logistics/">
+            
+                    
+                        <b>1.2.5.3.2.4.</b>
+                    
+                    Logistics systems
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.1" data-path="../../logistics/oms/">
+            
+                <a href="../../logistics/oms/">
+            
+                    
+                        <b>1.2.5.3.2.4.1.</b>
+                    
+                    Order management (OMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.2" data-path="../../logistics/tms/">
+            
+                <a href="../../logistics/tms/">
+            
+                    
+                        <b>1.2.5.3.2.4.2.</b>
+                    
+                    Transport management (TMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.3" data-path="../../logistics/whs/">
+            
+                <a href="../../logistics/whs/">
+            
+                    
+                        <b>1.2.5.3.2.4.3.</b>
+                    
+                    Warehouse (WHS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.4" data-path="../../logistics/yms/">
+            
+                <a href="../../logistics/yms/">
+            
+                    
+                        <b>1.2.5.3.2.4.4.</b>
+                    
+                    Yard management (YMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.5" data-path="../../logistics/ims/">
+            
+                <a href="../../logistics/ims/">
+            
+                    
+                        <b>1.2.5.3.2.4.5.</b>
+                    
+                    Inventory management (IMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.6" data-path="../../logistics/inventory/">
+            
+                <a href="../../logistics/inventory/">
+            
+                    
+                        <b>1.2.5.3.2.4.6.</b>
+                    
+                    Inventory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.7" data-path="../../logistics/logisticsapi/">
+            
+                <a href="../../logistics/logisticsapi/">
+            
+                    
+                        <b>1.2.5.3.2.4.7.</b>
+                    
+                    Logistics API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5" data-path="../../files/">
+            
+                <a href="../../files/">
+            
+                    
+                        <b>1.2.5.3.2.5.</b>
+                    
+                    Files
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.1" data-path="../../files/files/">
+            
+                <a href="../../files/files/">
+            
+                    
+                        <b>1.2.5.3.2.5.1.</b>
+                    
+                    Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.2" data-path="../../files/excel/">
+            
+                <a href="../../files/excel/">
+            
+                    
+                        <b>1.2.5.3.2.5.2.</b>
+                    
+                    Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.3" data-path="../../files/document/">
+            
+                <a href="../../files/document/">
+            
+                    
+                        <b>1.2.5.3.2.5.3.</b>
+                    
+                    Document (legacy type)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.4" data-path="../../files/objectstore/">
+            
+                <a href="../../files/objectstore/">
+            
+                    
+                        <b>1.2.5.3.2.5.4.</b>
+                    
+                    Object store
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.2.5.3.2.6.</b>
+                    
+                    Streams
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.1" data-path="../kafka/">
+            
+                <a href="../kafka/">
+            
+                    
+                        <b>1.2.5.3.2.6.1.</b>
+                    
+                    Apache Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5.3.2.6.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.5.3.2.6.2.</b>
+                    
+                    Apache Kafka, live estate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.3" data-path="../mqtt/">
+            
+                <a href="../mqtt/">
+            
+                    
+                        <b>1.2.5.3.2.6.3.</b>
+                    
+                    MQTT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.4" data-path="../iot/">
+            
+                <a href="../iot/">
+            
+                    
+                        <b>1.2.5.3.2.6.4.</b>
+                    
+                    IoT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.5" data-path="../rfid/">
+            
+                <a href="../rfid/">
+            
+                    
+                        <b>1.2.5.3.2.6.5.</b>
+                    
+                    RFID readers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.6" data-path="../gps/">
+            
+                <a href="../gps/">
+            
+                    
+                        <b>1.2.5.3.2.6.6.</b>
+                    
+                    GPS and telematics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.7" data-path="../sensorgateway/">
+            
+                <a href="../sensorgateway/">
+            
+                    
+                        <b>1.2.5.3.2.6.7.</b>
+                    
+                    Sensor gateway
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.8" data-path="../cctv/">
+            
+                <a href="../cctv/">
+            
+                    
+                        <b>1.2.5.3.2.6.8.</b>
+                    
+                    CCTV cameras
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.3" data-path="../../../discovery/">
+            
+                <a href="../../../discovery/">
+            
+                    
+                        <b>1.2.5.3.3.</b>
+                    
+                    Explore, sample and profile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.4" data-path="../../../sql-warehouses/">
+            
+                <a href="../../../sql-warehouses/">
+            
+                    
+                        <b>1.2.5.3.4.</b>
+                    
+                    SQL warehouses and databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.5" data-path="../../../enterprise-saas/">
+            
+                <a href="../../../enterprise-saas/">
+            
+                    
+                        <b>1.2.5.3.5.</b>
+                    
+                    Enterprise SaaS and ERP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.6" data-path="../../../files-object-storage/">
+            
+                <a href="../../../files-object-storage/">
+            
+                    
+                        <b>1.2.5.3.6.</b>
+                    
+                    Files and object storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.7" data-path="../../../streaming-kafka/">
+            
+                <a href="../../../streaming-kafka/">
+            
+                    
+                        <b>1.2.5.3.7.</b>
+                    
+                    Streaming: Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.8" data-path="../../../event-listeners/">
+            
+                <a href="../../../event-listeners/">
+            
+                    
+                        <b>1.2.5.3.8.</b>
+                    
+                    Event listeners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.9" data-path="../../../telemetry/">
+            
+                <a href="../../../telemetry/">
+            
+                    
+                        <b>1.2.5.3.9.</b>
+                    
+                    Telemetry: MQTT, RFID, GPS, sensors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.10" data-path="../../../logistics-systems/">
+            
+                <a href="../../../logistics-systems/">
+            
+                    
+                        <b>1.2.5.3.10.</b>
+                    
+                    Logistics systems of record
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.11" data-path="../../../cctv-video/">
+            
+                <a href="../../../cctv-video/">
+            
+                    
+                        <b>1.2.5.3.11.</b>
+                    
+                    CCTV and video
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.12" data-path="../../../edge-flipper/">
+            
+                <a href="../../../edge-flipper/">
+            
+                    
+                        <b>1.2.5.3.12.</b>
+                    
+                    Flipper edge reader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.13" data-path="../../../web/">
+            
+                <a href="../../../web/">
+            
+                    
+                        <b>1.2.5.3.13.</b>
+                    
+                    Web and crawler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.14" data-path="../../../runners/">
+            
+                <a href="../../../runners/">
+            
+                    
+                        <b>1.2.5.3.14.</b>
+                    
+                    Runners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.15" data-path="../../../networking/">
+            
+                <a href="../../../networking/">
+            
+                    
+                        <b>1.2.5.3.15.</b>
+                    
+                    Networking and address policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.16" data-path="../../../troubleshooting/">
+            
+                <a href="../../../troubleshooting/">
+            
+                    
+                        <b>1.2.5.3.16.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="../../../../deployment/">
+            
+                <a href="../../../../deployment/">
+            
+                    
+                        <b>1.2.5.4.</b>
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../../../../developer-guide/">
+            
+                <a href="../../../../../developer-guide/">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    Developer guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../../../../../developer-guide/connector-model/">
+            
+                <a href="../../../../../developer-guide/connector-model/">
+            
+                    
+                        <b>1.2.6.1.</b>
+                    
+                    Connector model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../../../../../developer-guide/api/">
+            
+                <a href="../../../../../developer-guide/api/">
+            
+                    
+                        <b>1.2.6.2.</b>
+                    
+                    gRPC API reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.2.1" data-path="../../../../../developer-guide/api/identity/">
+            
+                <a href="../../../../../developer-guide/api/identity/">
+            
+                    
+                        <b>1.2.6.2.1.</b>
+                    
+                    Identity, licences & landing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.2" data-path="../../../../../developer-guide/api/connections/">
+            
+                <a href="../../../../../developer-guide/api/connections/">
+            
+                    
+                        <b>1.2.6.2.2.</b>
+                    
+                    Configuration, connections & runners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.3" data-path="../../../../../developer-guide/api/fetch/">
+            
+                <a href="../../../../../developer-guide/api/fetch/">
+            
+                    
+                        <b>1.2.6.2.3.</b>
+                    
+                    Fetch & traces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.4" data-path="../../../../../developer-guide/api/twins/">
+            
+                <a href="../../../../../developer-guide/api/twins/">
+            
+                    
+                        <b>1.2.6.2.4.</b>
+                    
+                    Twins, simulation & claims
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.5" data-path="../../../../../developer-guide/api/analysis/">
+            
+                <a href="../../../../../developer-guide/api/analysis/">
+            
+                    
+                        <b>1.2.6.2.5.</b>
+                    
+                    Analysis, posture & rules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.6" data-path="../../../../../developer-guide/api/compliance/">
+            
+                <a href="../../../../../developer-guide/api/compliance/">
+            
+                    
+                        <b>1.2.6.2.6.</b>
+                    
+                    Compliance, finance & operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.7" data-path="../../../../../developer-guide/api/sql/">
+            
+                <a href="../../../../../developer-guide/api/sql/">
+            
+                    
+                        <b>1.2.6.2.7.</b>
+                    
+                    SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.8" data-path="../../../../../developer-guide/api/lineage-activity/">
+            
+                <a href="../../../../../developer-guide/api/lineage-activity/">
+            
+                    
+                        <b>1.2.6.2.8.</b>
+                    
+                    Lineage & activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.9" data-path="../../../../../developer-guide/api/vision/">
+            
+                <a href="../../../../../developer-guide/api/vision/">
+            
+                    
+                        <b>1.2.6.2.9.</b>
+                    
+                    CCTV, surveillance & documents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.10" data-path="../../../../../developer-guide/api/calling-support/">
+            
+                <a href="../../../../../developer-guide/api/calling-support/">
+            
+                    
+                        <b>1.2.6.2.10.</b>
+                    
+                    Calling & support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.11" data-path="../../../../../developer-guide/api/orchestrator/">
+            
+                <a href="../../../../../developer-guide/api/orchestrator/">
+            
+                    
+                        <b>1.2.6.2.11.</b>
+                    
+                    Agent orchestrator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.12" data-path="../../../../../developer-guide/api/metering-schedules/">
+            
+                <a href="../../../../../developer-guide/api/metering-schedules/">
+            
+                    
+                        <b>1.2.6.2.12.</b>
+                    
+                    Schedules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.13" data-path="../../../../../developer-guide/api/web-crm/">
+            
+                <a href="../../../../../developer-guide/api/web-crm/">
+            
+                    
+                        <b>1.2.6.2.13.</b>
+                    
+                    Crawler, metasearch & CRM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../../../../privacy/">
+            
+                <a href="../../../../../../privacy/">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    FACE app privacy policy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../../../../privacy/es/">
+            
+                <a href="../../../../../../privacy/es/">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    Política de privacidad de la app FACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../../../../privacy/fr-ca/">
+            
+                <a href="../../../../../../privacy/fr-ca/">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Politique de confidentialité de l'application FACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../../../../../privacy/pt-br/">
+            
+                <a href="../../../../../../privacy/pt-br/">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    Política de privacidade do app FACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../../../.." >Apache Kafka, live estate</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+    
+                                <h1 id="apache-kafka-live-estate">Apache Kafka, live estate</h1>
+<!--
+SPDX-FileCopyrightText: 2026 Runink
+SPDX-License-Identifier: LicenseRef-Runink-Proprietary
+-->
+<blockquote>
+<p><strong>Warning:</strong> <strong>The test-estate safety rule: stand the test estate up only beside a test instance, never a production deployment.</strong> The broker below is encrypted and every client logs in, but its certificate authority, keys and passwords are generated on your machine for this test only. Use a scratch machine.</p>
+</blockquote>
+<p><strong>Streaming</strong> · type <code>kafka</code> · a broker on your machine, fed without end</p>
+<h2 id="what-it-is">What it is</h2>
+<p>A Kafka broker on your own machine that never stops receiving events, so you can watch FACE take in a stream rather than a recording. A producer generates the quickstart estate's operations: trucks moving between the sites, dock doors, cold rooms, forklifts, meters, drone surveys, yard gates, and the mainframe's order and inventory changes.</p>
+<p>The events are about the same Quillmere estate as every other quickstart: the same warehouses, yards, docks, trailers, carriers, customers and items, with the same IDs. The values are <strong>authored for the quickstart, not measured</strong>. Every record says so in its <code>provenance</code> field: <code>authored quickstart estate</code>.</p>
+<p>The broker setup follows Confluent's <a href="https://developer.confluent.io/confluent-tutorials/kafka-on-docker/" target="_blank">Kafka on Docker</a> tutorial: one Apache Kafka node in KRaft mode, no ZooKeeper. A Schema Registry is added, because the values are Avro. For the recorded topics and the ksqlDB catalogue, see <a href="../kafka/">Apache Kafka</a>. The connector reference is <a href="../../../streaming-kafka/">Streaming: Kafka</a>.</p>
+<p><strong>FACE connects to Kafka only over SASL_SSL.</strong> The broker below speaks TLS with a certificate from a certificate authority you generate, and every client logs in with SCRAM-SHA-512. The Schema Registry answers HTTPS only, from the same authority, and every call logs in with its own user and password. FACE refuses a Kafka connection without encryption or without a login, and a registry over plain <code>http://</code> or without its login.</p>
+<h2 id="what-you-need">What you need</h2>
+<ul>
+<li>Docker with Compose, and <code>openssl</code>.</li>
+<li>The producer image, <code>face-stream-producer:1.4.0</code>.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> The producer image is not on a public registry yet. Without it, steps 1 to 3 still give you a running broker and Schema Registry, but no events.</p>
+</blockquote>
+<h2 id="1-generate-the-keys-and-passwords">1. Generate the keys and passwords</h2>
+<p>In an empty directory, save this as <code>setup.sh</code> and run it once (<code>sh setup.sh</code>). It writes the passwords to <code>.env</code>, which Compose reads, and the certificate authority, the broker's and the registry's certificates and the client files to <code>secrets/</code>. The authority's private key is deleted as soon as it has signed, so nothing else can be signed with it.</p>
+<pre><code class="lang-bash"><span class="hljs-meta">#!/bin/sh</span>
+<span class="hljs-comment"># The name FACE uses to reach this machine. Keep localhost when FACE runs here.</span>
+KAFKA_HOST=<span class="hljs-variable">${KAFKA_HOST:-localhost}</span>
+<span class="hljs-built_in">set</span> -eu
+<span class="hljs-built_in">umask</span> 077
+<span class="hljs-built_in">mkdir</span> -p secrets
+<span class="hljs-function"><span class="hljs-title">pw</span></span>() { openssl rand -hex 20; }
+<span class="hljs-built_in">cat</span> &gt; .<span class="hljs-built_in">env</span> &lt;&lt;<span class="hljs-string">EOF
+KAFKA_HOST=$KAFKA_HOST
+SCRAM_BROKER=$(pw)
+SCRAM_FACE_READER=$(pw)
+SCRAM_PRODUCER=$(pw)
+SCRAM_SCHEMA_REGISTRY=$(pw)
+REGISTRY_FACE_READER=$(pw)
+REGISTRY_PRODUCER=$(pw)
+EOF</span>
+. ./.env
+
+openssl genpkey -algorithm EC -pkeyopt ec_paramgen_curve:P-256 -out secrets/ca.key
+openssl req -x509 -new -key secrets/ca.key -sha256 -days 365 -subj <span class="hljs-string">"/CN=Quickstart Kafka CA"</span> \
+  -addext <span class="hljs-string">"basicConstraints=critical,CA:TRUE,pathlen:0"</span> -addext <span class="hljs-string">"keyUsage=critical,keyCertSign,cRLSign"</span> \
+  -out secrets/ca.crt
+<span class="hljs-function"><span class="hljs-title">leaf</span></span>() {
+  openssl genpkey -algorithm EC -pkeyopt ec_paramgen_curve:P-256 -out <span class="hljs-string">"secrets/<span class="hljs-variable">$1</span>.key"</span>
+  openssl req -new -key <span class="hljs-string">"secrets/<span class="hljs-variable">$1</span>.key"</span> -subj <span class="hljs-string">"/CN=<span class="hljs-variable">$1</span>"</span> -out <span class="hljs-string">"secrets/<span class="hljs-variable">$1</span>.csr"</span>
+  <span class="hljs-built_in">printf</span> <span class="hljs-string">'basicConstraints=critical,CA:FALSE\nkeyUsage=critical,digitalSignature\nextendedKeyUsage=serverAuth\nsubjectAltName=%s\n'</span> <span class="hljs-string">"<span class="hljs-variable">$2</span>"</span> &gt; <span class="hljs-string">"secrets/<span class="hljs-variable">$1</span>.ext"</span>
+  openssl x509 -req -<span class="hljs-keyword">in</span> <span class="hljs-string">"secrets/<span class="hljs-variable">$1</span>.csr"</span> -CA secrets/ca.crt -CAkey secrets/ca.key -CAcreateserial \
+    -days 365 -sha256 -extfile <span class="hljs-string">"secrets/<span class="hljs-variable">$1</span>.ext"</span> -out <span class="hljs-string">"secrets/<span class="hljs-variable">$1</span>.crt"</span>
+}
+leaf broker <span class="hljs-string">"DNS:broker,DNS:<span class="hljs-variable">$KAFKA_HOST</span>"</span>
+leaf schema-registry <span class="hljs-string">"DNS:schema-registry,DNS:<span class="hljs-variable">$KAFKA_HOST</span>"</span>
+<span class="hljs-built_in">cat</span> secrets/broker.key secrets/broker.crt &gt; secrets/broker-keystore.pem
+<span class="hljs-built_in">rm</span> -f secrets/ca.key secrets/ca.srl secrets/*.csr secrets/*.ext
+
+<span class="hljs-comment"># The producer reads its passwords from files, never from a flag.</span>
+<span class="hljs-built_in">printf</span> %s <span class="hljs-string">"<span class="hljs-variable">$SCRAM_PRODUCER</span>"</span> &gt; secrets/producer-sasl-password
+<span class="hljs-built_in">printf</span> %s <span class="hljs-string">"<span class="hljs-variable">$REGISTRY_PRODUCER</span>"</span> &gt; secrets/producer-registry-password
+<span class="hljs-comment"># The console tools in step 2 log in as face-reader.</span>
+<span class="hljs-built_in">cat</span> &gt; secrets/face-reader.properties &lt;&lt;<span class="hljs-string">EOF
+security.protocol=SASL_SSL
+sasl.mechanism=SCRAM-SHA-512
+sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required username="face-reader" password="$SCRAM_FACE_READER";
+ssl.truststore.type=PEM
+ssl.truststore.location=/etc/kafka/tls/ca.crt
+EOF</span>
+<span class="hljs-comment"># The containers run as their own users, so they must be able to read these.</span>
+<span class="hljs-comment"># That is why this is a scratch machine only.</span>
+<span class="hljs-built_in">chmod</span> 0644 secrets/*
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"keys and passwords written to secrets/ and .env"</span>
+</code></pre>
+<p>If FACE runs on another machine, set the name it reaches this one by first, for example <code>KAFKA_HOST=kafka-host.example.invalid sh setup.sh</code>. The certificates then carry that name and the broker advertises it.</p>
+<h2 id="2-start-the-broker-the-registry-and-the-producer">2. Start the broker, the registry and the producer</h2>
+<p>Save this as <code>compose.yaml</code> in the same directory:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">x-kafka-image:</span> <span class="hljs-string">&amp;kafka-image</span> <span class="hljs-string">apache/kafka:4.2.2</span>
+<span class="hljs-attr">x-karapace-image:</span> <span class="hljs-string">&amp;karapace-image</span> <span class="hljs-string">ghcr.io/aiven-open/karapace:6.2.4</span>
+
+<span class="hljs-attr">services:</span>
+  <span class="hljs-comment"># Formats the broker's storage WITH its SCRAM users, once, before it starts.</span>
+  <span class="hljs-attr">format:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">*kafka-image</span>
+    <span class="hljs-attr">user:</span> <span class="hljs-string">"1000:1000"</span>
+    <span class="hljs-attr">volumes:</span> [<span class="hljs-string">kafka-data:/var/lib/kafka/data</span>]
+    <span class="hljs-attr">entrypoint:</span> [<span class="hljs-string">"bash"</span>, <span class="hljs-string">"-c"</span>]
+    <span class="hljs-attr">command:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">|
+        cat &gt; /tmp/format.properties &lt;&lt;CFG
+        process.roles=broker,controller
+        node.id=1
+        controller.quorum.voters=1@localhost:9093
+        controller.listener.names=CONTROLLER
+        listeners=INTERNAL://broker:29092,EXTERNAL://0.0.0.0:9092,CONTROLLER://localhost:9093
+        listener.security.protocol.map=INTERNAL:SASL_SSL,EXTERNAL:SASL_SSL,CONTROLLER:SASL_PLAINTEXT
+        inter.broker.listener.name=INTERNAL
+        log.dirs=/var/lib/kafka/data
+        CFG
+        /opt/kafka/bin/kafka-storage.sh format --ignore-formatted -t rtWtPypOQIeDOIHE0I7Rtg -c /tmp/format.properties \
+          --add-scram 'SCRAM-SHA-512=[name=broker,password=${SCRAM_BROKER}]' \
+          --add-scram 'SCRAM-SHA-512=[name=face-reader,password=${SCRAM_FACE_READER}]' \
+          --add-scram 'SCRAM-SHA-512=[name=producer,password=${SCRAM_PRODUCER}]' \
+          --add-scram 'SCRAM-SHA-512=[name=schema-registry,password=${SCRAM_SCHEMA_REGISTRY}]' &gt; /dev/null
+</span>
+  <span class="hljs-attr">broker:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">*kafka-image</span>
+    <span class="hljs-attr">hostname:</span> <span class="hljs-string">broker</span>
+    <span class="hljs-attr">container_name:</span> <span class="hljs-string">broker</span>
+    <span class="hljs-attr">depends_on:</span>
+      <span class="hljs-attr">format:</span> {<span class="hljs-attr">condition:</span> <span class="hljs-string">service_completed_successfully</span>}
+    <span class="hljs-attr">ports:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">"9092:9092"</span>
+    <span class="hljs-attr">volumes:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">kafka-data:/var/lib/kafka/data</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">./secrets:/etc/kafka/tls:ro</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-attr">CLUSTER_ID:</span> <span class="hljs-string">rtWtPypOQIeDOIHE0I7Rtg</span>
+      <span class="hljs-attr">KAFKA_NODE_ID:</span> <span class="hljs-number">1</span>
+      <span class="hljs-attr">KAFKA_PROCESS_ROLES:</span> <span class="hljs-string">broker,controller</span>
+      <span class="hljs-attr">KAFKA_LOG_DIRS:</span> <span class="hljs-string">/var/lib/kafka/data</span>
+      <span class="hljs-comment"># Containers use broker:29092; FACE uses ${KAFKA_HOST}:9092. Both are</span>
+      <span class="hljs-comment"># SASL_SSL. The controller listens on the container's loopback only.</span>
+      <span class="hljs-attr">KAFKA_LISTENERS:</span> <span class="hljs-string">INTERNAL://broker:29092,EXTERNAL://0.0.0.0:9092,CONTROLLER://localhost:9093</span>
+      <span class="hljs-attr">KAFKA_ADVERTISED_LISTENERS:</span> <span class="hljs-string">INTERNAL://broker:29092,EXTERNAL://${KAFKA_HOST}:9092</span>
+      <span class="hljs-attr">KAFKA_LISTENER_SECURITY_PROTOCOL_MAP:</span> <span class="hljs-string">INTERNAL:SASL_SSL,EXTERNAL:SASL_SSL,CONTROLLER:SASL_PLAINTEXT</span>
+      <span class="hljs-attr">KAFKA_CONTROLLER_LISTENER_NAMES:</span> <span class="hljs-string">CONTROLLER</span>
+      <span class="hljs-attr">KAFKA_INTER_BROKER_LISTENER_NAME:</span> <span class="hljs-string">INTERNAL</span>
+      <span class="hljs-attr">KAFKA_CONTROLLER_QUORUM_VOTERS:</span> <span class="hljs-number">1</span><span class="hljs-string">@localhost:9093</span>
+      <span class="hljs-attr">KAFKA_SASL_ENABLED_MECHANISMS:</span> <span class="hljs-string">SCRAM-SHA-512</span>
+      <span class="hljs-attr">KAFKA_SASL_MECHANISM_INTER_BROKER_PROTOCOL:</span> <span class="hljs-string">SCRAM-SHA-512</span>
+      <span class="hljs-attr">KAFKA_LISTENER_NAME_INTERNAL_SCRAM___SHA___512_SASL_JAAS_CONFIG:</span> <span class="hljs-string">org.apache.kafka.common.security.scram.ScramLoginModule</span> <span class="hljs-string">required</span> <span class="hljs-string">username="broker"</span> <span class="hljs-string">password="${SCRAM_BROKER}";</span>
+      <span class="hljs-attr">KAFKA_LISTENER_NAME_EXTERNAL_SCRAM___SHA___512_SASL_JAAS_CONFIG:</span> <span class="hljs-string">org.apache.kafka.common.security.scram.ScramLoginModule</span> <span class="hljs-string">required;</span>
+      <span class="hljs-attr">KAFKA_SASL_MECHANISM_CONTROLLER_PROTOCOL:</span> <span class="hljs-string">PLAIN</span>
+      <span class="hljs-attr">KAFKA_LISTENER_NAME_CONTROLLER_SASL_ENABLED_MECHANISMS:</span> <span class="hljs-string">PLAIN</span>
+      <span class="hljs-attr">KAFKA_LISTENER_NAME_CONTROLLER_PLAIN_SASL_JAAS_CONFIG:</span> <span class="hljs-string">org.apache.kafka.common.security.plain.PlainLoginModule</span> <span class="hljs-string">required</span> <span class="hljs-string">username="broker"</span> <span class="hljs-string">password="${SCRAM_BROKER}"</span> <span class="hljs-string">user_broker="${SCRAM_BROKER}";</span>
+      <span class="hljs-attr">KAFKA_SSL_KEYSTORE_TYPE:</span> <span class="hljs-string">PEM</span>
+      <span class="hljs-attr">KAFKA_SSL_KEYSTORE_LOCATION:</span> <span class="hljs-string">/etc/kafka/tls/broker-keystore.pem</span>
+      <span class="hljs-attr">KAFKA_SSL_TRUSTSTORE_TYPE:</span> <span class="hljs-string">PEM</span>
+      <span class="hljs-attr">KAFKA_SSL_TRUSTSTORE_LOCATION:</span> <span class="hljs-string">/etc/kafka/tls/ca.crt</span>
+      <span class="hljs-attr">KAFKA_SSL_ENABLED_PROTOCOLS:</span> <span class="hljs-string">TLSv1.3,TLSv1.2</span>
+      <span class="hljs-attr">KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR:</span> <span class="hljs-number">1</span>
+      <span class="hljs-attr">KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR:</span> <span class="hljs-number">1</span>
+      <span class="hljs-attr">KAFKA_TRANSACTION_STATE_LOG_MIN_ISR:</span> <span class="hljs-number">1</span>
+      <span class="hljs-attr">KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS:</span> <span class="hljs-number">0</span>
+      <span class="hljs-attr">KAFKA_AUTO_CREATE_TOPICS_ENABLE:</span> <span class="hljs-string">"false"</span>
+
+  <span class="hljs-comment"># Writes the registry's login file: salted hashes, made by Karapace's own tool.</span>
+  <span class="hljs-attr">registry-auth:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">*karapace-image</span>
+    <span class="hljs-attr">volumes:</span> [<span class="hljs-string">registry-auth:/auth</span>]
+    <span class="hljs-attr">entrypoint:</span> [<span class="hljs-string">"sh"</span>, <span class="hljs-string">"-c"</span>]
+    <span class="hljs-attr">command:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">|
+        r=$$(karapace_mkpasswd -u face-reader -a sha512 '${REGISTRY_FACE_READER}')
+        p=$$(karapace_mkpasswd -u producer -a sha512 '${REGISTRY_PRODUCER}')
+        printf '{"users": [%s, %s], "permissions": [{"username": "face-reader", "operation": "Read", "resource": "Subject:quillmere\\\\..*"}, {"username": "producer", "operation": "Write", "resource": "Subject:quillmere\\\\..*"}]}\n' "$$r" "$$p" &gt; /auth/auth.json
+</span>
+  <span class="hljs-attr">schema-registry:</span>
+    <span class="hljs-comment"># Karapace answers the Confluent Schema Registry API.</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">*karapace-image</span>
+    <span class="hljs-attr">entrypoint:</span> [<span class="hljs-string">"python3"</span>, <span class="hljs-string">"-m"</span>, <span class="hljs-string">"karapace"</span>]
+    <span class="hljs-attr">depends_on:</span>
+      <span class="hljs-attr">broker:</span> {<span class="hljs-attr">condition:</span> <span class="hljs-string">service_started</span>}
+      <span class="hljs-attr">registry-auth:</span> {<span class="hljs-attr">condition:</span> <span class="hljs-string">service_completed_successfully</span>}
+    <span class="hljs-attr">ports:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">"8081:8081"</span>
+    <span class="hljs-attr">volumes:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">./secrets:/etc/kafka/tls:ro</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">registry-auth:/auth:ro</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-attr">KARAPACE_KARAPACE_REGISTRY:</span> <span class="hljs-string">"true"</span>
+      <span class="hljs-attr">KARAPACE_HOST:</span> <span class="hljs-number">0.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>
+      <span class="hljs-attr">KARAPACE_PORT:</span> <span class="hljs-number">8081</span>
+      <span class="hljs-attr">KARAPACE_ADVERTISED_HOSTNAME:</span> <span class="hljs-string">schema-registry</span>
+      <span class="hljs-comment"># HTTPS only, and every call logs in.</span>
+      <span class="hljs-attr">KARAPACE_SERVER_TLS_CERTFILE:</span> <span class="hljs-string">/etc/kafka/tls/schema-registry.crt</span>
+      <span class="hljs-attr">KARAPACE_SERVER_TLS_KEYFILE:</span> <span class="hljs-string">/etc/kafka/tls/schema-registry.key</span>
+      <span class="hljs-attr">KARAPACE_REGISTRY_AUTHFILE:</span> <span class="hljs-string">/auth/auth.json</span>
+      <span class="hljs-comment"># Its own broker connection: SASL_SSL as schema-registry.</span>
+      <span class="hljs-attr">KARAPACE_BOOTSTRAP_URI:</span> <span class="hljs-string">broker:29092</span>
+      <span class="hljs-attr">KARAPACE_SECURITY_PROTOCOL:</span> <span class="hljs-string">SASL_SSL</span>
+      <span class="hljs-attr">KARAPACE_SASL_MECHANISM:</span> <span class="hljs-string">SCRAM-SHA-512</span>
+      <span class="hljs-attr">KARAPACE_SASL_PLAIN_USERNAME:</span> <span class="hljs-string">schema-registry</span>
+      <span class="hljs-attr">KARAPACE_SASL_PLAIN_PASSWORD:</span> <span class="hljs-string">${SCRAM_SCHEMA_REGISTRY}</span>
+      <span class="hljs-attr">KARAPACE_SSL_CAFILE:</span> <span class="hljs-string">/etc/kafka/tls/ca.crt</span>
+      <span class="hljs-attr">KARAPACE_TOPIC_NAME:</span> <span class="hljs-string">_schemas</span>
+      <span class="hljs-attr">KARAPACE_LOG_LEVEL:</span> <span class="hljs-string">WARNING</span>
+
+  <span class="hljs-attr">producer:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">face-stream-producer:1.4.0</span>
+    <span class="hljs-attr">depends_on:</span> [<span class="hljs-string">broker</span>, <span class="hljs-string">schema-registry</span>]
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">unless-stopped</span>
+    <span class="hljs-attr">volumes:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">./secrets:/run/quickstart:ro</span>
+    <span class="hljs-attr">command:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">produce</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">kafka</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">--bootstrap=broker:29092</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">--security-protocol=sasl_ssl</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">--sasl-mechanism=SCRAM-SHA-512</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">--sasl-username=producer</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">--sasl-password-file=/run/quickstart/producer-sasl-password</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">--tls-ca-file=/run/quickstart/ca.crt</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">--registry=https://schema-registry:8081</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">--registry-username=producer</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">--registry-password-file=/run/quickstart/producer-registry-password</span>
+
+<span class="hljs-attr">volumes:</span>
+  <span class="hljs-attr">kafka-data:</span>
+  <span class="hljs-attr">registry-auth:</span>
+</code></pre>
+<p>Start everything:</p>
+<pre><code class="lang-bash">docker compose up -d
+docker compose logs -f producer
+</code></pre>
+<p>The producer creates its topics, registers their schemas, lists the anomalies it plants, and then sends about 10 events a second. It retries until the broker and the registry answer, so the start order does not matter. Nothing on the network is unencrypted: the broker's controller listener is on its own loopback, and every other port is TLS with a login.</p>
+<h2 id="3-list-the-topics-and-read-a-few-records">3. List the topics and read a few records</h2>
+<p>Log in as <code>face-reader</code>, the user FACE will use:</p>
+<pre><code class="lang-bash">docker <span class="hljs-built_in">exec</span> broker /opt/kafka/bin/kafka-topics.sh --bootstrap-server broker:29092 \
+  --command-config /etc/kafka/tls/face-reader.properties --list
+. ./.env
+curl -s --cacert secrets/ca.crt -u <span class="hljs-string">"face-reader:<span class="hljs-variable">$REGISTRY_FACE_READER</span>"</span> https://localhost:8081/subjects
+</code></pre>
+<p>You see the twelve topics below and one <code>-value</code> subject for each.</p>
+<pre><code class="lang-bash">docker <span class="hljs-built_in">exec</span> broker /opt/kafka/bin/kafka-console-consumer.sh \
+  --bootstrap-server broker:29092 \
+  --consumer.config /etc/kafka/tls/face-reader.properties \
+  --topic quillmere.fleet.telematics.v1 \
+  --from-beginning --max-messages 5 \
+  --property print.key=<span class="hljs-literal">true</span> --property print.timestamp=<span class="hljs-literal">true</span>
+</code></pre>
+<p>The key is the trailer ID. The value is Avro in the Confluent wire format: a zero byte, the 4-byte schema ID, then the Avro body. The console consumer prints it as raw bytes. To read values as text, run the producer without <code>--registry</code>: it then writes JSON values and registers no schemas.</p>
+<h2 id="4-add-the-connection-in-face">4. Add the connection in FACE</h2>
+<p>In <strong>Settings › Integrations › Systems</strong>, add a <strong>Kafka</strong> connection:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bootstrap_servers</code></td>
+<td><code>localhost:9092</code></td>
+</tr>
+<tr>
+<td><code>topics</code></td>
+<td><code>quillmere.</code></td>
+</tr>
+<tr>
+<td><code>client_id</code></td>
+<td><code>face-quickstart</code></td>
+</tr>
+<tr>
+<td><code>security_protocol</code></td>
+<td><code>sasl_ssl</code></td>
+</tr>
+<tr>
+<td><code>sasl_mechanism</code></td>
+<td><code>scram-sha-512</code></td>
+</tr>
+<tr>
+<td><code>username</code></td>
+<td><code>face-reader</code></td>
+</tr>
+<tr>
+<td><code>ssl_ca_pem</code></td>
+<td>the contents of <code>secrets/ca.crt</code></td>
+</tr>
+<tr>
+<td><code>schema_registry_url</code></td>
+<td><code>https://localhost:8081</code></td>
+</tr>
+<tr>
+<td><code>schema_registry_username</code></td>
+<td><code>face-reader</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Credential</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>password</code></td>
+<td><code>SCRAM_FACE_READER</code> from <code>.env</code></td>
+</tr>
+<tr>
+<td><code>schema_registry_password</code></td>
+<td><code>REGISTRY_FACE_READER</code> from <code>.env</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>ssl_ca_pem</code> is a certificate, not a secret: it is what lets FACE check the broker's and the registry's certificates against the authority you generated, instead of trusting anything. <code>localhost</code> works when FACE runs on the same machine as the broker. If FACE runs elsewhere, use the <code>KAFKA_HOST</code> you gave <code>setup.sh</code> in both addresses, for example <code>kafka-host.example.invalid:9092</code> and <code>https://kafka-host.example.invalid:8081</code>.</p>
+<p><code>topics</code> is a prefix filter: <code>quillmere.</code> matches all twelve topics.</p>
+<p>FACE lands a fetch of one Kafka connection as one table, every topic it reads side by side. So that the readings are read as readings, give the two sensor-reading topics their own connections, each with the property <code>runink.domain</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Connection</th>
+<th><code>topics</code></th>
+<th>Property <code>runink.domain</code></th>
+<th>What FACE reads from it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fleet sensor readings</td>
+<td><code>quillmere.fleet.sensor-readings.</code></td>
+<td><code>telemetry</code></td>
+<td>vehicle positions on the map, and cold-chain time out of band</td>
+</tr>
+<tr>
+<td>Equipment readings</td>
+<td><code>quillmere.assets.equipment-readings.</code></td>
+<td><code>equipment</code></td>
+<td>trends towards each channel's stated limit, with the projected crossing</td>
+</tr>
+</tbody>
+</table>
+<p>and narrow the first connection's <code>topics</code> to the other ten (<code>quillmere.fleet.telematics.</code>, <code>quillmere.site.</code>, <code>quillmere.drone.</code>, <code>quillmere.yard.</code>, <code>quillmere.mainframe.</code>). All three use the same security settings and credentials.</p>
+<h3 id="step-by-step-in-the-console">Step by step in the Console</h3>
+<ol>
+<li>Open <strong>Settings › Integrations › Systems</strong> and select <strong>New connection</strong>.</li>
+<li><p><strong>Source:</strong> under <strong>Sensors &amp; telemetry</strong>, select <strong>Apache Kafka</strong>, then <strong>Next</strong>.</p>
+<p><img src="../../../../../../images/connections/kafka-1-source.jpg" alt="The Apache Kafka card selected in the source catalog"></img></p>
+</li>
+<li><p><strong>Details:</strong> enter a <strong>Connection name</strong> (the <strong>Id</strong> follows it) and the <strong>Environment</strong>. Under <strong>Settings</strong>, fill in <strong>Bootstrap servers</strong> (comma-separated), <strong>Topics</strong> (a prefix) and <strong>User</strong> (<code>face-reader</code>).</p>
+</li>
+<li>Set <strong>Security protocol</strong> to <code>sasl_ssl</code>. It is the only value FACE saves: plaintext and SASL_PLAINTEXT send everything unencrypted, and <code>ssl</code> carries no login.</li>
+<li>Under <strong>Credentials</strong>, enter <strong>Password</strong> and <strong>Schema Registry password</strong> from <code>.env</code>.</li>
+<li>Open <strong>Advanced</strong> and set <strong>SASL mechanism</strong> to <code>scram-sha-512</code>, <strong>Client ID</strong>, <strong>Schema Registry URL</strong> (<code>https://…</code>), <strong>Schema Registry user</strong> (<code>face-reader</code>) and <strong>CA certificate</strong> (the contents of <code>secrets/ca.crt</code>). The form has no switch to skip certificate checks, and FACE refuses a connection with <code>insecure_skip_verify</code> on.</li>
+<li><p><strong>Runner:</strong> keep <strong>Runink managed</strong>, or pick a registered runner that can reach the broker, then <strong>Next</strong>.</p>
+<p><img src="../../../../../../images/connections/wizard-3-runner.jpg" alt="Step 3, Runner: Runink managed selected and available"></img></p>
+</li>
+<li><p><strong>Review:</strong> check the values, keep <strong>Test after saving</strong> ticked and select <strong>Test &amp; save</strong>. If a security setting is missing, the Console says which and does not save.</p>
+</li>
+<li>The test routes to the runner and asks the broker to answer. <strong>Tested: the source answered</strong> means the broker is reachable and accepted the login; it does not mean records have been read. Select <strong>Done</strong>.</li>
+</ol>
+<p>The connection joins the list and appears among the sources on <a href="../../../../../user-guide/ask/">Ask</a>, and in every brief's source list.</p>
+<h2 id="the-topics">The topics</h2>
+<p>Every topic has 3 partitions. The key is a business ID, as plain text, so a consumer can join on it without the registry. The value schema is registered under the topic name (<code>&lt;topic&gt;-value</code>). Positions are WGS84 degrees, in <code>latitude</code> and <code>longitude</code>. Times are UTC, and each record's Kafka timestamp is the time of the event.</p>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Key</th>
+<th>What it carries</th>
+<th>How often</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>quillmere.fleet.telematics.v1</code></td>
+<td><code>trailer_id</code></td>
+<td>Position along the lane between sites, speed, heading, odometer, fuel, engine fault, reefer setpoint and return-air temperature, rear door</td>
+<td>every 5 s per trailer, 10 trailers</td>
+</tr>
+<tr>
+<td><code>quillmere.site.dock-doors.v1</code></td>
+<td><code>dock_id</code></td>
+<td>Dock door open or closed, dock occupied, door cycle count, last change</td>
+<td>every 10 s per dock, 9 docks</td>
+</tr>
+<tr>
+<td><code>quillmere.site.environment.v1</code></td>
+<td><code>sensor_id</code></td>
+<td>Temperature and humidity per zone: ambient, cold room, freezer, dock apron, the port's reefer rack</td>
+<td>every 15 s per sensor, 14 sensors</td>
+</tr>
+<tr>
+<td><code>quillmere.site.equipment.v1</code></td>
+<td><code>equipment_id</code></td>
+<td>Forklifts, AGVs and straddle carriers: position, state, battery, speed, load</td>
+<td>every 5 s per machine, 11 machines</td>
+</tr>
+<tr>
+<td><code>quillmere.site.energy.v1</code></td>
+<td><code>meter_id</code></td>
+<td>Demand and energy per circuit: refrigeration, lighting, dock doors, chargers, reefer rack, gate</td>
+<td>every 60 s per meter, 16 meters</td>
+</tr>
+<tr>
+<td><code>quillmere.drone.survey.v1</code></td>
+<td><code>flight_id</code></td>
+<td>Survey frames with position and altitude: case counts by rack location in the DCs, trailer counts in the yards and the port, perimeter checks</td>
+<td>every 4 s while flying; one 8-minute flight per site each hour</td>
+</tr>
+<tr>
+<td><code>quillmere.yard.gate-events.v1</code></td>
+<td><code>trailer_id</code></td>
+<td>Trailers in and out of the yard and port gates, read by RFID or plate</td>
+<td>on each arrival and departure</td>
+</tr>
+<tr>
+<td><code>quillmere.yard.trailer-positions.v1</code></td>
+<td><code>trailer_id</code></td>
+<td>Parked trailer's yard slot, load state, gate-in time and dwell</td>
+<td>every 30 s per parked trailer</td>
+</tr>
+<tr>
+<td><code>quillmere.mainframe.orders.cdc.v1</code></td>
+<td><code>order_id</code></td>
+<td>Order header changes from the order-entry mainframe</td>
+<td>every 10 s</td>
+</tr>
+<tr>
+<td><code>quillmere.mainframe.inventory.cdc.v1</code></td>
+<td><code>&lt;sku_id&gt;@&lt;location_id&gt;</code></td>
+<td>On-hand and allocated cases per item and warehouse</td>
+<td>every 5 s, after a full refresh at start</td>
+</tr>
+<tr>
+<td><code>quillmere.fleet.sensor-readings.v1</code></td>
+<td><code>asset_id</code></td>
+<td>Sensor readings: a GPS fix (<code>metric</code> <code>gps_fix</code>, <code>latitude</code>/<code>longitude</code> with <code>geo_stated</code>, speed, odometer) for every tractor, van and trailer; every reefer's return air (<code>metric</code> <code>temperature</code>) with its load's stated band (<code>threshold_min</code>/<code>threshold_max</code>) and the load spec's allowance out of band (<code>max_excursion_minutes</code>), and, on a reefer trailer carrying a shipment, the load's value (<code>load_value</code>, <code>load_value_currency</code>)</td>
+<td>every 30 s per vehicle (28), every 60 s per reefer (7)</td>
+</tr>
+<tr>
+<td><code>quillmere.assets.equipment-readings.v1</code></td>
+<td><code>asset_id</code></td>
+<td>Sensor readings for every equipment channel of the fleet, the yards and the warehouses: tractor coolant, oil pressure, battery, brake pads, tyres; reefer return air and compressor duty; yard tractor hydraulics, gate barrier motors, reefer plug-ins; forklift batteries and motors, dock levelers, refrigeration compressors, cold and freezer rooms. Each states its limit in <code>attributes</code> (<code>alarm_c</code>, <code>trip_c</code> or <code>replace_below_pct</code>, with <code>limit_source</code>)</td>
+<td>every 120 s per channel (183)</td>
+</tr>
+</tbody>
+</table>
+<p>The two sensor-reading topics use the field names a telemetry source lands as (<code>asset_id</code>, <code>observed_at</code>, <code>metric</code>, <code>value</code>, <code>value_stated</code>, <code>unit</code>, the threshold pair with its <code>*_stated</code> flags, <code>attributes</code>). The tractors and vans run loops from their distribution centre through three customer delivery sites and back, on straight lines between the points, not on roads. A dozen channels drift towards their limit on a three-hour ramp and reset, time compressed so that minutes of the stream show the slope: coolant creeping up, brake pads wearing, a reefer's return air leaving its 2-8 °C band, a cold room drifting off its setpoint, a refrigeration compressor running hotter.</p>
+<p>The sites are the quickstart's three distribution centres and their yards, at their authored addresses (Elk Grove Village IL, Plainfield IN and Edwardsville IL), and one port terminal: Quillmere Calumet Terminal, a point in the Lake Calumet port district in Chicago. The trucks run four lanes along the interstate corridors between them. The lanes are polylines through the cities on those corridors, not a road network.</p>
+<h3 id="the-mainframe-records">The mainframe records</h3>
+<p>The two <code>mainframe</code> topics are change data, as a capture agent delivers it from an IMS database updated by CICS transactions. Each record carries the fixed-width record, already converted from EBCDIC, and the same fields decoded. <code>op</code> is <code>REFRESH</code> for the initial full read, then <code>INSERT</code> or <code>UPDATE</code>.</p>
+<p>The order header record, copybook <code>QORDHDR</code>, 88 bytes:</p>
+<pre><code>05 OH-ORDER-ID     PIC X(10).
+05 OH-CUST-ID      PIC X(10).
+05 OH-CUST-PO      PIC X(16).
+05 OH-WHSE-ID      PIC X(10).
+05 OH-STATUS       PIC X(2).     OP, AL, PK or SH
+05 OH-LINE-COUNT   PIC 9(3).
+05 OH-TOTAL-CENTS  PIC 9(11).
+05 OH-CHANGED-TS   PIC X(26).    YYYY-MM-DD-HH.MM.SS.NNNNNN
+</code></pre><p>The inventory balance record, copybook <code>QINVBAL</code>, 88 bytes:</p>
+<pre><code>05 IB-SKU-ID       PIC X(10).
+05 IB-LOC-ID       PIC X(10).
+05 IB-DESC         PIC X(24).
+05 IB-UOM          PIC X(2).
+05 IB-ON-HAND      PIC S9(7) SIGN LEADING SEPARATE.
+05 IB-ALLOCATED    PIC S9(7) SIGN LEADING SEPARATE.
+05 IB-CHANGED-TS   PIC X(26).
+</code></pre><p>The mainframe is a source in its own right: it opens with a balance for every quickstart item at every warehouse, then changes them. New orders continue the order numbers after the quickstart's 24 orders and use its customers and items.</p>
+<h2 id="the-planted-anomalies">The planted anomalies</h2>
+<p>Six anomalies recur every hour, so FACE has something to find whenever you connect. The minute is counted from when the producer started.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Minute</th>
+<th>Where</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ANOM-L1</td>
+<td>10 to 30</td>
+<td><code>fleet.telematics</code>, trailer TRL-102</td>
+<td>A reefer temperature excursion. The door opens, then the return air climbs through 9.2, 10.8 and 11.4 °C and stays above the 8 °C limit for about 12 minutes. It is the same profile as the cold-chain scenario of shipment SHP-50004.</td>
+</tr>
+<tr>
+<td>ANOM-L2</td>
+<td>25 to 45</td>
+<td><code>site.dock-doors</code>, DOCK-EAST-02</td>
+<td>A stuck sensor. It keeps sending heartbeats, but the door state, cycle count and last-change time do not move for 20 minutes. Every other door changes at least every 10 minutes.</td>
+</tr>
+<tr>
+<td>ANOM-L3</td>
+<td>32 to 40</td>
+<td><code>drone.survey</code> at WH-SOUTH</td>
+<td>A drone count that disagrees with the mainframe. For one item, the drone counts 48 cases (one pallet) fewer than the mainframe's on-hand balance at that moment. Every other item agrees.</td>
+</tr>
+<tr>
+<td>ANOM-L4</td>
+<td>from 30</td>
+<td><code>yard.gate-events</code></td>
+<td>A duplicate gate read. The first gate event after the half hour is delivered twice, with the same <code>event_id</code>.</td>
+</tr>
+<tr>
+<td>ANOM-L5</td>
+<td>35</td>
+<td><code>fleet.telematics</code>, trailer TRL-105</td>
+<td>A GPS jump. One frame puts the trailer about 380 km north of its lane, 5 seconds after and before frames on the lane, at an ordinary speed.</td>
+</tr>
+<tr>
+<td>ANOM-L6</td>
+<td>40 to 48</td>
+<td><code>drone.survey</code> at YARD-SOUTH</td>
+<td>A perimeter finding: three frames report a gap in the north fence.</td>
+</tr>
+</tbody>
+</table>
+<p>The producer prints this list, with the item for ANOM-L3, when it starts.</p>
+<h2 id="reproducing-a-run">Reproducing a run</h2>
+<p>The stream is deterministic. The same <code>--seed</code> and <code>--start</code> give the same records, byte for byte:</p>
+<pre><code class="lang-bash">docker run --<span class="hljs-built_in">rm</span> face-stream-producer:1.4.0 produce kafka --dry-run --ticks 60 --start 2026-10-11T12:00:00Z
+</code></pre>
+<p><code>--dry-run</code> prints a minute of records as JSON lines and opens no connection. Other flags:</p>
+<table>
+<thead>
+<tr>
+<th>Flag</th>
+<th>Default</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--bootstrap</code></td>
+<td>none</td>
+<td>The broker, <code>host:port</code></td>
+</tr>
+<tr>
+<td><code>--security-protocol</code></td>
+<td><code>plaintext</code></td>
+<td><code>sasl_ssl</code> for this broker; FACE itself connects only with <code>sasl_ssl</code></td>
+</tr>
+<tr>
+<td><code>--sasl-mechanism</code></td>
+<td><code>SCRAM-SHA-512</code></td>
+<td><code>SCRAM-SHA-512</code> or <code>SCRAM-SHA-256</code></td>
+</tr>
+<tr>
+<td><code>--sasl-username</code>, <code>--sasl-password-file</code></td>
+<td>none</td>
+<td>The broker login; the password is read from the file</td>
+</tr>
+<tr>
+<td><code>--tls-ca-file</code></td>
+<td>none</td>
+<td>The certificate authority the broker's and the registry's certificates must chain to</td>
+</tr>
+<tr>
+<td><code>--registry</code></td>
+<td>none</td>
+<td>The Schema Registry URL, <code>https://</code> with a secured broker. Without it, values are JSON.</td>
+</tr>
+<tr>
+<td><code>--registry-username</code>, <code>--registry-password-file</code></td>
+<td>none</td>
+<td>The registry login; the password is read from the file</td>
+</tr>
+<tr>
+<td><code>--rate</code></td>
+<td>about 7</td>
+<td>Events per second across all topics. A higher rate runs the estate faster.</td>
+</tr>
+<tr>
+<td><code>--seed</code></td>
+<td><code>20261005</code></td>
+<td>The quickstart universe's seed</td>
+</tr>
+<tr>
+<td><code>--start</code></td>
+<td>now</td>
+<td>Event time of the first record</td>
+</tr>
+<tr>
+<td><code>--retention</code>, <code>--retention-bytes</code></td>
+<td><code>24h</code>, 64 MiB</td>
+<td>Topic retention, set when the producer creates a topic</td>
+</tr>
+</tbody>
+</table>
+<h2 id="stop-and-clean-up">Stop and clean up</h2>
+<pre><code class="lang-bash">docker compose down -v
+<span class="hljs-built_in">rm</span> -rf secrets .<span class="hljs-built_in">env</span>
+</code></pre>
+<p><code>-v</code> removes the broker's volume with every topic and record, and the registry's login file. Removing <code>secrets/</code> and <code>.env</code> deletes the keys and passwords.</p>
+
+                                
+    
+    <footer class="runink-footer" role="contentinfo">
+        <img class="runink-brand" src="../../../../../../_brand/logo.png" alt="">
+        
+    </footer>
+    
+
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../kafka/" class="navigation navigation-prev " aria-label="Previous page: Apache Kafka">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../mqtt/" class="navigation navigation-next " aria-label="Next page: MQTT">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    
+    <script type="application/json" id="honkit-page-context">{"page":{"title":"Apache Kafka, live estate","level":"1.2.5.3.2.6.2","depth":6,"next":{"title":"MQTT","level":"1.2.5.3.2.6.3","depth":6,"path":"docs/admin-guide/data-sources/quickstarts/streams/mqtt/README.md","ref":"docs/admin-guide/data-sources/quickstarts/streams/mqtt/README.md","articles":[]},"previous":{"title":"Apache Kafka","level":"1.2.5.3.2.6.1","depth":6,"path":"docs/admin-guide/data-sources/quickstarts/streams/kafka/README.md","ref":"docs/admin-guide/data-sources/quickstarts/streams/kafka/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","runink-copy"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"lunr":{"maxIndexSize":100000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"runink-copy":{},"highlight":{},"search":{}},"theme":"default","author":"Runink","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"logo":"_brand/logo.png","siteURL":"https://docs.runink.org/face/"},"title":"FACE Documentation","language":"en","gitbook":"7.0.1","description":"FACE by Runink (Fulfilment Autonomous Claims Engine) is Runink's sovereign operational-intelligence product: it connects to your warehouses, ERPs, telematics, sensors and cameras, reasons over them with models Runink runs for you or that you host (never a third-party AI service), and produces…"},"file":{"path":"docs/admin-guide/data-sources/quickstarts/streams/kafka-live/README.md","mtime":"","type":"markdown"},"gitbook":{"version":"7.0.1","time":""},"basePath":"../../../../../..","book":{"language":""}}</script>
+</div>
+
+        
+    <noscript>
+        <link rel="stylesheet" href="../../../../../../gitbook/noscript.css">
+    </noscript>
+    
+    <script src="../../../../../../gitbook/boot.js"></script>
+    
+    <script src="../../../../../../gitbook/gitbook.js" defer></script>
+    <script src="../../../../../../gitbook/theme.js" defer></script>
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-runink-copy/copy.js" defer></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-search/search-engine.js" defer></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-search/search.js" defer></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/@honkit/honkit-plugin-lunr/lunr.min.js" defer></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/@honkit/honkit-plugin-lunr/search-lunr.js" defer></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,64 @@
+{
+  "type": "iot",
+  "fixture_kind": "stream",
+  "root": "streams/iot",
+  "discovery_today": "no catalogue RPC: FACE resolves iot to its MQTT connector, subscribes for a window and infers the event shape",
+  "credential_placeholder": "change-me",
+  "replay": "go run ./cmd/synth replay iot --broker localhost:1883    # PUBLISH to a broker you run",
+  "connections": [
+    {
+      "name": "Trailer tags",
+      "settings": {
+        "endpoint": "mqtts://iot.quillmere.invalid:8883",
+        "protocol": "mqtt"
+      },
+      "credentials": [
+        "api_key"
+      ]
+    }
+  ],
+  "datasets": [
+    {
+      "name": "quillmere/tags/+/event",
+      "kind": "topic_filter",
+      "domain": "telematics",
+      "fields": [
+        {
+          "name": "event_id",
+          "type": "string"
+        },
+        {
+          "name": "device_id",
+          "type": "string",
+          "joins": "device"
+        },
+        {
+          "name": "trailer_id",
+          "type": "string",
+          "joins": "trailer"
+        },
+        {
+          "name": "shipment_id",
+          "type": "string",
+          "joins": "shipment"
+        },
+        {
+          "name": "kind",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "decimal"
+        },
+        {
+          "name": "at",
+          "type": "timestamp"
+        }
+      ],
+      "paths": [
+        "streams/iot/messages.jsonl"
+      ],
+      "row_count": 48
+    }
+  ]
+}

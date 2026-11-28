@@ -1,0 +1,1069 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Verify a release · Runink River</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 7.0.1">
+        <meta name="author" content="Runink">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-runink-copy/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../_brand/favicon.svg" type="image/svg+xml">
+
+    
+    <link rel="next" href="../release-signing/" />
+    
+    
+    <link rel="prev" href="../reporting/" />
+    
+
+    
+    
+    <meta property="og:site_name" content="Runink River">
+    <meta property="og:title" content="Verify a release">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Runink River is an optimized developer workstation on s6: the DEsk desktop, the linux-runink kernel, an encrypted ZFS root with boot environments, a default-deny firewall and a graphical installer, for data, analytics and AI development on hardware you own.">
+    <meta name="twitter:title" content="Verify a release">
+    <meta name="twitter:description" content="Runink River is an optimized developer workstation on s6: the DEsk desktop, the linux-runink kernel, an encrypted ZFS root with boot environments, a default-deny firewall and a graphical installer, for data, analytics and AI development on hardware you own.">
+    
+    <meta name="twitter:card" content="summary">
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak font-size-2 font-family-1 color-theme-2">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Runink River
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../getting-started/">
+            
+                <a href="../../getting-started/">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    Getting started
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../getting-started/download/">
+            
+                <a href="../../getting-started/download/">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    Download & verify
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../getting-started/usb/">
+            
+                <a href="../../getting-started/usb/">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    Create a USB stick
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../getting-started/install/">
+            
+                <a href="../../getting-started/install/">
+            
+                    
+                        <b>1.2.1.3.</b>
+                    
+                    Install
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../getting-started/first-boot/">
+            
+                <a href="../../getting-started/first-boot/">
+            
+                    
+                        <b>1.2.1.4.</b>
+                    
+                    First boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../../getting-started/desktop/">
+            
+                <a href="../../getting-started/desktop/">
+            
+                    
+                        <b>1.2.1.5.</b>
+                    
+                    The desktop
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../features/">
+            
+                <a href="../../features/">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Features
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../features/s6/">
+            
+                <a href="../../features/s6/">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    s6 init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../features/kernel/">
+            
+                <a href="../../features/kernel/">
+            
+                    
+                        <b>1.2.2.2.</b>
+                    
+                    Kernel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../features/zfs-encryption/">
+            
+                <a href="../../features/zfs-encryption/">
+            
+                    
+                        <b>1.2.2.3.</b>
+                    
+                    ZFS & encryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../features/firewall/">
+            
+                <a href="../../features/firewall/">
+            
+                    
+                        <b>1.2.2.4.</b>
+                    
+                    Firewall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../../features/sandbox/">
+            
+                <a href="../../features/sandbox/">
+            
+                    
+                        <b>1.2.2.5.</b>
+                    
+                    river-sandbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../../features/installer/">
+            
+                <a href="../../features/installer/">
+            
+                    
+                        <b>1.2.2.6.</b>
+                    
+                    Installer & planner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../../features/install-guide/">
+            
+                <a href="../../features/install-guide/">
+            
+                    
+                        <b>1.2.2.7.</b>
+                    
+                    Offline install guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../configuration/">
+            
+                <a href="../../configuration/">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../configuration/boot-environments/">
+            
+                <a href="../../configuration/boot-environments/">
+            
+                    
+                        <b>1.2.3.1.</b>
+                    
+                    Boot environments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../configuration/services/">
+            
+                <a href="../../configuration/services/">
+            
+                    
+                        <b>1.2.3.2.</b>
+                    
+                    Services (s6)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../configuration/updates/">
+            
+                <a href="../../configuration/updates/">
+            
+                    
+                        <b>1.2.3.3.</b>
+                    
+                    Updates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../../configuration/package-repository/">
+            
+                <a href="../../configuration/package-repository/">
+            
+                    
+                        <b>1.2.3.4.</b>
+                    
+                    Package repository
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../../configuration/blackarch/">
+            
+                <a href="../../configuration/blackarch/">
+            
+                    
+                        <b>1.2.3.5.</b>
+                    
+                    Security tools on the live stick
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="../../configuration/keyboard-locale/">
+            
+                <a href="../../configuration/keyboard-locale/">
+            
+                    
+                        <b>1.2.3.6.</b>
+                    
+                    Keyboard & language
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="../../configuration/networking/">
+            
+                <a href="../../configuration/networking/">
+            
+                    
+                        <b>1.2.3.7.</b>
+                    
+                    Networking
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../troubleshooting/">
+            
+                <a href="../../troubleshooting/">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../hardware/">
+            
+                <a href="../../hardware/">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    Hardware support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../architecture/">
+            
+                <a href="../../architecture/">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../concepts/">
+            
+                <a href="../../concepts/">
+            
+                    
+                        <b>1.2.7.</b>
+                    
+                    Design principles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../build/">
+            
+                <a href="../../build/">
+            
+                    
+                        <b>1.2.8.</b>
+                    
+                    Build from source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../kernel-on-arch/">
+            
+                <a href="../../kernel-on-arch/">
+            
+                    
+                        <b>1.2.9.</b>
+                    
+                    Kernel on Arch (AUR)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.2.10.</b>
+                    
+                    Security
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.10.1" data-path="../reporting/">
+            
+                <a href="../reporting/">
+            
+                    
+                        <b>1.2.10.1.</b>
+                    
+                    Report a vulnerability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.10.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.10.2.</b>
+                    
+                    Verify a release
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.3" data-path="../release-signing/">
+            
+                <a href="../release-signing/">
+            
+                    
+                        <b>1.2.10.3.</b>
+                    
+                    Release signing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.4" data-path="../secure-boot/">
+            
+                <a href="../secure-boot/">
+            
+                    
+                        <b>1.2.10.4.</b>
+                    
+                    Secure Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../../releases/">
+            
+                <a href="../../releases/">
+            
+                    
+                        <b>1.2.11.</b>
+                    
+                    Releases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../../contributing/">
+            
+                <a href="../../contributing/">
+            
+                    
+                        <b>1.2.12.</b>
+                    
+                    Contributing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.12.1" data-path="../../contributing/governance/">
+            
+                <a href="../../contributing/governance/">
+            
+                    
+                        <b>1.2.12.1.</b>
+                    
+                    Governance & community
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../../governance/">
+            
+                <a href="../../governance/">
+            
+                    
+                        <b>1.2.13.</b>
+                    
+                    Licensing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../../contributing-issues/">
+            
+                <a href="../../contributing-issues/">
+            
+                    
+                        <b>1.2.14.</b>
+                    
+                    Bugs & features
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../../faq/">
+            
+                <a href="../../faq/">
+            
+                    
+                        <b>1.2.15.</b>
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../../roadmap/">
+            
+                <a href="../../roadmap/">
+            
+                    
+                        <b>1.2.16.</b>
+                    
+                    Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../../brand/">
+            
+                <a href="../../brand/">
+            
+                    
+                        <b>1.2.17.</b>
+                    
+                    Brand assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Verify a release</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+    
+                                <h1 id="verify-a-release">Verify a release</h1>
+<p><em>Check a Runink River ISO before you write it: the OpenPGP signature on SHA256SUMS, the checksum, the build provenance, the Sigstore bundle and the evidence the release gate attaches.</em></p>
+<!--
+SPDX-FileCopyrightText: 2026 The RIVER Authors
+SPDX-License-Identifier: MIT
+-->
+<p>A Runink River release is only published after the release gate has checked the exact ISO
+you download (<a href="https://github.com/org-runink/river/blob/main/docs/VERIFY.md" target="_blank"><code>docs/VERIFY.md</code></a>). Verifying it yourself takes a minute, and the
+first check, the signature, is the one that matters: everything else is additional evidence.</p>
+<blockquote>
+<p><strong>Note:</strong> The release-signing key is published and pinned; <strong>no Runink River release signed with it has
+been published yet</strong> (<a href="../../releases/">Releases</a>). The commands below are
+what you will run on the first one.</p>
+</blockquote>
+<h2 id="the-key">The key</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fingerprint</td>
+<td><code>95C0A7B97D547413E42660DDB06FE75626F15BF3</code></td>
+</tr>
+<tr>
+<td>Algorithm</td>
+<td>NIST P-384 (<code>nistp384</code>)</td>
+</tr>
+<tr>
+<td>Public key</td>
+<td><code>https://runink.org/.well-known/gpg-key.txt</code></td>
+</tr>
+<tr>
+<td>Pinned in</td>
+<td><a href="https://github.com/org-runink/river/blob/main/KEYS" target="_blank"><code>KEYS</code></a> and <code>KEY_FPR_PINNED</code> in <a href="https://github.com/org-runink/river/blob/main/install.sh" target="_blank"><code>install.sh</code></a>, set in the same commit</td>
+</tr>
+<tr>
+<td>Signs</td>
+<td>each release's <code>SHA256SUMS</code>, as the detached signature <code>SHA256SUMS.asc</code></td>
+</tr>
+</tbody>
+</table>
+<p>Always compare the <strong>full fingerprint</strong>, never a short key ID or a name: the user IDs on the
+key may change (a "Runink River Release Engineering" user ID may be added to it), the
+fingerprint does not.</p>
+<h2 id="the-quick-way-installsh">The quick way: install.sh</h2>
+<p>On any Linux machine:</p>
+<pre><code class="lang-bash">curl -fsSL https://raw.githubusercontent.com/org-runink/river/main/install.sh | sh -s -- --dry-run
+</code></pre>
+<p><code>install.sh</code> downloads the public key, checks that the key which made the signature is the
+pinned fingerprint, verifies <code>SHA256SUMS.asc</code> over <code>SHA256SUMS</code>, and checks the ISO's sha256.
+It <strong>fails closed</strong>: no fingerprint, no signature or a wrong checksum means no image.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--dry-run</code></td>
+<td>verify the release metadata, print what would be done, change nothing</td>
+</tr>
+<tr>
+<td><code>--out DIR</code></td>
+<td>put the ISO in <code>DIR</code> (default: the current directory)</td>
+</tr>
+<tr>
+<td><code>--write DEV</code></td>
+<td>after verifying, write the ISO to the USB stick <code>DEV</code>, after you type its serial</td>
+</tr>
+<tr>
+<td><code>--yes-i-have-checked-serial=S</code></td>
+<td>confirm the stick's serial without a prompt, for scripts</td>
+</tr>
+</tbody>
+</table>
+<p>It never runs <code>sudo</code> itself; a step that needs root prints the command instead. Its only
+requests are the release files and the public key. <code>RIVER_KEY_FPR</code> overrides the pinned
+fingerprint, which means you are choosing what to trust; leave it unset.</p>
+<h2 id="by-hand">By hand</h2>
+<h3 id="1-the-signature-and-the-checksum">1. The signature and the checksum</h3>
+<pre><code class="lang-bash">curl -fsSLO https://runink.org/.well-known/gpg-key.txt
+gpg --import gpg-key.txt
+gpg --fingerprint 95C0A7B97D547413E42660DDB06FE75626F15BF3   <span class="hljs-comment"># must match KEYS</span>
+gpg --verify SHA256SUMS.asc SHA256SUMS                     <span class="hljs-comment"># must say "Good signature"</span>
+<span class="hljs-built_in">sha256sum</span> -c --ignore-missing SHA256SUMS                   <span class="hljs-comment"># the ISO must say "OK"</span>
+</code></pre>
+<p><code>gpg --verify</code> also prints a warning that the key is not certified with a trusted signature
+unless you have signed it yourself; that is expected. What matters is "Good signature" and a
+primary key fingerprint equal to the one above.</p>
+<h3 id="2-an-iso-published-in-parts">2. An ISO published in parts</h3>
+<p>An ISO larger than 2 GiB (GitHub's limit for one release file) is also published as numbered
+parts, each listed in the signed <code>SHA256SUMS</code>. <code>install.sh</code> joins them for you; by hand:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">cat</span> runink-river-&lt;<span class="hljs-built_in">date</span>&gt;-x86_64.iso.part-* &gt; runink-river-&lt;<span class="hljs-built_in">date</span>&gt;-x86_64.iso
+<span class="hljs-built_in">sha256sum</span> -c --ignore-missing SHA256SUMS
+</code></pre>
+<h3 id="3-provenance-which-workflow-published-it-from-which-commit">3. Provenance: which workflow published it, from which commit</h3>
+<pre><code class="lang-bash">gh attestation verify runink-river-&lt;<span class="hljs-built_in">date</span>&gt;-x86_64.iso --repo org-runink/river
+</code></pre>
+<h3 id="4-the-sigstore-signature">4. The Sigstore signature</h3>
+<p>A keyless signature, additional to the OpenPGP one, never a replacement for it:</p>
+<pre><code class="lang-bash">cosign verify-blob runink-river-&lt;<span class="hljs-built_in">date</span>&gt;-x86_64.iso \
+  --bundle runink-river-&lt;<span class="hljs-built_in">date</span>&gt;-x86_64.iso.sigstore.json \
+  --certificate-identity-regexp <span class="hljs-string">'^https://github.com/org-runink/river/.github/workflows/release-gate.yml@'</span> \
+  --certificate-oidc-issuer https://token.actions.githubusercontent.com
+</code></pre>
+<p>The evidence files carry their own bundles and are listed, with their checksums, in
+<code>EVIDENCE.SHA256SUMS</code>.</p>
+<h3 id="5-the-signed-tag">5. The signed tag</h3>
+<pre><code class="lang-bash">git <span class="hljs-built_in">clone</span> https://github.com/org-runink/river.git &amp;&amp; <span class="hljs-built_in">cd</span> river
+git verify-tag runink-os-YYYY.MM
+</code></pre>
+<h2 id="what-the-evidence-tells-you">What the evidence tells you</h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Tells you</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;iso&gt;.spdx.json</code>, <code>&lt;iso&gt;.cdx.json</code></td>
+<td>every package and file in the image (SPDX and CycloneDX SBOMs)</td>
+</tr>
+<tr>
+<td><code>river-source.*</code></td>
+<td>the SBOM of the source tree</td>
+</tr>
+<tr>
+<td><code>&lt;iso&gt;.ownfiles.txt</code></td>
+<td>every file Runink River added or changed relative to the packages it comes from: the part of the image that is the project's own</td>
+</tr>
+<tr>
+<td><code>&lt;iso&gt;.archaudit.json</code>, <code>.txt</code></td>
+<td>distribution packages checked against the Arch Linux security tracker; a High or Critical advisory with a fix available blocks the release</td>
+</tr>
+<tr>
+<td><code>&lt;iso&gt;.govulncheck.txt</code></td>
+<td>the image's own Go programs checked with govulncheck</td>
+</tr>
+<tr>
+<td><code>&lt;iso&gt;.gitleaks.json</code></td>
+<td>the secret scan of the project's own files</td>
+</tr>
+</tbody>
+</table>
+<p>Known, accepted advisories are waivers in <code>.github/release-gate/waivers.txt</code>, each with an
+owner and an expiry date; an expired waiver blocks the next release.</p>
+<h2 id="honest-limits">Honest limits</h2>
+<ul>
+<li>The ISO is <strong>not reproducible yet</strong>, so the provenance proves which digests were published,
+not how they were built (SLSA Build Level 1). A release maintainer compares the artifacts
+with their own build before signing.</li>
+<li>Secure Boot keys are a separate X.509 chain, and Secure Boot is not supported yet:
+<a href="../secure-boot/">Secure Boot</a>.</li>
+</ul>
+
+                                
+    
+    <footer class="runink-footer" role="contentinfo">
+        <img class="runink-brand" src="../../../_brand/logo.svg" alt="">
+        
+    </footer>
+    
+
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../reporting/" class="navigation navigation-prev " aria-label="Previous page: Report a vulnerability">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../release-signing/" class="navigation navigation-next " aria-label="Next page: Release signing">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    
+    <script type="application/json" id="honkit-page-context">{"page":{"title":"Verify a release","level":"1.2.10.2","depth":3,"next":{"title":"Release signing","level":"1.2.10.3","depth":3,"path":"docs/security/release-signing/README.md","ref":"docs/security/release-signing/README.md","articles":[]},"previous":{"title":"Report a vulnerability","level":"1.2.10.1","depth":3,"path":"docs/security/reporting/README.md","ref":"docs/security/reporting/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","runink-copy"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"lunr":{"maxIndexSize":100000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"runink-copy":{},"highlight":{},"search":{}},"theme":"default","author":"Runink","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"logo":"_brand/logo.svg","siteURL":"https://docs.runink.org/river/"},"title":"Runink River","language":"en","gitbook":"7.0.1","description":"Runink River is an optimized developer workstation on s6: the DEsk desktop, the linux-runink kernel, an encrypted ZFS root with boot environments, a default-deny firewall and a graphical installer, for data, analytics and AI development on hardware you own."},"file":{"path":"docs/security/verify/README.md","mtime":"","type":"markdown"},"gitbook":{"version":"7.0.1","time":""},"basePath":"../../..","book":{"language":""}}</script>
+</div>
+
+        
+    <noscript>
+        <link rel="stylesheet" href="../../../gitbook/noscript.css">
+    </noscript>
+    
+    <script src="../../../gitbook/boot.js"></script>
+    
+    <script src="../../../gitbook/gitbook.js" defer></script>
+    <script src="../../../gitbook/theme.js" defer></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-runink-copy/copy.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/@honkit/honkit-plugin-lunr/lunr.min.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/@honkit/honkit-plugin-lunr/search-lunr.js" defer></script>
+        
+    
+
+    </body>
+</html>
+

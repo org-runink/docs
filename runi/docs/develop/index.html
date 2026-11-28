@@ -1,0 +1,698 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Developer Guide · Runi</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 7.0.1">
+        <meta name="author" content="Runink">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-runink-copy/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../api/throttle/" />
+    
+
+    
+    
+    <meta property="og:site_name" content="Runi">
+    <meta property="og:title" content="Developer Guide">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="BSD-3-Clause · zero dependencies">
+    <meta name="twitter:title" content="Developer Guide">
+    <meta name="twitter:description" content="BSD-3-Clause · zero dependencies">
+    
+    <meta name="twitter:card" content="summary">
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak font-size-2 font-family-1 color-theme-2">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Runi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../guide/">
+            
+                <a href="../guide/">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    User Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../guide/install/">
+            
+                <a href="../guide/install/">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    Installing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../guide/choosing/">
+            
+                <a href="../guide/choosing/">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    Choosing a package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../guide/where-it-runs/">
+            
+                <a href="../guide/where-it-runs/">
+            
+                    
+                        <b>1.2.1.3.</b>
+                    
+                    Where it runs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../guide/compatibility/">
+            
+                <a href="../guide/compatibility/">
+            
+                    
+                        <b>1.2.1.4.</b>
+                    
+                    Compatibility
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../api/">
+            
+                <a href="../api/">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../api/stats/">
+            
+                <a href="../api/stats/">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    runi/stats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../api/arimax/">
+            
+                <a href="../api/arimax/">
+            
+                    
+                        <b>1.2.2.2.</b>
+                    
+                    runi/arimax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../api/season/">
+            
+                <a href="../api/season/">
+            
+                    
+                        <b>1.2.2.3.</b>
+                    
+                    runi/season
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../api/bm25/">
+            
+                <a href="../api/bm25/">
+            
+                    
+                        <b>1.2.2.4.</b>
+                    
+                    runi/bm25
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../api/salvage/">
+            
+                <a href="../api/salvage/">
+            
+                    
+                        <b>1.2.2.5.</b>
+                    
+                    runi/salvage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../api/avro/">
+            
+                <a href="../api/avro/">
+            
+                    
+                        <b>1.2.2.6.</b>
+                    
+                    runi/avro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../api/barn/">
+            
+                <a href="../api/barn/">
+            
+                    
+                        <b>1.2.2.7.</b>
+                    
+                    runi/barn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../api/memo/">
+            
+                <a href="../api/memo/">
+            
+                    
+                        <b>1.2.2.8.</b>
+                    
+                    runi/memo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="../api/lazy/">
+            
+                <a href="../api/lazy/">
+            
+                    
+                        <b>1.2.2.9.</b>
+                    
+                    runi/lazy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="../api/budget/">
+            
+                <a href="../api/budget/">
+            
+                    
+                        <b>1.2.2.10.</b>
+                    
+                    runi/budget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="../api/chain/">
+            
+                <a href="../api/chain/">
+            
+                    
+                        <b>1.2.2.11.</b>
+                    
+                    runi/chain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="../api/toon/">
+            
+                <a href="../api/toon/">
+            
+                    
+                        <b>1.2.2.12.</b>
+                    
+                    runi/toon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="../api/toml/">
+            
+                <a href="../api/toml/">
+            
+                    
+                        <b>1.2.2.13.</b>
+                    
+                    runi/toml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14" data-path="../api/drift/">
+            
+                <a href="../api/drift/">
+            
+                    
+                        <b>1.2.2.14.</b>
+                    
+                    runi/drift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.15" data-path="../api/rate/">
+            
+                <a href="../api/rate/">
+            
+                    
+                        <b>1.2.2.15.</b>
+                    
+                    runi/rate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.16" data-path="../api/tree/">
+            
+                <a href="../api/tree/">
+            
+                    
+                        <b>1.2.2.16.</b>
+                    
+                    runi/tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.17" data-path="../api/sustain/">
+            
+                <a href="../api/sustain/">
+            
+                    
+                        <b>1.2.2.17.</b>
+                    
+                    runi/sustain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.18" data-path="../api/throttle/">
+            
+                <a href="../api/throttle/">
+            
+                    
+                        <b>1.2.2.18.</b>
+                    
+                    runi/throttle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Developer Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Developer Guide</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+    
+                                <h1 id="developer-guide">Developer Guide</h1>
+<p>How to build and test <code>runi</code>, the rules every change keeps, and how to add to it. The
+source is at <a href="https://github.com/org-runink/runi" target="_blank">github.com/org-runink/runi</a>, under
+BSD-3-Clause.</p>
+<h2 id="build-and-test">Build and test</h2>
+<p><code>runi</code> is one Go module with no dependencies, so a checkout and a supported Go toolchain
+(1.24, 1.25 or 1.26) are all you need:</p>
+<pre><code class="lang-bash">git <span class="hljs-built_in">clone</span> https://github.com/org-runink/runi
+<span class="hljs-built_in">cd</span> runi
+go vet ./...
+go <span class="hljs-built_in">test</span> -count=1 ./...
+go <span class="hljs-built_in">test</span> -race -count=1 ./...
+gofmt -l .                              <span class="hljs-comment"># must print nothing</span>
+go <span class="hljs-built_in">test</span> -run <span class="hljs-string">'^$'</span> -bench . -benchtime 1x ./...   <span class="hljs-comment"># every benchmark still compiles and runs</span>
+</code></pre>
+<p>CI runs the same commands on each supported Go version, with <code>GOTOOLCHAIN=local</code> so a
+newer toolchain is never fetched behind the test's back.</p>
+<h2 id="the-rules-a-change-keeps">The rules a change keeps</h2>
+<ul>
+<li><strong>Standard library only.</strong> <code>go.mod</code> has no <code>require</code> block, and CI fails if one appears,
+if the module graph holds any other module, or if any imported package lives outside the
+standard library.</li>
+<li><strong>Per-package coverage floors.</strong> Each package has its own coverage floor in CI. A change
+that drops a package below its floor fails; a floor is raised when coverage genuinely
+rises and never lowered.</li>
+<li><strong>Independent packages.</strong> A package imports no other <code>runi</code> package, so any one of them
+can be taken alone or copied out. The one exception is <code>barn</code>, which stores its data in
+<code>avro</code>'s format and imports it.</li>
+<li><strong>Measured claims.</strong> A performance claim comes with the benchmark that produced it and
+the hardware it ran on. The cross-language comparisons live in
+<a href="https://github.com/org-runink/runi/tree/main/benchmarks" target="_blank"><code>benchmarks/</code></a>.</li>
+</ul>
+<h2 id="adding-or-changing-a-package">Adding or changing a package</h2>
+<ol>
+<li>Put the package in its own top-level directory, with a package doc comment and runnable
+<code>Example</code> functions that show the main use.</li>
+<li>Bring its coverage to the level the other packages hold, and add its floor to the
+coverage step of <code>.github/workflows/ci.yml</code>.</li>
+<li>Regenerate the <a href="../api/">API Reference</a>: the pages are generated from the source, and
+the docs workflow fails if they are stale. Add the package to the docs workflow's list of
+packages that must have an API page, and to <a href="../guide/choosing/">Choosing a package</a>.</li>
+<li>Record the change in
+<a href="https://github.com/org-runink/runi/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a>. Exported API
+follows the <a href="../guide/compatibility/">compatibility rules</a>.</li>
+</ol>
+<p>Sign off every commit (<code>git commit -s</code>).</p>
+<h2 id="the-documentation-site">The documentation site</h2>
+<p>These pages are a Hugo site in <code>website/</code> (the Hextra theme, vendored, so the build needs no
+network):</p>
+<pre><code class="lang-bash">hugo --<span class="hljs-built_in">source</span> website --minify --destination ~/.cache/runi-docs-build
+</code></pre>
+<h2 id="security">Security</h2>
+<p>Report a vulnerability privately, as described in
+<a href="https://github.com/org-runink/runi/blob/main/SECURITY.md" target="_blank">SECURITY.md</a>, never in a public
+issue.</p>
+
+                                
+    
+    <footer class="runink-footer" role="contentinfo">
+        <img class="runink-brand" src="../../_brand/logo.png" alt="">
+        
+    </footer>
+    
+
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../api/throttle/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: runi/throttle">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    
+    <script type="application/json" id="honkit-page-context">{"page":{"title":"Developer Guide","level":"1.2.3","depth":2,"previous":{"title":"runi/throttle","level":"1.2.2.18","depth":3,"path":"docs/api/throttle/README.md","ref":"docs/api/throttle/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","runink-copy"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"lunr":{"maxIndexSize":100000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"runink-copy":{},"highlight":{},"search":{}},"theme":"default","author":"Runink","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"logo":"_brand/logo.png","siteURL":"https://docs.runink.org/runi/"},"title":"Runi","language":"en","gitbook":"7.0.1","description":"BSD-3-Clause · zero dependencies"},"file":{"path":"docs/develop/README.md","mtime":"","type":"markdown"},"gitbook":{"version":"7.0.1","time":""},"basePath":"../..","book":{"language":""}}</script>
+</div>
+
+        
+    <noscript>
+        <link rel="stylesheet" href="../../gitbook/noscript.css">
+    </noscript>
+    
+    <script src="../../gitbook/boot.js"></script>
+    
+    <script src="../../gitbook/gitbook.js" defer></script>
+    <script src="../../gitbook/theme.js" defer></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-runink-copy/copy.js" defer></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js" defer></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js" defer></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-lunr/lunr.min.js" defer></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-lunr/search-lunr.js" defer></script>
+        
+    
+
+    </body>
+</html>
+

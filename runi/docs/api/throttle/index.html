@@ -1,0 +1,1325 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>runi/throttle · Runi</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 7.0.1">
+        <meta name="author" content="Runink">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-runink-copy/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../develop/" />
+    
+    
+    <link rel="prev" href="../sustain/" />
+    
+
+    
+    
+    <meta property="og:site_name" content="Runi">
+    <meta property="og:title" content="runi/throttle">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="BSD-3-Clause · zero dependencies">
+    <meta name="twitter:title" content="runi/throttle">
+    <meta name="twitter:description" content="BSD-3-Clause · zero dependencies">
+    
+    <meta name="twitter:card" content="summary">
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak font-size-2 font-family-1 color-theme-2">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Runi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../guide/">
+            
+                <a href="../../guide/">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    User Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../guide/install/">
+            
+                <a href="../../guide/install/">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    Installing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../guide/choosing/">
+            
+                <a href="../../guide/choosing/">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    Choosing a package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../guide/where-it-runs/">
+            
+                <a href="../../guide/where-it-runs/">
+            
+                    
+                        <b>1.2.1.3.</b>
+                    
+                    Where it runs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../guide/compatibility/">
+            
+                <a href="../../guide/compatibility/">
+            
+                    
+                        <b>1.2.1.4.</b>
+                    
+                    Compatibility
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../stats/">
+            
+                <a href="../stats/">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    runi/stats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../arimax/">
+            
+                <a href="../arimax/">
+            
+                    
+                        <b>1.2.2.2.</b>
+                    
+                    runi/arimax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../season/">
+            
+                <a href="../season/">
+            
+                    
+                        <b>1.2.2.3.</b>
+                    
+                    runi/season
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../bm25/">
+            
+                <a href="../bm25/">
+            
+                    
+                        <b>1.2.2.4.</b>
+                    
+                    runi/bm25
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../salvage/">
+            
+                <a href="../salvage/">
+            
+                    
+                        <b>1.2.2.5.</b>
+                    
+                    runi/salvage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../avro/">
+            
+                <a href="../avro/">
+            
+                    
+                        <b>1.2.2.6.</b>
+                    
+                    runi/avro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../barn/">
+            
+                <a href="../barn/">
+            
+                    
+                        <b>1.2.2.7.</b>
+                    
+                    runi/barn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../memo/">
+            
+                <a href="../memo/">
+            
+                    
+                        <b>1.2.2.8.</b>
+                    
+                    runi/memo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="../lazy/">
+            
+                <a href="../lazy/">
+            
+                    
+                        <b>1.2.2.9.</b>
+                    
+                    runi/lazy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="../budget/">
+            
+                <a href="../budget/">
+            
+                    
+                        <b>1.2.2.10.</b>
+                    
+                    runi/budget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="../chain/">
+            
+                <a href="../chain/">
+            
+                    
+                        <b>1.2.2.11.</b>
+                    
+                    runi/chain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="../toon/">
+            
+                <a href="../toon/">
+            
+                    
+                        <b>1.2.2.12.</b>
+                    
+                    runi/toon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="../toml/">
+            
+                <a href="../toml/">
+            
+                    
+                        <b>1.2.2.13.</b>
+                    
+                    runi/toml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14" data-path="../drift/">
+            
+                <a href="../drift/">
+            
+                    
+                        <b>1.2.2.14.</b>
+                    
+                    runi/drift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.15" data-path="../rate/">
+            
+                <a href="../rate/">
+            
+                    
+                        <b>1.2.2.15.</b>
+                    
+                    runi/rate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.16" data-path="../tree/">
+            
+                <a href="../tree/">
+            
+                    
+                        <b>1.2.2.16.</b>
+                    
+                    runi/tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.17" data-path="../sustain/">
+            
+                <a href="../sustain/">
+            
+                    
+                        <b>1.2.2.17.</b>
+                    
+                    runi/sustain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.18" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.2.18.</b>
+                    
+                    runi/throttle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../develop/">
+            
+                <a href="../../develop/">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Developer Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >runi/throttle</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+    
+                                <h1 id="runithrottle">runi/throttle</h1>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> <span class="hljs-string">"github.com/org-runink/runi/throttle"</span>
+</code></pre>
+<p>Package throttle caps how often something may act: per interval, per
+target, and after failures.</p>
+<p>Anything that acts on its own — restarts a process, scales a pool, drains
+a node, retries a request — can act too often when what it watches
+misbehaves, and its actions can then do more harm than the fault. The
+remedies are old and well understood: a rate with a burst allowance, a
+fixed allowance per window, a minimum interval per target, a growing
+random delay between retries, and a switch that stops trying something
+that keeps failing. This package provides each as a small type that is
+told the time of every call.</p>
+<p>Which to use:</p>
+<ul>
+<li>Bucket is a token bucket: on average rate actions per second, at most
+burst at once. Over any stretch of time t it allows at most
+burst + ⌊rate·t⌋. Kept in integer nanoseconds as the generic cell rate
+algorithm's theoretical arrival time, so it does not drift.</li>
+<li>Quota is at most N actions in each window of length W, windows laid
+from an origin the caller chooses: "5 per hour, on the hour". It says
+how many remain and when the window ends.</li>
+<li>Cooldown lets each key act at most once per period, for any comparable
+key; keys are forgotten once their period ends, in O(1) amortised
+time, and an optional cap bounds how many are tracked.</li>
+<li>Backoff draws the delays between retries: exponential, capped, and
+randomised by full or decorrelated jitter from a source the caller
+seeds.</li>
+<li>Breaker is a circuit breaker: closed, open and half-open, opening after
+consecutive failures and probing before it closes again.</li>
+</ul>
+<p>They compose: each answers "may I act now?", and an action that must pass
+several caps asks each of them.</p>
+<p>limit, <em> := throttle.NewBucket(0.1, 3)  // one restart per 10 s, 3 at once
+each, </em> := throttle.NewCooldown<a href="5*time.Minute,%2010000">string</a>
+for ev := range unhealthy {
+    if each.Allow(ev.Service, ev.At) &amp;&amp; limit.Allow(ev.At) {
+        restart(ev.Service)
+    }
+}</p>
+<p>The order matters when an action is refused: a cap asked first spends its
+allowance even when a later one refuses. Ask the scarcest last, or use
+the query methods (Tokens, Remaining, Next) first.</p>
+<p>Time comes only from the at argument of each call; nothing here reads the
+clock or sleeps, so every type is as testable as the caller's clock is.
+Backoff takes no time at all: it returns a delay, and waiting is the
+caller's. Times are compared and differenced with time.Time's own
+methods, which use the monotonic reading time.Now attaches, so a
+wall-clock step between two such readings does not distort an interval.</p>
+<p>One rule holds for every timed type, and tests hold each type to it: a
+time before the latest one the type has seen is taken as the latest, and
+counted in Late. Time never runs backwards, so a clock stepped back, or
+calls delivered out of order, cannot refill a bucket, reopen a window,
+end a cooldown or end an open period early; at worst they make the type
+wait until the clock passes where it was. A call at the latest time is
+not late. Query methods (Tokens, Next, Remaining, WindowEnd) apply the
+same rule and change nothing.</p>
+<p>Allow and AllowN on Bucket and Quota, Breaker's Allow and Record and
+Backoff's Next do O(1) work and allocate nothing; so does Cooldown's
+Allow, in O(1) amortised, on a key it already tracks or once its table
+has reached its working size. A test holds each to zero. Bucket, Quota and
+Breaker are plain values, safe to copy. A Cooldown holds a table and a
+Backoff a random source by reference, and a copy shares them. None is
+safe for concurrent use; give each goroutine its own, or guard it.
+Constructor errors wrap ErrInvalid.</p>
+<h2 id="what-this-package-does-not-do">What this package does not do</h2>
+<p>It does not choose rates, windows, periods or thresholds, and has no
+defaults. They follow from how much harm one action can do and how fast
+the thing acted on recovers, which only the caller knows. The literature
+cited on each type describes mechanisms, not settings.</p>
+<p>It does not wait. Next, NextN and Backoff.Next say when or how long;
+sleeping, timers and contexts are the caller's.</p>
+<p>It does not coordinate. Every cap is local to the value that holds it;
+several processes each with a Bucket of rate r together allow up to
+r times as many. A limit shared across processes needs shared state —
+one owner the others ask — which this package does not provide.</p>
+<p>It does not adapt. Rates and thresholds are fixed at construction; it
+does not raise a rate while actions succeed or lower it when they fail,
+as the additive-increase, multiplicative-decrease rule of V. Jacobson,
+"Congestion Avoidance and Control", ACM SIGCOMM 1988, does for a
+transport's window.</p>
+<p>It does not judge results. What counts as a failure for a Breaker, and
+whether an error is worth a retry, is the caller's decision.</p>
+<p>It does not keep a log of actions. Quota counts per fixed window and
+Bucket refills continuously; a sliding window over a log of every action
+is exact over every stretch but costs memory per action, and is not here.</p>
+<p>It does not persist. A process that restarts starts every cap afresh,
+with full buckets and closed breakers.</p>
+<h3 id="index">Index</h3>
+<ul>
+<li><code>type</code> <a href="#backoff">Backoff</a></li>
+<li><code>type</code> <a href="#breaker">Breaker</a></li>
+<li><code>type</code> <a href="#bucket">Bucket</a></li>
+<li><code>type</code> <a href="#cooldown">Cooldown</a></li>
+<li><code>type</code> <a href="#jitter">Jitter</a></li>
+<li><code>type</code> <a href="#quota">Quota</a></li>
+<li><code>type</code> <a href="#state">State</a></li>
+<li><code>method</code> <a href="#backoffattempt">Backoff.Attempt</a></li>
+<li><code>method</code> <a href="#backoffbase">Backoff.Base</a></li>
+<li><code>method</code> <a href="#backoffcap">Backoff.Cap</a></li>
+<li><code>method</code> <a href="#backoffceiling">Backoff.Ceiling</a></li>
+<li><code>method</code> <a href="#backoffnext">Backoff.Next</a></li>
+<li><code>method</code> <a href="#backoffreset">Backoff.Reset</a></li>
+<li><code>method</code> <a href="#breakerallow">Breaker.Allow</a></li>
+<li><code>method</code> <a href="#breakerfailures">Breaker.Failures</a></li>
+<li><code>method</code> <a href="#breakerlate">Breaker.Late</a></li>
+<li><code>method</code> <a href="#breakeropenuntil">Breaker.OpenUntil</a></li>
+<li><code>method</code> <a href="#breakerrecord">Breaker.Record</a></li>
+<li><code>method</code> <a href="#breakerreset">Breaker.Reset</a></li>
+<li><code>method</code> <a href="#breakersince">Breaker.Since</a></li>
+<li><code>method</code> <a href="#breakerstate">Breaker.State</a></li>
+<li><code>method</code> <a href="#breakertransitions">Breaker.Transitions</a></li>
+<li><code>method</code> <a href="#bucketallow">Bucket.Allow</a></li>
+<li><code>method</code> <a href="#bucketallowed">Bucket.Allowed</a></li>
+<li><code>method</code> <a href="#bucketallown">Bucket.AllowN</a></li>
+<li><code>method</code> <a href="#bucketburst">Bucket.Burst</a></li>
+<li><code>method</code> <a href="#bucketdenied">Bucket.Denied</a></li>
+<li><code>method</code> <a href="#bucketinterval">Bucket.Interval</a></li>
+<li><code>method</code> <a href="#bucketlate">Bucket.Late</a></li>
+<li><code>method</code> <a href="#bucketnext">Bucket.Next</a></li>
+<li><code>method</code> <a href="#bucketnextn">Bucket.NextN</a></li>
+<li><code>method</code> <a href="#bucketrate">Bucket.Rate</a></li>
+<li><code>method</code> <a href="#bucketreset">Bucket.Reset</a></li>
+<li><code>method</code> <a href="#buckettokens">Bucket.Tokens</a></li>
+<li><code>method</code> <a href="#cooldownallow">Cooldown.Allow</a></li>
+<li><code>method</code> <a href="#cooldownallowed">Cooldown.Allowed</a></li>
+<li><code>method</code> <a href="#cooldowndenied">Cooldown.Denied</a></li>
+<li><code>method</code> <a href="#cooldownfull">Cooldown.Full</a></li>
+<li><code>method</code> <a href="#cooldownlate">Cooldown.Late</a></li>
+<li><code>method</code> <a href="#cooldownlen">Cooldown.Len</a></li>
+<li><code>method</code> <a href="#cooldownnext">Cooldown.Next</a></li>
+<li><code>method</code> <a href="#cooldownperiod">Cooldown.Period</a></li>
+<li><code>method</code> <a href="#cooldownreset">Cooldown.Reset</a></li>
+<li><code>method</code> <a href="#cooldownsweep">Cooldown.Sweep</a></li>
+<li><code>const</code> <a href="#errinvalid">ErrInvalid</a></li>
+<li><code>method</code> <a href="#jitterstring">Jitter.String</a></li>
+<li><code>func</code> <a href="#newbackoff">NewBackoff</a></li>
+<li><code>func</code> <a href="#newbreaker">NewBreaker</a></li>
+<li><code>func</code> <a href="#newbucket">NewBucket</a></li>
+<li><code>func</code> <a href="#newcooldown">NewCooldown</a></li>
+<li><code>func</code> <a href="#newquota">NewQuota</a></li>
+<li><code>method</code> <a href="#quotaallow">Quota.Allow</a></li>
+<li><code>method</code> <a href="#quotaallowed">Quota.Allowed</a></li>
+<li><code>method</code> <a href="#quotaallown">Quota.AllowN</a></li>
+<li><code>method</code> <a href="#quotadenied">Quota.Denied</a></li>
+<li><code>method</code> <a href="#quotalate">Quota.Late</a></li>
+<li><code>method</code> <a href="#quotalimit">Quota.Limit</a></li>
+<li><code>method</code> <a href="#quotaremaining">Quota.Remaining</a></li>
+<li><code>method</code> <a href="#quotareset">Quota.Reset</a></li>
+<li><code>method</code> <a href="#quotawindow">Quota.Window</a></li>
+<li><code>method</code> <a href="#quotawindowend">Quota.WindowEnd</a></li>
+<li><code>method</code> <a href="#statestring">State.String</a></li>
+</ul>
+<h4 id="backoff">Backoff</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Backoff <span class="hljs-keyword">struct</span>
+</code></pre>
+<p>Backoff draws the delays to wait between retries of a failed action:
+growing, capped, and random, so that many callers that failed together do
+not retry together.</p>
+<p>Plain exponential backoff, base·2ⁿ before the n-th retry, spreads one
+caller's retries out but keeps callers that failed at the same moment in
+step: they retry at the same moments and collide again. Randomising each
+delay breaks the lockstep. Of the schemes compared in M. Brooker,
+"Exponential Backoff And Jitter", AWS Architecture Blog, 2015, this
+provides the two the article recommends:</p>
+<ul>
+<li>FullJitter: uniform on [0, min(cap, base·2ⁿ)]. The delays grow as plain
+backoff does, but each is anywhere from zero to that ceiling; in the
+article's simulation it needed the least total work.</li>
+<li>DecorrelatedJitter: min(cap, uniform[base, 3·prev]), starting from
+prev = base. Each delay depends on the last instead of on the attempt
+number, grows by up to three times per retry, and never falls below
+base.</li>
+</ul>
+<p>Exponential backoff itself is that of R. M. Metcalfe and D. R. Boggs,
+"Ethernet: Distributed Packet Switching for Local Computer Networks",
+Communications of the ACM 19(7), 1976, where a station that collides
+waits a random number of slots drawn from a range that doubles with each
+collision; IEEE 802.3 stops doubling after 10 collisions and gives up
+after 16. This package stops at cap and never gives up: how many retries
+to make is the caller's decision.</p>
+<p>Randomness comes only from the source given to NewBackoff — a
+*rand.Rand, or a rand.PCG or rand.ChaCha8 from math/rand/v2, seeded by the
+caller — so a Backoff with a seeded source draws the same delays on every
+run. Integers in a range are drawn without bias by the multiply-and-reject
+method of D. Lemire, "Fast Random Integer Generation in an Interval", ACM
+Transactions on Modeling and Computer Simulation 29(1), 2019. Delays are
+whole nanoseconds; every value of the range, both ends included, is
+equally likely before the cap is applied.</p>
+<p>Backoff computes delays and does nothing else: it does not sleep, and it
+takes no time because no delay depends on one. The caller waits, retries,
+and calls Reset after a success.</p>
+<p>The zero value is not usable (Next panics on it); build one with
+NewBackoff. A copy shares the source with the original, and so draws from
+the same stream. Not safe for concurrent use, and neither are the sources
+math/rand/v2 provides.</p>
+<p><small>Defined in <code>throttle/backoff.go</code>.</small></p>
+<h4 id="breaker">Breaker</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Breaker <span class="hljs-keyword">struct</span>
+</code></pre>
+<p>Breaker stops calling something that keeps failing, and tries it again,
+carefully, after a while.</p>
+<p>It has three states:</p>
+<ul>
+<li>Closed: Allow admits every call. Record counts consecutive failures; a
+success resets the count, and threshold failures in a row open the
+breaker.</li>
+<li>Open: Allow refuses every call until openFor has passed since the
+breaker opened; then the breaker is half-open.</li>
+<li>HalfOpen: Allow admits up to probes calls, and refuses the rest. If any
+probe fails, the breaker opens again for another openFor; once probes
+of them have succeeded, it closes.</li>
+</ul>
+<p>Every change of state is counted in Transitions, and Since is the time of
+the latest. The move from Open to HalfOpen happens at the first Allow,
+Record or State call at or after the end of the open period, and Since is
+that call's time.</p>
+<p>Results are matched to calls only by count. In HalfOpen a Record counts as
+a probe's result only while an admitted probe has not yet reported; any
+other result — from a call admitted while the breaker was still closed,
+arriving late — is ignored, as is every Record while the breaker is Open.
+A probe whose result is never recorded holds its place, and once every
+probe is held the breaker stays half-open; record a timed-out probe as a
+failure.</p>
+<p>Method: the Circuit Breaker pattern of M. T. Nygard, Release It! Design
+and Deploy Production-Ready Software, 2nd ed., Pragmatic Bookshelf, 2018,
+chapter 5 (stability patterns): closed, open and half-open, a failure
+threshold to open, a timeout to try again, and a trial call to decide.
+Allowing more than one trial (probes &gt; 1) and requiring all of them to
+succeed is a stricter form of the same rule.</p>
+<p>A time before the latest one the breaker has seen is taken as the latest
+(and counted in Late), so a clock stepped back cannot end an open period
+early.</p>
+<p>The zero value is not usable; build one with NewBreaker. Safe to copy,
+not safe for concurrent use.</p>
+<p><small>Defined in <code>throttle/breaker.go</code>.</small></p>
+<h4 id="bucket">Bucket</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Bucket <span class="hljs-keyword">struct</span>
+</code></pre>
+<p>Bucket is a token bucket: it allows on average rate actions per second,
+and up to burst of them at once after a quiet spell.</p>
+<p>The bucket holds at most burst tokens and gains one every 1/rate seconds;
+an action takes one token, or n for AllowN, and is refused when there are
+not enough. Over any stretch of time of length t, then, at most
+burst + ⌊t·rate⌋ tokens are taken: the bucket's whole content at the start
+plus what it earned during the stretch. A test holds every Bucket to that
+bound over every pair of its own allowed actions.</p>
+<p>Method: the generic cell rate algorithm (GCRA) in its virtual-scheduling
+form, ATM Forum, Traffic Management Specification Version 4.0
+(af-tm-0056.000), 1996, and ITU-T Recommendation I.371, Traffic control
+and congestion control in B-ISDN. Rather than a count of tokens that grows
+with time, GCRA keeps a theoretical arrival time (TAT): the time at which
+the bucket would be full again if nothing more were taken. A request for n
+tokens at time t conforms when TAT + n·T − burst·T ≤ t, T being the
+interval between tokens, and then moves TAT to max(TAT, t) + n·T. That is
+the token bucket of A. S. Tanenbaum and D. J. Wetherall, Computer
+Networks, 5th ed., Pearson, 2011, §5.4 (traffic shaping), counted in time
+instead of tokens; the leaky bucket of J. S. Turner, "New directions in
+communications (or which way to the information age?)", IEEE
+Communications Magazine 24(10), 1986, is the same rule seen from the
+other side.</p>
+<p>Here TAT is kept as a debt: TAT minus the latest time, in whole
+nanoseconds, between 0 and burst·T. T is 1/rate rounded once, in
+NewBucket, to the nearest nanosecond (Interval reports it, Rate the rate it
+gives); every step after that is integer addition, subtraction and
+comparison, so a bucket run for years admits exactly what the arithmetic
+says, with no rounding to accumulate and nothing to overflow.</p>
+<p>A time before the latest one the bucket has seen is taken as the latest
+(and counted in Late): a clock stepped back earns no tokens, and the
+bucket resumes refilling only once the clock passes where it was.</p>
+<p>The zero value refuses every action; build one with NewBucket. Safe to
+copy, not safe for concurrent use.</p>
+<p><small>Defined in <code>throttle/bucket.go</code>.</small></p>
+<h4 id="cooldown">Cooldown</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Cooldown[K comparable] <span class="hljs-keyword">struct</span>
+</code></pre>
+<p>Cooldown lets each key act at most once per period: an action for a key is
+allowed when the key has not been allowed one in the last period, and is
+then the start of the key's next period. "Restart any one service at most
+once every ten minutes."</p>
+<p>The rule is exact. An action at t for a key last allowed at s is allowed
+if and only if t − s ≥ period; a refused action does not move s. It is
+the same rule as a Bucket of burst 1 and one token per period kept for
+each key, and a test holds the two to the same decisions.</p>
+<p>A key is forgotten once its period has passed, since from then on it would
+be allowed anyway. Keys are kept in a queue in the order they were
+allowed, which is also the order their periods end, because times never
+run backwards here; so expired keys are always at the front. Every Allow
+first drops the expired keys at the front, which costs O(1) amortised per
+key ever allowed, and the table holds only keys allowed within the last
+period. Sweep does the same dropping at a time of the caller's choosing,
+for a table that may sit idle while holding many keys.</p>
+<p>maxKeys, when positive, caps the keys tracked at once. When the table is
+full of keys still within their period, an action for a new key is
+refused and counted in Full: no tracked key is evicted to make room,
+because an evicted key could then act again before its period ended, and
+a cap on corrective actions should fail by acting less, not more. The
+cap bounds memory: Go maps do not return memory on deletion, so the
+table's footprint is its largest size, at most maxKeys entries.</p>
+<p>Allow on a key already tracked does not allocate, nor does Allow on a key
+whose period has ended once the table has reached its working size: the
+slots expired keys leave are reused. Growing the table allocates.</p>
+<p>A time before the latest one the cooldown has seen is taken as the
+latest (and counted in Late), so a clock stepped back cannot end a period
+early.</p>
+<p>The zero value is not usable (Allow panics on it: it has no table); build
+one with NewCooldown, which returns a pointer. Not safe to copy (copies
+share the table) and not safe for concurrent use.</p>
+<p><small>Defined in <code>throttle/cooldown.go</code>.</small></p>
+<h4 id="jitter">Jitter</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Jitter <span class="hljs-type">uint8</span>
+</code></pre>
+<p>Jitter selects how a Backoff randomises its delays.</p>
+<p><small>Defined in <code>throttle/backoff.go</code>.</small></p>
+<h4 id="quota">Quota</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Quota <span class="hljs-keyword">struct</span>
+</code></pre>
+<p>Quota allows at most a fixed number of actions in each window of fixed
+length: "no more than 5 restarts per hour, on the hour".</p>
+<p>Windows are laid end to end from an origin the caller chooses: window k
+is [origin + k·length, origin + (k+1)·length), for every integer k, so
+windows before the origin exist too. A time on a boundary belongs to the
+window it starts. The count starts again from zero at each boundary; a
+window's unused actions do not carry over.</p>
+<p>The guarantee is per window, not per stretch of time of the window's
+length: actions taken at the end of one window and at the start of the
+next fall in different windows, so a stretch of one window's length that
+straddles a boundary can see up to twice the limit. Where that matters,
+use a Bucket, whose bound holds over every stretch, or both.</p>
+<p>Method: the jumping window of E. P. Rathgeb, "Modeling and performance
+comparison of policing mechanisms for ATM networks", IEEE Journal on
+Selected Areas in Communications 9(3), 1991, which also sets out the
+boundary effect above. It suits quotas people read off a calendar or a
+report — a count per hour, per day, per shift — that a token bucket's
+continuous refill does not match.</p>
+<p>A time before the latest one the quota has seen is taken as the latest
+(and counted in Late), so a clock stepped back cannot reopen an earlier
+window. Window boundaries are computed from time.Time.Sub of the origin,
+which saturates about 292 years away from it.</p>
+<p>The zero value is not usable (it panics); build one with NewQuota. Safe
+to copy, not safe for concurrent use.</p>
+<p><small>Defined in <code>throttle/quota.go</code>.</small></p>
+<h4 id="state">State</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> State <span class="hljs-type">uint8</span>
+</code></pre>
+<p>State is a Breaker's state.</p>
+<p><small>Defined in <code>throttle/breaker.go</code>.</small></p>
+<h4 id="backoffattempt">Backoff.Attempt</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Backoff)</span></span> Attempt() <span class="hljs-type">int</span>
+</code></pre>
+<p>Attempt is the number of delays drawn since NewBackoff or Reset; it stops
+at math.MaxInt.</p>
+<p><small>Defined in <code>throttle/backoff.go</code>.</small></p>
+<h4 id="backoffbase">Backoff.Base</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Backoff)</span></span> Base() time.Duration
+</code></pre>
+<p>Base is the smallest scale of delay: the first FullJitter ceiling, and the
+DecorrelatedJitter floor.</p>
+<p><small>Defined in <code>throttle/backoff.go</code>.</small></p>
+<h4 id="backoffcap">Backoff.Cap</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Backoff)</span></span> Cap() time.Duration
+</code></pre>
+<p>Cap is the largest delay Next returns.</p>
+<p><small>Defined in <code>throttle/backoff.go</code>.</small></p>
+<h4 id="backoffceiling">Backoff.Ceiling</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Backoff)</span></span> Ceiling() time.Duration
+</code></pre>
+<p>Ceiling is the largest delay the next call to Next can return:
+min(cap, base·2ⁿ) for FullJitter, n being Attempt, and min(cap, 3·prev)
+for DecorrelatedJitter. It changes nothing.</p>
+<p><small>Defined in <code>throttle/backoff.go</code>.</small></p>
+<h4 id="backoffnext">Backoff.Next</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Backoff)</span></span> Next() time.Duration
+</code></pre>
+<p>Next draws the delay before the next retry and counts the attempt. It does
+not allocate.</p>
+<p><small>Defined in <code>throttle/backoff.go</code>.</small></p>
+<h4 id="backoffreset">Backoff.Reset</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Backoff)</span></span> Reset()
+</code></pre>
+<p>Reset starts again from the first attempt, keeping the parameters and the
+source; the source is not rewound.</p>
+<p><small>Defined in <code>throttle/backoff.go</code>.</small></p>
+<h4 id="breakerallow">Breaker.Allow</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Breaker)</span></span> Allow(at time.Time) <span class="hljs-type">bool</span>
+</code></pre>
+<p>Allow reports whether a call may be made at time at. In HalfOpen, a true
+result admits a probe, whose result the caller must Record. It does not
+allocate.</p>
+<p><small>Defined in <code>throttle/breaker.go</code>.</small></p>
+<h4 id="breakerfailures">Breaker.Failures</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Breaker)</span></span> Failures() <span class="hljs-type">int</span>
+</code></pre>
+<p>Failures is the number of consecutive failures recorded while closed.</p>
+<p><small>Defined in <code>throttle/breaker.go</code>.</small></p>
+<h4 id="breakerlate">Breaker.Late</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Breaker)</span></span> Late() <span class="hljs-type">int64</span>
+</code></pre>
+<p>Late is the number of calls whose time was before the latest time the
+breaker had seen, and was taken as that time.</p>
+<p><small>Defined in <code>throttle/breaker.go</code>.</small></p>
+<h4 id="breakeropenuntil">Breaker.OpenUntil</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Breaker)</span></span> OpenUntil() time.Time
+</code></pre>
+<p>OpenUntil is the end of the current open period, and the zero time when
+the breaker is not open.</p>
+<p><small>Defined in <code>throttle/breaker.go</code>.</small></p>
+<h4 id="breakerrecord">Breaker.Record</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Breaker)</span></span> Record(ok <span class="hljs-type">bool</span>, at time.Time)
+</code></pre>
+<p>Record reports the result of a call at time at: ok for success. It does
+not allocate.</p>
+<p><small>Defined in <code>throttle/breaker.go</code>.</small></p>
+<h4 id="breakerreset">Breaker.Reset</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Breaker)</span></span> Reset()
+</code></pre>
+<p>Reset closes the breaker, forgets every time it has seen and zeroes every
+count, keeping the threshold, open duration and probes.</p>
+<p><small>Defined in <code>throttle/breaker.go</code>.</small></p>
+<h4 id="breakersince">Breaker.Since</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Breaker)</span></span> Since() time.Time
+</code></pre>
+<p>Since is the time the current state was entered: the zero time before the
+first change.</p>
+<p><small>Defined in <code>throttle/breaker.go</code>.</small></p>
+<h4 id="breakerstate">Breaker.State</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Breaker)</span></span> State(at time.Time) State
+</code></pre>
+<p>State is the state at time at. It moves an Open breaker whose period has
+passed to HalfOpen, as Allow and Record do.</p>
+<p><small>Defined in <code>throttle/breaker.go</code>.</small></p>
+<h4 id="breakertransitions">Breaker.Transitions</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Breaker)</span></span> Transitions() <span class="hljs-type">int64</span>
+</code></pre>
+<p>Transitions is the number of changes of state.</p>
+<p><small>Defined in <code>throttle/breaker.go</code>.</small></p>
+<h4 id="bucketallow">Bucket.Allow</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Bucket)</span></span> Allow(at time.Time) <span class="hljs-type">bool</span>
+</code></pre>
+<p>Allow takes one token at time at and reports whether there was one. It
+does not allocate.</p>
+<p><small>Defined in <code>throttle/bucket.go</code>.</small></p>
+<h4 id="bucketallowed">Bucket.Allowed</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Bucket)</span></span> Allowed() <span class="hljs-type">int64</span>
+</code></pre>
+<p>Allowed is the number of AllowN calls that took tokens.</p>
+<p><small>Defined in <code>throttle/bucket.go</code>.</small></p>
+<h4 id="bucketallown">Bucket.AllowN</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Bucket)</span></span> AllowN(at time.Time, n <span class="hljs-type">int</span>) <span class="hljs-type">bool</span>
+</code></pre>
+<p>AllowN takes n tokens at time at, all or none, and reports whether there
+were n. An n larger than the burst is always refused; an n ≤ 0 takes
+nothing, reports true and is not counted. It does not allocate.</p>
+<p><small>Defined in <code>throttle/bucket.go</code>.</small></p>
+<h4 id="bucketburst">Bucket.Burst</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Bucket)</span></span> Burst() <span class="hljs-type">int</span>
+</code></pre>
+<p>Burst is the bucket's capacity.</p>
+<p><small>Defined in <code>throttle/bucket.go</code>.</small></p>
+<h4 id="bucketdenied">Bucket.Denied</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Bucket)</span></span> Denied() <span class="hljs-type">int64</span>
+</code></pre>
+<p>Denied is the number of AllowN calls that were refused.</p>
+<p><small>Defined in <code>throttle/bucket.go</code>.</small></p>
+<h4 id="bucketinterval">Bucket.Interval</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Bucket)</span></span> Interval() time.Duration
+</code></pre>
+<p>Interval is the time between tokens: 1/rate rounded to the nearest
+nanosecond.</p>
+<p><small>Defined in <code>throttle/bucket.go</code>.</small></p>
+<h4 id="bucketlate">Bucket.Late</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Bucket)</span></span> Late() <span class="hljs-type">int64</span>
+</code></pre>
+<p>Late is the number of calls whose time was before the latest time the
+bucket had seen, and was taken as that time.</p>
+<p><small>Defined in <code>throttle/bucket.go</code>.</small></p>
+<h4 id="bucketnext">Bucket.Next</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Bucket)</span></span> Next(at time.Time) time.Time
+</code></pre>
+<p>Next is the earliest time, not before at (nor before the latest time the
+bucket has seen), at which one token is available. It changes nothing.</p>
+<p><small>Defined in <code>throttle/bucket.go</code>.</small></p>
+<h4 id="bucketnextn">Bucket.NextN</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Bucket)</span></span> NextN(at time.Time, n <span class="hljs-type">int</span>) (time.Time, <span class="hljs-type">bool</span>)
+</code></pre>
+<p>NextN is the earliest time, not before at (nor before the latest time the
+bucket has seen), at which AllowN(_, n) would succeed, if nothing else is
+taken first. It reports false, and the zero time, when n exceeds the burst
+and no time will do. It changes nothing.</p>
+<p><small>Defined in <code>throttle/bucket.go</code>.</small></p>
+<h4 id="bucketrate">Bucket.Rate</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Bucket)</span></span> Rate() <span class="hljs-type">float64</span>
+</code></pre>
+<p>Rate is the rate the bucket keeps, in tokens per second: 1e9 divided by
+the Interval in nanoseconds, which can differ from the rate asked of
+NewBucket by the rounding of the interval.</p>
+<p><small>Defined in <code>throttle/bucket.go</code>.</small></p>
+<h4 id="bucketreset">Bucket.Reset</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Bucket)</span></span> Reset()
+</code></pre>
+<p>Reset refills the bucket, forgets every time it has seen and zeroes every
+count, keeping the rate and burst.</p>
+<p><small>Defined in <code>throttle/bucket.go</code>.</small></p>
+<h4 id="buckettokens">Bucket.Tokens</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Bucket)</span></span> Tokens(at time.Time) <span class="hljs-type">int</span>
+</code></pre>
+<p>Tokens is the number of whole tokens in the bucket at time at, 0 to burst.
+It changes nothing.</p>
+<p><small>Defined in <code>throttle/bucket.go</code>.</small></p>
+<h4 id="cooldownallow">Cooldown.Allow</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(cd *Cooldown[K])</span></span> Allow(key K, at time.Time) <span class="hljs-type">bool</span>
+</code></pre>
+<p>Allow reports whether key may act at time at, and if so starts its
+period. It does not allocate unless the table grows.</p>
+<p><small>Defined in <code>throttle/cooldown.go</code>.</small></p>
+<h4 id="cooldownallowed">Cooldown.Allowed</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(cd *Cooldown[K])</span></span> Allowed() <span class="hljs-type">int64</span>
+</code></pre>
+<p>Allowed is the number of actions allowed.</p>
+<p><small>Defined in <code>throttle/cooldown.go</code>.</small></p>
+<h4 id="cooldowndenied">Cooldown.Denied</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(cd *Cooldown[K])</span></span> Denied() <span class="hljs-type">int64</span>
+</code></pre>
+<p>Denied is the number of actions refused, for either reason.</p>
+<p><small>Defined in <code>throttle/cooldown.go</code>.</small></p>
+<h4 id="cooldownfull">Cooldown.Full</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(cd *Cooldown[K])</span></span> Full() <span class="hljs-type">int64</span>
+</code></pre>
+<p>Full is the number of actions refused only because the table was full: the
+key itself was free to act.</p>
+<p><small>Defined in <code>throttle/cooldown.go</code>.</small></p>
+<h4 id="cooldownlate">Cooldown.Late</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(cd *Cooldown[K])</span></span> Late() <span class="hljs-type">int64</span>
+</code></pre>
+<p>Late is the number of calls whose time was before the latest time the
+cooldown had seen, and was taken as that time.</p>
+<p><small>Defined in <code>throttle/cooldown.go</code>.</small></p>
+<h4 id="cooldownlen">Cooldown.Len</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(cd *Cooldown[K])</span></span> Len() <span class="hljs-type">int</span>
+</code></pre>
+<p>Len is the number of keys tracked: those allowed within the last period,
+plus any whose period has ended since the last Allow or Sweep.</p>
+<p><small>Defined in <code>throttle/cooldown.go</code>.</small></p>
+<h4 id="cooldownnext">Cooldown.Next</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(cd *Cooldown[K])</span></span> Next(key K, at time.Time) time.Time
+</code></pre>
+<p>Next is the earliest time, not before at (nor before the latest time the
+cooldown has seen), at which key may act, if nothing else acts first. For
+a new key refused because the table is full, it is the time the oldest
+tracked key's period ends. It changes nothing.</p>
+<p><small>Defined in <code>throttle/cooldown.go</code>.</small></p>
+<h4 id="cooldownperiod">Cooldown.Period</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(cd *Cooldown[K])</span></span> Period() time.Duration
+</code></pre>
+<p>Period is the time a key must wait between actions.</p>
+<p><small>Defined in <code>throttle/cooldown.go</code>.</small></p>
+<h4 id="cooldownreset">Cooldown.Reset</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(cd *Cooldown[K])</span></span> Reset()
+</code></pre>
+<p>Reset forgets every key and every time and zeroes every count, keeping the
+period, the cap and the memory already allocated.</p>
+<p><small>Defined in <code>throttle/cooldown.go</code>.</small></p>
+<h4 id="cooldownsweep">Cooldown.Sweep</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(cd *Cooldown[K])</span></span> Sweep(at time.Time) <span class="hljs-type">int</span>
+</code></pre>
+<p>Sweep forgets every key whose period has ended by at and returns how many
+it forgot: O(1) per key forgotten. Allow does the same on every call, so
+Sweep is needed only to release keys while no Allow is made.</p>
+<p><small>Defined in <code>throttle/cooldown.go</code>.</small></p>
+<h4 id="errinvalid">ErrInvalid</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> ErrInvalid = errors.New(<span class="hljs-string">"throttle: invalid parameter"</span>)
+</code></pre>
+<p>ErrInvalid is wrapped by every constructor error: a parameter that is NaN,
+infinite where a finite value is needed, or outside the range its doc
+names. Match it with errors.Is; the message text is not part of the API.</p>
+<p><small>Defined in <code>throttle/errors.go</code>.</small></p>
+<h4 id="jitterstring">Jitter.String</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(j Jitter)</span></span> String() <span class="hljs-type">string</span>
+</code></pre>
+<p>String is "full" or "decorrelated".</p>
+<p><small>Defined in <code>throttle/backoff.go</code>.</small></p>
+<h4 id="newbackoff">NewBackoff</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">NewBackoff</span><span class="hljs-params">(j Jitter, base, <span class="hljs-built_in">cap</span> time.Duration, src rand.Source)</span></span> (Backoff, <span class="hljs-type">error</span>)
+</code></pre>
+<p>NewBackoff returns a backoff of the given jitter with 0 &lt; base ≤ cap,
+drawing from src, which must not be nil.</p>
+<p><small>Defined in <code>throttle/backoff.go</code>.</small></p>
+<h4 id="newbreaker">NewBreaker</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">NewBreaker</span><span class="hljs-params">(threshold <span class="hljs-type">int</span>, openFor time.Duration, probes <span class="hljs-type">int</span>)</span></span> (Breaker, <span class="hljs-type">error</span>)
+</code></pre>
+<p>NewBreaker returns a closed breaker that opens after threshold ≥ 1
+consecutive failures, stays open for openFor ≥ 0, and then admits probes ≥
+1 trial calls, all of which must succeed for it to close.</p>
+<p><small>Defined in <code>throttle/breaker.go</code>.</small></p>
+<h4 id="newbucket">NewBucket</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">NewBucket</span><span class="hljs-params">(rate <span class="hljs-type">float64</span>, burst <span class="hljs-type">int</span>)</span></span> (Bucket, <span class="hljs-type">error</span>)
+</code></pre>
+<p>NewBucket returns a full bucket that gains rate tokens per second and
+holds at most burst. rate must be finite and positive with 1/rate between
+1 ns and 2⁶³ ns once rounded to whole nanoseconds (about 2e9 down to one
+per 292 years), and burst ≥ 1 with burst/rate below 2⁶³ ns.</p>
+<p><small>Defined in <code>throttle/bucket.go</code>.</small></p>
+<h4 id="newcooldown">NewCooldown</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">NewCooldown</span>[<span class="hljs-title">K</span> <span class="hljs-title">comparable</span>]<span class="hljs-params">(period time.Duration, maxKeys <span class="hljs-type">int</span>)</span></span> (*Cooldown[K], <span class="hljs-type">error</span>)
+</code></pre>
+<p>NewCooldown returns a cooldown of period &gt; 0 per key, tracking at most
+maxKeys ≥ 0 keys at once; 0 is no cap.</p>
+<p><small>Defined in <code>throttle/cooldown.go</code>.</small></p>
+<h4 id="newquota">NewQuota</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">NewQuota</span><span class="hljs-params">(limit <span class="hljs-type">int</span>, window time.Duration, origin time.Time)</span></span> (Quota, <span class="hljs-type">error</span>)
+</code></pre>
+<p>NewQuota returns a quota of limit ≥ 1 actions per window of length
+window &gt; 0, with windows aligned to origin.</p>
+<p><small>Defined in <code>throttle/quota.go</code>.</small></p>
+<h4 id="quotaallow">Quota.Allow</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Quota)</span></span> Allow(at time.Time) <span class="hljs-type">bool</span>
+</code></pre>
+<p>Allow takes one action from the window that holds at and reports whether
+it was within the limit. It does not allocate.</p>
+<p><small>Defined in <code>throttle/quota.go</code>.</small></p>
+<h4 id="quotaallowed">Quota.Allowed</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Quota)</span></span> Allowed() <span class="hljs-type">int64</span>
+</code></pre>
+<p>Allowed is the number of AllowN calls that took actions.</p>
+<p><small>Defined in <code>throttle/quota.go</code>.</small></p>
+<h4 id="quotaallown">Quota.AllowN</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Quota)</span></span> AllowN(at time.Time, n <span class="hljs-type">int</span>) <span class="hljs-type">bool</span>
+</code></pre>
+<p>AllowN takes n actions from the window that holds at, all or none, and
+reports whether they were within the limit. An n ≤ 0 takes nothing,
+reports true and is not counted. It does not allocate.</p>
+<p><small>Defined in <code>throttle/quota.go</code>.</small></p>
+<h4 id="quotadenied">Quota.Denied</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Quota)</span></span> Denied() <span class="hljs-type">int64</span>
+</code></pre>
+<p>Denied is the number of AllowN calls that were refused.</p>
+<p><small>Defined in <code>throttle/quota.go</code>.</small></p>
+<h4 id="quotalate">Quota.Late</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Quota)</span></span> Late() <span class="hljs-type">int64</span>
+</code></pre>
+<p>Late is the number of calls whose time was before the latest time the
+quota had seen, and was taken as that time.</p>
+<p><small>Defined in <code>throttle/quota.go</code>.</small></p>
+<h4 id="quotalimit">Quota.Limit</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Quota)</span></span> Limit() <span class="hljs-type">int</span>
+</code></pre>
+<p>Limit is the number of actions allowed per window.</p>
+<p><small>Defined in <code>throttle/quota.go</code>.</small></p>
+<h4 id="quotaremaining">Quota.Remaining</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Quota)</span></span> Remaining(at time.Time) <span class="hljs-type">int</span>
+</code></pre>
+<p>Remaining is the number of actions left in the window that holds at. It
+changes nothing.</p>
+<p><small>Defined in <code>throttle/quota.go</code>.</small></p>
+<h4 id="quotareset">Quota.Reset</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Quota)</span></span> Reset()
+</code></pre>
+<p>Reset empties every window, forgets every time it has seen and zeroes
+every count, keeping the limit, window and origin.</p>
+<p><small>Defined in <code>throttle/quota.go</code>.</small></p>
+<h4 id="quotawindow">Quota.Window</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Quota)</span></span> Window() time.Duration
+</code></pre>
+<p>Window is the length of a window.</p>
+<p><small>Defined in <code>throttle/quota.go</code>.</small></p>
+<h4 id="quotawindowend">Quota.WindowEnd</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Quota)</span></span> WindowEnd(at time.Time) time.Time
+</code></pre>
+<p>WindowEnd is the end of the window that holds at: the time the count
+starts again. It changes nothing.</p>
+<p><small>Defined in <code>throttle/quota.go</code>.</small></p>
+<h4 id="statestring">State.String</h4>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s State)</span></span> String() <span class="hljs-type">string</span>
+</code></pre>
+<p>String is "closed", "open" or "half-open".</p>
+<p><small>Defined in <code>throttle/breaker.go</code>.</small></p>
+
+                                
+    
+    <footer class="runink-footer" role="contentinfo">
+        <img class="runink-brand" src="../../../_brand/logo.png" alt="">
+        
+    </footer>
+    
+
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../sustain/" class="navigation navigation-prev " aria-label="Previous page: runi/sustain">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../develop/" class="navigation navigation-next " aria-label="Next page: Developer Guide">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    
+    <script type="application/json" id="honkit-page-context">{"page":{"title":"runi/throttle","level":"1.2.2.18","depth":3,"next":{"title":"Developer Guide","level":"1.2.3","depth":2,"path":"docs/develop/README.md","ref":"docs/develop/README.md","articles":[]},"previous":{"title":"runi/sustain","level":"1.2.2.17","depth":3,"path":"docs/api/sustain/README.md","ref":"docs/api/sustain/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","runink-copy"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"lunr":{"maxIndexSize":100000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"runink-copy":{},"highlight":{},"search":{}},"theme":"default","author":"Runink","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"logo":"_brand/logo.png","siteURL":"https://docs.runink.org/runi/"},"title":"Runi","language":"en","gitbook":"7.0.1","description":"BSD-3-Clause · zero dependencies"},"file":{"path":"docs/api/throttle/README.md","mtime":"","type":"markdown"},"gitbook":{"version":"7.0.1","time":""},"basePath":"../../..","book":{"language":""}}</script>
+</div>
+
+        
+    <noscript>
+        <link rel="stylesheet" href="../../../gitbook/noscript.css">
+    </noscript>
+    
+    <script src="../../../gitbook/boot.js"></script>
+    
+    <script src="../../../gitbook/gitbook.js" defer></script>
+    <script src="../../../gitbook/theme.js" defer></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-runink-copy/copy.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/@honkit/honkit-plugin-lunr/lunr.min.js" defer></script>
+        
+    
+        
+        <script src="../../../gitbook/@honkit/honkit-plugin-lunr/search-lunr.js" defer></script>
+        
+    
+
+    </body>
+</html>
+

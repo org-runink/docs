@@ -1,0 +1,141 @@
+<!doctype html>
+<!-- SPDX-FileCopyrightText: 2026 Runink -->
+<!-- SPDX-License-Identifier: LicenseRef-Runink-Proprietary -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Runink Documentation</title>
+<meta name="description" content="Admin, User and Developer documentation for Runink products (FACE, Runink TIDDE with its FORGE studio, PULSE and LUNA) and for the open-source projects Runink River and Runi.">
+<link rel="canonical" href="https://docs.runink.org/">
+<meta property="og:site_name" content="Runink Documentation">
+<meta property="og:title" content="Runink Documentation">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://docs.runink.org/">
+<meta property="og:description" content="Admin, User and Developer documentation for FACE, Runink TIDDE, PULSE and LUNA, and for the open-source Runink River and Runi.">
+<meta name="twitter:card" content="summary">
+<!--
+  GA4, gated by Consent Mode v2: the same behaviour as the product docs sites'
+  layouts/_partials/components/analytics/google-analytics.html (River's copy is
+  the reference). Every signal defaults to denied; only "Allow Counting" in the
+  banner below grants analytics_storage, and a stored grant from an earlier
+  visit is re-applied. No advertising, so the ad_* signals stay denied.
+-->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'functionality_storage': 'granted',
+    'security_storage': 'granted',
+    'wait_for_update': 500
+  });
+  try {
+    if (window.localStorage && localStorage.getItem('riverCookieConsent') === 'accepted') {
+      gtag('consent', 'update', { 'analytics_storage': 'granted' });
+    }
+  } catch (e) {}
+  gtag('js', new Date());
+  gtag('config', 'G-SEECKDWZNJ');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SEECKDWZNJ"></script>
+<style>
+  :root { --bg:#1A1614; --card:#231E1B; --ink:#F3EEE9; --muted:#B8ADA5; --accent:#D9764E; --line:#3A322D; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; overflow-wrap:anywhere; }
+  main { max-width:960px; margin:0 auto; padding:56px 16px 72px; }
+  h1 { font-size:2rem; margin:0 0 8px; letter-spacing:-.01em; }
+  h2.section { font-size:1.15rem; margin:40px 0 14px; color:var(--ink); }
+  p.lead { color:var(--muted); margin:0 0 12px; max-width:640px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr)); gap:16px; }
+  .card { display:block; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px; color:inherit; text-decoration:none; min-width:0; }
+  a.card:hover, a.card:focus-visible, div.card:hover, div.card:focus-within { border-color:var(--accent); outline:none; }
+  .card .head { display:flex; align-items:center; gap:12px; margin:0 0 8px; }
+  .card .head img { width:40px; height:40px; object-fit:contain; flex:0 0 40px; border-radius:8px; }
+  .card h3 { margin:0; font-size:1.1rem; color:var(--accent); }
+  .card h3 a { color:inherit; text-decoration:none; }
+  .card h3 a:hover, .card h3 a:focus-visible { text-decoration:underline; outline:none; }
+  .card p { margin:0; color:var(--muted); font-size:.95rem; }
+  .card p.kinds { margin-top:8px; font-size:.85rem; color:var(--ink); opacity:.8; }
+  .card p.sub { margin-top:10px; padding-top:10px; border-top:1px solid var(--line); }
+  .card p.sub a { color:var(--ink); }
+  footer { margin-top:48px; color:var(--muted); font-size:.85rem; }
+  footer a { color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Runink Documentation</h1>
+  <p class="lead">Admin, User and Developer documentation for every Runink product and open-source project: what each tool does, its concepts and architecture, and how to configure it, use it and build on it. Prices and plans are on <a href="https://runink.org/" style="color:var(--ink)">runink.org</a>.</p>
+
+  <h2 class="section">Products</h2>
+  <div class="grid">
+    <a class="card" href="/face/"><div class="head"><img src="/face/_brand/logo.png" alt="" width="40" height="40" loading="lazy"><h3>FACE</h3></div><p>Sovereign operational intelligence for logistics, supply chain and field operations.</p><p class="kinds">Admin, User and Developer documentation</p></a>
+    <div class="card"><div class="head"><img src="/tidde/_brand/logo.png" alt="" width="40" height="40" loading="lazy"><h3><a href="/tidde/">Runink TIDDE</a></h3></div><p>Trusted Intelligence for Developer &amp; Data Experience (TIDDE): the console for clusters, data runners, agents and governance.</p><p class="kinds">Admin, User and Developer documentation</p><p class="sub">Includes <a href="/tidde/docs/user-guide/forge/">FORGE</a>, the studio inside TIDDE that turns an approved chat into web apps and pipelines.</p></div>
+    <a class="card" href="/pulse/"><div class="head"><img src="/pulse/_brand/logo.png" alt="" width="40" height="40" loading="lazy"><h3>PULSE</h3></div><p>Marketing, content and lead generation on your own sovereign models.</p><p class="kinds">Admin, User and Developer documentation</p></a>
+    <a class="card" href="/luna/"><div class="head"><h3>LUNA</h3></div><p>The personal companion app: habits, coaching and voice.</p><p class="kinds">Admin, User and Developer documentation</p></a>
+  </div>
+
+  <h2 class="section">Open-source projects</h2>
+  <div class="grid">
+    <a class="card" href="/river/"><div class="head"><img src="/river/_brand/logo.svg" alt="" width="40" height="40" loading="lazy"><h3>Runink River</h3></div><p>The open-source developer workstation on s6, ZFS and the linux-runink kernel.</p><p class="kinds">Admin, User and Developer documentation</p></a>
+    <a class="card" href="/runi/"><div class="head"><img src="/runi/_brand/logo.png" alt="" width="40" height="40" loading="lazy"><h3>Runi</h3></div><p>Eighteen small Go packages for data and AI work, with zero dependencies.</p><p class="kinds">Admin, User and Developer documentation</p></a>
+  </div>
+
+  <footer>© 2026 Runink · <a href="https://runink.org/">runink.org</a> · <a href="https://runink.org/privacy/">Privacy</a></footer>
+</main>
+
+<div id="river-consent-banner" style="display:none;position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1a1a1a;color:#d4d4d4;padding:1rem 1.25rem;font:14px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;border-top:1px solid #333;">
+  <p style="margin:0;max-width:48rem;flex:1 1 16rem;">
+    We use cookies to count visits to this documentation. There is no advertising here,
+    so nothing is used to target you. Nothing is counted until you choose
+    "Allow Counting". See the
+    <a href="https://runink.org/privacy/" style="color:#fff;text-decoration:underline;">Runink privacy policy</a>
+    for details.
+  </p>
+  <div style="display:flex;flex-wrap:wrap;gap:0.75rem;flex:0 1 auto;">
+    <button id="river-reject-cookies" style="padding:0.5rem 1rem;font-size:14px;border:1px solid #555;background:transparent;color:#d4d4d4;border-radius:0.4rem;cursor:pointer;">
+      Reject Non-Essential
+    </button>
+    <button id="river-accept-cookies" style="padding:0.5rem 1rem;font-size:14px;border:none;background:#3b82f6;color:#fff;border-radius:0.4rem;cursor:pointer;">
+      Allow Counting
+    </button>
+  </div>
+</div>
+<script>
+(function() {
+  var banner = document.getElementById('river-consent-banner');
+  if (!banner) return;
+  var ts = null;
+  try { ts = localStorage.getItem('riverCookieConsentTimestamp'); } catch (e) {}
+  var ttl = 180 * 24 * 60 * 60 * 1000; // 180 days
+  if (!ts || (Date.now() - parseInt(ts, 10) >= ttl)) {
+    banner.style.display = 'flex';
+    try {
+      localStorage.removeItem('riverCookieConsent');
+      localStorage.removeItem('riverCookieConsentTimestamp');
+    } catch (e) {}
+  }
+  // A grant replays the page_view: the first load sent only a cookieless ping.
+  function setConsent(granted) {
+    if (typeof gtag !== 'function') return;
+    gtag('consent', 'update', { 'analytics_storage': granted ? 'granted' : 'denied' });
+    if (granted) gtag('event', 'page_view');
+  }
+  function answer(value, granted) {
+    try {
+      localStorage.setItem('riverCookieConsent', value);
+      localStorage.setItem('riverCookieConsentTimestamp', Date.now().toString());
+    } catch (e) {}
+    setConsent(granted);
+    banner.style.display = 'none';
+  }
+  document.getElementById('river-accept-cookies').addEventListener('click', function() { answer('accepted', true); });
+  document.getElementById('river-reject-cookies').addEventListener('click', function() { answer('rejected', false); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,3183 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>PostgreSQL · FACE Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 7.0.1">
+        <meta name="author" content="Runink">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-runink-copy/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../mysql/" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    
+    
+    <meta property="og:site_name" content="FACE Documentation">
+    <meta property="og:title" content="PostgreSQL">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="FACE by Runink (Fulfilment Autonomous Claims Engine) is Runink's sovereign operational-intelligence product: it connects to your warehouses, ERPs, telematics, sensors and cameras, reasons over them with models Runink runs for you or that you host (never a third-party AI service), and produces…">
+    <meta name="twitter:title" content="PostgreSQL">
+    <meta name="twitter:description" content="FACE by Runink (Fulfilment Autonomous Claims Engine) is Runink's sovereign operational-intelligence product: it connects to your warehouses, ERPs, telematics, sensors and cameras, reasons over them with models Runink runs for you or that you host (never a third-party AI service), and produces…">
+    
+    <meta name="twitter:card" content="summary">
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak font-size-2 font-family-1 color-theme-2">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../../../">
+            
+                <a href="../../../../../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    FACE Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../../../">
+            
+                <a href="../../../../../">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../../../overview/">
+            
+                <a href="../../../../../overview/">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../../../../overview/what-is-face/">
+            
+                <a href="../../../../../overview/what-is-face/">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    What FACE is
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../../../../overview/sustainability-dangerous-goods-luxury/">
+            
+                <a href="../../../../../overview/sustainability-dangerous-goods-luxury/">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    Sustainability: dangerous goods and luxury assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../../../concepts/">
+            
+                <a href="../../../../../concepts/">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../../../../concepts/fetch-pipeline/">
+            
+                <a href="../../../../../concepts/fetch-pipeline/">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    Fetch pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../../../../concepts/sovereign-models/">
+            
+                <a href="../../../../../concepts/sovereign-models/">
+            
+                    
+                        <b>1.2.2.2.</b>
+                    
+                    Sovereign models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../../../../concepts/structured-output/">
+            
+                <a href="../../../../../concepts/structured-output/">
+            
+                    
+                        <b>1.2.2.3.</b>
+                    
+                    Structured output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../../../../concepts/grounding/">
+            
+                <a href="../../../../../concepts/grounding/">
+            
+                    
+                        <b>1.2.2.4.</b>
+                    
+                    Grounding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../../../../../concepts/evidence-documents/">
+            
+                <a href="../../../../../concepts/evidence-documents/">
+            
+                    
+                        <b>1.2.2.5.</b>
+                    
+                    Evidence documents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../../../../../concepts/action-cards-and-money/">
+            
+                <a href="../../../../../concepts/action-cards-and-money/">
+            
+                    
+                        <b>1.2.2.6.</b>
+                    
+                    Action cards & money
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../../../../../concepts/statistics-and-ml/">
+            
+                <a href="../../../../../concepts/statistics-and-ml/">
+            
+                    
+                        <b>1.2.2.7.</b>
+                    
+                    Statistics & ML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../../../../../concepts/posture-and-maturity/">
+            
+                <a href="../../../../../concepts/posture-and-maturity/">
+            
+                    
+                        <b>1.2.2.8.</b>
+                    
+                    Posture & maturity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="../../../../../concepts/simulation-and-twins/">
+            
+                <a href="../../../../../concepts/simulation-and-twins/">
+            
+                    
+                        <b>1.2.2.9.</b>
+                    
+                    Simulation & twins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="../../../../../concepts/compliance-finance-operations/">
+            
+                <a href="../../../../../concepts/compliance-finance-operations/">
+            
+                    
+                        <b>1.2.2.10.</b>
+                    
+                    Compliance, finance, operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="../../../../../concepts/twin-ontology/">
+            
+                <a href="../../../../../concepts/twin-ontology/">
+            
+                    
+                        <b>1.2.2.11.</b>
+                    
+                    Twin ontology & graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="../../../../../concepts/vision/">
+            
+                <a href="../../../../../concepts/vision/">
+            
+                    
+                        <b>1.2.2.12.</b>
+                    
+                    Vision & CCTV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="../../../../../concepts/agents-and-oversight/">
+            
+                <a href="../../../../../concepts/agents-and-oversight/">
+            
+                    
+                        <b>1.2.2.13.</b>
+                    
+                    Agents & oversight
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../../../architecture/">
+            
+                <a href="../../../../../architecture/">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../../../../architecture/security/">
+            
+                <a href="../../../../../architecture/security/">
+            
+                    
+                        <b>1.2.3.1.</b>
+                    
+                    Security & trust
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1.1" data-path="../../../../../architecture/security/zero-trust/">
+            
+                <a href="../../../../../architecture/security/zero-trust/">
+            
+                    
+                        <b>1.2.3.1.1.</b>
+                    
+                    Defence in depth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.2" data-path="../../../../../architecture/security/identity-access/">
+            
+                <a href="../../../../../architecture/security/identity-access/">
+            
+                    
+                        <b>1.2.3.1.2.</b>
+                    
+                    Identity & access
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.3" data-path="../../../../../architecture/security/encryption/">
+            
+                <a href="../../../../../architecture/security/encryption/">
+            
+                    
+                        <b>1.2.3.1.3.</b>
+                    
+                    Encryption at rest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.4" data-path="../../../../../architecture/security/sovereign-inference/">
+            
+                <a href="../../../../../architecture/security/sovereign-inference/">
+            
+                    
+                        <b>1.2.3.1.4.</b>
+                    
+                    Sovereign inference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.5" data-path="../../../../../architecture/security/ai-safety/">
+            
+                <a href="../../../../../architecture/security/ai-safety/">
+            
+                    
+                        <b>1.2.3.1.5.</b>
+                    
+                    AI safety
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.6" data-path="../../../../../architecture/security/audit-lineage/">
+            
+                <a href="../../../../../architecture/security/audit-lineage/">
+            
+                    
+                        <b>1.2.3.1.6.</b>
+                    
+                    Auditability & lineage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.7" data-path="../../../../../architecture/security/network-egress/">
+            
+                <a href="../../../../../architecture/security/network-egress/">
+            
+                    
+                        <b>1.2.3.1.7.</b>
+                    
+                    Network egress controls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.8" data-path="../../../../../architecture/security/compliance/">
+            
+                <a href="../../../../../architecture/security/compliance/">
+            
+                    
+                        <b>1.2.3.1.8.</b>
+                    
+                    Compliance posture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../../../../user-guide/">
+            
+                <a href="../../../../../user-guide/">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    User guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../../../../user-guide/agents/">
+            
+                <a href="../../../../../user-guide/agents/">
+            
+                    
+                        <b>1.2.4.1.</b>
+                    
+                    Model cards
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1.1" data-path="../../../../../user-guide/agents/claims-recovery/">
+            
+                <a href="../../../../../user-guide/agents/claims-recovery/">
+            
+                    
+                        <b>1.2.4.1.1.</b>
+                    
+                    Claims & recovery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.2" data-path="../../../../../user-guide/agents/freight-invoice-audit/">
+            
+                <a href="../../../../../user-guide/agents/freight-invoice-audit/">
+            
+                    
+                        <b>1.2.4.1.2.</b>
+                    
+                    Freight invoice audit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.3" data-path="../../../../../user-guide/agents/customs-trade-documents/">
+            
+                <a href="../../../../../user-guide/agents/customs-trade-documents/">
+            
+                    
+                        <b>1.2.4.1.3.</b>
+                    
+                    Customs & trade documents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.4" data-path="../../../../../user-guide/agents/compliance-review/">
+            
+                <a href="../../../../../user-guide/agents/compliance-review/">
+            
+                    
+                        <b>1.2.4.1.4.</b>
+                    
+                    Compliance review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.5" data-path="../../../../../user-guide/agents/insurance-claim-files/">
+            
+                <a href="../../../../../user-guide/agents/insurance-claim-files/">
+            
+                    
+                        <b>1.2.4.1.5.</b>
+                    
+                    Insurance claim files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.6" data-path="../../../../../user-guide/agents/cold-chain-telemetry/">
+            
+                <a href="../../../../../user-guide/agents/cold-chain-telemetry/">
+            
+                    
+                        <b>1.2.4.1.6.</b>
+                    
+                    Cold chain & telemetry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.7" data-path="../../../../../user-guide/agents/maintenance/">
+            
+                <a href="../../../../../user-guide/agents/maintenance/">
+            
+                    
+                        <b>1.2.4.1.7.</b>
+                    
+                    Maintenance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.8" data-path="../../../../../user-guide/agents/stock-and-demand/">
+            
+                <a href="../../../../../user-guide/agents/stock-and-demand/">
+            
+                    
+                        <b>1.2.4.1.8.</b>
+                    
+                    Stock & demand
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.9" data-path="../../../../../user-guide/agents/returns/">
+            
+                <a href="../../../../../user-guide/agents/returns/">
+            
+                    
+                        <b>1.2.4.1.9.</b>
+                    
+                    Returns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.10" data-path="../../../../../user-guide/agents/yard-and-transport/">
+            
+                <a href="../../../../../user-guide/agents/yard-and-transport/">
+            
+                    
+                        <b>1.2.4.1.10.</b>
+                    
+                    Yard & transport
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.11" data-path="../../../../../user-guide/agents/options-and-approvals/">
+            
+                <a href="../../../../../user-guide/agents/options-and-approvals/">
+            
+                    
+                        <b>1.2.4.1.11.</b>
+                    
+                    Options & approvals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.12" data-path="../../../../../user-guide/agents/field-readings/">
+            
+                <a href="../../../../../user-guide/agents/field-readings/">
+            
+                    
+                        <b>1.2.4.1.12.</b>
+                    
+                    Field readings (edge)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.13" data-path="../../../../../user-guide/agents/data-posture/">
+            
+                <a href="../../../../../user-guide/agents/data-posture/">
+            
+                    
+                        <b>1.2.4.1.13.</b>
+                    
+                    Data posture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.14" data-path="../../../../../user-guide/agents/voice-dispatch/">
+            
+                <a href="../../../../../user-guide/agents/voice-dispatch/">
+            
+                    
+                        <b>1.2.4.1.14.</b>
+                    
+                    Voice dispatch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.15" data-path="../../../../../user-guide/agents/documents-and-plans/">
+            
+                <a href="../../../../../user-guide/agents/documents-and-plans/">
+            
+                    
+                        <b>1.2.4.1.15.</b>
+                    
+                    Documents & plans (vision)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.16" data-path="../../../../../user-guide/agents/claims-leakage/">
+            
+                <a href="../../../../../user-guide/agents/claims-leakage/">
+            
+                    
+                        <b>1.2.4.1.16.</b>
+                    
+                    Claims leakage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.17" data-path="../../../../../user-guide/agents/freight-market-analyst/">
+            
+                <a href="../../../../../user-guide/agents/freight-market-analyst/">
+            
+                    
+                        <b>1.2.4.1.17.</b>
+                    
+                    Freight market analyst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.18" data-path="../../../../../user-guide/agents/self-healing/">
+            
+                <a href="../../../../../user-guide/agents/self-healing/">
+            
+                    
+                        <b>1.2.4.1.18.</b>
+                    
+                    Self-healing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.19" data-path="../../../../../user-guide/agents/counterparty-background-check/">
+            
+                <a href="../../../../../user-guide/agents/counterparty-background-check/">
+            
+                    
+                        <b>1.2.4.1.19.</b>
+                    
+                    Counterparty background check
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.20" data-path="../../../../../user-guide/agents/fraud-detection/">
+            
+                <a href="../../../../../user-guide/agents/fraud-detection/">
+            
+                    
+                        <b>1.2.4.1.20.</b>
+                    
+                    Fraud indicators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.21" data-path="../../../../../user-guide/agents/customer-analysis/">
+            
+                <a href="../../../../../user-guide/agents/customer-analysis/">
+            
+                    
+                        <b>1.2.4.1.21.</b>
+                    
+                    Customer analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../../../../../user-guide/sign-in/">
+            
+                <a href="../../../../../user-guide/sign-in/">
+            
+                    
+                        <b>1.2.4.2.</b>
+                    
+                    Sign in
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../../../../../user-guide/navigation/">
+            
+                <a href="../../../../../user-guide/navigation/">
+            
+                    
+                        <b>1.2.4.3.</b>
+                    
+                    Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="../../../../../user-guide/overview/">
+            
+                <a href="../../../../../user-guide/overview/">
+            
+                    
+                        <b>1.2.4.4.</b>
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../../../../../user-guide/ask/">
+            
+                <a href="../../../../../user-guide/ask/">
+            
+                    
+                        <b>1.2.4.5.</b>
+                    
+                    Ask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="../../../../../user-guide/briefs/">
+            
+                <a href="../../../../../user-guide/briefs/">
+            
+                    
+                        <b>1.2.4.6.</b>
+                    
+                    Briefs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="../../../../../user-guide/options/">
+            
+                <a href="../../../../../user-guide/options/">
+            
+                    
+                        <b>1.2.4.7.</b>
+                    
+                    Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8" data-path="../../../../../user-guide/why/">
+            
+                <a href="../../../../../user-guide/why/">
+            
+                    
+                        <b>1.2.4.8.</b>
+                    
+                    Why
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.9" data-path="../../../../../user-guide/live-sensing/">
+            
+                <a href="../../../../../user-guide/live-sensing/">
+            
+                    
+                        <b>1.2.4.9.</b>
+                    
+                    Live sensing and vision
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.10" data-path="../../../../../user-guide/actionable-twins/">
+            
+                <a href="../../../../../user-guide/actionable-twins/">
+            
+                    
+                        <b>1.2.4.10.</b>
+                    
+                    Actionable Twins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.11" data-path="../../../../../user-guide/fleet-and-control/">
+            
+                <a href="../../../../../user-guide/fleet-and-control/">
+            
+                    
+                        <b>1.2.4.11.</b>
+                    
+                    Routes and fleet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.12" data-path="../../../../../user-guide/contacts-and-verification/">
+            
+                <a href="../../../../../user-guide/contacts-and-verification/">
+            
+                    
+                        <b>1.2.4.12.</b>
+                    
+                    Contacts and verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.13" data-path="../../../../../user-guide/voice-and-calls/">
+            
+                <a href="../../../../../user-guide/voice-and-calls/">
+            
+                    
+                        <b>1.2.4.13.</b>
+                    
+                    Voice and calls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.14" data-path="../../../../../user-guide/settings/">
+            
+                <a href="../../../../../user-guide/settings/">
+            
+                    
+                        <b>1.2.4.14.</b>
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.15" data-path="../../../../../user-guide/account-deletion/">
+            
+                <a href="../../../../../user-guide/account-deletion/">
+            
+                    
+                        <b>1.2.4.15.</b>
+                    
+                    Delete your account
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.16" data-path="../../../../../user-guide/accessibility/">
+            
+                <a href="../../../../../user-guide/accessibility/">
+            
+                    
+                        <b>1.2.4.16.</b>
+                    
+                    Accessibility and languages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.17" data-path="../../../../../user-guide/troubleshooting/">
+            
+                <a href="../../../../../user-guide/troubleshooting/">
+            
+                    
+                        <b>1.2.4.17.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    Admin guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../../../../access-and-trial/">
+            
+                <a href="../../../../access-and-trial/">
+            
+                    
+                        <b>1.2.5.1.</b>
+                    
+                    Access and the trial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../../../../admin-page/">
+            
+                <a href="../../../../admin-page/">
+            
+                    
+                        <b>1.2.5.2.</b>
+                    
+                    Admin page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                        <b>1.2.5.3.</b>
+                    
+                    Data sources
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.1" data-path="../../../connections/">
+            
+                <a href="../../../connections/">
+            
+                    
+                        <b>1.2.5.3.1.</b>
+                    
+                    Connections and credentials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.2.5.3.2.</b>
+                    
+                    Quickstarts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.1" data-path="../../all-connectors/">
+            
+                <a href="../../all-connectors/">
+            
+                    
+                        <b>1.2.5.3.2.1.</b>
+                    
+                    See all connectors at once
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.2.5.3.2.2.</b>
+                    
+                    Databases & warehouses
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.5.3.2.2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.5.3.2.2.1.</b>
+                    
+                    PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.2" data-path="../mysql/">
+            
+                <a href="../mysql/">
+            
+                    
+                        <b>1.2.5.3.2.2.2.</b>
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.3" data-path="../snowflake/">
+            
+                <a href="../snowflake/">
+            
+                    
+                        <b>1.2.5.3.2.2.3.</b>
+                    
+                    Snowflake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.4" data-path="../databricks/">
+            
+                <a href="../databricks/">
+            
+                    
+                        <b>1.2.5.3.2.2.4.</b>
+                    
+                    Databricks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.5" data-path="../redshift/">
+            
+                <a href="../redshift/">
+            
+                    
+                        <b>1.2.5.3.2.2.5.</b>
+                    
+                    Amazon Redshift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.6" data-path="../bigquery/">
+            
+                <a href="../bigquery/">
+            
+                    
+                        <b>1.2.5.3.2.2.6.</b>
+                    
+                    Google BigQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3" data-path="../../business-apps/">
+            
+                <a href="../../business-apps/">
+            
+                    
+                        <b>1.2.5.3.2.3.</b>
+                    
+                    Business apps
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.1" data-path="../../business-apps/salesforce/">
+            
+                <a href="../../business-apps/salesforce/">
+            
+                    
+                        <b>1.2.5.3.2.3.1.</b>
+                    
+                    Salesforce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.2" data-path="../../business-apps/sap/">
+            
+                <a href="../../business-apps/sap/">
+            
+                    
+                        <b>1.2.5.3.2.3.2.</b>
+                    
+                    SAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.3" data-path="../../business-apps/guidewire/">
+            
+                <a href="../../business-apps/guidewire/">
+            
+                    
+                        <b>1.2.5.3.2.3.3.</b>
+                    
+                    Guidewire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.4" data-path="../../business-apps/servicenow/">
+            
+                <a href="../../business-apps/servicenow/">
+            
+                    
+                        <b>1.2.5.3.2.3.4.</b>
+                    
+                    ServiceNow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.5" data-path="../../business-apps/hubspot/">
+            
+                <a href="../../business-apps/hubspot/">
+            
+                    
+                        <b>1.2.5.3.2.3.5.</b>
+                    
+                    HubSpot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.6" data-path="../../business-apps/d365/">
+            
+                <a href="../../business-apps/d365/">
+            
+                    
+                        <b>1.2.5.3.2.3.6.</b>
+                    
+                    Microsoft Dynamics 365
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.7" data-path="../../business-apps/sharepoint/">
+            
+                <a href="../../business-apps/sharepoint/">
+            
+                    
+                        <b>1.2.5.3.2.3.7.</b>
+                    
+                    SharePoint lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.8" data-path="../../business-apps/github/">
+            
+                <a href="../../business-apps/github/">
+            
+                    
+                        <b>1.2.5.3.2.3.8.</b>
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4" data-path="../../logistics/">
+            
+                <a href="../../logistics/">
+            
+                    
+                        <b>1.2.5.3.2.4.</b>
+                    
+                    Logistics systems
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.1" data-path="../../logistics/oms/">
+            
+                <a href="../../logistics/oms/">
+            
+                    
+                        <b>1.2.5.3.2.4.1.</b>
+                    
+                    Order management (OMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.2" data-path="../../logistics/tms/">
+            
+                <a href="../../logistics/tms/">
+            
+                    
+                        <b>1.2.5.3.2.4.2.</b>
+                    
+                    Transport management (TMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.3" data-path="../../logistics/whs/">
+            
+                <a href="../../logistics/whs/">
+            
+                    
+                        <b>1.2.5.3.2.4.3.</b>
+                    
+                    Warehouse (WHS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.4" data-path="../../logistics/yms/">
+            
+                <a href="../../logistics/yms/">
+            
+                    
+                        <b>1.2.5.3.2.4.4.</b>
+                    
+                    Yard management (YMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.5" data-path="../../logistics/ims/">
+            
+                <a href="../../logistics/ims/">
+            
+                    
+                        <b>1.2.5.3.2.4.5.</b>
+                    
+                    Inventory management (IMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.6" data-path="../../logistics/inventory/">
+            
+                <a href="../../logistics/inventory/">
+            
+                    
+                        <b>1.2.5.3.2.4.6.</b>
+                    
+                    Inventory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.7" data-path="../../logistics/logisticsapi/">
+            
+                <a href="../../logistics/logisticsapi/">
+            
+                    
+                        <b>1.2.5.3.2.4.7.</b>
+                    
+                    Logistics API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5" data-path="../../files/">
+            
+                <a href="../../files/">
+            
+                    
+                        <b>1.2.5.3.2.5.</b>
+                    
+                    Files
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.1" data-path="../../files/files/">
+            
+                <a href="../../files/files/">
+            
+                    
+                        <b>1.2.5.3.2.5.1.</b>
+                    
+                    Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.2" data-path="../../files/excel/">
+            
+                <a href="../../files/excel/">
+            
+                    
+                        <b>1.2.5.3.2.5.2.</b>
+                    
+                    Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.3" data-path="../../files/document/">
+            
+                <a href="../../files/document/">
+            
+                    
+                        <b>1.2.5.3.2.5.3.</b>
+                    
+                    Document (legacy type)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.4" data-path="../../files/objectstore/">
+            
+                <a href="../../files/objectstore/">
+            
+                    
+                        <b>1.2.5.3.2.5.4.</b>
+                    
+                    Object store
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6" data-path="../../streams/">
+            
+                <a href="../../streams/">
+            
+                    
+                        <b>1.2.5.3.2.6.</b>
+                    
+                    Streams
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.1" data-path="../../streams/kafka/">
+            
+                <a href="../../streams/kafka/">
+            
+                    
+                        <b>1.2.5.3.2.6.1.</b>
+                    
+                    Apache Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.2" data-path="../../streams/kafka-live/">
+            
+                <a href="../../streams/kafka-live/">
+            
+                    
+                        <b>1.2.5.3.2.6.2.</b>
+                    
+                    Apache Kafka, live estate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.3" data-path="../../streams/mqtt/">
+            
+                <a href="../../streams/mqtt/">
+            
+                    
+                        <b>1.2.5.3.2.6.3.</b>
+                    
+                    MQTT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.4" data-path="../../streams/iot/">
+            
+                <a href="../../streams/iot/">
+            
+                    
+                        <b>1.2.5.3.2.6.4.</b>
+                    
+                    IoT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.5" data-path="../../streams/rfid/">
+            
+                <a href="../../streams/rfid/">
+            
+                    
+                        <b>1.2.5.3.2.6.5.</b>
+                    
+                    RFID readers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.6" data-path="../../streams/gps/">
+            
+                <a href="../../streams/gps/">
+            
+                    
+                        <b>1.2.5.3.2.6.6.</b>
+                    
+                    GPS and telematics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.7" data-path="../../streams/sensorgateway/">
+            
+                <a href="../../streams/sensorgateway/">
+            
+                    
+                        <b>1.2.5.3.2.6.7.</b>
+                    
+                    Sensor gateway
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.8" data-path="../../streams/cctv/">
+            
+                <a href="../../streams/cctv/">
+            
+                    
+                        <b>1.2.5.3.2.6.8.</b>
+                    
+                    CCTV cameras
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.3" data-path="../../../discovery/">
+            
+                <a href="../../../discovery/">
+            
+                    
+                        <b>1.2.5.3.3.</b>
+                    
+                    Explore, sample and profile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.4" data-path="../../../sql-warehouses/">
+            
+                <a href="../../../sql-warehouses/">
+            
+                    
+                        <b>1.2.5.3.4.</b>
+                    
+                    SQL warehouses and databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.5" data-path="../../../enterprise-saas/">
+            
+                <a href="../../../enterprise-saas/">
+            
+                    
+                        <b>1.2.5.3.5.</b>
+                    
+                    Enterprise SaaS and ERP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.6" data-path="../../../files-object-storage/">
+            
+                <a href="../../../files-object-storage/">
+            
+                    
+                        <b>1.2.5.3.6.</b>
+                    
+                    Files and object storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.7" data-path="../../../streaming-kafka/">
+            
+                <a href="../../../streaming-kafka/">
+            
+                    
+                        <b>1.2.5.3.7.</b>
+                    
+                    Streaming: Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.8" data-path="../../../event-listeners/">
+            
+                <a href="../../../event-listeners/">
+            
+                    
+                        <b>1.2.5.3.8.</b>
+                    
+                    Event listeners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.9" data-path="../../../telemetry/">
+            
+                <a href="../../../telemetry/">
+            
+                    
+                        <b>1.2.5.3.9.</b>
+                    
+                    Telemetry: MQTT, RFID, GPS, sensors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.10" data-path="../../../logistics-systems/">
+            
+                <a href="../../../logistics-systems/">
+            
+                    
+                        <b>1.2.5.3.10.</b>
+                    
+                    Logistics systems of record
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.11" data-path="../../../cctv-video/">
+            
+                <a href="../../../cctv-video/">
+            
+                    
+                        <b>1.2.5.3.11.</b>
+                    
+                    CCTV and video
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.12" data-path="../../../edge-flipper/">
+            
+                <a href="../../../edge-flipper/">
+            
+                    
+                        <b>1.2.5.3.12.</b>
+                    
+                    Flipper edge reader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.13" data-path="../../../web/">
+            
+                <a href="../../../web/">
+            
+                    
+                        <b>1.2.5.3.13.</b>
+                    
+                    Web and crawler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.14" data-path="../../../runners/">
+            
+                <a href="../../../runners/">
+            
+                    
+                        <b>1.2.5.3.14.</b>
+                    
+                    Runners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.15" data-path="../../../networking/">
+            
+                <a href="../../../networking/">
+            
+                    
+                        <b>1.2.5.3.15.</b>
+                    
+                    Networking and address policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.16" data-path="../../../troubleshooting/">
+            
+                <a href="../../../troubleshooting/">
+            
+                    
+                        <b>1.2.5.3.16.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="../../../../deployment/">
+            
+                <a href="../../../../deployment/">
+            
+                    
+                        <b>1.2.5.4.</b>
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../../../../developer-guide/">
+            
+                <a href="../../../../../developer-guide/">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    Developer guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../../../../../developer-guide/connector-model/">
+            
+                <a href="../../../../../developer-guide/connector-model/">
+            
+                    
+                        <b>1.2.6.1.</b>
+                    
+                    Connector model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../../../../../developer-guide/api/">
+            
+                <a href="../../../../../developer-guide/api/">
+            
+                    
+                        <b>1.2.6.2.</b>
+                    
+                    gRPC API reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.2.1" data-path="../../../../../developer-guide/api/identity/">
+            
+                <a href="../../../../../developer-guide/api/identity/">
+            
+                    
+                        <b>1.2.6.2.1.</b>
+                    
+                    Identity, licences & landing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.2" data-path="../../../../../developer-guide/api/connections/">
+            
+                <a href="../../../../../developer-guide/api/connections/">
+            
+                    
+                        <b>1.2.6.2.2.</b>
+                    
+                    Configuration, connections & runners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.3" data-path="../../../../../developer-guide/api/fetch/">
+            
+                <a href="../../../../../developer-guide/api/fetch/">
+            
+                    
+                        <b>1.2.6.2.3.</b>
+                    
+                    Fetch & traces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.4" data-path="../../../../../developer-guide/api/twins/">
+            
+                <a href="../../../../../developer-guide/api/twins/">
+            
+                    
+                        <b>1.2.6.2.4.</b>
+                    
+                    Twins, simulation & claims
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.5" data-path="../../../../../developer-guide/api/analysis/">
+            
+                <a href="../../../../../developer-guide/api/analysis/">
+            
+                    
+                        <b>1.2.6.2.5.</b>
+                    
+                    Analysis, posture & rules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.6" data-path="../../../../../developer-guide/api/compliance/">
+            
+                <a href="../../../../../developer-guide/api/compliance/">
+            
+                    
+                        <b>1.2.6.2.6.</b>
+                    
+                    Compliance, finance & operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.7" data-path="../../../../../developer-guide/api/sql/">
+            
+                <a href="../../../../../developer-guide/api/sql/">
+            
+                    
+                        <b>1.2.6.2.7.</b>
+                    
+                    SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.8" data-path="../../../../../developer-guide/api/lineage-activity/">
+            
+                <a href="../../../../../developer-guide/api/lineage-activity/">
+            
+                    
+                        <b>1.2.6.2.8.</b>
+                    
+                    Lineage & activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.9" data-path="../../../../../developer-guide/api/vision/">
+            
+                <a href="../../../../../developer-guide/api/vision/">
+            
+                    
+                        <b>1.2.6.2.9.</b>
+                    
+                    CCTV, surveillance & documents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.10" data-path="../../../../../developer-guide/api/calling-support/">
+            
+                <a href="../../../../../developer-guide/api/calling-support/">
+            
+                    
+                        <b>1.2.6.2.10.</b>
+                    
+                    Calling & support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.11" data-path="../../../../../developer-guide/api/orchestrator/">
+            
+                <a href="../../../../../developer-guide/api/orchestrator/">
+            
+                    
+                        <b>1.2.6.2.11.</b>
+                    
+                    Agent orchestrator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.12" data-path="../../../../../developer-guide/api/metering-schedules/">
+            
+                <a href="../../../../../developer-guide/api/metering-schedules/">
+            
+                    
+                        <b>1.2.6.2.12.</b>
+                    
+                    Schedules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.13" data-path="../../../../../developer-guide/api/web-crm/">
+            
+                <a href="../../../../../developer-guide/api/web-crm/">
+            
+                    
+                        <b>1.2.6.2.13.</b>
+                    
+                    Crawler, metasearch & CRM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../../../../privacy/">
+            
+                <a href="../../../../../../privacy/">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    FACE app privacy policy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../../../../privacy/es/">
+            
+                <a href="../../../../../../privacy/es/">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    Política de privacidad de la app FACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../../../../privacy/fr-ca/">
+            
+                <a href="../../../../../../privacy/fr-ca/">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Politique de confidentialité de l'application FACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../../../../../privacy/pt-br/">
+            
+                <a href="../../../../../../privacy/pt-br/">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    Política de privacidade do app FACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../../../.." >PostgreSQL</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+    
+                                <h1 id="postgresql">PostgreSQL</h1>
+<!--
+SPDX-FileCopyrightText: 2026 Runink
+SPDX-License-Identifier: LicenseRef-Runink-Proprietary
+-->
+<blockquote>
+<p><strong>Warning:</strong> <strong>The test-estate safety rule: stand the test estate up only beside a test instance, never a production deployment.</strong> Its systems are throwaway test services with published credentials: <code>change-me</code> is every test credential. They are still encrypted and still ask for a login, because FACE refuses a connection that is not (see <a href="../../#connector-security">Connector security</a>). Use a scratch machine or a scratch cluster.</p>
+</blockquote>
+<p><strong>Grade A</strong> · dataset: SQL (DDL and rows in the engine's dialect) · type <code>postgres</code></p>
+<h2 id="what-it-is">What it is</h2>
+<p>A PostgreSQL database. In the test estate it is Quillmere's operational system, schema <code>ops</code>: customers and their delivery sites, warehouses (three distribution centres and a retail store), yards and docks; the item master (<code>ops.items</code>: every SKU with its name, category, EAN-13 and the words a camera or OCR reads off it); a year of orders, 2025-10-01 to 2026-09-29 with the 2025 holiday season in it, and the shipments that served them, leg by leg; the fleet, the site and yard equipment with their readings against stated limits, and the maintenance work orders; inventory, reorder policies and replenishment orders; route plans, their stops and their revisions; freight invoices, claims, their evidence and correspondence. The connector reference is <a href="../../../sql-warehouses/">SQL warehouses and databases</a>.</p>
+<h2 id="grade">Grade</h2>
+<p><strong>A.</strong> Open source. It stands up locally from the download, with the model and its rows, end to end. Any PostgreSQL 13 or later works; the dataset is verified on 16.15.</p>
+<p>See the <a href="../../#grades">grade table</a> for all 32 types.</p>
+<h2 id="settings-and-credentials">Settings and credentials</h2>
+<p>From the connection catalogue. Settings are ordinary fields on the connection record. Credentials are kept in a sealed bundle and never returned.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type</td>
+<td><code>postgres</code></td>
+</tr>
+<tr>
+<td>Other spellings that resolve</td>
+<td><code>postgresql</code></td>
+</tr>
+<tr>
+<td>Settings</td>
+<td><code>host</code>, <code>port</code>, <code>database</code>, <code>username</code>, <code>ssl_mode</code></td>
+</tr>
+<tr>
+<td>Credentials</td>
+<td><code>password</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-test-connection">The test connection</h3>
+<p><strong>Quillmere ops (Postgres)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Test value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>host</code></td>
+<td><code>pg.quillmere.invalid</code></td>
+</tr>
+<tr>
+<td><code>port</code></td>
+<td><code>5432</code></td>
+</tr>
+<tr>
+<td><code>database</code></td>
+<td><code>quillmere_ops</code></td>
+</tr>
+<tr>
+<td><code>username</code></td>
+<td><code>face_reader</code></td>
+</tr>
+<tr>
+<td><code>ssl_mode</code></td>
+<td><code>require</code></td>
+</tr>
+</tbody>
+</table>
+<p>Credentials: <code>password</code>. In the test estate, every credential is <code>change-me</code>. Credentials are write-only: they go into the sealed credential bundle and are never returned.</p>
+<h2 id="stand-up-the-test-system">Stand up the test system</h2>
+<p>The safety rule at the top of this page comes first: a scratch machine or a scratch cluster, never a production or platform one.</p>
+<ol>
+<li>Download <a href="https://docs.runink.org/downloads/connections/postgres.zip" target="_blank"><code>postgres.zip</code></a> and unzip it. It holds <code>postgres/01_schema.sql</code>, the rows in <code>postgres/02_data_01.sql</code> to <code>postgres/02_data_16.sql</code> (load them in name order), and <code>postgres/expected.json</code>.</li>
+<li><p>Start a scratch PostgreSQL 13 or later with TLS on, because <code>ssl_mode</code> <code>require</code> needs it. The official image ships a self-signed certificate you can use for a test:</p>
+<pre><code class="lang-bash">docker run --<span class="hljs-built_in">rm</span> -e POSTGRES_PASSWORD=change-me -p 5432:5432 postgres:16 \
+  -c ssl=on \
+  -c ssl_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem \
+  -c ssl_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+</code></pre>
+</li>
+<li><p>Create the database and the reader role, then load the schema and the rows, in that order:</p>
+<pre><code class="lang-bash">psql -h localhost -U postgres -c <span class="hljs-string">"CREATE DATABASE quillmere_ops"</span>
+psql -h localhost -U postgres -c <span class="hljs-string">"CREATE ROLE face_reader LOGIN PASSWORD 'change-me'"</span>
+psql -h localhost -U postgres -d quillmere_ops -f postgres/01_schema.sql $(<span class="hljs-keyword">for</span> f <span class="hljs-keyword">in</span> postgres/02_data_*.sql; <span class="hljs-keyword">do</span> <span class="hljs-built_in">printf</span> -- <span class="hljs-string">'-f %s '</span> <span class="hljs-string">"<span class="hljs-variable">$f</span>"</span>; <span class="hljs-keyword">done</span>)
+psql -h localhost -U postgres -d quillmere_ops -c <span class="hljs-string">"GRANT USAGE ON SCHEMA ops TO face_reader; GRANT SELECT ON ALL TABLES IN SCHEMA ops TO face_reader"</span>
+</code></pre>
+</li>
+<li>Add the connection with the settings above, as <a href="#create-it-in-the-console">Create it in the Console</a> shows. Replace <code>pg.quillmere.invalid</code> with the address of your scratch engine: a <code>.invalid</code> name never resolves.</li>
+</ol>
+<h2 id="create-it-in-the-console">Create it in the Console</h2>
+<p>The screens below were taken on a live instance, adding the quickstart's database as Runink hosts it. Your host is your scratch engine's address; every other value is the test connection's.</p>
+<ol>
+<li>Open <strong>Settings › Integrations › Systems</strong> and select <strong>New connection</strong>.</li>
+<li><p><strong>Source:</strong> under <strong>Warehouses &amp; databases</strong>, select <strong>PostgreSQL</strong>, then <strong>Next</strong>.</p>
+<p><img src="../../../../../../images/connections/postgres-1-source.jpg" alt="The PostgreSQL card selected in the source catalog"></img></p>
+</li>
+<li><p><strong>Details:</strong> fill in the settings.</p>
+<p>| Field | Value |
+|---|---|
+| <strong>Connection name</strong> | a name you will recognise, for example <code>Quillmere ops (PostgreSQL)</code>; the <strong>Id</strong> follows it |
+| <strong>Environment</strong> | where this source lives, for example <code>dev</code> or <code>staging</code> |
+| <strong>Host / endpoint</strong> | your engine's address |
+| <strong>Port</strong> | <code>5432</code> |
+| <strong>Database name</strong> | <code>quillmere_ops</code> |
+| <strong>User</strong> | <code>face_reader</code> |
+| <strong>Ssl mode</strong> | <code>require</code> (encrypt, do not verify the certificate). Use a verifying mode when the engine's certificate is from a CA your runner trusts. FACE refuses <code>disable</code>, <code>allow</code>, <code>prefer</code> and an unset mode. |</p>
+<p><img src="../../../../../../images/connections/postgres-2-details.jpg" alt="Step 2, Details: host, port, database, user and the encryption in transit"></img></p>
+</li>
+<li><p>Scroll to <strong>Credentials</strong> and enter the reader's <strong>Password</strong>. It is sealed when you save and never shown again.</p>
+<p><img src="../../../../../../images/connections/postgres-2-credentials.jpg" alt="The Credentials section with the write-only Password field"></img></p>
+</li>
+<li><p><strong>Runner:</strong> keep <strong>Runink managed</strong>, or pick a registered runner that can reach the engine, then <strong>Next</strong>.</p>
+</li>
+<li><p><strong>Review:</strong> check the values. <strong>Credentials</strong> reads <strong>none entered</strong> until you type the password in step 4. Keep <strong>Test after saving</strong> ticked and select <strong>Test &amp; save</strong>.</p>
+<p><img src="../../../../../../images/connections/postgres-4-review.jpg" alt="Step 4, Review: every value before saving"></img></p>
+</li>
+</ol>
+<p>The new connection appears in the list with a <strong>credential stored</strong> chip and the test's result. It shows as a source on Ask and in every brief's source list. To read it, see <a href="../../../../../user-guide/ask/">Ask</a>.</p>
+<h2 id="what-face-finds">What FACE finds</h2>
+<p>FACE reads the catalogue: <code>information_schema</code>, with the declared primary and foreign keys, every <code>COMMENT ON</code> table, view and column as the dataset's and field's description, and each view's definition (<code>pg_get_viewdef</code>). Partitions and relations an extension owns (such as <code>pg_stat_statements</code>' views) are not listed as datasets; the discovery says how many were left out. A test loads this dataset into an empty engine, runs FACE's discovery, and compares the result with the expected model (<code>TestSynthUniverseDiscoveryMatchesExpected</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Kind</th>
+<th>Domain</th>
+<th>Primary key</th>
+<th>Rows</th>
+<th>Fields</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ops.customers</code></td>
+<td>table</td>
+<td>customers</td>
+<td><code>customer_id</code></td>
+<td>7</td>
+<td>5</td>
+</tr>
+<tr>
+<td><code>ops.customer_sites</code></td>
+<td>table</td>
+<td>customers</td>
+<td><code>site_id</code></td>
+<td>18</td>
+<td>11</td>
+</tr>
+<tr>
+<td><code>ops.warehouses</code></td>
+<td>table</td>
+<td>warehouse_ops</td>
+<td><code>warehouse_id</code></td>
+<td>4</td>
+<td>11</td>
+</tr>
+<tr>
+<td><code>ops.yards</code></td>
+<td>table</td>
+<td>yard</td>
+<td><code>yard_id</code></td>
+<td>4</td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>ops.docks</code></td>
+<td>table</td>
+<td>warehouse_ops</td>
+<td><code>dock_id</code></td>
+<td>9</td>
+<td>5</td>
+</tr>
+<tr>
+<td><code>ops.items</code></td>
+<td>table</td>
+<td>product_catalog</td>
+<td><code>sku_id</code></td>
+<td>22</td>
+<td>5</td>
+</tr>
+<tr>
+<td><code>ops.orders</code></td>
+<td>table</td>
+<td>orders</td>
+<td><code>order_id</code></td>
+<td>4736</td>
+<td>6</td>
+</tr>
+<tr>
+<td><code>ops.order_lines</code></td>
+<td>table</td>
+<td>orders</td>
+<td><code>order_id</code>, <code>line_no</code></td>
+<td>7793</td>
+<td>5</td>
+</tr>
+<tr>
+<td><code>ops.transfer_hubs</code></td>
+<td>table</td>
+<td>shipments</td>
+<td><code>hub_id</code></td>
+<td>9</td>
+<td>9</td>
+</tr>
+<tr>
+<td><code>ops.suppliers</code></td>
+<td>table</td>
+<td>inventory</td>
+<td><code>supplier_id</code></td>
+<td>8</td>
+<td>7</td>
+</tr>
+<tr>
+<td><code>ops.supplier_items</code></td>
+<td>table</td>
+<td>inventory</td>
+<td><code>supplier_id</code>, <code>sku_id</code></td>
+<td>26</td>
+<td>7</td>
+</tr>
+<tr>
+<td><code>ops.vehicles</code></td>
+<td>table</td>
+<td>telematics</td>
+<td><code>vehicle_id</code></td>
+<td>49</td>
+<td>14</td>
+</tr>
+<tr>
+<td><code>ops.vehicle_shifts</code></td>
+<td>table</td>
+<td>telematics</td>
+<td><code>shift_id</code></td>
+<td>270</td>
+<td>5</td>
+</tr>
+<tr>
+<td><code>ops.vehicle_positions</code></td>
+<td>table</td>
+<td>telematics</td>
+<td><code>vehicle_id</code>, <code>observed_at</code></td>
+<td>1728</td>
+<td>7</td>
+</tr>
+<tr>
+<td><code>ops.site_assets</code></td>
+<td>table</td>
+<td>warehouse_ops</td>
+<td><code>asset_id</code></td>
+<td>51</td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>ops.asset_channels</code></td>
+<td>table</td>
+<td>warehouse_ops</td>
+<td><code>channel_id</code></td>
+<td>183</td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>ops.asset_readings</code></td>
+<td>table</td>
+<td>warehouse_ops</td>
+<td><code>channel_id</code>, <code>read_at</code></td>
+<td>12124</td>
+<td>3</td>
+</tr>
+<tr>
+<td><code>ops.maintenance_work_orders</code></td>
+<td>table</td>
+<td>warehouse_ops</td>
+<td><code>work_order_id</code></td>
+<td>391</td>
+<td>12</td>
+</tr>
+<tr>
+<td><code>ops.shipments</code></td>
+<td>table</td>
+<td>shipments</td>
+<td><code>shipment_id</code></td>
+<td>3351</td>
+<td>26</td>
+</tr>
+<tr>
+<td><code>ops.shipment_legs</code></td>
+<td>table</td>
+<td>shipments</td>
+<td><code>shipment_id</code>, <code>leg_no</code></td>
+<td>3663</td>
+<td>18</td>
+</tr>
+<tr>
+<td><code>ops.reefer_readings</code></td>
+<td>table</td>
+<td>cold_chain</td>
+<td><code>shipment_id</code>, <code>leg_no</code>, <code>read_at</code></td>
+<td>2632</td>
+<td>6</td>
+</tr>
+<tr>
+<td><code>ops.temperature_excursions</code></td>
+<td>table</td>
+<td>cold_chain</td>
+<td><code>excursion_id</code></td>
+<td>31</td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>ops.inventory_positions</code></td>
+<td>table</td>
+<td>inventory</td>
+<td><code>sku_id</code>, <code>warehouse_id</code></td>
+<td>64</td>
+<td>11</td>
+</tr>
+<tr>
+<td><code>ops.reorder_policies</code></td>
+<td>table</td>
+<td>inventory</td>
+<td><code>sku_id</code>, <code>warehouse_id</code></td>
+<td>54</td>
+<td>16</td>
+</tr>
+<tr>
+<td><code>ops.replenishment_orders</code></td>
+<td>table</td>
+<td>inventory</td>
+<td><code>replenishment_id</code></td>
+<td>1066</td>
+<td>14</td>
+</tr>
+<tr>
+<td><code>ops.route_plans</code></td>
+<td>table</td>
+<td>shipments</td>
+<td><code>route_plan_id</code>, <code>plan_version</code></td>
+<td>172</td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>ops.route_stops</code></td>
+<td>table</td>
+<td>shipments</td>
+<td><code>stop_id</code></td>
+<td>757</td>
+<td>21</td>
+</tr>
+<tr>
+<td><code>ops.route_plan_revisions</code></td>
+<td>table</td>
+<td>shipments</td>
+<td><code>revision_id</code></td>
+<td>20</td>
+<td>14</td>
+</tr>
+<tr>
+<td><code>ops.freight_invoices</code></td>
+<td>table</td>
+<td>freight_audit</td>
+<td><code>invoice_id</code></td>
+<td>3308</td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>ops.claims</code></td>
+<td>table</td>
+<td>claims</td>
+<td><code>claim_id</code></td>
+<td>235</td>
+<td>12</td>
+</tr>
+<tr>
+<td><code>ops.claim_evidence</code></td>
+<td>table</td>
+<td>claims</td>
+<td><code>evidence_id</code></td>
+<td>822</td>
+<td>6</td>
+</tr>
+<tr>
+<td><code>ops.claim_messages</code></td>
+<td>table</td>
+<td>claims</td>
+<td><code>message_id</code></td>
+<td>712</td>
+<td>7</td>
+</tr>
+<tr>
+<td><code>ops.remediation_orders</code></td>
+<td>table</td>
+<td>claims</td>
+<td><code>remediation_id</code></td>
+<td>56</td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>ops.yard_moves</code></td>
+<td>table</td>
+<td>yard</td>
+<td><code>move_id</code></td>
+<td>418</td>
+<td>9</td>
+</tr>
+<tr>
+<td><code>ops.gate_events</code></td>
+<td>table</td>
+<td>yard</td>
+<td><code>event_id</code></td>
+<td>408</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p>The tables of schema <code>recovery</code> (read by the connection <code>postgres-recovery</code>, not by <code>postgres-operations</code>) are described in <a href="../../../../../overview/sustainability-dangerous-goods-luxury/">Dangerous goods and luxury assets</a>; their row counts are the generator's (<code>TestSynthOpsRecoveryTables</code>) and are not restated here.</p>
+<p>Every table declares its primary key, and the relations are declared foreign keys: an order to its customer and warehouse, a shipment to its order, origin warehouse, destination site, dock and tractor, a leg and its reefer readings to their shipment, a channel's readings to the channel, a policy and a replenishment order to the supplier's item, a stop to its plan version and shipment, a revision to the plan version it produced and to the revision that triggered it, evidence and messages to their claim. <code>expected.json</code> lists every one.</p>
+<h3 id="what-the-rows-let-face-show">What the rows let FACE show</h3>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Tables</th>
+<th>What FACE does with them</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Routes</td>
+<td><code>shipments</code> (<code>origin_warehouse_id</code>, <code>dest_site_id</code>, <code>status</code>, <code>transport_mode</code>, <code>temp_min_c</code>/<code>temp_max_c</code>), <code>customer_sites</code> (<code>lat</code>/<code>lon</code>)</td>
+<td>the run's routes phase draws every pending shipment from its warehouse to its customer site, with the tightest temperature band the routed shipments state</td>
+</tr>
+<tr>
+<td>Reactive fulfilment</td>
+<td><code>inventory_positions</code> (<code>on_hand</code>, <code>available</code>, <code>lead_time_days</code>), <code>orders</code> + <code>order_lines</code></td>
+<td>the site page computes safety stock and a reorder point per item from the lead time, the daily demand and the cycle-service level your organisation sets in Admin, and shows the items under it after the last demand spike</td>
+</tr>
+<tr>
+<td>Fleet planning</td>
+<td><code>route_stops</code> (a dispatch feed's columns: <code>vehicle_id</code>, <code>stop_sequence</code>, <code>latitude</code>/<code>longitude</code>, <code>demand_kg</code>, <code>vehicle_capacity_kg</code>, <code>planning_speed_kmh</code>, <code>window_start</code>/<code>window_end</code>, <code>temperature_min_c</code>/<code>max_c</code>), <code>vehicles</code> (status, capacity, reefer capability), <code>vehicle_shifts</code></td>
+<td>the fleet planner's stops, beside the GPS fixes of the live fleet topic</td>
+</tr>
+<tr>
+<td>Recursive re-plans</td>
+<td><code>route_plan_revisions</code> (<code>trigger_kind</code>, <code>triggered_by_revision_id</code>, <code>legs_before</code>/<code>legs_after</code>)</td>
+<td>the history of re-plans, an excursion's re-plan triggering a delay re-plan, a reassignment and the receiving plan's re-plan</td>
+</tr>
+<tr>
+<td>Predictive maintenance</td>
+<td><code>site_assets</code>, <code>asset_channels</code> (each limit and its source), <code>asset_readings</code>, <code>maintenance_work_orders</code></td>
+<td>30 days of readings to check a projection against what happened; the live readings are on the Kafka equipment topic</td>
+</tr>
+<tr>
+<td>Cold chain</td>
+<td><code>shipment_legs</code> (band per leg), <code>reefer_readings</code>, <code>temperature_excursions</code></td>
+<td>time out of band per leg</td>
+</tr>
+<tr>
+<td>Claims</td>
+<td><code>claims</code>, <code>claim_evidence</code>, <code>claim_messages</code> (sent, replied, resolved, closed), <code>remediation_orders</code></td>
+<td>follow a claim from filing to close</td>
+</tr>
+<tr>
+<td>Item lookup</td>
+<td><code>items</code> (<code>name</code>, <code>category</code>, <code>aliases</code>, <code>ean</code>), <code>inventory_positions</code></td>
+<td>find an item by the word a detector or OCR produces (<code>teddy bear</code>, <code>pikachu</code>, <code>husky</code>) or by its EAN-13, then its stock at each warehouse</td>
+</tr>
+<tr>
+<td>The 2025 holiday season</td>
+<td><code>orders</code> + <code>order_lines</code> from 2025-10-01, <code>replenishment_orders</code>, <code>route_plans</code>, <code>route_plan_revisions</code></td>
+<td>a season to forecast the next from: the toy line's lift from November to Christmas (the teddy bear steady, the Pikachu plush breaking out, the husky plush running out on its 24-day supplier lead time), a smaller lift on household items, the peak-season replenishment orders, and the <code>demand_spike</code> re-plans of Black Friday week and the pre-Christmas peak</td>
+</tr>
+<tr>
+<td>The store's window</td>
+<td><code>warehouses</code> (the store <code>ST-NAPERVILLE</code>: Naperville, IL, US, with <code>lat</code>/<code>lon</code>), its <code>orders</code> + <code>order_lines</code> (point-of-sale tickets), <code>inventory_positions</code>, <code>replenishment_orders</code>, <code>items</code>, <code>supplier_items</code></td>
+<td>a retail store to arrange a shop window for: a spring-2025 Easter line received in March and April 2025 and selling down through 2026 (past collection: months of cover, sales now under 0.8 of the four weeks before), the Pikachu and unicorn plush rising through August and September, and tickets that carry both, so a bundle's evidence is in the store's own baskets</td>
+</tr>
+<tr>
+<td>Dangerous goods and luxury assets</td>
+<td>schema <code>recovery</code>: <code>goods</code> (UN numbers, hazard classes, packing groups; serialised watches, handbags, jewellery, wine, art), <code>mode_rules</code>, <code>consignments</code> + <code>legs</code> (road, rail and sea), <code>sensor_readings</code>, <code>incidents</code>, <code>declarations</code>, <code>loss_claims</code>, <code>facilities</code>, <code>reverse_orders</code>, <code>custody_events</code>, <code>disposal_certificates</code>, <code>environmental_report</code>, and the trade side <code>trade_measures</code>, <code>trade_exposures</code>, <code>trade_lanes</code>, <code>trade_providers</code>, <code>trade_suppliers</code>, <code>trade_responses</code>; the goods are also rows of <code>ops.items</code></td>
+<td>which hazardous and high-value shipments are at risk right now, what happened to each, the nearest facility whose licence was valid on the day, and the certificates and report rows that close the loop. Read by the connection <code>postgres-recovery</code> as its own role, because <code>face_reader</code> already sees the 40 tables a fetch sweeps in <code>ops</code>. See <a href="../../../../../overview/sustainability-dangerous-goods-luxury/">Dangerous goods and luxury assets</a></td>
+</tr>
+</tbody>
+</table>
+<p>Late deliveries, invoices over the contracted rate and claims filed past the carrier's window occur at about 15%, 12% and 15%. About one asset in twelve has a service overdue.</p>
+<h3 id="where-the-sites-are">Where the sites are</h3>
+<p><code>ops.warehouses</code> and <code>ops.yards</code> give every warehouse and yard a postal address and coordinates, so a fetch of this source puts them on the twins Map: FACE writes a Site entity for each row, placed by the coordinates the row states (<code>lat</code>/<code>lon</code> on warehouses, <code>latitude</code>/<code>longitude</code> on yards), with the address and the docks of <code>ops.docks</code> on its page. FACE never geocodes an address: a site with only an address is listed, not placed.</p>
+<p>The customer delivery sites (<code>ops.customer_sites</code>), the suppliers and the carriers' depots stand at <strong>real city centroids</strong>: the U.S. Census Bureau's 2024 Gazetteer internal point of an Illinois or Indiana city, with no street address. FACE places a destination at the coordinates the row states.</p>
+<p>The distribution centres are <strong>authored for this quickstart, not measured</strong>. The cities, postal codes and coordinates are real places, a point in an industrial district of each city, so the Map puts each site somewhere true. No street address is a real business's.</p>
+<table>
+<thead>
+<tr>
+<th>Site</th>
+<th>Address</th>
+<th>Latitude, longitude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>WH-NORTH</code> Quillmere North DC</td>
+<td>2250 Wexcombe Parkway, Elk Grove Village, IL 60007, US</td>
+<td>42.0031, -87.9706</td>
+</tr>
+<tr>
+<td><code>YARD-NORTH</code> Quillmere North Yard</td>
+<td>2290 Wexcombe Parkway, Elk Grove Village, IL 60007, US</td>
+<td>42.0043, -87.9689</td>
+</tr>
+<tr>
+<td><code>WH-EAST</code> Quillmere East DC</td>
+<td>4100 Harlowfield Drive, Plainfield, IN 46168, US</td>
+<td>39.7148, -86.3417</td>
+</tr>
+<tr>
+<td><code>YARD-EAST</code> Quillmere East Yard</td>
+<td>4150 Harlowfield Drive, Plainfield, IN 46168, US</td>
+<td>39.716, -86.3399</td>
+</tr>
+<tr>
+<td><code>WH-SOUTH</code> Quillmere South DC</td>
+<td>7300 Ostley Commerce Road, Edwardsville, IL 62025, US</td>
+<td>38.7742, -90.0389</td>
+</tr>
+<tr>
+<td><code>YARD-SOUTH</code> Quillmere South Yard</td>
+<td>7340 Ostley Commerce Road, Edwardsville, IL 62025, US</td>
+<td>38.7754, -90.0371</td>
+</tr>
+</tbody>
+</table>
+<p>The same sites, with the same addresses and coordinates, are in <a href="../../logistics/whs/">whs</a> (<code>facility</code>) and <a href="../../logistics/yms/">yms</a> (<code>yards</code>).</p>
+<p><code>expected.json</code> in the download has the full model: every field with its logical type, the source's native type and nullability.</p>
+<h2 id="how-it-joins-the-quillmere-universe">How it joins the Quillmere universe</h2>
+<p>This source carries 12 of the universe's shared keys. The same ID means the same thing in every source: a shipment here is the same shipment in the database, the event bus, the GPS track and the claim PDF.</p>
+<table>
+<thead>
+<tr>
+<th>Universe entity</th>
+<th>Fields here</th>
+<th>Also in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>asn</td>
+<td><code>shipments.asn_id</code></td>
+<td><a href="../../logistics/logisticsapi/">logisticsapi</a>, <a href="../../logistics/whs/">whs</a></td>
+</tr>
+<tr>
+<td>carrier</td>
+<td><code>shipments.carrier_id</code></td>
+<td><a href="../../business-apps/d365/">d365</a>, <a href="../../files/document/">document</a>, <a href="../../files/files/">files</a>, <a href="../../business-apps/guidewire/">guidewire</a>, <a href="../mysql/">mysql</a>, <a href="../../files/objectstore/">objectstore</a>, <a href="../redshift/">redshift</a>, <a href="../../business-apps/sharepoint/">sharepoint</a>, <a href="../../logistics/tms/">tms</a>, <a href="../../logistics/yms/">yms</a></td>
+</tr>
+<tr>
+<td>customer</td>
+<td><code>customers.customer_id</code>, <code>orders.customer_id</code></td>
+<td><a href="../../files/files/">files</a>, <a href="../../business-apps/hubspot/">hubspot</a>, <a href="../../streams/kafka/">kafka</a>, <a href="../../logistics/oms/">oms</a>, <a href="../redshift/">redshift</a>, <a href="../../business-apps/salesforce/">salesforce</a>, <a href="../../business-apps/sap/">sap</a>, <a href="../snowflake/">snowflake</a></td>
+</tr>
+<tr>
+<td>customer_po</td>
+<td><code>orders.customer_po</code></td>
+<td><a href="../../files/files/">files</a>, <a href="../../business-apps/hubspot/">hubspot</a>, <a href="../../streams/kafka/">kafka</a>, <a href="../../logistics/oms/">oms</a>, <a href="../snowflake/">snowflake</a></td>
+</tr>
+<tr>
+<td>device</td>
+<td><code>docks.camera_id</code>, <code>docks.rfid_reader_id</code></td>
+<td><a href="../bigquery/">bigquery</a>, <a href="../../streams/cctv/">cctv</a>, <a href="../databricks/">databricks</a>, <a href="../../files/files/">files</a>, <a href="../../streams/gps/">gps</a>, <a href="../../streams/iot/">iot</a>, <a href="../../streams/kafka/">kafka</a>, <a href="../../streams/mqtt/">mqtt</a>, <a href="../../streams/rfid/">rfid</a>, <a href="../../business-apps/servicenow/">servicenow</a></td>
+</tr>
+<tr>
+<td>dock</td>
+<td><code>docks.dock_id</code>, <code>shipments.dock_id</code></td>
+<td><a href="../../streams/cctv/">cctv</a>, <a href="../../files/excel/">excel</a>, <a href="../../files/files/">files</a>, <a href="../../streams/kafka/">kafka</a>, <a href="../../logistics/logisticsapi/">logisticsapi</a>, <a href="../../streams/sensorgateway/">sensorgateway</a>, <a href="../../logistics/whs/">whs</a>, <a href="../../logistics/yms/">yms</a></td>
+</tr>
+<tr>
+<td>order</td>
+<td><code>order_lines.order_id</code>, <code>orders.order_id</code>, <code>shipments.order_id</code></td>
+<td><a href="../../files/document/">document</a>, <a href="../../files/files/">files</a>, <a href="../../business-apps/hubspot/">hubspot</a>, <a href="../../streams/kafka/">kafka</a>, <a href="../../logistics/oms/">oms</a>, <a href="../../business-apps/sap/">sap</a>, <a href="../snowflake/">snowflake</a></td>
+</tr>
+<tr>
+<td>shipment</td>
+<td><code>shipments.shipment_id</code></td>
+<td><a href="../bigquery/">bigquery</a>, <a href="../../business-apps/d365/">d365</a>, <a href="../databricks/">databricks</a>, <a href="../../files/document/">document</a>, <a href="../../files/excel/">excel</a>, <a href="../../files/files/">files</a>, <a href="../../business-apps/github/">github</a>, <a href="../../business-apps/guidewire/">guidewire</a>, <a href="../../streams/iot/">iot</a>, <a href="../../streams/kafka/">kafka</a>, <a href="../../logistics/logisticsapi/">logisticsapi</a>, <a href="../../streams/mqtt/">mqtt</a>, <a href="../mysql/">mysql</a>, <a href="../../files/objectstore/">objectstore</a>, <a href="../redshift/">redshift</a>, <a href="../../business-apps/salesforce/">salesforce</a>, <a href="../../business-apps/sap/">sap</a>, <a href="../../business-apps/servicenow/">servicenow</a>, <a href="../../business-apps/sharepoint/">sharepoint</a>, <a href="../../logistics/tms/">tms</a>, <a href="../../logistics/whs/">whs</a>, <a href="../../logistics/yms/">yms</a></td>
+</tr>
+<tr>
+<td>sku</td>
+<td><code>order_lines.sku_id</code></td>
+<td><a href="../../logistics/ims/">ims</a>, <a href="../../logistics/inventory/">inventory</a>, <a href="../../logistics/logisticsapi/">logisticsapi</a>, <a href="../../logistics/oms/">oms</a>, <a href="../../business-apps/sap/">sap</a>, <a href="../snowflake/">snowflake</a></td>
+</tr>
+<tr>
+<td>trailer</td>
+<td><code>shipments.trailer_id</code></td>
+<td><a href="../../streams/cctv/">cctv</a>, <a href="../databricks/">databricks</a>, <a href="../../files/document/">document</a>, <a href="../../files/excel/">excel</a>, <a href="../../streams/iot/">iot</a>, <a href="../../streams/kafka/">kafka</a>, <a href="../../streams/mqtt/">mqtt</a>, <a href="../../business-apps/servicenow/">servicenow</a>, <a href="../../logistics/tms/">tms</a>, <a href="../../logistics/yms/">yms</a></td>
+</tr>
+<tr>
+<td>warehouse</td>
+<td><code>docks.warehouse_id</code>, <code>orders.warehouse_id</code>, <code>warehouses.warehouse_id</code>, <code>yards.warehouse_id</code></td>
+<td><a href="../../logistics/inventory/">inventory</a>, <a href="../../logistics/oms/">oms</a>, <a href="../redshift/">redshift</a>, <a href="../../logistics/tms/">tms</a>, <a href="../../logistics/whs/">whs</a>, <a href="../../logistics/yms/">yms</a></td>
+</tr>
+<tr>
+<td>yard</td>
+<td><code>warehouses.yard_id</code>, <code>yards.yard_id</code></td>
+<td><a href="../../logistics/yms/">yms</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Evidence it holds for the planted anomalies:</strong></p>
+<ul>
+<li><strong>ANOM-4, A duplicate customer PO.</strong> <code>postgres/02_data_01.sql</code> in <code>postgres.zip</code>, look for <code>'PO-0002-4194'</code> (two order rows).</li>
+</ul>
+<p>See <a href="../../all-connectors/">all connectors at once</a> for the walkthrough across every source.</p>
+<h2 id="download">Download</h2>
+<ul>
+<li><a href="https://docs.runink.org/downloads/connections/postgres.zip" target="_blank"><code>postgres.zip</code></a>: 18 files, <code>expected.json</code> included.</li>
+</ul>
+<p>This is one of 25 zips: the 7 streaming types ship as replay recordings instead.</p>
+<details><summary>What is in the zip</summary>
+
+- `postgres/01_schema.sql`
+- `postgres/02_data_01.sql` to `postgres/02_data_16.sql`
+- `postgres/expected.json`
+
+</details>
+
+<p>The whole universe is <a href="https://docs.runink.org/downloads/connections/universe.json" target="_blank"><code>universe.json</code></a>. <a href="https://docs.runink.org/downloads/connections/manifest.json" target="_blank"><code>manifest.json</code></a> lists every download with its size and SHA-256, and <a href="https://docs.runink.org/downloads/connections/SHA256SUMS" target="_blank"><code>SHA256SUMS</code></a> is the same list for <code>sha256sum -c</code>.</p>
+
+                                
+    
+    <footer class="runink-footer" role="contentinfo">
+        <img class="runink-brand" src="../../../../../../_brand/logo.png" alt="">
+        
+    </footer>
+    
+
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Databases & warehouses">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../mysql/" class="navigation navigation-next " aria-label="Next page: MySQL">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    
+    <script type="application/json" id="honkit-page-context">{"page":{"title":"PostgreSQL","level":"1.2.5.3.2.2.1","depth":6,"next":{"title":"MySQL","level":"1.2.5.3.2.2.2","depth":6,"path":"docs/admin-guide/data-sources/quickstarts/databases/mysql/README.md","ref":"docs/admin-guide/data-sources/quickstarts/databases/mysql/README.md","articles":[]},"previous":{"title":"Databases & warehouses","level":"1.2.5.3.2.2","depth":5,"path":"docs/admin-guide/data-sources/quickstarts/databases/README.md","ref":"docs/admin-guide/data-sources/quickstarts/databases/README.md","articles":[{"title":"PostgreSQL","level":"1.2.5.3.2.2.1","depth":6,"path":"docs/admin-guide/data-sources/quickstarts/databases/postgres/README.md","ref":"docs/admin-guide/data-sources/quickstarts/databases/postgres/README.md","articles":[]},{"title":"MySQL","level":"1.2.5.3.2.2.2","depth":6,"path":"docs/admin-guide/data-sources/quickstarts/databases/mysql/README.md","ref":"docs/admin-guide/data-sources/quickstarts/databases/mysql/README.md","articles":[]},{"title":"Snowflake","level":"1.2.5.3.2.2.3","depth":6,"path":"docs/admin-guide/data-sources/quickstarts/databases/snowflake/README.md","ref":"docs/admin-guide/data-sources/quickstarts/databases/snowflake/README.md","articles":[]},{"title":"Databricks","level":"1.2.5.3.2.2.4","depth":6,"path":"docs/admin-guide/data-sources/quickstarts/databases/databricks/README.md","ref":"docs/admin-guide/data-sources/quickstarts/databases/databricks/README.md","articles":[]},{"title":"Amazon Redshift","level":"1.2.5.3.2.2.5","depth":6,"path":"docs/admin-guide/data-sources/quickstarts/databases/redshift/README.md","ref":"docs/admin-guide/data-sources/quickstarts/databases/redshift/README.md","articles":[]},{"title":"Google BigQuery","level":"1.2.5.3.2.2.6","depth":6,"path":"docs/admin-guide/data-sources/quickstarts/databases/bigquery/README.md","ref":"docs/admin-guide/data-sources/quickstarts/databases/bigquery/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","runink-copy"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"lunr":{"maxIndexSize":100000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"runink-copy":{},"highlight":{},"search":{}},"theme":"default","author":"Runink","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"logo":"_brand/logo.png","siteURL":"https://docs.runink.org/face/"},"title":"FACE Documentation","language":"en","gitbook":"7.0.1","description":"FACE by Runink (Fulfilment Autonomous Claims Engine) is Runink's sovereign operational-intelligence product: it connects to your warehouses, ERPs, telematics, sensors and cameras, reasons over them with models Runink runs for you or that you host (never a third-party AI service), and produces…"},"file":{"path":"docs/admin-guide/data-sources/quickstarts/databases/postgres/README.md","mtime":"","type":"markdown"},"gitbook":{"version":"7.0.1","time":""},"basePath":"../../../../../..","book":{"language":""}}</script>
+</div>
+
+        
+    <noscript>
+        <link rel="stylesheet" href="../../../../../../gitbook/noscript.css">
+    </noscript>
+    
+    <script src="../../../../../../gitbook/boot.js"></script>
+    
+    <script src="../../../../../../gitbook/gitbook.js" defer></script>
+    <script src="../../../../../../gitbook/theme.js" defer></script>
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-runink-copy/copy.js" defer></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-search/search-engine.js" defer></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-search/search.js" defer></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/@honkit/honkit-plugin-lunr/lunr.min.js" defer></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/@honkit/honkit-plugin-lunr/search-lunr.js" defer></script>
+        
+    
+
+    </body>
+</html>
+

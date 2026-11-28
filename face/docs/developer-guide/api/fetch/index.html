@@ -1,0 +1,4117 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Fetch & traces · FACE Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 7.0.1">
+        <meta name="author" content="Runink">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-runink-copy/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../twins/" />
+    
+    
+    <link rel="prev" href="../connections/" />
+    
+
+    
+    
+    <meta property="og:site_name" content="FACE Documentation">
+    <meta property="og:title" content="Fetch & traces">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="FACE by Runink (Fulfilment Autonomous Claims Engine) is Runink's sovereign operational-intelligence product: it connects to your warehouses, ERPs, telematics, sensors and cameras, reasons over them with models Runink runs for you or that you host (never a third-party AI service), and produces…">
+    <meta name="twitter:title" content="Fetch & traces">
+    <meta name="twitter:description" content="FACE by Runink (Fulfilment Autonomous Claims Engine) is Runink's sovereign operational-intelligence product: it connects to your warehouses, ERPs, telematics, sensors and cameras, reasons over them with models Runink runs for you or that you host (never a third-party AI service), and produces…">
+    
+    <meta name="twitter:card" content="summary">
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak font-size-2 font-family-1 color-theme-2">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    FACE Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../overview/">
+            
+                <a href="../../../overview/">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../../overview/what-is-face/">
+            
+                <a href="../../../overview/what-is-face/">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    What FACE is
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../../overview/sustainability-dangerous-goods-luxury/">
+            
+                <a href="../../../overview/sustainability-dangerous-goods-luxury/">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    Sustainability: dangerous goods and luxury assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../concepts/">
+            
+                <a href="../../../concepts/">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../../concepts/fetch-pipeline/">
+            
+                <a href="../../../concepts/fetch-pipeline/">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    Fetch pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../../concepts/sovereign-models/">
+            
+                <a href="../../../concepts/sovereign-models/">
+            
+                    
+                        <b>1.2.2.2.</b>
+                    
+                    Sovereign models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../../concepts/structured-output/">
+            
+                <a href="../../../concepts/structured-output/">
+            
+                    
+                        <b>1.2.2.3.</b>
+                    
+                    Structured output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../../concepts/grounding/">
+            
+                <a href="../../../concepts/grounding/">
+            
+                    
+                        <b>1.2.2.4.</b>
+                    
+                    Grounding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../../../concepts/evidence-documents/">
+            
+                <a href="../../../concepts/evidence-documents/">
+            
+                    
+                        <b>1.2.2.5.</b>
+                    
+                    Evidence documents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../../../concepts/action-cards-and-money/">
+            
+                <a href="../../../concepts/action-cards-and-money/">
+            
+                    
+                        <b>1.2.2.6.</b>
+                    
+                    Action cards & money
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../../../concepts/statistics-and-ml/">
+            
+                <a href="../../../concepts/statistics-and-ml/">
+            
+                    
+                        <b>1.2.2.7.</b>
+                    
+                    Statistics & ML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../../../concepts/posture-and-maturity/">
+            
+                <a href="../../../concepts/posture-and-maturity/">
+            
+                    
+                        <b>1.2.2.8.</b>
+                    
+                    Posture & maturity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="../../../concepts/simulation-and-twins/">
+            
+                <a href="../../../concepts/simulation-and-twins/">
+            
+                    
+                        <b>1.2.2.9.</b>
+                    
+                    Simulation & twins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="../../../concepts/compliance-finance-operations/">
+            
+                <a href="../../../concepts/compliance-finance-operations/">
+            
+                    
+                        <b>1.2.2.10.</b>
+                    
+                    Compliance, finance, operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="../../../concepts/twin-ontology/">
+            
+                <a href="../../../concepts/twin-ontology/">
+            
+                    
+                        <b>1.2.2.11.</b>
+                    
+                    Twin ontology & graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="../../../concepts/vision/">
+            
+                <a href="../../../concepts/vision/">
+            
+                    
+                        <b>1.2.2.12.</b>
+                    
+                    Vision & CCTV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="../../../concepts/agents-and-oversight/">
+            
+                <a href="../../../concepts/agents-and-oversight/">
+            
+                    
+                        <b>1.2.2.13.</b>
+                    
+                    Agents & oversight
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../architecture/">
+            
+                <a href="../../../architecture/">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../../architecture/security/">
+            
+                <a href="../../../architecture/security/">
+            
+                    
+                        <b>1.2.3.1.</b>
+                    
+                    Security & trust
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1.1" data-path="../../../architecture/security/zero-trust/">
+            
+                <a href="../../../architecture/security/zero-trust/">
+            
+                    
+                        <b>1.2.3.1.1.</b>
+                    
+                    Defence in depth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.2" data-path="../../../architecture/security/identity-access/">
+            
+                <a href="../../../architecture/security/identity-access/">
+            
+                    
+                        <b>1.2.3.1.2.</b>
+                    
+                    Identity & access
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.3" data-path="../../../architecture/security/encryption/">
+            
+                <a href="../../../architecture/security/encryption/">
+            
+                    
+                        <b>1.2.3.1.3.</b>
+                    
+                    Encryption at rest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.4" data-path="../../../architecture/security/sovereign-inference/">
+            
+                <a href="../../../architecture/security/sovereign-inference/">
+            
+                    
+                        <b>1.2.3.1.4.</b>
+                    
+                    Sovereign inference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.5" data-path="../../../architecture/security/ai-safety/">
+            
+                <a href="../../../architecture/security/ai-safety/">
+            
+                    
+                        <b>1.2.3.1.5.</b>
+                    
+                    AI safety
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.6" data-path="../../../architecture/security/audit-lineage/">
+            
+                <a href="../../../architecture/security/audit-lineage/">
+            
+                    
+                        <b>1.2.3.1.6.</b>
+                    
+                    Auditability & lineage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.7" data-path="../../../architecture/security/network-egress/">
+            
+                <a href="../../../architecture/security/network-egress/">
+            
+                    
+                        <b>1.2.3.1.7.</b>
+                    
+                    Network egress controls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.8" data-path="../../../architecture/security/compliance/">
+            
+                <a href="../../../architecture/security/compliance/">
+            
+                    
+                        <b>1.2.3.1.8.</b>
+                    
+                    Compliance posture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../../user-guide/">
+            
+                <a href="../../../user-guide/">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    User guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../../user-guide/agents/">
+            
+                <a href="../../../user-guide/agents/">
+            
+                    
+                        <b>1.2.4.1.</b>
+                    
+                    Model cards
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1.1" data-path="../../../user-guide/agents/claims-recovery/">
+            
+                <a href="../../../user-guide/agents/claims-recovery/">
+            
+                    
+                        <b>1.2.4.1.1.</b>
+                    
+                    Claims & recovery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.2" data-path="../../../user-guide/agents/freight-invoice-audit/">
+            
+                <a href="../../../user-guide/agents/freight-invoice-audit/">
+            
+                    
+                        <b>1.2.4.1.2.</b>
+                    
+                    Freight invoice audit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.3" data-path="../../../user-guide/agents/customs-trade-documents/">
+            
+                <a href="../../../user-guide/agents/customs-trade-documents/">
+            
+                    
+                        <b>1.2.4.1.3.</b>
+                    
+                    Customs & trade documents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.4" data-path="../../../user-guide/agents/compliance-review/">
+            
+                <a href="../../../user-guide/agents/compliance-review/">
+            
+                    
+                        <b>1.2.4.1.4.</b>
+                    
+                    Compliance review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.5" data-path="../../../user-guide/agents/insurance-claim-files/">
+            
+                <a href="../../../user-guide/agents/insurance-claim-files/">
+            
+                    
+                        <b>1.2.4.1.5.</b>
+                    
+                    Insurance claim files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.6" data-path="../../../user-guide/agents/cold-chain-telemetry/">
+            
+                <a href="../../../user-guide/agents/cold-chain-telemetry/">
+            
+                    
+                        <b>1.2.4.1.6.</b>
+                    
+                    Cold chain & telemetry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.7" data-path="../../../user-guide/agents/maintenance/">
+            
+                <a href="../../../user-guide/agents/maintenance/">
+            
+                    
+                        <b>1.2.4.1.7.</b>
+                    
+                    Maintenance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.8" data-path="../../../user-guide/agents/stock-and-demand/">
+            
+                <a href="../../../user-guide/agents/stock-and-demand/">
+            
+                    
+                        <b>1.2.4.1.8.</b>
+                    
+                    Stock & demand
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.9" data-path="../../../user-guide/agents/returns/">
+            
+                <a href="../../../user-guide/agents/returns/">
+            
+                    
+                        <b>1.2.4.1.9.</b>
+                    
+                    Returns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.10" data-path="../../../user-guide/agents/yard-and-transport/">
+            
+                <a href="../../../user-guide/agents/yard-and-transport/">
+            
+                    
+                        <b>1.2.4.1.10.</b>
+                    
+                    Yard & transport
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.11" data-path="../../../user-guide/agents/options-and-approvals/">
+            
+                <a href="../../../user-guide/agents/options-and-approvals/">
+            
+                    
+                        <b>1.2.4.1.11.</b>
+                    
+                    Options & approvals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.12" data-path="../../../user-guide/agents/field-readings/">
+            
+                <a href="../../../user-guide/agents/field-readings/">
+            
+                    
+                        <b>1.2.4.1.12.</b>
+                    
+                    Field readings (edge)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.13" data-path="../../../user-guide/agents/data-posture/">
+            
+                <a href="../../../user-guide/agents/data-posture/">
+            
+                    
+                        <b>1.2.4.1.13.</b>
+                    
+                    Data posture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.14" data-path="../../../user-guide/agents/voice-dispatch/">
+            
+                <a href="../../../user-guide/agents/voice-dispatch/">
+            
+                    
+                        <b>1.2.4.1.14.</b>
+                    
+                    Voice dispatch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.15" data-path="../../../user-guide/agents/documents-and-plans/">
+            
+                <a href="../../../user-guide/agents/documents-and-plans/">
+            
+                    
+                        <b>1.2.4.1.15.</b>
+                    
+                    Documents & plans (vision)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.16" data-path="../../../user-guide/agents/claims-leakage/">
+            
+                <a href="../../../user-guide/agents/claims-leakage/">
+            
+                    
+                        <b>1.2.4.1.16.</b>
+                    
+                    Claims leakage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.17" data-path="../../../user-guide/agents/freight-market-analyst/">
+            
+                <a href="../../../user-guide/agents/freight-market-analyst/">
+            
+                    
+                        <b>1.2.4.1.17.</b>
+                    
+                    Freight market analyst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.18" data-path="../../../user-guide/agents/self-healing/">
+            
+                <a href="../../../user-guide/agents/self-healing/">
+            
+                    
+                        <b>1.2.4.1.18.</b>
+                    
+                    Self-healing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.19" data-path="../../../user-guide/agents/counterparty-background-check/">
+            
+                <a href="../../../user-guide/agents/counterparty-background-check/">
+            
+                    
+                        <b>1.2.4.1.19.</b>
+                    
+                    Counterparty background check
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.20" data-path="../../../user-guide/agents/fraud-detection/">
+            
+                <a href="../../../user-guide/agents/fraud-detection/">
+            
+                    
+                        <b>1.2.4.1.20.</b>
+                    
+                    Fraud indicators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.21" data-path="../../../user-guide/agents/customer-analysis/">
+            
+                <a href="../../../user-guide/agents/customer-analysis/">
+            
+                    
+                        <b>1.2.4.1.21.</b>
+                    
+                    Customer analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../../../user-guide/sign-in/">
+            
+                <a href="../../../user-guide/sign-in/">
+            
+                    
+                        <b>1.2.4.2.</b>
+                    
+                    Sign in
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../../../user-guide/navigation/">
+            
+                <a href="../../../user-guide/navigation/">
+            
+                    
+                        <b>1.2.4.3.</b>
+                    
+                    Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="../../../user-guide/overview/">
+            
+                <a href="../../../user-guide/overview/">
+            
+                    
+                        <b>1.2.4.4.</b>
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../../../user-guide/ask/">
+            
+                <a href="../../../user-guide/ask/">
+            
+                    
+                        <b>1.2.4.5.</b>
+                    
+                    Ask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="../../../user-guide/briefs/">
+            
+                <a href="../../../user-guide/briefs/">
+            
+                    
+                        <b>1.2.4.6.</b>
+                    
+                    Briefs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="../../../user-guide/options/">
+            
+                <a href="../../../user-guide/options/">
+            
+                    
+                        <b>1.2.4.7.</b>
+                    
+                    Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8" data-path="../../../user-guide/why/">
+            
+                <a href="../../../user-guide/why/">
+            
+                    
+                        <b>1.2.4.8.</b>
+                    
+                    Why
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.9" data-path="../../../user-guide/live-sensing/">
+            
+                <a href="../../../user-guide/live-sensing/">
+            
+                    
+                        <b>1.2.4.9.</b>
+                    
+                    Live sensing and vision
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.10" data-path="../../../user-guide/actionable-twins/">
+            
+                <a href="../../../user-guide/actionable-twins/">
+            
+                    
+                        <b>1.2.4.10.</b>
+                    
+                    Actionable Twins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.11" data-path="../../../user-guide/fleet-and-control/">
+            
+                <a href="../../../user-guide/fleet-and-control/">
+            
+                    
+                        <b>1.2.4.11.</b>
+                    
+                    Routes and fleet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.12" data-path="../../../user-guide/contacts-and-verification/">
+            
+                <a href="../../../user-guide/contacts-and-verification/">
+            
+                    
+                        <b>1.2.4.12.</b>
+                    
+                    Contacts and verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.13" data-path="../../../user-guide/voice-and-calls/">
+            
+                <a href="../../../user-guide/voice-and-calls/">
+            
+                    
+                        <b>1.2.4.13.</b>
+                    
+                    Voice and calls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.14" data-path="../../../user-guide/settings/">
+            
+                <a href="../../../user-guide/settings/">
+            
+                    
+                        <b>1.2.4.14.</b>
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.15" data-path="../../../user-guide/account-deletion/">
+            
+                <a href="../../../user-guide/account-deletion/">
+            
+                    
+                        <b>1.2.4.15.</b>
+                    
+                    Delete your account
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.16" data-path="../../../user-guide/accessibility/">
+            
+                <a href="../../../user-guide/accessibility/">
+            
+                    
+                        <b>1.2.4.16.</b>
+                    
+                    Accessibility and languages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.17" data-path="../../../user-guide/troubleshooting/">
+            
+                <a href="../../../user-guide/troubleshooting/">
+            
+                    
+                        <b>1.2.4.17.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../../admin-guide/">
+            
+                <a href="../../../admin-guide/">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    Admin guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../../../admin-guide/access-and-trial/">
+            
+                <a href="../../../admin-guide/access-and-trial/">
+            
+                    
+                        <b>1.2.5.1.</b>
+                    
+                    Access and the trial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../../../admin-guide/admin-page/">
+            
+                <a href="../../../admin-guide/admin-page/">
+            
+                    
+                        <b>1.2.5.2.</b>
+                    
+                    Admin page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../../../admin-guide/data-sources/">
+            
+                <a href="../../../admin-guide/data-sources/">
+            
+                    
+                        <b>1.2.5.3.</b>
+                    
+                    Data sources
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.1" data-path="../../../admin-guide/data-sources/connections/">
+            
+                <a href="../../../admin-guide/data-sources/connections/">
+            
+                    
+                        <b>1.2.5.3.1.</b>
+                    
+                    Connections and credentials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2" data-path="../../../admin-guide/data-sources/quickstarts/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/">
+            
+                    
+                        <b>1.2.5.3.2.</b>
+                    
+                    Quickstarts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.1" data-path="../../../admin-guide/data-sources/quickstarts/all-connectors/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/all-connectors/">
+            
+                    
+                        <b>1.2.5.3.2.1.</b>
+                    
+                    See all connectors at once
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2" data-path="../../../admin-guide/data-sources/quickstarts/databases/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/databases/">
+            
+                    
+                        <b>1.2.5.3.2.2.</b>
+                    
+                    Databases & warehouses
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.1" data-path="../../../admin-guide/data-sources/quickstarts/databases/postgres/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/databases/postgres/">
+            
+                    
+                        <b>1.2.5.3.2.2.1.</b>
+                    
+                    PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.2" data-path="../../../admin-guide/data-sources/quickstarts/databases/mysql/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/databases/mysql/">
+            
+                    
+                        <b>1.2.5.3.2.2.2.</b>
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.3" data-path="../../../admin-guide/data-sources/quickstarts/databases/snowflake/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/databases/snowflake/">
+            
+                    
+                        <b>1.2.5.3.2.2.3.</b>
+                    
+                    Snowflake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.4" data-path="../../../admin-guide/data-sources/quickstarts/databases/databricks/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/databases/databricks/">
+            
+                    
+                        <b>1.2.5.3.2.2.4.</b>
+                    
+                    Databricks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.5" data-path="../../../admin-guide/data-sources/quickstarts/databases/redshift/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/databases/redshift/">
+            
+                    
+                        <b>1.2.5.3.2.2.5.</b>
+                    
+                    Amazon Redshift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.2.6" data-path="../../../admin-guide/data-sources/quickstarts/databases/bigquery/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/databases/bigquery/">
+            
+                    
+                        <b>1.2.5.3.2.2.6.</b>
+                    
+                    Google BigQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3" data-path="../../../admin-guide/data-sources/quickstarts/business-apps/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/business-apps/">
+            
+                    
+                        <b>1.2.5.3.2.3.</b>
+                    
+                    Business apps
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.1" data-path="../../../admin-guide/data-sources/quickstarts/business-apps/salesforce/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/business-apps/salesforce/">
+            
+                    
+                        <b>1.2.5.3.2.3.1.</b>
+                    
+                    Salesforce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.2" data-path="../../../admin-guide/data-sources/quickstarts/business-apps/sap/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/business-apps/sap/">
+            
+                    
+                        <b>1.2.5.3.2.3.2.</b>
+                    
+                    SAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.3" data-path="../../../admin-guide/data-sources/quickstarts/business-apps/guidewire/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/business-apps/guidewire/">
+            
+                    
+                        <b>1.2.5.3.2.3.3.</b>
+                    
+                    Guidewire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.4" data-path="../../../admin-guide/data-sources/quickstarts/business-apps/servicenow/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/business-apps/servicenow/">
+            
+                    
+                        <b>1.2.5.3.2.3.4.</b>
+                    
+                    ServiceNow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.5" data-path="../../../admin-guide/data-sources/quickstarts/business-apps/hubspot/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/business-apps/hubspot/">
+            
+                    
+                        <b>1.2.5.3.2.3.5.</b>
+                    
+                    HubSpot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.6" data-path="../../../admin-guide/data-sources/quickstarts/business-apps/d365/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/business-apps/d365/">
+            
+                    
+                        <b>1.2.5.3.2.3.6.</b>
+                    
+                    Microsoft Dynamics 365
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.7" data-path="../../../admin-guide/data-sources/quickstarts/business-apps/sharepoint/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/business-apps/sharepoint/">
+            
+                    
+                        <b>1.2.5.3.2.3.7.</b>
+                    
+                    SharePoint lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.3.8" data-path="../../../admin-guide/data-sources/quickstarts/business-apps/github/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/business-apps/github/">
+            
+                    
+                        <b>1.2.5.3.2.3.8.</b>
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4" data-path="../../../admin-guide/data-sources/quickstarts/logistics/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/logistics/">
+            
+                    
+                        <b>1.2.5.3.2.4.</b>
+                    
+                    Logistics systems
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.1" data-path="../../../admin-guide/data-sources/quickstarts/logistics/oms/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/logistics/oms/">
+            
+                    
+                        <b>1.2.5.3.2.4.1.</b>
+                    
+                    Order management (OMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.2" data-path="../../../admin-guide/data-sources/quickstarts/logistics/tms/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/logistics/tms/">
+            
+                    
+                        <b>1.2.5.3.2.4.2.</b>
+                    
+                    Transport management (TMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.3" data-path="../../../admin-guide/data-sources/quickstarts/logistics/whs/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/logistics/whs/">
+            
+                    
+                        <b>1.2.5.3.2.4.3.</b>
+                    
+                    Warehouse (WHS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.4" data-path="../../../admin-guide/data-sources/quickstarts/logistics/yms/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/logistics/yms/">
+            
+                    
+                        <b>1.2.5.3.2.4.4.</b>
+                    
+                    Yard management (YMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.5" data-path="../../../admin-guide/data-sources/quickstarts/logistics/ims/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/logistics/ims/">
+            
+                    
+                        <b>1.2.5.3.2.4.5.</b>
+                    
+                    Inventory management (IMS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.6" data-path="../../../admin-guide/data-sources/quickstarts/logistics/inventory/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/logistics/inventory/">
+            
+                    
+                        <b>1.2.5.3.2.4.6.</b>
+                    
+                    Inventory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.4.7" data-path="../../../admin-guide/data-sources/quickstarts/logistics/logisticsapi/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/logistics/logisticsapi/">
+            
+                    
+                        <b>1.2.5.3.2.4.7.</b>
+                    
+                    Logistics API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5" data-path="../../../admin-guide/data-sources/quickstarts/files/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/files/">
+            
+                    
+                        <b>1.2.5.3.2.5.</b>
+                    
+                    Files
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.1" data-path="../../../admin-guide/data-sources/quickstarts/files/files/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/files/files/">
+            
+                    
+                        <b>1.2.5.3.2.5.1.</b>
+                    
+                    Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.2" data-path="../../../admin-guide/data-sources/quickstarts/files/excel/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/files/excel/">
+            
+                    
+                        <b>1.2.5.3.2.5.2.</b>
+                    
+                    Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.3" data-path="../../../admin-guide/data-sources/quickstarts/files/document/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/files/document/">
+            
+                    
+                        <b>1.2.5.3.2.5.3.</b>
+                    
+                    Document (legacy type)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.5.4" data-path="../../../admin-guide/data-sources/quickstarts/files/objectstore/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/files/objectstore/">
+            
+                    
+                        <b>1.2.5.3.2.5.4.</b>
+                    
+                    Object store
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6" data-path="../../../admin-guide/data-sources/quickstarts/streams/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/streams/">
+            
+                    
+                        <b>1.2.5.3.2.6.</b>
+                    
+                    Streams
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.1" data-path="../../../admin-guide/data-sources/quickstarts/streams/kafka/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/streams/kafka/">
+            
+                    
+                        <b>1.2.5.3.2.6.1.</b>
+                    
+                    Apache Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.2" data-path="../../../admin-guide/data-sources/quickstarts/streams/kafka-live/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/streams/kafka-live/">
+            
+                    
+                        <b>1.2.5.3.2.6.2.</b>
+                    
+                    Apache Kafka, live estate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.3" data-path="../../../admin-guide/data-sources/quickstarts/streams/mqtt/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/streams/mqtt/">
+            
+                    
+                        <b>1.2.5.3.2.6.3.</b>
+                    
+                    MQTT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.4" data-path="../../../admin-guide/data-sources/quickstarts/streams/iot/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/streams/iot/">
+            
+                    
+                        <b>1.2.5.3.2.6.4.</b>
+                    
+                    IoT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.5" data-path="../../../admin-guide/data-sources/quickstarts/streams/rfid/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/streams/rfid/">
+            
+                    
+                        <b>1.2.5.3.2.6.5.</b>
+                    
+                    RFID readers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.6" data-path="../../../admin-guide/data-sources/quickstarts/streams/gps/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/streams/gps/">
+            
+                    
+                        <b>1.2.5.3.2.6.6.</b>
+                    
+                    GPS and telematics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.7" data-path="../../../admin-guide/data-sources/quickstarts/streams/sensorgateway/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/streams/sensorgateway/">
+            
+                    
+                        <b>1.2.5.3.2.6.7.</b>
+                    
+                    Sensor gateway
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.2.6.8" data-path="../../../admin-guide/data-sources/quickstarts/streams/cctv/">
+            
+                <a href="../../../admin-guide/data-sources/quickstarts/streams/cctv/">
+            
+                    
+                        <b>1.2.5.3.2.6.8.</b>
+                    
+                    CCTV cameras
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.3" data-path="../../../admin-guide/data-sources/discovery/">
+            
+                <a href="../../../admin-guide/data-sources/discovery/">
+            
+                    
+                        <b>1.2.5.3.3.</b>
+                    
+                    Explore, sample and profile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.4" data-path="../../../admin-guide/data-sources/sql-warehouses/">
+            
+                <a href="../../../admin-guide/data-sources/sql-warehouses/">
+            
+                    
+                        <b>1.2.5.3.4.</b>
+                    
+                    SQL warehouses and databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.5" data-path="../../../admin-guide/data-sources/enterprise-saas/">
+            
+                <a href="../../../admin-guide/data-sources/enterprise-saas/">
+            
+                    
+                        <b>1.2.5.3.5.</b>
+                    
+                    Enterprise SaaS and ERP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.6" data-path="../../../admin-guide/data-sources/files-object-storage/">
+            
+                <a href="../../../admin-guide/data-sources/files-object-storage/">
+            
+                    
+                        <b>1.2.5.3.6.</b>
+                    
+                    Files and object storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.7" data-path="../../../admin-guide/data-sources/streaming-kafka/">
+            
+                <a href="../../../admin-guide/data-sources/streaming-kafka/">
+            
+                    
+                        <b>1.2.5.3.7.</b>
+                    
+                    Streaming: Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.8" data-path="../../../admin-guide/data-sources/event-listeners/">
+            
+                <a href="../../../admin-guide/data-sources/event-listeners/">
+            
+                    
+                        <b>1.2.5.3.8.</b>
+                    
+                    Event listeners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.9" data-path="../../../admin-guide/data-sources/telemetry/">
+            
+                <a href="../../../admin-guide/data-sources/telemetry/">
+            
+                    
+                        <b>1.2.5.3.9.</b>
+                    
+                    Telemetry: MQTT, RFID, GPS, sensors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.10" data-path="../../../admin-guide/data-sources/logistics-systems/">
+            
+                <a href="../../../admin-guide/data-sources/logistics-systems/">
+            
+                    
+                        <b>1.2.5.3.10.</b>
+                    
+                    Logistics systems of record
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.11" data-path="../../../admin-guide/data-sources/cctv-video/">
+            
+                <a href="../../../admin-guide/data-sources/cctv-video/">
+            
+                    
+                        <b>1.2.5.3.11.</b>
+                    
+                    CCTV and video
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.12" data-path="../../../admin-guide/data-sources/edge-flipper/">
+            
+                <a href="../../../admin-guide/data-sources/edge-flipper/">
+            
+                    
+                        <b>1.2.5.3.12.</b>
+                    
+                    Flipper edge reader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.13" data-path="../../../admin-guide/data-sources/web/">
+            
+                <a href="../../../admin-guide/data-sources/web/">
+            
+                    
+                        <b>1.2.5.3.13.</b>
+                    
+                    Web and crawler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.14" data-path="../../../admin-guide/data-sources/runners/">
+            
+                <a href="../../../admin-guide/data-sources/runners/">
+            
+                    
+                        <b>1.2.5.3.14.</b>
+                    
+                    Runners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.15" data-path="../../../admin-guide/data-sources/networking/">
+            
+                <a href="../../../admin-guide/data-sources/networking/">
+            
+                    
+                        <b>1.2.5.3.15.</b>
+                    
+                    Networking and address policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3.16" data-path="../../../admin-guide/data-sources/troubleshooting/">
+            
+                <a href="../../../admin-guide/data-sources/troubleshooting/">
+            
+                    
+                        <b>1.2.5.3.16.</b>
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="../../../admin-guide/deployment/">
+            
+                <a href="../../../admin-guide/deployment/">
+            
+                    
+                        <b>1.2.5.4.</b>
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    Developer guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../../connector-model/">
+            
+                <a href="../../connector-model/">
+            
+                    
+                        <b>1.2.6.1.</b>
+                    
+                    Connector model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.2.6.2.</b>
+                    
+                    gRPC API reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.2.1" data-path="../identity/">
+            
+                <a href="../identity/">
+            
+                    
+                        <b>1.2.6.2.1.</b>
+                    
+                    Identity, licences & landing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.2" data-path="../connections/">
+            
+                <a href="../connections/">
+            
+                    
+                        <b>1.2.6.2.2.</b>
+                    
+                    Configuration, connections & runners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6.2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.6.2.3.</b>
+                    
+                    Fetch & traces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.4" data-path="../twins/">
+            
+                <a href="../twins/">
+            
+                    
+                        <b>1.2.6.2.4.</b>
+                    
+                    Twins, simulation & claims
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.5" data-path="../analysis/">
+            
+                <a href="../analysis/">
+            
+                    
+                        <b>1.2.6.2.5.</b>
+                    
+                    Analysis, posture & rules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.6" data-path="../compliance/">
+            
+                <a href="../compliance/">
+            
+                    
+                        <b>1.2.6.2.6.</b>
+                    
+                    Compliance, finance & operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.7" data-path="../sql/">
+            
+                <a href="../sql/">
+            
+                    
+                        <b>1.2.6.2.7.</b>
+                    
+                    SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.8" data-path="../lineage-activity/">
+            
+                <a href="../lineage-activity/">
+            
+                    
+                        <b>1.2.6.2.8.</b>
+                    
+                    Lineage & activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.9" data-path="../vision/">
+            
+                <a href="../vision/">
+            
+                    
+                        <b>1.2.6.2.9.</b>
+                    
+                    CCTV, surveillance & documents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.10" data-path="../calling-support/">
+            
+                <a href="../calling-support/">
+            
+                    
+                        <b>1.2.6.2.10.</b>
+                    
+                    Calling & support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.11" data-path="../orchestrator/">
+            
+                <a href="../orchestrator/">
+            
+                    
+                        <b>1.2.6.2.11.</b>
+                    
+                    Agent orchestrator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.12" data-path="../metering-schedules/">
+            
+                <a href="../metering-schedules/">
+            
+                    
+                        <b>1.2.6.2.12.</b>
+                    
+                    Schedules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.13" data-path="../web-crm/">
+            
+                <a href="../web-crm/">
+            
+                    
+                        <b>1.2.6.2.13.</b>
+                    
+                    Crawler, metasearch & CRM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../../privacy/">
+            
+                <a href="../../../../privacy/">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    FACE app privacy policy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../../privacy/es/">
+            
+                <a href="../../../../privacy/es/">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    Política de privacidad de la app FACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../../privacy/fr-ca/">
+            
+                <a href="../../../../privacy/fr-ca/">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Politique de confidentialité de l'application FACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../../../privacy/pt-br/">
+            
+                <a href="../../../../privacy/pt-br/">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    Política de privacidade do app FACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >Fetch & traces</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+    
+                                <h1 id="fetch--traces">Fetch &amp; traces</h1>
+<!--
+SPDX-FileCopyrightText: 2026 Runink
+SPDX-License-Identifier: LicenseRef-Runink-Proprietary
+-->
+<p>A <strong>fetch</strong> is FACE's main pipeline. It reads the selected data sources on a runner, profiles and
+reconciles them, runs the posture, rules, hypothesis and twin agents on the sovereign model plane,
+and returns one analysis with decisions, action cards and their judgements. <code>FetchService</code> starts
+fetches, streams their progress, lists past runs, and generates procedures.</p>
+<p>Fetches always execute on a <strong>runner</strong>, never on the control plane. The control plane hands the
+work to an enrolled runner or dials the managed runner
+(see <a href="../connections/">Configuration, connections &amp; runners</a>). A fetch
+has no usage charge and no limit of its own.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>RPC</th>
+<th>Kind</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FetchService</td>
+<td><a href="#runfetch">RunFetch</a></td>
+<td>Unary</td>
+<td>Run a fetch and return the analysis</td>
+</tr>
+<tr>
+<td>FetchService</td>
+<td><a href="#runfetchstream">RunFetchStream</a></td>
+<td>Server streaming</td>
+<td>Run a fetch, streaming phase progress</td>
+</tr>
+<tr>
+<td>FetchService</td>
+<td><a href="#listtraces">ListTraces</a></td>
+<td>Unary</td>
+<td>List saved sessions (order and claim workflows)</td>
+</tr>
+<tr>
+<td>FetchService</td>
+<td><a href="#gettracedetails">GetTraceDetails</a></td>
+<td>Unary</td>
+<td>One run's command, analysis and SQL</td>
+</tr>
+<tr>
+<td>FetchService</td>
+<td><a href="#generatesop">GenerateSOP</a></td>
+<td>Unary</td>
+<td>Draft a standard operating procedure</td>
+</tr>
+<tr>
+<td>FetchService</td>
+<td><a href="#listfetchstarters">ListFetchStarters</a></td>
+<td>Unary</td>
+<td>Suggested fetch prompts</td>
+</tr>
+<tr>
+<td>FetchService</td>
+<td><a href="#listfetchruns">ListFetchRuns</a></td>
+<td>Unary</td>
+<td>The fetch run history</td>
+</tr>
+<tr>
+<td>FetchService</td>
+<td><a href="#getfetchattachments">GetFetchAttachments</a></td>
+<td>Unary</td>
+<td>What one run read off its attachments</td>
+</tr>
+<tr>
+<td>FetchService</td>
+<td><a href="#getrunstoryboard">GetRunStoryboard</a></td>
+<td>Unary</td>
+<td>One run's question, strict verdict and storyboard</td>
+</tr>
+<tr>
+<td>FetchService</td>
+<td><a href="#getasklayout">GetAskLayout</a></td>
+<td>Unary</td>
+<td>One run's Ask answer, block by block, as the run stored it</td>
+</tr>
+<tr>
+<td>FetchService</td>
+<td><a href="#getscenariograph">GetScenarioGraph</a></td>
+<td>Unary</td>
+<td>One run's scenarios as a mind map, shared leaves drawn once</td>
+</tr>
+</tbody>
+</table>
+<p><code>FetchService/GetDispatchKey</code> is internal to the platform (served only by a runner, and only to a
+verified mesh peer) and is not documented here.</p>
+<h2 id="fetchservice">FetchService</h2>
+<p>Full name <code>semantics.v1.FetchService</code>.</p>
+<h3 id="runfetch">RunFetch</h3>
+<pre><code class="lang-proto"><span class="hljs-function"><span class="hljs-keyword">rpc</span> RunFetch(RunFetchRequest) <span class="hljs-keyword">returns</span> (RunFetchResponse)</span>;
+</code></pre>
+<ul>
+<li><strong>Kind:</strong> Unary. A fetch can take many minutes: set a generous deadline, or use
+<a href="#runfetchstream">RunFetchStream</a>.</li>
+<li><strong>Auth:</strong> Bearer session, writer, admin or service account. A reader cannot run a fetch.</li>
+<li><strong>Errors:</strong> None beyond authentication. <strong>Every outcome is in the response.</strong> Check <code>success</code>
+and <code>message</code>:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No runner available or reachable</td>
+<td><code>success: false</code>, <code>message</code> says so. The fetch never runs on the control plane.</td>
+</tr>
+<tr>
+<td>No selected source could be read</td>
+<td><code>success: false</code>, <code>message</code> names each source and why.</td>
+</tr>
+<tr>
+<td>Some analysis phases failed</td>
+<td><code>success: false</code>, <code>message</code> gives the verdict, and <code>analysis</code> carries what <strong>was</strong> produced.</td>
+</tr>
+<tr>
+<td>Complete</td>
+<td><code>success: true</code>, <code>transaction_id</code> and <code>analysis</code> set.</td>
+</tr>
+</tbody>
+</table>
+<p>Read <code>analysis.source_notices</code> even on success: it reports sources that could not be read and
+where SQL actually ran.</p>
+<h4 id="request-runfetchrequest">Request: RunFetchRequest</h4>
+<p>Shared by <code>RunFetch</code> and <code>RunFetchStream</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>command</code></td>
+<td><code>string</code></td>
+<td>What to analyse, in plain language, for example <code>Which shipments are running late, and why?</code>.</td>
+</tr>
+<tr>
+<td><code>documents</code></td>
+<td><code>repeated string</code></td>
+<td>Attachments, each a <code>data:</code> URI with the file's contents (<code>data:&lt;type&gt;;name=&lt;file name&gt;;base64,&lt;bytes&gt;</code>). The fetch reads each by what its bytes are, not by the declared type: photos (JPEG, PNG, TIFF, WebP), PDF (text layer and scanned pages), DOCX, PPTX, XLSX and plain text. Others are skipped with the reason. What it read is in <code>analysis.attachments</code> and <a href="#getfetchattachments">GetFetchAttachments</a>. A spreadsheet uploaded with <code>AskAttachmentService</code> is sent as <code>attached:&lt;attachment_id&gt;</code> instead, and read as an Excel connection reads a workbook: every sheet a table.</td>
+</tr>
+<tr>
+<td><code>connection_id</code></td>
+<td><code>string</code></td>
+<td>The primary data source.</td>
+</tr>
+<tr>
+<td><code>runner_id</code></td>
+<td><code>string</code></td>
+<td>The runner to use.</td>
+</tr>
+<tr>
+<td><code>enrichment_connection_ids</code></td>
+<td><code>repeated string</code></td>
+<td>Additional sources to read.</td>
+</tr>
+<tr>
+<td><code>trigger_type</code></td>
+<td><a href="#runfetchrequesttriggertype"><code>RunFetchRequest.TriggerType</code></a></td>
+<td>What started the run.</td>
+</tr>
+<tr>
+<td><code>schedule_config</code></td>
+<td><code>string</code></td>
+<td>Optional cron expression or description.</td>
+</tr>
+<tr>
+<td><code>job_id</code></td>
+<td><code>string</code></td>
+<td>Your job id. Used as the charge reference when there is no transaction id.</td>
+</tr>
+<tr>
+<td><code>language_preference</code></td>
+<td><code>string</code></td>
+<td>Preferred language for the analysis.</td>
+</tr>
+<tr>
+<td><code>notify_via_call</code></td>
+<td><code>bool</code></td>
+<td>Phone the carrier number in the integration config once every phase of the run has ended, not when the answer returns. The message says how the run ended: finished, partly finished (naming each phase that did not finish, and why), interrupted by a server restart, or failed. A finished run's message adds the spoken summary. Sent once. Nothing is sent if no number is configured, or if the server stops before the run's phases end.</td>
+</tr>
+<tr>
+<td><code>notify_via_whatsapp</code></td>
+<td><code>bool</code></td>
+<td>The same message as <code>notify_via_call</code>, at the same moment, to the WhatsApp number in the integration config. Nothing is sent if no number is configured.</td>
+</tr>
+<tr>
+<td><code>session_eda</code></td>
+<td><code>bool</code></td>
+<td>Run only the fast first phase (data domains, maturity, rules reconciliation, knowledge graph) and skip the deep hypothesis and twin agents.</td>
+</tr>
+<tr>
+<td><code>synapse_threshold</code></td>
+<td><code>double</code></td>
+<td>Minimum absolute Pearson r for the pass to record a measured link ("synapse") between two data domains. 0 means the default, 0.5. Higher values give fewer, stronger links.</td>
+</tr>
+<tr>
+<td><code>dispatched_connections</code></td>
+<td><code>repeated Connection</code></td>
+<td><strong>Internal.</strong> Set by the platform when it forwards work to a runner. A client value is overwritten or ignored.</td>
+</tr>
+<tr>
+<td><code>dispatch_id</code></td>
+<td><code>string</code></td>
+<td><strong>Internal.</strong> As above.</td>
+</tr>
+<tr>
+<td><code>dispatched_credentials</code></td>
+<td><code>repeated SealedCredential</code></td>
+<td><strong>Internal.</strong> As above. Clients never see or send credentials here.</td>
+</tr>
+<tr>
+<td><code>trigger_events</code></td>
+<td><code>repeated DataEvent</code></td>
+<td><strong>Internal.</strong> Set by an <a href="../metering-schedules/#scheduleeventstate">event-triggered schedule</a>: the change events that fired the run. A client value is cleared.</td>
+</tr>
+<tr>
+<td><code>trigger_connection_id</code></td>
+<td><code>string</code></td>
+<td><strong>Internal.</strong> As above: the connection whose data listener saw them.</td>
+</tr>
+<tr>
+<td><code>persona_id</code></td>
+<td><code>string</code></td>
+<td>Who the run is for: a product persona's id (<code>ops</code>, <code>cfo</code>, <code>cro</code>, <code>cmo</code>, <code>ceo</code>), a persona this instance saved, or empty for the generalist view. It changes what the answer leads with, never what data it reads. An id that names no persona is refused with <code>INVALID_ARGUMENT</code>.</td>
+</tr>
+<tr>
+<td><code>dispatched_persona</code>, <code>dispatched_external_search</code></td>
+<td><code>Persona</code>, <code>ExternalSearchPolicy</code></td>
+<td><strong>Internal.</strong> The control plane overwrites both when it forwards work to a runner. A client cannot set them.</td>
+</tr>
+<tr>
+<td><code>public_sources</code></td>
+<td><code>PublicSourceChoice</code> (<code>repeated string source_ids</code>)</td>
+<td>The public sources this run reads, by the ids <code>ConfigService/ListPublicSources</code> returns. Unset means the server's default. Set means exactly those ids, and none when the list is empty. An id the server does not know is named on the run and read as nothing. It can only narrow what a run reads: the tenant's external-search policy still decides what may leave.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response-runfetchresponse">Response: RunFetchResponse</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>success</code></td>
+<td><code>bool</code></td>
+<td><code>true</code> only for a complete run.</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>string</code></td>
+<td>Why, when <code>success</code> is <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>transaction_id</code></td>
+<td><code>string</code></td>
+<td>The run's id, also used as the trace id.</td>
+</tr>
+<tr>
+<td><code>analysis</code></td>
+<td><a href="#fetchanalysisresult"><code>FetchAnalysisResult</code></a></td>
+<td>The analysis. Also present on a partial run.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="runfetchstream">RunFetchStream</h3>
+<pre><code class="lang-proto"><span class="hljs-function"><span class="hljs-keyword">rpc</span> RunFetchStream(RunFetchRequest) <span class="hljs-keyword">returns</span> (stream RunFetchUpdate)</span>;
+</code></pre>
+<ul>
+<li><strong>Kind:</strong> Server streaming. Available over native gRPC and gRPC-web.</li>
+<li><strong>Auth:</strong> Bearer session, writer, admin or service account. A reader cannot run a fetch.</li>
+<li><strong>Errors:</strong> Outcomes arrive in the stream, as for <code>RunFetch</code>. The stream can end with an error
+only if forwarding to the runner fails in transport.</li>
+</ul>
+<p>Runs the same pipeline and streams real progress as each phase completes: <code>data_health</code>,
+<code>rules</code>, <code>scenarios</code>, <code>recommendations</code>, and a terminal <code>final</code> event that carries the full
+<a href="#response-runfetchresponse"><code>RunFetchResponse</code></a> in <code>result</code>. A refused request is a single
+<code>denied</code> event with <code>done: true</code>. A recent identical request may be answered from an earlier run, and the result's <code>provenance</code> then says so.</p>
+<p>The <code>final</code> event's message is "Answer ready": the answer is back, and the phases after it (the
+analysis, which judges the scenarios, and the twins decisions) still run. It does not say the run
+succeeded. Read the run's <code>verdict</code> (<a href="#listfetchruns">ListFetchRuns</a>,
+<a href="#getrunstoryboard">GetRunStoryboard</a>) for that.</p>
+<h4 id="response-runfetchupdate">Response: RunFetchUpdate</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>phase</code></td>
+<td><code>string</code></td>
+<td><code>data_health</code>, <code>rules</code>, <code>scenarios</code>, <code>recommendations</code>, <code>final</code>, or <code>denied</code>.</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>string</code></td>
+<td>Human-readable progress, for example <code>Data health checked</code>.</td>
+</tr>
+<tr>
+<td><code>done</code></td>
+<td><code>bool</code></td>
+<td>This phase, or for <code>final</code> and <code>denied</code> the whole run, is complete.</td>
+</tr>
+<tr>
+<td><code>result</code></td>
+<td><a href="#response-runfetchresponse"><code>RunFetchResponse</code></a></td>
+<td>Set only on the <code>final</code> event.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="listtraces">ListTraces</h3>
+<pre><code class="lang-proto"><span class="hljs-function"><span class="hljs-keyword">rpc</span> ListTraces(ListTracesRequest) <span class="hljs-keyword">returns</span> (ListTracesResponse)</span>;
+</code></pre>
+<ul>
+<li><strong>Kind:</strong> Unary.</li>
+<li><strong>Auth:</strong> Bearer session.</li>
+<li><strong>Errors:</strong> <code>FAILED_PRECONDITION</code> if no session store is configured. <code>INTERNAL</code> if it cannot be
+read.</li>
+</ul>
+<p>Lists recent saved sessions, newest first. A session is saved only for order and
+claim workflows, so this is not a list of fetch runs: use
+<a href="#listfetchruns">ListFetchRuns</a> for that.</p>
+<h4 id="request-listtracesrequest">Request: ListTracesRequest</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>limit</code></td>
+<td><code>int32</code></td>
+<td>Maximum runs. 0 or negative means 20. Capped at 200.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response-listtracesresponse">Response: ListTracesResponse</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>traces</code></td>
+<td><code>repeated</code> <a href="#trace"><code>Trace</code></a></td>
+<td>One per run. <code>description</code> is `Cmd: <command></command> \</td>
+<td><first 50="" characters="" of="" the="" analysis="">`.</first></td>
+</tr>
+</tbody>
+</table>
+<h3 id="gettracedetails">GetTraceDetails</h3>
+<pre><code class="lang-proto"><span class="hljs-function"><span class="hljs-keyword">rpc</span> GetTraceDetails(GetTraceDetailsRequest) <span class="hljs-keyword">returns</span> (GetTraceDetailsResponse)</span>;
+</code></pre>
+<ul>
+<li><strong>Kind:</strong> Unary.</li>
+<li><strong>Auth:</strong> Bearer session.</li>
+<li><strong>Errors:</strong> <code>UNAVAILABLE</code> if no session store is configured. <code>NOT_FOUND</code> if the trace does not
+exist.</li>
+</ul>
+<h4 id="request-gettracedetailsrequest">Request: GetTraceDetailsRequest</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>trace_id</code></td>
+<td><code>string</code></td>
+<td>A run's <code>transaction_id</code>.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response-gettracedetailsresponse">Response: GetTraceDetailsResponse</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>trace</code></td>
+<td><a href="#trace"><code>Trace</code></a></td>
+<td>The run. <code>description</code> holds the command, the full analysis and the generated SQL.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="generatesop">GenerateSOP</h3>
+<pre><code class="lang-proto"><span class="hljs-function"><span class="hljs-keyword">rpc</span> GenerateSOP(GenerateSOPRequest) <span class="hljs-keyword">returns</span> (GenerateSOPResponse)</span>;
+</code></pre>
+<ul>
+<li><strong>Kind:</strong> Unary.</li>
+<li><strong>Auth:</strong> Bearer session.</li>
+<li><strong>Errors:</strong> <code>INVALID_ARGUMENT</code> if the request trips the prompt-injection check.
+<code>PERMISSION_DENIED</code> if it trips the fetch agent's guardrail.</li>
+</ul>
+<p>Drafts a standard operating procedure in Markdown on the model plane. If the model is unavailable,
+<code>sop_content</code> is <code>SOP Generation Failed</code>. That is not an error, so check the content.</p>
+<h4 id="request-generatesoprequest">Request: GenerateSOPRequest</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>topic</code></td>
+<td><code>string</code></td>
+<td>What the procedure is for.</td>
+</tr>
+<tr>
+<td><code>process_name</code></td>
+<td><code>string</code></td>
+<td>The process.</td>
+</tr>
+<tr>
+<td><code>steps</code></td>
+<td><code>repeated string</code></td>
+<td>Optional step hints.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response-generatesopresponse">Response: GenerateSOPResponse</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sop_content</code></td>
+<td><code>string</code></td>
+<td>The procedure, in Markdown.</td>
+</tr>
+<tr>
+<td><code>sop_id</code></td>
+<td><code>string</code></td>
+<td><code>sop_&lt;unix seconds&gt;</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="listfetchstarters">ListFetchStarters</h3>
+<pre><code class="lang-proto"><span class="hljs-function"><span class="hljs-keyword">rpc</span> ListFetchStarters(ListFetchStartersRequest) <span class="hljs-keyword">returns</span> (ListFetchStartersResponse)</span>;
+</code></pre>
+<ul>
+<li><strong>Kind:</strong> Unary.</li>
+<li><strong>Auth:</strong> Bearer session.</li>
+<li><strong>Errors:</strong> None.</li>
+</ul>
+<p>Returns four suggested prompts, sampled from the deployment's configured list or from a built-in
+list.</p>
+<h4 id="request-listfetchstartersrequest">Request: ListFetchStartersRequest</h4>
+<p>No fields.</p>
+<h4 id="response-listfetchstartersresponse">Response: ListFetchStartersResponse</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>starters</code></td>
+<td><code>repeated</code> <a href="#fetchstarter"><code>FetchStarter</code></a></td>
+<td>Suggestions.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="listfetchruns">ListFetchRuns</h3>
+<pre><code class="lang-proto"><span class="hljs-function"><span class="hljs-keyword">rpc</span> ListFetchRuns(ListFetchRunsRequest) <span class="hljs-keyword">returns</span> (ListFetchRunsResponse)</span>;
+</code></pre>
+<ul>
+<li><strong>Kind:</strong> Unary.</li>
+<li><strong>Auth:</strong> Bearer session. The caller's own runs; an org admin gets every run in the
+tenant.</li>
+<li><strong>Errors:</strong> <code>UNAUTHENTICATED</code> with no signed-in caller. <code>FAILED_PRECONDITION</code> on a
+runner, or on a process that records no run history. <code>UNAVAILABLE</code> if the history
+cannot be read.</li>
+</ul>
+<p>The fetch run history, newest first. The control plane records one run for every
+<code>RunFetch</code> and <code>RunFetchStream</code> call it receives from a signed-in caller, including
+fetches it refuses. A run carries no result. Its <code>verdict</code> carries the question it was
+asked and which of its phases finished (see <a href="#runverdict">RunVerdict</a>).</p>
+<p>A run is recorded twice: as <code>FETCH_RUN_OUTCOME_RUNNING</code> when the control plane receives
+it, and with its outcome when it answers. Both records share <code>run_id</code>, and the
+response lists the run once, with the later outcome. If the control plane stops before
+the run answers, no outcome is ever recorded. Such a run is listed as
+<code>FETCH_RUN_OUTCOME_INTERRUPTED</code> once it is older than the 300-second fetch limit plus
+a 60-second margin, with <code>ended_unix_ms</code> 0 and a <code>message</code> saying the server stopped
+before it finished. Before that it is listed as running. With object storage
+configured, runs are kept for 30 days; without it, the newest 500 records (a run's
+start and end are two) are kept in memory and lost on a restart.</p>
+<p>A run is successful only when every phase finished, including the phases that run
+after the answer. <code>outcome</code> says only whether the response came back; read <code>verdict</code>
+for whether the run succeeded.</p>
+<h4 id="request-listfetchrunsrequest">Request: ListFetchRunsRequest</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>limit</code></td>
+<td><code>int32</code></td>
+<td>Maximum runs. 0 or negative means 20. Capped at 200.</td>
+</tr>
+<tr>
+<td><code>include_archived</code></td>
+<td><code>bool</code></td>
+<td>Also list archived runs, each marked <code>archived</code>, so they can be restored. Org admin only: anyone else is refused.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response-listfetchrunsresponse">Response: ListFetchRunsResponse</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>runs</code></td>
+<td><code>repeated</code> <a href="#fetchrunsummary"><code>FetchRunSummary</code></a></td>
+<td>Newest first.</td>
+</tr>
+<tr>
+<td><code>durable</code></td>
+<td><code>bool</code></td>
+<td>False when the history is kept in memory only.</td>
+</tr>
+<tr>
+<td><code>not_durable_reason</code></td>
+<td><code>string</code></td>
+<td>Why, when <code>durable</code> is false.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getfetchattachments">GetFetchAttachments</h3>
+<pre><code class="lang-proto"><span class="hljs-function"><span class="hljs-keyword">rpc</span> GetFetchAttachments(GetFetchAttachmentsRequest) <span class="hljs-keyword">returns</span> (GetFetchAttachmentsResponse)</span>;
+</code></pre>
+<ul>
+<li><strong>Kind:</strong> Unary.</li>
+<li><strong>Auth:</strong> Bearer session. Only the tenant that ran the fetch can read its readings.</li>
+<li><strong>Errors:</strong> <code>INVALID_ARGUMENT</code> when <code>transaction_id</code> is missing or is not a fetch run.
+<code>NOT_FOUND</code> when the run recorded no readings (it ran before readings were recorded, or
+they could not be stored). <code>UNAVAILABLE</code> if the readings cannot be read.</li>
+</ul>
+<p>What one fetch read off the attachments it was sent, in the order sent. The same list is on
+that run's <code>analysis.attachments</code>. Every run records its list, so a run sent no attachment
+answers an empty list, not <code>NOT_FOUND</code>.</p>
+<h4 id="request-getfetchattachmentsrequest">Request: GetFetchAttachmentsRequest</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>transaction_id</code></td>
+<td><code>string</code></td>
+<td>The run, as <code>FetchRunSummary.transaction_id</code>. Required.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response-getfetchattachmentsresponse">Response: GetFetchAttachmentsResponse</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>transaction_id</code></td>
+<td><code>string</code></td>
+<td>The run.</td>
+</tr>
+<tr>
+<td><code>attachments</code></td>
+<td><code>repeated</code> <a href="#fetchattachmentreading"><code>FetchAttachmentReading</code></a></td>
+<td>One per attachment. Empty when the run was sent none.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getrunstoryboard">GetRunStoryboard</h3>
+<pre><code class="lang-proto"><span class="hljs-function"><span class="hljs-keyword">rpc</span> GetRunStoryboard(GetRunStoryboardRequest) <span class="hljs-keyword">returns</span> (RunStoryboard)</span>;
+</code></pre>
+<ul>
+<li><strong>Kind:</strong> Unary.</li>
+<li><strong>Auth:</strong> Bearer session. Only a run in the caller's own run history (an org admin's:
+the tenant's).</li>
+<li><strong>Errors:</strong> <code>INVALID_ARGUMENT</code> with no <code>transaction_id</code>. <code>UNAUTHENTICATED</code> with no
+signed-in caller. <code>FAILED_PRECONDITION</code> on a runner, or on a process that records no
+run history. <code>NOT_FOUND</code> when the run is not in the caller's history. <code>UNAVAILABLE</code>
+if the history cannot be read.</li>
+</ul>
+<p>One run's storyboard: its question and strict verdict, and what each page of the
+story recorded for it, read from that run's own records. A count is set only with its
+<code>*_recorded</code> (or <code>rows_stated</code>) flag: false means the run recorded nothing for that
+page, not zero.</p>
+<h4 id="request-getrunstoryboardrequest">Request: GetRunStoryboardRequest</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>transaction_id</code></td>
+<td><code>string</code></td>
+<td>The run's analysis transaction id.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response-runstoryboard">Response: RunStoryboard</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>transaction_id</code></td>
+<td><code>string</code></td>
+<td>The run.</td>
+</tr>
+<tr>
+<td><code>verdict</code></td>
+<td><a href="#runverdict"><code>RunVerdict</code></a></td>
+<td>Its strict verdict. Absent for a run that answered before its phases were recorded.</td>
+</tr>
+<tr>
+<td><code>datasets_read</code></td>
+<td><code>int32</code></td>
+<td>Fetch: the datasets read for the question.</td>
+</tr>
+<tr>
+<td><code>rows_read</code></td>
+<td><code>int64</code></td>
+<td>Fetch: the rows read, when <code>rows_stated</code>.</td>
+</tr>
+<tr>
+<td><code>rows_stated</code></td>
+<td><code>bool</code></td>
+<td>True when the fetch stated its row count.</td>
+</tr>
+<tr>
+<td><code>knowledge_recorded</code></td>
+<td><code>bool</code></td>
+<td>True when the run recorded a posture or rules.</td>
+</tr>
+<tr>
+<td><code>domains</code></td>
+<td><code>int32</code></td>
+<td>Knowledge: the domains in its posture.</td>
+</tr>
+<tr>
+<td><code>rules</code></td>
+<td><code>int32</code></td>
+<td>Knowledge: the rules it recorded.</td>
+</tr>
+<tr>
+<td><code>scenarios_recorded</code></td>
+<td><code>bool</code></td>
+<td>True when the run recorded scenario results.</td>
+</tr>
+<tr>
+<td><code>scenarios_judged</code></td>
+<td><code>int32</code></td>
+<td>Scenarios: the scenarios judged.</td>
+</tr>
+<tr>
+<td><code>twins_recorded</code></td>
+<td><code>bool</code></td>
+<td>True when the run recorded decisions or actions.</td>
+</tr>
+<tr>
+<td><code>decisions</code></td>
+<td><code>int32</code></td>
+<td>Twins: the decisions recorded.</td>
+</tr>
+<tr>
+<td><code>actions</code></td>
+<td><code>int32</code></td>
+<td>Twins: the actions recorded.</td>
+</tr>
+<tr>
+<td><code>started_unix_ms</code></td>
+<td><code>int64</code></td>
+<td>When the control plane received the run.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getasklayout">GetAskLayout</h3>
+<pre><code class="lang-proto"><span class="hljs-function"><span class="hljs-keyword">rpc</span> GetAskLayout(GetAskLayoutRequest) <span class="hljs-keyword">returns</span> (AskLayout)</span>;
+</code></pre>
+<ul>
+<li><strong>Kind:</strong> Unary.</li>
+<li><strong>Auth:</strong> Bearer session. Only a run in the caller's own run history (an org admin's:
+the tenant's).</li>
+<li><strong>Errors:</strong> <code>INVALID_ARGUMENT</code> with no <code>transaction_id</code>. <code>UNAUTHENTICATED</code> with no
+signed-in caller. <code>FAILED_PRECONDITION</code> on a runner, or on a process that records no
+run history. <code>NOT_FOUND</code> when the run is not in the caller's history, or stored no
+layout (it ran before layouts were stored, or its twins phase has not ended).
+<code>UNAVAILABLE</code> if the history or the layout cannot be read. <code>DATA_LOSS</code> if the stored
+layout cannot be decoded.</li>
+</ul>
+<p>One run's Ask answer as the run stored it: the blocks the model chose for the question,
+in its order, each resolved by the server from what the run measured. It is read back as stored. See <a href="../../../user-guide/ask/#the-answer">Ask</a>.</p>
+<h4 id="request-getasklayoutrequest">Request: GetAskLayoutRequest</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>transaction_id</code></td>
+<td><code>string</code></td>
+<td>The run's analysis transaction id.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response-asklayout">Response: AskLayout</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>transaction_id</code></td>
+<td><code>string</code></td>
+<td>The run.</td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td><code>AskLayoutSource</code></td>
+<td><code>MODEL</code>: the model chose the blocks. <code>DEFAULT</code>: the fixed layout (the answer, then what waits) stands in.</td>
+</tr>
+<tr>
+<td><code>fallback_reason</code></td>
+<td><code>string</code></td>
+<td>Why the fixed layout stands in. Empty for <code>MODEL</code>.</td>
+</tr>
+<tr>
+<td><code>blocks</code></td>
+<td><code>repeated AskBlock</code></td>
+<td>In order. Each has a <code>state</code> (<code>PRESENT</code>, <code>EMPTY</code> with <code>state_reason</code>, or <code>UNREADABLE</code> with the read's error), a <code>basis</code> (where it was read, over which tables, sampled or not, how) and one of <code>answer</code>, <code>figure</code>, <code>table</code>, <code>chart</code>, <code>map_layer</code>, <code>decision_options</code>, <code>actions</code>, <code>evidence</code> or <code>not_checked</code>.</td>
+</tr>
+<tr>
+<td><code>dropped</code></td>
+<td><code>repeated AskDroppedBlock</code></td>
+<td>Blocks the model named that the run does not hold, each with why.</td>
+</tr>
+<tr>
+<td><code>resolved_unix_ms</code></td>
+<td><code>int64</code></td>
+<td>When the layout was resolved.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getscenariograph">GetScenarioGraph</h3>
+<pre><code class="lang-proto"><span class="hljs-function"><span class="hljs-keyword">rpc</span> GetScenarioGraph(GetScenarioGraphRequest) <span class="hljs-keyword">returns</span> (ScenarioGraph)</span>;
+</code></pre>
+<ul>
+<li><strong>Kind:</strong> Unary.</li>
+<li><strong>Auth:</strong> Bearer session. Only a run in the caller's own run history (an org admin's:
+the tenant's).</li>
+<li><strong>Errors:</strong> <code>UNAUTHENTICATED</code> with no signed-in caller. <code>FAILED_PRECONDITION</code> on a
+runner, or on a process that records no run history. <code>NOT_FOUND</code> when the run is not
+in the caller's history. <code>UNAVAILABLE</code> when one of the run's records cannot be read:
+the graph is then unknown, never empty.</li>
+</ul>
+<p>The graph behind <strong>Graph</strong> on the Options page: the run's question, its business areas, their
+scenarios, and what each scenario rests on, read from the run's stored records with no
+model call. Node kinds: <code>RUN</code> (or <code>ESTATE</code> when no run is named: the caller's newest
+run), <code>DOMAIN</code>, <code>SCENARIO</code>, <code>PROPERTY</code> (a lever its simulation tested), <code>EDGE_TEST</code>
+(the link between two areas a synapse scenario crosses), <code>TERM</code> (a metasearch topic or
+market subject), <code>TABLE</code>, <code>RULE</code> and <code>VERDICT</code>. A node is identified by the record's own
+key (<code>term:&lt;normalised term&gt;</code>, <code>rule:&lt;rule id&gt;</code>, <code>table:&lt;table&gt;</code>, <code>edge:&lt;a&gt;|&lt;b&gt;</code>), so a
+leaf several scenarios share is one node with an edge from each; what differs per
+scenario (a property's result, the terms a scenario triggered across an edge test) is
+on the edge. A kind the run recorded nothing for is listed in <code>gaps</code> with the reason.</p>
+<h4 id="request-getscenariographrequest">Request: GetScenarioGraphRequest</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>transaction_id</code></td>
+<td><code>string</code></td>
+<td>The run. Empty: the caller's newest run, under an <code>ESTATE</code> root.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response-scenariograph">Response: ScenarioGraph</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>transaction_id</code></td>
+<td><code>string</code></td>
+<td>The run read; empty when the caller has none.</td>
+</tr>
+<tr>
+<td><code>root_id</code></td>
+<td><code>string</code></td>
+<td>The root node.</td>
+</tr>
+<tr>
+<td><code>nodes</code></td>
+<td><code>repeated ScenarioGraphNode</code></td>
+<td><code>id</code>, <code>kind</code>, <code>label</code> (the record's own text), <code>scenario_id</code> and <code>domain</code> for a scenario, <code>status</code>, <code>facts</code> (key and value), <code>sources</code> and <code>ran_at</code> for a term, and <code>measured</code> with <code>not_measured_reason</code>.</td>
+</tr>
+<tr>
+<td><code>edges</code></td>
+<td><code>repeated ScenarioGraphEdge</code></td>
+<td><code>from_id</code>, <code>to_id</code>, the link's <code>facts</code>, and <code>triggered_terms</code> on a scenario → edge-test link.</td>
+</tr>
+<tr>
+<td><code>gaps</code></td>
+<td><code>repeated ScenarioGraphGap</code></td>
+<td>A node kind the run recorded nothing for, and why.</td>
+</tr>
+<tr>
+<td><code>run_verdict</code></td>
+<td><a href="#runverdict"><code>RunVerdict</code></a></td>
+<td>The run's strict verdict, when it recorded one.</td>
+</tr>
+<tr>
+<td><code>computed_unix_ms</code></td>
+<td><code>int64</code></td>
+<td>When the graph was built (kept for 5 s per tenant and run).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="messages">Messages</h2>
+<h3 id="fetchattachmentreading">FetchAttachmentReading</h3>
+<p>One attachment, as one fetch read it. <code>status</code> and <code>found_content</code> together give three
+states: read with something on it, read with nothing on it (<code>READ</code>, <code>found_content</code> false),
+and not readable (<code>SKIPPED</code> or <code>FAILED</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>index</code></td>
+<td><code>int32</code></td>
+<td>1-based position in the request's <code>documents</code>.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>string</code></td>
+<td>The file name the client sent, else <code>attachment N</code>. Never a server path.</td>
+</tr>
+<tr>
+<td><code>content_type</code></td>
+<td><code>string</code></td>
+<td>Detected from the bytes, for example <code>application/pdf</code>.</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td><code>FetchAttachmentStatus</code></td>
+<td><code>FETCH_ATTACHMENT_STATUS_READ</code>, <code>FETCH_ATTACHMENT_STATUS_SKIPPED</code> (not a format a fetch reads, such as a recording or an archive) or <code>FETCH_ATTACHMENT_STATUS_FAILED</code> (a format a fetch reads, and reading it failed).</td>
+</tr>
+<tr>
+<td><code>reason</code></td>
+<td><code>string</code></td>
+<td>Why it was skipped, or the error it failed with. Empty when read.</td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td><code>string</code></td>
+<td>The text read off it, at most 64 KiB.</td>
+</tr>
+<tr>
+<td><code>text_truncated</code></td>
+<td><code>bool</code></td>
+<td>The text was cut.</td>
+</tr>
+<tr>
+<td><code>found_content</code></td>
+<td><code>bool</code></td>
+<td>Anything was read: text, a field or a table.</td>
+</tr>
+<tr>
+<td><code>documents</code></td>
+<td><code>repeated StructuredDocument</code></td>
+<td>The structured reading of each photo the attachment is, or carries as a scanned PDF page: document type, fields with boxes, tables, checkboxes and warnings, as <code>OCRService.ExtractStructured</code> returns them. Each is stored, so <code>SaveStructuredCorrections</code> and <code>ExportStructured</code> accept its <code>document_id</code>.</td>
+</tr>
+<tr>
+<td><code>tables</code></td>
+<td><code>repeated FetchAttachmentTable</code></td>
+<td>Tables the document declares (DOCX, PPTX, XLSX) or that a PDF's text layer lays out: <code>name</code>, <code>columns</code>, <code>rows</code> (at most 200, <code>truncated</code> when more), <code>method</code> (<code>native</code> or <code>text-layer</code>) and <code>note</code>.</td>
+</tr>
+<tr>
+<td><code>notes</code></td>
+<td><code>repeated string</code></td>
+<td>What part of a read attachment was left out, and why.</td>
+</tr>
+<tr>
+<td><code>pages_read</code>, <code>pages_total</code></td>
+<td><code>int32</code></td>
+<td>For a PDF: pages read, and pages in the document. 0 otherwise.</td>
+</tr>
+<tr>
+<td><code>attached_id</code></td>
+<td><code>string</code></td>
+<td>Set for an <code>attached:&lt;id&gt;</code> entry: the uploaded spreadsheet's id. Its <code>tables</code> are its sheets, <code>method</code> <code>excel-connector</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fetchrunsummary">FetchRunSummary</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>run_id</code></td>
+<td><code>string</code></td>
+<td>An id the control plane assigns when the run arrives. Runs recorded before the start record existed carry the analysis transaction id instead.</td>
+</tr>
+<tr>
+<td><code>started_unix_ms</code></td>
+<td><code>int64</code></td>
+<td>When the control plane received the run.</td>
+</tr>
+<tr>
+<td><code>ended_unix_ms</code></td>
+<td><code>int64</code></td>
+<td>When its answer left. 0 for a running or interrupted run.</td>
+</tr>
+<tr>
+<td><code>outcome</code></td>
+<td><code>FetchRunOutcome</code></td>
+<td><code>FETCH_RUN_OUTCOME_SUCCEEDED</code>, <code>FETCH_RUN_OUTCOME_FAILED</code>, <code>FETCH_RUN_OUTCOME_DENIED</code> (refused before any runner was used), <code>FETCH_RUN_OUTCOME_RUNNING</code> (received, no answer yet) or <code>FETCH_RUN_OUTCOME_INTERRUPTED</code> (never answered; the server stopped first).</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>string</code></td>
+<td>The failure or refusal message, clipped to 240 characters. For an interrupted run, a sentence saying the server stopped before the run finished.</td>
+</tr>
+<tr>
+<td><code>runner_id</code></td>
+<td><code>string</code></td>
+<td>The runner the request named; empty when it named none.</td>
+</tr>
+<tr>
+<td><code>transaction_id</code></td>
+<td><code>string</code></td>
+<td>The analysis transaction id the response carried. Empty while running, for a refused or interrupted run, or when the response had none. A cached answer repeats an earlier run's transaction id.</td>
+</tr>
+<tr>
+<td><code>verdict</code></td>
+<td><a href="#runverdict"><code>RunVerdict</code></a></td>
+<td>The run's strict verdict. Absent for a run that answered before its phases were recorded: such a run is not successful.</td>
+</tr>
+<tr>
+<td><code>verdict_unreadable</code></td>
+<td><code>string</code></td>
+<td>Set when the run's phase ledger could not be read, in the server's words. <code>verdict</code> is then absent because nothing was read, which is not the same as a run that recorded no ledger.</td>
+</tr>
+<tr>
+<td><code>archived</code>, <code>archived_by</code>, <code>archived_unix_ms</code></td>
+<td><code>bool</code>, <code>string</code>, <code>int64</code></td>
+<td>Set only with <code>include_archived</code>: the run is archived, by whom (the verified subject) and when.</td>
+</tr>
+<tr>
+<td><code>persona_id</code>, <code>persona_name</code></td>
+<td><code>string</code></td>
+<td>Who the run was made for, and that persona's name when the run arrived. Both empty for the generalist view.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="runverdict">RunVerdict</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>outcome</code></td>
+<td><a href="#runverdictoutcome"><code>RunVerdictOutcome</code></a></td>
+<td>How the run ended, strictly.</td>
+</tr>
+<tr>
+<td><code>phases</code></td>
+<td><code>repeated</code> <a href="#runphase"><code>RunPhase</code></a></td>
+<td>Every phase the run planned, in order: the fetch's own, then the ones after the answer.</td>
+</tr>
+<tr>
+<td><code>question</code></td>
+<td><code>string</code></td>
+<td>The question the run was asked, up to 500 characters.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="runphase">RunPhase</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>phase</code></td>
+<td><code>string</code></td>
+<td><code>sources</code>, <code>data_prep</code>, <code>trends</code>, <code>analysis</code>, <code>scenarios</code>, <code>twins</code>, or another phase.</td>
+</tr>
+<tr>
+<td><code>label</code></td>
+<td><code>string</code></td>
+<td>The label for the phase.</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td><code>string</code></td>
+<td><code>done</code>, <code>failed</code>, <code>overrun</code>, <code>skipped</code>, <code>running</code> or <code>not_run</code>. Only <code>done</code> counts as finished.</td>
+</tr>
+<tr>
+<td><code>reason</code></td>
+<td><code>string</code></td>
+<td>Why it did not finish, in the server's words. Empty when it did.</td>
+</tr>
+<tr>
+<td><code>elapsed_ms</code></td>
+<td><code>int64</code></td>
+<td>How long it took, when measured.</td>
+</tr>
+<tr>
+<td><code>stage</code></td>
+<td><code>string</code></td>
+<td><code>fetch</code> (before the answer) or <code>background</code> (after it).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fetchanalysisresult">FetchAnalysisResult</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>transaction_id</code></td>
+<td><code>string</code></td>
+<td>Run id.</td>
+</tr>
+<tr>
+<td><code>sql_generated</code></td>
+<td><code>string</code></td>
+<td>The SQL the pipeline generated and ran.</td>
+</tr>
+<tr>
+<td><code>quality</code></td>
+<td><a href="#dataquality"><code>DataQuality</code></a></td>
+<td>Not measured by the current pipeline: every figure is 0. See <code>metrics.unmeasured_reason</code>.</td>
+</tr>
+<tr>
+<td><code>profiling</code></td>
+<td><a href="#dataprofiling"><code>DataProfiling</code></a></td>
+<td>Only <code>data_shapes</code> is set, and it is a fixed label. The other fields are empty.</td>
+</tr>
+<tr>
+<td><code>metrics</code></td>
+<td><a href="../twins/#evaluationmetrics"><code>EvaluationMetrics</code></a></td>
+<td>No evaluation harness runs for a fetch: <code>unmeasured_reason</code> is set and every score is absent. Do not display them.</td>
+</tr>
+<tr>
+<td><code>graph_nodes</code></td>
+<td><code>repeated</code> <a href="../analysis/#knowledgegraphnode"><code>KnowledgeGraphNode</code></a></td>
+<td>The domain graph.</td>
+</tr>
+<tr>
+<td><code>graph_edges</code></td>
+<td><code>repeated</code> <a href="../analysis/#knowledgegraphedge"><code>KnowledgeGraphEdge</code></a></td>
+<td>Its edges, with the evidence in <code>relation</code>.</td>
+</tr>
+<tr>
+<td><code>analysis_text</code></td>
+<td><code>string</code></td>
+<td>The business analysis, as prose.</td>
+</tr>
+<tr>
+<td><code>decisions</code></td>
+<td><code>repeated</code> <a href="../twins/#decision"><code>Decision</code></a></td>
+<td>The twin's decisions.</td>
+</tr>
+<tr>
+<td><code>action_cards</code></td>
+<td><code>repeated</code> <a href="../twins/#actioncard"><code>ActionCard</code></a></td>
+<td>Proposed actions, with origin stage <code>fetch</code>. Decide them with <code>TwinsService/ExecuteAction</code>.</td>
+</tr>
+<tr>
+<td><code>time_series</code></td>
+<td><code>repeated</code> <a href="../twins/#timeseriesinsight"><code>TimeSeriesInsight</code></a></td>
+<td>Time-series insights.</td>
+</tr>
+<tr>
+<td><code>shadow_search</code></td>
+<td><code>repeated</code> <a href="../twins/#shadowsearchresult"><code>ShadowSearchResult</code></a></td>
+<td>Public research used.</td>
+</tr>
+<tr>
+<td><code>spoken_response</code></td>
+<td><code>string</code></td>
+<td>A short spoken-style summary.</td>
+</tr>
+<tr>
+<td><code>provenance</code></td>
+<td><a href="#provenance"><code>Provenance</code></a></td>
+<td>How this result was produced: fresh, cached, or degraded.</td>
+</tr>
+<tr>
+<td><code>hypothesis_scenarios</code></td>
+<td><code>repeated</code> <a href="../twins/#decisionscenario"><code>DecisionScenario</code></a></td>
+<td>The scenarios tested for the run: each scenario's title, business area, impacts and evidence.</td>
+</tr>
+<tr>
+<td><code>hypothesis_impacts</code></td>
+<td><code>repeated</code> <a href="../twins/#impactsimulation"><code>ImpactSimulation</code></a></td>
+<td>Scenario impacts.</td>
+</tr>
+<tr>
+<td><code>hypothesis_traces</code></td>
+<td><code>repeated</code> <a href="../twins/#evidencetrace"><code>EvidenceTrace</code></a></td>
+<td>Scenario evidence traces.</td>
+</tr>
+<tr>
+<td><code>hypothesis_forecasts</code></td>
+<td><code>repeated</code> <a href="../twins/#timeseriesforecast"><code>TimeSeriesForecast</code></a></td>
+<td>Scenario forecasts.</td>
+</tr>
+<tr>
+<td><code>hypothesis_anomalies</code></td>
+<td><code>repeated</code> <a href="../twins/#timeseriesanomaly"><code>TimeSeriesAnomaly</code></a></td>
+<td>Scenario anomalies.</td>
+</tr>
+<tr>
+<td><code>hypothesis_scenarios_inferred</code></td>
+<td><code>int32</code></td>
+<td>Scenarios the estate proposed before the agent cap. Meaningful only when <code>hypothesis_swarm_ran</code> is <code>true</code>.</td>
+</tr>
+<tr>
+<td><code>hypothesis_agents_dispatched</code></td>
+<td><code>int32</code></td>
+<td>Agents started. Fewer than inferred means the lists above are a sample.</td>
+</tr>
+<tr>
+<td><code>hypothesis_agents_succeeded</code></td>
+<td><code>int32</code></td>
+<td>Agents that produced a simulation.</td>
+</tr>
+<tr>
+<td><code>hypothesis_swarm_ran</code></td>
+<td><code>bool</code></td>
+<td>Whether the three counts above were measured. <code>false</code> means they are absent, not zero: for example on a <code>session_eda</code> fetch.</td>
+</tr>
+<tr>
+<td><code>source_notices</code></td>
+<td><code>repeated string</code></td>
+<td>Sentences about sources that could not be read, or about where a source's SQL ran. Empty does <strong>not</strong> mean everything was fine.</td>
+</tr>
+<tr>
+<td><code>action_judgements</code></td>
+<td><a href="../#judgementset"><code>JudgementSet</code></a></td>
+<td>The verdict on every action proposed in this run, accepted <strong>and</strong> rejected. Rejected actions appear nowhere else.</td>
+</tr>
+<tr>
+<td><code>attachments</code></td>
+<td><code>repeated</code> <a href="#fetchattachmentreading"><code>FetchAttachmentReading</code></a></td>
+<td>What this run read off each attachment it was sent: read, skipped (with the reason) or failed (with the error). Empty when it was sent none.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataquality">DataQuality</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>accuracy</code></td>
+<td><code>double</code></td>
+<td>Accuracy.</td>
+</tr>
+<tr>
+<td><code>completeness</code></td>
+<td><code>double</code></td>
+<td>Completeness.</td>
+</tr>
+<tr>
+<td><code>consistency</code></td>
+<td><code>double</code></td>
+<td>Consistency.</td>
+</tr>
+<tr>
+<td><code>timeliness</code></td>
+<td><code>double</code></td>
+<td>Timeliness.</td>
+</tr>
+<tr>
+<td><code>validity</code></td>
+<td><code>double</code></td>
+<td>Validity.</td>
+</tr>
+<tr>
+<td><code>uniqueness</code></td>
+<td><code>double</code></td>
+<td>Uniqueness.</td>
+</tr>
+<tr>
+<td><code>integrity</code></td>
+<td><code>double</code></td>
+<td>Integrity.</td>
+</tr>
+<tr>
+<td><code>relevance</code></td>
+<td><code>double</code></td>
+<td>Relevance.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataprofiling">DataProfiling</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>outliers</code></td>
+<td><code>repeated string</code></td>
+<td>Outliers.</td>
+</tr>
+<tr>
+<td><code>patterns</code></td>
+<td><code>repeated string</code></td>
+<td>Patterns.</td>
+</tr>
+<tr>
+<td><code>schema_drifts</code></td>
+<td><code>repeated string</code></td>
+<td>Schema drifts.</td>
+</tr>
+<tr>
+<td><code>data_shapes</code></td>
+<td><code>string</code></td>
+<td>Data shapes.</td>
+</tr>
+<tr>
+<td><code>duplicate_rows</code></td>
+<td><code>int32</code></td>
+<td>Duplicate rows.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="provenance">Provenance</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>path</code></td>
+<td><code>string</code></td>
+<td>How the result was reached.</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td><code>string</code></td>
+<td>The model that produced it. Empty when no model produced it.</td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td><code>string</code></td>
+<td>How the value was produced.</td>
+</tr>
+<tr>
+<td><code>degraded</code></td>
+<td><code>bool</code></td>
+<td>Produced without full server capability.</td>
+</tr>
+<tr>
+<td><code>confidence</code></td>
+<td><code>double</code></td>
+<td>A score from 0 to 1.</td>
+</tr>
+<tr>
+<td><code>computed_at</code></td>
+<td><code>int64</code></td>
+<td>Unix seconds when the underlying value was produced. Use it to judge staleness.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="trace">Trace</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td><code>string</code></td>
+<td>The run's transaction id.</td>
+</tr>
+<tr>
+<td><code>schema_name</code></td>
+<td><code>string</code></td>
+<td>Always <code>execution_log</code>.</td>
+</tr>
+<tr>
+<td><code>table_name</code></td>
+<td><code>string</code></td>
+<td>Always <code>session_result</code>.</td>
+</tr>
+<tr>
+<td><code>row_count</code></td>
+<td><code>int64</code></td>
+<td>Not populated.</td>
+</tr>
+<tr>
+<td><code>size_bytes</code></td>
+<td><code>int64</code></td>
+<td>Not populated.</td>
+</tr>
+<tr>
+<td><code>last_modified</code></td>
+<td><code>string</code></td>
+<td>When the run was recorded, RFC 3339.</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td><code>string</code></td>
+<td>The run's command and analysis. See each RPC.</td>
+</tr>
+<tr>
+<td><code>freshness_label</code></td>
+<td><code>string</code></td>
+<td>Not populated.</td>
+</tr>
+<tr>
+<td><code>columns</code></td>
+<td><code>repeated string</code></td>
+<td>Not populated.</td>
+</tr>
+<tr>
+<td><code>downstream_tables</code></td>
+<td><code>repeated string</code></td>
+<td>Not populated.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fetchstarter">FetchStarter</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>icon</code></td>
+<td><code>string</code></td>
+<td>Icon name.</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td><code>string</code></td>
+<td>Title.</td>
+</tr>
+<tr>
+<td><code>subtitle</code></td>
+<td><code>string</code></td>
+<td>Subtitle.</td>
+</tr>
+<tr>
+<td><code>prompt_text</code></td>
+<td><code>string</code></td>
+<td>The prompt to send as <code>RunFetchRequest.command</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="enums">Enums</h2>
+<h3 id="runverdictoutcome">RunVerdictOutcome</h3>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>RUN_VERDICT_OUTCOME_UNSPECIFIED</code></td>
+<td>Not set.</td>
+</tr>
+<tr>
+<td><code>RUN_VERDICT_OUTCOME_SUCCESSFUL</code></td>
+<td>It answered, and every phase is <code>done</code>.</td>
+</tr>
+<tr>
+<td><code>RUN_VERDICT_OUTCOME_PARTIAL</code></td>
+<td>It answered, and at least one phase is not <code>done</code>. A phase left <code>running</code> more than 46 minutes after the run's last update reads as <code>not_run</code>, with the reason <em>the server stopped before it finished</em>.</td>
+</tr>
+<tr>
+<td><code>RUN_VERDICT_OUTCOME_FAILED</code></td>
+<td>It did not answer: it failed, was refused or was interrupted.</td>
+</tr>
+<tr>
+<td><code>RUN_VERDICT_OUTCOME_RUNNING</code></td>
+<td>It has not answered yet, or a phase after the answer is running.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="runfetchrequesttriggertype">RunFetchRequest.TriggerType</h3>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TRIGGER_TYPE_UNSPECIFIED</code></td>
+<td>Not set.</td>
+</tr>
+<tr>
+<td><code>TRIGGER_TYPE_MANUAL</code></td>
+<td>Started by a person.</td>
+</tr>
+<tr>
+<td><code>TRIGGER_TYPE_SCHEDULED</code></td>
+<td>Started by a schedule.</td>
+</tr>
+<tr>
+<td><code>TRIGGER_TYPE_API</code></td>
+<td>Started by an integration.</td>
+</tr>
+<tr>
+<td><code>TRIGGER_TYPE_EVENT</code></td>
+<td>Started by an event-triggered schedule, when a connection's data listener saw the changes it asks for.</td>
+</tr>
+</tbody>
+</table>
+
+                                
+    
+    <footer class="runink-footer" role="contentinfo">
+        <img class="runink-brand" src="../../../../_brand/logo.png" alt="">
+        
+    </footer>
+    
+
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../connections/" class="navigation navigation-prev " aria-label="Previous page: Configuration, connections & runners">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../twins/" class="navigation navigation-next " aria-label="Next page: Twins, simulation & claims">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    
+    <script type="application/json" id="honkit-page-context">{"page":{"title":"Fetch & traces","level":"1.2.6.2.3","depth":4,"next":{"title":"Twins, simulation & claims","level":"1.2.6.2.4","depth":4,"path":"docs/developer-guide/api/twins/README.md","ref":"docs/developer-guide/api/twins/README.md","articles":[]},"previous":{"title":"Configuration, connections & runners","level":"1.2.6.2.2","depth":4,"path":"docs/developer-guide/api/connections/README.md","ref":"docs/developer-guide/api/connections/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","runink-copy"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"lunr":{"maxIndexSize":100000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"runink-copy":{},"highlight":{},"search":{}},"theme":"default","author":"Runink","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"logo":"_brand/logo.png","siteURL":"https://docs.runink.org/face/"},"title":"FACE Documentation","language":"en","gitbook":"7.0.1","description":"FACE by Runink (Fulfilment Autonomous Claims Engine) is Runink's sovereign operational-intelligence product: it connects to your warehouses, ERPs, telematics, sensors and cameras, reasons over them with models Runink runs for you or that you host (never a third-party AI service), and produces…"},"file":{"path":"docs/developer-guide/api/fetch/README.md","mtime":"","type":"markdown"},"gitbook":{"version":"7.0.1","time":""},"basePath":"../../../..","book":{"language":""}}</script>
+</div>
+
+        
+    <noscript>
+        <link rel="stylesheet" href="../../../../gitbook/noscript.css">
+    </noscript>
+    
+    <script src="../../../../gitbook/boot.js"></script>
+    
+    <script src="../../../../gitbook/gitbook.js" defer></script>
+    <script src="../../../../gitbook/theme.js" defer></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-runink-copy/copy.js" defer></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js" defer></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js" defer></script>
+        
+    
+        
+        <script src="../../../../gitbook/@honkit/honkit-plugin-lunr/lunr.min.js" defer></script>
+        
+    
+        
+        <script src="../../../../gitbook/@honkit/honkit-plugin-lunr/search-lunr.js" defer></script>
+        
+    
+
+    </body>
+</html>
+
